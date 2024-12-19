@@ -1,5 +1,5 @@
 const {signup, login} = require('../Controllers/AuthContoller');
-const { signupValidation, loginValidation } = require('../Midllewares/AuthValidation');
+const { signupValidation, loginValidation } = require('../Middlewares/AuthValidation');
 const router = require('express').Router();
 
 
