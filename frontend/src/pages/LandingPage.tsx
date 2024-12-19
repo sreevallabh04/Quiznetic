@@ -1,39 +1,40 @@
 import { motion } from 'framer-motion';
-import { LoginForm } from '../components/auth/LoginForm';
+import { useNavigate } from 'react-router-dom';
 import { Hero } from '../components/landing/Hero';
 import { useAuth } from '../components/auth/AuthContext';
-import { Navigate } from 'react-router-dom';
 
 export function LandingPage() {
+  const navigate = useNavigate();
   const { user } = useAuth();
 
   if (user) {
-    return <Navigate to="/" replace />;
+    return navigate('/', { replace: true });
   }
 
   return (
     <div className="min-h-screen bg-gray-900">
       <div className="container mx-auto px-4 py-16">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex-1"
+        <Hero />
+        
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="flex justify-center gap-4 mt-12"
+        >
+          <button
+            onClick={() => navigate('/login')}
+            className="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors"
           >
-            <Hero />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="w-full lg:w-96 bg-gray-800/50 backdrop-blur-xl p-8 rounded-2xl shadow-xl"
+            Login
+          </button>
+          <button
+            onClick={() => navigate('/signup')}
+            className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg font-medium transition-colors"
           >
-            <h2 className="text-2xl font-bold text-white mb-6 text-center">
-              Welcome Back
-            </h2>
-            <LoginForm />
-          </motion.div>
-        </div>
+            Sign Up
+          </button>
+        </motion.div>
       </div>
     </div>
   );

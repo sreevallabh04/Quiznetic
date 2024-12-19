@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './components/auth/AuthContext';
 import { Header } from './components/layout/Header';
 import { LandingPage } from './pages/LandingPage';
+import { LoginPage } from './pages/LoginPage';
+import { SignupPage } from './pages/SignupPage';
 import ClassSelection from './components/ClassSelection';
 import SubjectSelection from './components/SubjectSelection';
 import ChapterSelection from './components/ChapterSelection';
@@ -14,7 +16,7 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
 
-function App() {
+export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
@@ -23,31 +25,44 @@ function App() {
           
           <main className="pt-16">
             <Routes>
-              <Route path="/login" element={<LandingPage />} />
-              
-              <Route path="/" element={
-                <ProtectedRoute>
-                  <ClassSelection />
-                </ProtectedRoute>
-              } />
-              
-              <Route path="/class/:classId" element={
-                <ProtectedRoute>
-                  <SubjectSelection />
-                </ProtectedRoute>
-              } />
-              
-              <Route path="/class/:classId/:subject" element={
-                <ProtectedRoute>
-                  <ChapterSelection />
-                </ProtectedRoute>
-              } />
-              
-              <Route path="/class/:classId/:subject/:chapter" element={
-                <ProtectedRoute>
-                  <Quiz />
-                </ProtectedRoute>
-              } />
+              {/* Public Routes */}
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage />} />
+
+              {/* Protected Routes */}
+              <Route
+                path="/dashboard"
+                element={
+                  <ProtectedRoute>
+                    <ClassSelection />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/class/:classId"
+                element={
+                  <ProtectedRoute>
+                    <SubjectSelection />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/class/:classId/:subject"
+                element={
+                  <ProtectedRoute>
+                    <ChapterSelection />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/class/:classId/:subject/:chapter"
+                element={
+                  <ProtectedRoute>
+                    <Quiz />
+                  </ProtectedRoute>
+                }
+              />
             </Routes>
           </main>
         </div>
@@ -55,5 +70,3 @@ function App() {
     </AuthProvider>
   );
 }
-
-export default App;
