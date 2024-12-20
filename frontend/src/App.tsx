@@ -30,13 +30,12 @@ export default function App() {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/signup" element={<SignupPage />} />
 
-              {/* Protected Routes */}
+             
               <Route
                 path="/dashboard"
                 element={
-                  <ProtectedRoute>
+                  
                     <ClassSelection />
-                  </ProtectedRoute>
                 }
               />
               <Route

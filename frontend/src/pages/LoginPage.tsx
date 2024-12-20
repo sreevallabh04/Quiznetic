@@ -1,31 +1,95 @@
-import { motion } from 'framer-motion';
-import { LoginForm } from '../components/auth/LoginForm';
-import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ToastContainer } from "react-toastify";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { handleSuccess, handleError } from '../utils';
 
 export function LoginPage() {
+  const [loginInfo,setLoginInfo] = useState({
+    email: '',
+    password: ''
+  })
   const navigate = useNavigate();
+  const handleChange = (e) => {
+    const {name,value} = e.target;
+    console.log(name,value);
+    const copyLoginInfo = { ...loginInfo };
+        copyLoginInfo[name] = value;
+        setLoginInfo(copyLoginInfo);
+  }
+
+  const handleLogin = async (e)=> {
+    e.preventDefault();
+    const {email, password } = loginInfo;
+        if (!email || !password) {
+            return handleError("All fields are required")
+        }
+        try{
+          const url = "http://localhost:8080/auth/login"
+          const response = await fetch(url, {
+            method: "POST",
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(loginInfo)
+          });
+          const result = await response.json();
+          const {success,message,jwtToken,name,error} = result;
+          if(success) {
+            handleSuccess(message);
+            localStorage.setItem('token',jwtToken);
+            localStorage.setItem('loggedInUser',name);
+            setTimeout(()=> {
+                navigate('/dashboard')
+            },1000)
+          } else if(error){
+            const details = error?.details[0].message;
+            handleError(details);
+          } else if(!success){
+            handleError(message);
+          }
+          console.log(result);
+        } catch (err) {
+          handleError(err);
+        }
+        
+
+  
+  }
 
   return (
-    <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="w-full max-w-md bg-gray-800/50 backdrop-blur-xl p-8 rounded-2xl shadow-xl"
-      >
-        <button
-          onClick={() => navigate('/')}
-          className="flex items-center gap-2 text-purple-400 hover:text-purple-300 mb-6"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Home
-        </button>
-
-        <h2 className="text-2xl font-bold text-white mb-6">
-          Welcome Back
-        </h2>
-        <LoginForm />
-      </motion.div>
+    <div className="signup-container">
+      <h1 className="signup-header">Login</h1>
+      <form onSubmit = {handleLogin} className="signup-form">
+        
+        <div className="signup-form-group">
+          <label htmlFor="email" className="signup-label">Email</label>
+          <input
+            onChange={handleChange}
+            type="email"
+            name="email"
+            placeholder="Enter your email..."
+            className="signup-input"
+            value = {loginInfo.email}
+          />
+        </div>
+        <div className="signup-form-group">
+          <label htmlFor="password" className="signup-label">Password</label>
+          <input
+            onChange={handleChange}
+            type="password"
+            name="password"
+            placeholder="Enter your password..."
+            className="signup-input"
+            value = {loginInfo.password}
+          />
+        </div>
+        <button type="submit" className="signup-button">Login</button>
+        <span className="signup-text">
+          Don't have an account?
+          <Link to="/signup" className="signup-link">Signup</Link>
+        </span>
+      </form>
+      <ToastContainer />
     </div>
   );
 }
