@@ -5,7 +5,7 @@ import { Card } from './ui/Card';
 import { PageTitle } from './ui/PageTitle';
 import { useEffect, useState } from 'react';
 import { handleSuccess } from '../utils';
-
+import { ToastContainer } from 'react-toastify';
 const classes = [6, 7, 8, 9, 10];
 
 export default function ClassSelection() {
@@ -34,6 +34,7 @@ export default function ClassSelection() {
     >
       <h1>Welcome {loggedInUser}</h1>
       <button onClick={handleLogout}>Logout</button>
+      <ToastContainer />
       <PageTitle title="Select Your Class" />
       
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -49,5 +50,6 @@ export default function ClassSelection() {
         ))}
       </div>
     </motion.div>
+    
   );
 }
