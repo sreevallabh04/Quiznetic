@@ -1,15 +1,12 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Hero } from '../components/landing/Hero';
-import { useAuth } from '../components/auth/AuthContext';
 
 export function LandingPage() {
   const navigate = useNavigate();
-  const { user } = useAuth();
+  
 
-  if (user) {
-    return navigate('/', { replace: true });
-  }
+ 
 
   return (
     <div className="min-h-screen bg-gray-900">
