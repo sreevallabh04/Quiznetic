@@ -113,6 +113,21 @@ export const mathsClass6 = [
         "question": "What is the place value of 7 in 7,845?",
         "options": ["Units", "Thousands", "Hundreds", "Tens"],
         "correct": "Thousands"
+      },
+      {
+        "question": "What is the Roman numeral for 100?",
+        "options": ["C", "D", "M", "X"],
+        "correct": "C"
+      },
+      {
+        "question": "Which number is smaller: 2,000 or 3,000?",
+        "options": ["2,000", "3,000", "They are equal", "Cannot determine"],
+        "correct": "2,000"
+      },
+      {
+        "question": "What is the place value of 3 in 3,567?",
+        "options": ["Hundreds", "Thousands", "Tens", "Ones"],
+        "correct": "Thousands"
       }
     ]
   },
@@ -221,7 +236,33 @@ export const mathsClass6 = [
         "question": "Which property is shown in: 6 × 1 = 6?",
         "options": ["Closure", "Multiplicative Identity", "Associative", "Commutative"],
         "correct": "Multiplicative Identity"
+      },
+      {
+        "question": "What is the sum of 120 and 56?",
+        "options": ["176", "178", "180", "190"],
+        "correct": "176"
+      },
+      {
+        "question": "What is the product of the smallest whole number and the largest whole number?",
+        "options": ["0", "1", "Infinite", "Undefined"],
+        "correct": "0"
+      },
+      {
+        "question": "What is the successor of 1,000?",
+        "options": ["1,001", "999", "1,010", "100"],
+        "correct": "1,001"
+      },
+      {
+        "question": "Which of the following is a whole number?",
+        "options": ["-5", "1/2", "0", "1.5"],
+        "correct": "0"
+      },
+      {
+        "question": "What is the result of 9 × 0?",
+        "options": ["9", "0", "Undefined", "None of these"],
+        "correct": "0"
       }
+      
     ]
   },
   
@@ -329,6 +370,31 @@ export const mathsClass6 = [
         "question": "A number that is divisible by both 4 and 6 is also divisible by:",
         "options": ["10", "8", "12", "24"],
         "correct": "12"
+      },
+      {
+        "question": "What is the HCF of 8 and 12?",
+        "options": ["2", "4", "8", "6"],
+        "correct": "4"
+      },
+      {
+        "question": "What is the LCM of 5 and 7?",
+        "options": ["35", "12", "14", "10"],
+        "correct": "35"
+      },
+      {
+        "question": "Which of the following numbers is divisible by both 2 and 5?",
+        "options": ["10", "12", "15", "20"],
+        "correct": "10"
+      },
+      {
+        "question": "What is the prime factorization of 30?",
+        "options": ["2 × 3 × 5", "2 × 5 × 6", "3 × 5 × 7", "2 × 3 × 4"],
+        "correct": "2 × 3 × 5"
+      },
+      {
+        "question": "What is the smallest even number that is divisible by 3?",
+        "options": ["3", "6", "9", "12"],
+        "correct": "6"
       }
     ]
   },
@@ -437,24 +503,164 @@ export const mathsClass6 = [
         "question": "What is the name of a three-dimensional shape with a circular base and a single vertex?",
         "options": ["Cylinder", "Cone", "Sphere", "Cube"],
         "correct": "Cone"
+      },
+      {
+        "question": "A parallelogram has how many sides?",
+        "options": ["3", "4", "5", "6"],
+        "correct": "4"
+      },
+      {
+        "question": "Which shape has all sides of equal length?",
+        "options": ["Rectangle", "Square", "Parallelogram", "Rhombus"],
+        "correct": "Square"
+      },
+      {
+        "question": "A right angle measures:",
+        "options": ["90°", "45°", "180°", "60°"],
+        "correct": "90°"
+      },
+      {
+        "question": "How many sides does a decagon have?",
+        "options": ["8", "10", "12", "20"],
+        "correct": "10"
+      },
+      {
+        "question": "Which of the following shapes has no vertices?",
+        "options": ["Triangle", "Square", "Circle", "Rectangle"],
+        "correct": "Circle"
       }
     ]
   },
   
   {
-    id: 5,
-    title: 'Measures of Lines and Angles',
-    description: 'Learn about measuring angles and line segments',
-    questions: [
+    "id": 5,
+    "title": "Measures of Lines and Angles",
+    "description": "Learn about measuring angles and line segments",
+    "questions": [
       {
-        question: 'What is the measure of a right angle?',
-        options: ['45°', '90°', '180°', '360°'],
-        correct: '90°'
+        "question": "What is the measure of a right angle?",
+        "options": ["45°", "90°", "180°", "360°"],
+        "correct": "90°"
       },
       {
-        question: 'Which instrument is used to measure angles?',
-        options: ['Ruler', 'Compass', 'Protractor', 'Divider'],
-        correct: 'Protractor'
+        "question": "Which instrument is used to measure angles?",
+        "options": ["Ruler", "Compass", "Protractor", "Divider"],
+        "correct": "Protractor"
+      },
+      {
+        "question": "What is the measure of a straight angle?",
+        "options": ["0°", "45°", "90°", "180°"],
+        "correct": "180°"
+      },
+      {
+        "question": "How many degrees are in a full circle?",
+        "options": ["180°", "360°", "270°", "90°"],
+        "correct": "360°"
+      },
+      {
+        "question": "An acute angle measures:",
+        "options": ["Less than 90°", "Exactly 90°", "More than 90°", "Exactly 180°"],
+        "correct": "Less than 90°"
+      },
+      {
+        "question": "An obtuse angle measures:",
+        "options": ["Less than 90°", "Exactly 90°", "More than 90°", "Exactly 180°"],
+        "correct": "More than 90°"
+      },
+      {
+        "question": "What is the sum of the angles in a triangle?",
+        "options": ["180°", "360°", "90°", "270°"],
+        "correct": "180°"
+      },
+      {
+        "question": "What is the angle between two perpendicular lines?",
+        "options": ["0°", "45°", "90°", "180°"],
+        "correct": "90°"
+      },
+      {
+        "question": "Which of the following angles is smaller than a right angle?",
+        "options": ["Acute angle", "Obtuse angle", "Straight angle", "Reflex angle"],
+        "correct": "Acute angle"
+      },
+      {
+        "question": "Which of the following is used to measure the length of line segments?",
+        "options": ["Protractor", "Compass", "Ruler", "Divider"],
+        "correct": "Ruler"
+      },
+      {
+        "question": "What is the sum of the angles of a quadrilateral?",
+        "options": ["180°", "360°", "90°", "270°"],
+        "correct": "360°"
+      },
+      {
+        "question": "A reflex angle measures:",
+        "options": ["Less than 90°", "Exactly 90°", "More than 180°", "Exactly 180°"],
+        "correct": "More than 180°"
+      },
+      {
+        "question": "Which of the following is an example of a right angle?",
+        "options": ["The corner of a book", "The hands of a clock at 3 o'clock", "The angle between the hour and minute hand of a clock", "The angle between two parallel lines"],
+        "correct": "The corner of a book"
+      },
+      {
+        "question": "A line segment has:",
+        "options": ["One endpoint", "Two endpoints", "No endpoints", "Three endpoints"],
+        "correct": "Two endpoints"
+      },
+      {
+        "question": "What is the measure of an angle in an equilateral triangle?",
+        "options": ["30°", "45°", "60°", "90°"],
+        "correct": "60°"
+      },
+      {
+        "question": "What is the measure of an angle in a square?",
+        "options": ["90°", "60°", "180°", "120°"],
+        "correct": "90°"
+      },
+      {
+        "question": "Which angle is formed when two lines are parallel and cut by a transversal?",
+        "options": ["Alternate interior angle", "Supplementary angle", "Complementary angle", "Right angle"],
+        "correct": "Alternate interior angle"
+      },
+      {
+        "question": "What type of angle is formed by two rays that share a common endpoint?",
+        "options": ["Acute angle", "Right angle", "Straight angle", "Formed angle"],
+        "correct": "Formed angle"
+      },
+      {
+        "question": "What is the angle between the hands of a clock at 12:00?",
+        "options": ["0°", "90°", "180°", "360°"],
+        "correct": "0°"
+      },
+      {
+        "question": "What is the measure of an exterior angle of a regular polygon with 8 sides?",
+        "options": ["30°", "45°", "60°", "90°"],
+        "correct": "45°"
+      },
+      {
+        "question": "Which of the following angles is equal to 270°?",
+        "options": ["Acute angle", "Obtuse angle", "Reflex angle", "Right angle"],
+        "correct": "Reflex angle"
+      },
+      {
+        "question": "The angle between two adjacent sides of a square is:",
+        "options": ["45°", "60°", "90°", "180°"],
+        "correct": "90°"
+      },
+      {
+        "question": "Which of the following is an example of an obtuse angle?",
+        "options": ["30°", "60°", "120°", "180°"],
+        "correct": "120°"
+      },
+      {
+        "question": "In a triangle, if one angle measures 90°, the triangle is called:",
+        "options": ["Equilateral triangle", "Isosceles triangle", "Scalene triangle", "Right-angled triangle"],
+        "correct": "Right-angled triangle"
+      },
+      {
+        "question": "Which of the following is a property of an isosceles triangle?",
+        "options": ["All sides are equal", "Two sides are equal", "No sides are equal", "All angles are equal"],
+        "correct": "Two sides are equal"
       }
     ]
   },
@@ -562,6 +768,31 @@ export const mathsClass6 = [
         "question": "What is the result of dividing -20 by -5?",
         "options": ["-4", "4", "-25", "25"],
         "correct": "4"
+      },
+      {
+        "question": "What is the sum of 0 and -6?",
+        "options": ["-6", "6", "0", "None of these"],
+        "correct": "-6"
+      },
+      {
+        "question": "Which of the following is a negative integer?",
+        "options": ["1", "0", "-3", "5"],
+        "correct": "-3"
+      },
+      {
+        "question": "What is the product of 4 and -2?",
+        "options": ["-8", "8", "2", "-6"],
+        "correct": "-8"
+      },
+      {
+        "question": "What is the result of -6 × 2?",
+        "options": ["12", "-12", "0", "6"],
+        "correct": "-12"
+      },
+      {
+        "question": "If you add two negative integers, what is the result?",
+        "options": ["Positive", "Negative", "Zero", "Cannot be determined"],
+        "correct": "Negative"
       }
     ]
   },
@@ -826,71 +1057,6 @@ export const mathsClass6 = [
         "question": "What does a scatter plot show?",
         "options": ["Correlation", "Data frequency", "Trends over time", "Central tendency"],
         "correct": "Correlation"
-      },
-      {
-        "question": "What is a tally chart used for?",
-        "options": ["Summarizing frequencies", "Finding the range", "Identifying outliers", "Calculating mean"],
-        "correct": "Summarizing frequencies"
-      },
-      {
-        "question": "In a dataset, an outlier is a value that:",
-        "options": ["Falls far outside the rest of the data", "Represents the mean", "Represents the median", "Is repeated often"],
-        "correct": "Falls far outside the rest of the data"
-      },
-      {
-        "question": "What is the mode of the data: 4, 7, 7, 9, 11, 11, 11?",
-        "options": ["4", "7", "9", "11"],
-        "correct": "11"
-      },
-      {
-        "question": "How is the median calculated in an even set of numbers?",
-        "options": ["Middle value", "Mean of two middle values", "Largest value", "Smallest value"],
-        "correct": "Mean of two middle values"
-      },
-      {
-        "question": "The range of a dataset is defined as:",
-        "options": ["Highest value minus lowest value", "The most frequent value", "The central value", "The average value"],
-        "correct": "Highest value minus lowest value"
-      },
-      {
-        "question": "Which measure is least affected by extreme values?",
-        "options": ["Median", "Mean", "Mode", "Range"],
-        "correct": "Median"
-      },
-      {
-        "question": "In a frequency table, what does the sum of all frequencies represent?",
-        "options": ["Total data points", "Range", "Mean", "Mode"],
-        "correct": "Total data points"
-      },
-      {
-        "question": "A line graph is used to represent:",
-        "options": ["Changes over time", "Categories", "Proportions", "Correlations"],
-        "correct": "Changes over time"
-      },
-      {
-        "question": "If the mean of five numbers is 8, what is their total sum?",
-        "options": ["40", "24", "8", "48"],
-        "correct": "40"
-      },
-      {
-        "question": "In a dataset, the median is the:",
-        "options": ["Middle value", "Most frequent value", "Highest value", "Sum of values"],
-        "correct": "Middle value"
-      },
-      {
-        "question": "What does a box plot display?",
-        "options": ["Spread of data", "Mean", "Outliers", "All of the above"],
-        "correct": "All of the above"
-      },
-      {
-        "question": "Which graph is best for comparing parts of a whole?",
-        "options": ["Pie chart", "Bar graph", "Histogram", "Line graph"],
-        "correct": "Pie chart"
-      },
-      {
-        "question": "What is the first step in data handling?",
-        "options": ["Collecting data", "Organizing data", "Analyzing data", "Interpreting data"],
-        "correct": "Collecting data"
       }
     ]
   },
@@ -1428,218 +1594,271 @@ export const mathsClass6 = [
   },
   
   {
-      "id": 13,
-      "title": "Practical Geometry",
-      "description": "Introduction to constructions and geometrical tools",
-      "questions": [
-        {
-          "question": "Which tool is used to measure angles?",
-          "options": ["Protractor", "Compass", "Ruler", "Set Square"],
-          "correct": "Protractor"
-        },
-        {
-          "question": "What is the standard unit to measure angles?",
-          "options": ["Radian", "Degree", "Meter", "Centimeter"],
-          "correct": "Degree"
-        },
-        {
-          "question": "What is the first step to construct a perpendicular bisector?",
-          "options": ["Draw a line segment", "Draw a circle", "Measure the angle", "None of the above"],
-          "correct": "Draw a line segment"
-        },
-        {
-          "question": "How many arcs are needed to bisect an angle?",
-          "options": ["1", "2", "3", "4"],
-          "correct": "2"
-        },
-        {
-          "question": "Which geometrical tool is used to draw parallel lines?",
-          "options": ["Set Square", "Protractor", "Divider", "Compass"],
-          "correct": "Set Square"
-        },
-        {
-          "question": "What is the first step in constructing a triangle?",
-          "options": ["Draw the base", "Measure the angles", "Draw the height", "Label the sides"],
-          "correct": "Draw the base"
-        },
-        {
-          "question": "What is the angle sum of a triangle?",
-          "options": ["90°", "180°", "360°", "270°"],
-          "correct": "180°"
-        },
-        {
-          "question": "Which tool is used to transfer a length from one part to another?",
-          "options": ["Compass", "Divider", "Ruler", "Protractor"],
-          "correct": "Compass"
-        },
-        {
-          "question": "What is the purpose of a protractor?",
-          "options": ["To draw arcs", "To draw circles", "To measure angles", "To measure lines"],
-          "correct": "To measure angles"
-        },
-        {
-          "question": "What shape is created by joining three line segments?",
-          "options": ["Triangle", "Circle", "Rectangle", "Square"],
-          "correct": "Triangle"
-        },
-        {
-          "question": "What is the unit of length used in geometry?",
-          "options": ["Meters", "Centimeters", "Inches", "All of the above"],
-          "correct": "All of the above"
-        },
-        {
-          "question": "How many vertices does a triangle have?",
-          "options": ["1", "2", "3", "4"],
-          "correct": "3"
-        },
-        {
-          "question": "What is the name of a triangle with all equal sides?",
-          "options": ["Scalene Triangle", "Equilateral Triangle", "Isosceles Triangle", "Right Triangle"],
-          "correct": "Equilateral Triangle"
-        },
-        {
-          "question": "Which shape has all sides and angles equal?",
-          "options": ["Square", "Rectangle", "Rhombus", "Trapezium"],
-          "correct": "Square"
-        },
-        {
-          "question": "How many degrees are in a straight angle?",
-          "options": ["90°", "180°", "360°", "45°"],
-          "correct": "180°"
-        },
-        {
-          "question": "What tool is used to draw perpendicular lines?",
-          "options": ["Set Square", "Protractor", "Compass", "Divider"],
-          "correct": "Set Square"
-        },
-        {
-          "question": "How many sides does a pentagon have?",
-          "options": ["4", "5", "6", "7"],
-          "correct": "5"
-        },
-        {
-          "question": "What is the sum of all angles in a quadrilateral?",
-          "options": ["90°", "180°", "360°", "270°"],
-          "correct": "360°"
-        },
-        {
-          "question": "What is the first step in constructing a perpendicular line?",
-          "options": ["Draw a point on the line", "Measure the angle", "Draw two intersecting arcs", "None of the above"],
-          "correct": "Draw a point on the line"
-        },
-        {
-          "question": "Which shape has two pairs of parallel sides?",
-          "options": ["Square", "Rectangle", "Parallelogram", "Trapezium"],
-          "correct": "Parallelogram"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "title": "Understanding 3D and 2D Shapes",
-      "description": "Learn about dimensions and properties of shapes",
-      "questions": [
-        {
-          "question": "How many faces does a cube have?",
-          "options": ["4", "5", "6", "8"],
-          "correct": "6"
-        },
-        {
-          "question": "What is the shape of the base of a cone?",
-          "options": ["Square", "Circle", "Triangle", "Rectangle"],
-          "correct": "Circle"
-        },
-        {
-          "question": "How many edges does a cuboid have?",
-          "options": ["10", "12", "14", "16"],
-          "correct": "12"
-        },
-        {
-          "question": "Which of these is a 2D shape?",
-          "options": ["Sphere", "Cylinder", "Triangle", "Cube"],
-          "correct": "Triangle"
-        },
-        {
-          "question": "What is the shape of a football?",
-          "options": ["Sphere", "Circle", "Oval", "Rectangle"],
-          "correct": "Sphere"
-        },
-        {
-          "question": "How many vertices does a pyramid with a square base have?",
-          "options": ["4", "5", "6", "8"],
-          "correct": "5"
-        },
-        {
-          "question": "Which of the following has curved surfaces?",
-          "options": ["Cube", "Cuboid", "Cone", "Square"],
-          "correct": "Cone"
-        },
-        {
-          "question": "How many dimensions does a 2D shape have?",
-          "options": ["1", "2", "3", "4"],
-          "correct": "2"
-        },
-        {
-          "question": "What is the shape of a dice?",
-          "options": ["Cuboid", "Cube", "Rectangle", "Circle"],
-          "correct": "Cube"
-        },
-        {
-          "question": "Which of these is not a 3D shape?",
-          "options": ["Cylinder", "Rectangle", "Sphere", "Cone"],
-          "correct": "Rectangle"
-        },
-        {
-          "question": "How many faces does a triangular prism have?",
-          "options": ["4", "5", "6", "7"],
-          "correct": "5"
-        },
-        {
-          "question": "Which of these is an example of a 3D shape?",
-          "options": ["Square", "Sphere", "Triangle", "Rectangle"],
-          "correct": "Sphere"
-        },
-        {
-          "question": "How many vertices does a cylinder have?",
-          "options": ["0", "2", "4", "6"],
-          "correct": "0"
-        },
-        {
-          "question": "What is the shape of the shadow of a ball?",
-          "options": ["Sphere", "Circle", "Oval", "Rectangle"],
-          "correct": "Circle"
-        },
-        {
-          "question": "How many edges does a pyramid with a triangular base have?",
-          "options": ["6", "8", "10", "4"],
-          "correct": "6"
-        },
-        {
-          "question": "Which of these is a property of 2D shapes?",
-          "options": ["Volume", "Area", "Depth", "None"],
-          "correct": "Area"
-        },
-        {
-          "question": "How many edges does a cone have?",
-          "options": ["1", "2", "3", "4"],
-          "correct": "1"
-        },
-        {
-          "question": "What is the shape of a pizza slice?",
-          "options": ["Circle", "Triangle", "Rectangle", "Sphere"],
-          "correct": "Triangle"
-        },
-        {
-          "question": "How many faces does a cylinder have?",
-          "options": ["1", "2", "3", "4"],
-          "correct": "3"
-        },
-        {
-          "question": "What is the name of a 3D object with no vertices?",
-          "options": ["Sphere", "Cube", "Cylinder", "Cone"],
-          "correct": "Sphere"
-        }
-      ]
-    }
+    "id": 13,
+    "title": "Practical Geometry",
+    "description": "Introduction to constructions and geometrical tools",
+    "questions": [
+      {
+        "question": "Which tool is used to measure angles?",
+        "options": ["Protractor", "Compass", "Ruler", "Set Square"],
+        "correct": "Protractor"
+      },
+      {
+        "question": "What is the standard unit to measure angles?",
+        "options": ["Radian", "Degree", "Meter", "Centimeter"],
+        "correct": "Degree"
+      },
+      {
+        "question": "What is the first step to construct a perpendicular bisector?",
+        "options": ["Draw a line segment", "Draw a circle", "Measure the angle", "None of the above"],
+        "correct": "Draw a line segment"
+      },
+      {
+        "question": "How many arcs are needed to bisect an angle?",
+        "options": ["1", "2", "3", "4"],
+        "correct": "2"
+      },
+      {
+        "question": "Which geometrical tool is used to draw parallel lines?",
+        "options": ["Set Square", "Protractor", "Divider", "Compass"],
+        "correct": "Set Square"
+      },
+      {
+        "question": "What is the first step in constructing a triangle?",
+        "options": ["Draw the base", "Measure the angles", "Draw the height", "Label the sides"],
+        "correct": "Draw the base"
+      },
+      {
+        "question": "What is the angle sum of a triangle?",
+        "options": ["90°", "180°", "360°", "270°"],
+        "correct": "180°"
+      },
+      {
+        "question": "Which tool is used to transfer a length from one part to another?",
+        "options": ["Compass", "Divider", "Ruler", "Protractor"],
+        "correct": "Compass"
+      },
+      {
+        "question": "What is the purpose of a protractor?",
+        "options": ["To draw arcs", "To draw circles", "To measure angles", "To measure lines"],
+        "correct": "To measure angles"
+      },
+      {
+        "question": "What shape is created by joining three line segments?",
+        "options": ["Triangle", "Circle", "Rectangle", "Square"],
+        "correct": "Triangle"
+      },
+      {
+        "question": "What is the unit of length used in geometry?",
+        "options": ["Meters", "Centimeters", "Inches", "All of the above"],
+        "correct": "All of the above"
+      },
+      {
+        "question": "How many vertices does a triangle have?",
+        "options": ["1", "2", "3", "4"],
+        "correct": "3"
+      },
+      {
+        "question": "What is the name of a triangle with all equal sides?",
+        "options": ["Scalene Triangle", "Equilateral Triangle", "Isosceles Triangle", "Right Triangle"],
+        "correct": "Equilateral Triangle"
+      },
+      {
+        "question": "Which shape has all sides and angles equal?",
+        "options": ["Square", "Rectangle", "Rhombus", "Trapezium"],
+        "correct": "Square"
+      },
+      {
+        "question": "How many degrees are in a straight angle?",
+        "options": ["90°", "180°", "360°", "45°"],
+        "correct": "180°"
+      },
+      {
+        "question": "What tool is used to draw perpendicular lines?",
+        "options": ["Set Square", "Protractor", "Compass", "Divider"],
+        "correct": "Set Square"
+      },
+      {
+        "question": "How many sides does a pentagon have?",
+        "options": ["4", "5", "6", "7"],
+        "correct": "5"
+      },
+      {
+        "question": "What is the sum of all angles in a quadrilateral?",
+        "options": ["90°", "180°", "360°", "270°"],
+        "correct": "360°"
+      },
+      {
+        "question": "What is the first step in constructing a perpendicular line?",
+        "options": ["Draw a point on the line", "Measure the angle", "Draw two intersecting arcs", "None of the above"],
+        "correct": "Draw a point on the line"
+      },
+      {
+        "question": "Which shape has two pairs of parallel sides?",
+        "options": ["Square", "Rectangle", "Parallelogram", "Trapezium"],
+        "correct": "Parallelogram"
+      },
+      {
+        "question": "What is the formula for the area of a triangle?",
+        "options": ["Area = base x height", "Area = 1/2 x base x height", "Area = side x side", "Area = length x width"],
+        "correct": "Area = 1/2 x base x height"
+      },
+      {
+        "question": "How many degrees are in a full rotation?",
+        "options": ["180°", "360°", "90°", "270°"],
+        "correct": "360°"
+      },
+      {
+        "question": "Which tool is used to draw circles?",
+        "options": ["Compass", "Ruler", "Protractor", "Divider"],
+        "correct": "Compass"
+      },
+      {
+        "question": "What is the name of the quadrilateral with opposite sides equal and all angles 90°?",
+        "options": ["Rectangle", "Rhombus", "Square", "Parallelogram"],
+        "correct": "Rectangle"
+      },
+      {
+        "question": "What is the sum of all interior angles of a hexagon?",
+        "options": ["360°", "540°", "720°", "1080°"],
+        "correct": "720°"
+      }
+    ]
+  }
+  ,
+  {
+    "id": 14,
+    "title": "Understanding 3D and 2D Shapes",
+    "description": "Learn about dimensions and properties of shapes",
+    "questions": [
+      {
+        "question": "How many faces does a cube have?",
+        "options": ["4", "5", "6", "8"],
+        "correct": "6"
+      },
+      {
+        "question": "What is the shape of the base of a cone?",
+        "options": ["Square", "Circle", "Triangle", "Rectangle"],
+        "correct": "Circle"
+      },
+      {
+        "question": "How many edges does a cuboid have?",
+        "options": ["10", "12", "14", "16"],
+        "correct": "12"
+      },
+      {
+        "question": "Which of these is a 2D shape?",
+        "options": ["Sphere", "Cylinder", "Triangle", "Cube"],
+        "correct": "Triangle"
+      },
+      {
+        "question": "What is the shape of a football?",
+        "options": ["Sphere", "Circle", "Oval", "Rectangle"],
+        "correct": "Sphere"
+      },
+      {
+        "question": "How many vertices does a pyramid with a square base have?",
+        "options": ["4", "5", "6", "8"],
+        "correct": "5"
+      },
+      {
+        "question": "Which of the following has curved surfaces?",
+        "options": ["Cube", "Cuboid", "Cone", "Square"],
+        "correct": "Cone"
+      },
+      {
+        "question": "How many dimensions does a 2D shape have?",
+        "options": ["1", "2", "3", "4"],
+        "correct": "2"
+      },
+      {
+        "question": "What is the shape of a dice?",
+        "options": ["Cuboid", "Cube", "Rectangle", "Circle"],
+        "correct": "Cube"
+      },
+      {
+        "question": "Which of these is not a 3D shape?",
+        "options": ["Cylinder", "Rectangle", "Sphere", "Cone"],
+        "correct": "Rectangle"
+      },
+      {
+        "question": "How many faces does a triangular prism have?",
+        "options": ["4", "5", "6", "7"],
+        "correct": "5"
+      },
+      {
+        "question": "Which of these is an example of a 3D shape?",
+        "options": ["Square", "Sphere", "Triangle", "Rectangle"],
+        "correct": "Sphere"
+      },
+      {
+        "question": "How many vertices does a cylinder have?",
+        "options": ["0", "2", "4", "6"],
+        "correct": "0"
+      },
+      {
+        "question": "What is the shape of the shadow of a ball?",
+        "options": ["Sphere", "Circle", "Oval", "Rectangle"],
+        "correct": "Circle"
+      },
+      {
+        "question": "How many edges does a pyramid with a triangular base have?",
+        "options": ["6", "8", "10", "4"],
+        "correct": "6"
+      },
+      {
+        "question": "Which of these is a property of 2D shapes?",
+        "options": ["Volume", "Area", "Depth", "None"],
+        "correct": "Area"
+      },
+      {
+        "question": "How many edges does a cone have?",
+        "options": ["1", "2", "3", "4"],
+        "correct": "1"
+      },
+      {
+        "question": "What is the shape of a pizza slice?",
+        "options": ["Circle", "Triangle", "Rectangle", "Sphere"],
+        "correct": "Triangle"
+      },
+      {
+        "question": "How many faces does a cylinder have?",
+        "options": ["1", "2", "3", "4"],
+        "correct": "3"
+      },
+      {
+        "question": "What is the name of a 3D object with no vertices?",
+        "options": ["Sphere", "Cube", "Cylinder", "Cone"],
+        "correct": "Sphere"
+      },
+      {
+        "question": "What is the shape of the base of a pyramid with a triangular base?",
+        "options": ["Square", "Circle", "Triangle", "Rectangle"],
+        "correct": "Triangle"
+      },
+      {
+        "question": "Which of the following has no edges?",
+        "options": ["Cube", "Sphere", "Cone", "Pyramid"],
+        "correct": "Sphere"
+      },
+      {
+        "question": "How many faces does a octahedron have?",
+        "options": ["6", "8", "12", "4"],
+        "correct": "8"
+      },
+      {
+        "question": "Which of the following is a property of 3D shapes?",
+        "options": ["Area", "Volume", "Length", "Height"],
+        "correct": "Volume"
+      },
+      {
+        "question": "What shape is formed when a circle is rotated around its diameter?",
+        "options": ["Cylinder", "Cone", "Sphere", "Cube"],
+        "correct": "Sphere"
+      }
+      
+    ]
+  }
+  
   ];
   
