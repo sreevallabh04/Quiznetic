@@ -24,7 +24,12 @@ export const mathsClass7 = [
       { question: "Simplify: (-2) × (-3)", options: ["6", "-6", "0", "9"], correct: "6" },
       { question: "What is the result of 5 ÷ (-1)?", options: ["-5", "5", "0", "1"], correct: "-5" },
       { question: "Simplify: -18 ÷ 6", options: ["3", "-3", "6", "-6"], correct: "-3" },
-      { question: "Which of the following is a positive integer?", options: ["-2", "0", "5", "-5"], correct: "5" }
+      { question: "Which of the following is a positive integer?", options: ["-2", "0", "5", "-5"], correct: "5" },
+      { question: "What is the sum of -9 and 4?", "options": ["-13", "13", "-5", "5"], "correct": "-5" },
+      { question: "What is the multiplicative identity for integers?", "options": ["0", "1", "-1", "Any integer"], "correct": "1" },
+      { question: "Which property does (-4) × (5 + 3) = (-4 × 5) + (-4 × 3) illustrate?", "options": ["Associative", "Distributive", "Commutative", "Closure"], "correct": "Distributive" },
+      { question: "What is the result of (-2) × 8?", "options": ["-16", "16", "-10", "10"], "correct": "-16" },
+      { question: "Find the difference between -6 and -12.", "options": ["-18", "6", "-6", "18"], "correct": "6" }
     ]
   },
   {
