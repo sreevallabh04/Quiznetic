@@ -1,60 +1,33 @@
 export const mathsClass10 = [
-  [
-    {
-      "id": 1,
-      "title": "Real Numbers",
-      "questions": [
-        [
-          {
-            "question": "What is the decimal expansion of 1/3?",
-            "options": ["0.333...", "1.5", "0.5", "1.33"],
-            "correct": "0.333..."
-          },
-          {
-            "question": "Which of the following numbers is irrational?",
-            "options": ["22/7", "√2", "5/4", "1.5"],
-            "correct": "√2"
-          },
-          {
-            "question": "Is the number √5 a rational or an irrational number?",
-            "options": ["Rational", "Irrational"],
-            "correct": "Irrational"
-          },
-          {
-            "question": "What is the value of √4?",
-            "options": ["2", "-2", "4", "1"],
-            "correct": "2"
-          },
-          {
-            "question": "Which of these is a rational number?",
-            "options": ["π", "√2", "3/4", "√3"],
-            "correct": "3/4"
-          },
-          {
-            "question": "What is the value of log10(100)?",
-            "options": ["1", "2", "3", "10"],
-            "correct": "2"
-          },
-          {
-            "question": "Simplify log2(8).",
-            "options": ["3", "2", "4", "1"],
-            "correct": "3"
-          },
-          {
-            "question": "Which of the following is the logarithm base of 100?",
-            "options": ["2", "10", "3", "5"],
-            "correct": "10"
-          },
-          {
-            "question": "If log x = 3, find the value of x.",
-            "options": ["100", "1000", "10", "10000"],
-            "correct": "1000"
-          },
-          {
-            "question": "If log3(x + 2) = 2, solve for x.",
-            "options": ["1", "7", "3", "4"],
-            "correct": "7"
-          },
+  {
+    "id": 1,
+    "title": "Real Numbers",
+    "questions": [
+      {
+        "question": "What is the decimal expansion of 1/3?",
+        "options": ["0.333...", "1.5", "0.5", "1.33"],
+        "correct": "0.333..."
+      },
+      {
+        "question": "Which of the following numbers is irrational?",
+        "options": ["22/7", "√2", "5/4", "1.5"],
+        "correct": "√2"
+      },
+      {
+        "question": "Is the number √5 a rational or an irrational number?",
+        "options": ["Rational", "Irrational"],
+        "correct": "Irrational"
+      },
+      {
+        "question": "What is the value of √4?",
+        "options": ["2", "-2", "4", "1"],
+        "correct": "2"
+      },
+      {
+        "question": "Which of these is a rational number?",
+        "options": ["π", "√2", "3/4", "√3"],
+        "correct": "3/4"
+      },
           {
             "question": "What is the set representation of the set of even integers?",
             "options": ["{2, 4, 6, 8, ...}", "{1, 3, 5, 7, ...}", "{1, 2, 3, 4, ...}", "{0, 2, 4, 6, 8}"],
@@ -156,9 +129,7 @@ export const mathsClass10 = [
             "correct": "6"
           }
         ]
-        
-      ]
-    },
+      },
     {
       "id": 2,
       "title": "Logarithm",
@@ -326,4 +297,4 @@ export const mathsClass10 = [
     }
   ]
   
-];
+;
