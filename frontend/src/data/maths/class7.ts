@@ -323,7 +323,7 @@ export const mathsClass7 = [
       { "question": "What is the result of multiplying 5x by -2?", "options": ["-10x", "10x", "-7x", "7x"], "correct": "-10x" },
       { "question": "Which of the following is a like term of 4x?", "options": ["4x²", "3x", "4", "3y"], "correct": "3x" },
       { "question": "Simplify: 6x + 3 - 4x + 5.", "options": ["2x + 8", "3x + 8", "2x + 5", "3x + 5"], "correct": "2x + 8" },
-      { "question": "What is the result of multiplying 4x by 3y?", "options": ["12xy", "7xy", "12x", "7x"], "correct": "12xy" }
+            { "question": "What is the result of multiplying 4x by 3y?", "options": ["12xy", "7xy", "12x", "7x"], "correct": "12xy" }
 
 
     ]
@@ -556,42 +556,30 @@ export const mathsClass7 = [
         "correct": "Square"
       },
       {
-        "question": "Which quadrilateral has diagonals that are perpendicular but not necessarily equal?",
-        "options": ["Square", "Rhombus", "Rectangle", "Parallelogram"],
-        "correct": "Rhombus"
+        "question": "What is the value of 7² × 7³?",
+        "options": ["7⁵", "7⁶", "7⁴", "7⁷"],
+        "correct": "7⁵"
       },
       {
-        "question": "Which quadrilateral has exactly one pair of opposite sides parallel and the other two sides non-parallel?",
-        "options": ["Trapezium", "Parallelogram", "Kite", "Rhombus"],
-        "correct": "Trapezium"
+        "question": "What is 5⁻²?",
+        "options": ["1/25", "25", "1/5", "5"],
+        "correct": "1/25"
       },
       {
-        "question": "Which quadrilateral has all sides equal but does not necessarily have all angles equal?",
-        "options": ["Rhombus", "Square", "Rectangle", "Parallelogram"],
-        "correct": "Rhombus"
-    },
-    {
-        "question": "What is a special type of parallelogram that has equal diagonals?",
-        "options": ["Rectangle", "Rhombus", "Square", "Trapezium"],
-        "correct": "Rectangle"
-    },
-    {
-        "question": "Which quadrilateral has one pair of parallel sides and non-parallel sides of equal length?",
-        "options": ["Isosceles Trapezium", "Parallelogram", "Rhombus", "Kite"],
-        "correct": "Isosceles Trapezium"
-    },
-    {
-        "question": "In which quadrilateral are the opposite angles supplementary?",
-        "options": ["Parallelogram", "Rectangle", "Rhombus", "Trapezium"],
-        "correct": "Parallelogram"
-    },
-    {
-        "question": "The diagonals of a parallelogram divide it into how many congruent triangles?",
-        "options": ["2", "3", "4", "6"],
-        "correct": "4"
-    }
-    
-      
+        "question": "What is 6³ ÷ 6²?",
+        "options": ["6³", "6²", "6⁴", "6¹"],
+        "correct": "6¹"
+      },
+      {
+        "question": "What is 4⁰ × 4³?",
+        "options": ["4³", "4⁰", "4⁴", "4⁵"],
+        "correct": "4³"
+      },
+      {
+        "question": "What is the value of 2⁵ × 2²?",
+        "options": ["2⁷", "2⁶", "2⁵", "2⁸"],
+        "correct": "2⁷"
+      }
 
       
     ]
