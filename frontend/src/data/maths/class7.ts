@@ -56,7 +56,12 @@ export const mathsClass7 = [
       { question: "Simplify: 4 ÷ 0.5", options: ["2", "4", "8", "16"], correct: "8" },
       { question: "What is the greatest common divisor (GCD) of 12 and 18?", options: ["6", "12", "3", "18"], correct: "6" },
       { question: "Which of these is not a rational number?", options: ["2/3", "√2", "0.5", "1/4"], correct: "√2" },
-      { question: "Convert 11/8 into a mixed fraction.", options: ["1 3/8", "1 4/8", "1 1/8", "2 3/8"], correct: "1 3/8" }
+      { question: "Convert 11/8 into a mixed fraction.", options: ["1 3/8", "1 4/8", "1 1/8", "2 3/8"], correct: "1 3/8" },
+      { question: "What is the least common multiple (LCM) of 6 and 8?", "options": ["12", "24", "18", "48"], "correct": "24" },
+      { question: "Convert 2.75 into a fraction.", "options": ["11/4", "9/4", "7/4", "5/4"], "correct": "11/4" },
+      { question: "Which fraction is equivalent to 0.2?", "options": ["1/2", "2/5", "1/5", "3/4"], "correct": "1/5" },
+      { question: "Simplify: 3/7 + 2/7", "options": ["1/7", "5/7", "3/14", "10/7"], "correct": "5/7" },
+      { question: "Which decimal is equal to 7/8?", "options": ["0.75", "0.875", "0.7", "0.8"], "correct": "0.875" }
     ]
   },
   {
@@ -83,7 +88,13 @@ export const mathsClass7 = [
       { question: "What is the solution to x/6 = 3?", options: ["18", "9", "15", "12"], correct: "18" },
       { question: "Solve for x: 2x + 7 = 21.", options: ["7", "5", "4", "6"], correct: "7" },
       { question: "What is the solution to x + 12 = 20?", options: ["10", "8", "6", "5"], correct: "8" },
-      { question: "Solve for x: 5x - 8 = 17.", options: ["5", "6", "7", "8"], correct: "5" }
+      { question: "Solve for x: 5x - 8 = 17.", options: ["5", "6", "7", "8"], correct: "5" },
+        { question: "Solve for x: 3x + 2 = 17.", "options": ["5", "6", "7", "8"], "correct": "5" },
+        { question: "What is the value of x if 6x - 4 = 14?", "options": ["2", "3", "4", "5"], "correct": "3" },
+        { question: "Solve for x: x/2 + 3 = 10.", "options": ["12", "14", "10", "8"], "correct": "14" },
+        { question: "Find x if 7x = 35.", "options": ["3", "4", "5", "6"], "correct": "5" },
+        { question: "Solve for x: x - 5 = 9.", "options": ["12", "13", "14", "15"], "correct": "14" }
+      
     ]
   },
   {
@@ -109,7 +120,14 @@ export const mathsClass7 = [
       { question: "Which of these is an example of a reflex angle?", options: ["100°", "180°", "270°", "50°"], correct: "270°" },
       { question: "Which of the following is true for vertical angles?", options: ["They are always equal", "They are supplementary", "They form a straight line", "They add up to 180°"], correct: "They are always equal" },
       { question: "What is the sum of the interior angles of a hexagon?", options: ["720°", "1080°", "900°", "108°"], correct: "720°" },
-      { question: "What do you call an angle that measures more than 180° but less than 360°?", options: ["Reflex", "Acute", "Obtuse", "Right"], correct: "Reflex" }
+      { question: "What do you call an angle that measures more than 180° but less than 360°?", options: ["Reflex", "Acute", "Obtuse", "Right"], correct: "Reflex" },
+      { question: "What is the exterior angle sum of any polygon?", "options": ["180°", "360°", "90°", "270°"], "correct": "360°" },
+      { question: "What is the measure of a straight angle?", "options": ["90°", "180°", "270°", "360°"], "correct": "180°" },
+      { question: "If two parallel lines are cut by a transversal, what type of angles are alternate interior angles?", "options": ["Equal", "Supplementary", "Complementary", "Different"], "correct": "Equal" },
+      { question: "What is the sum of the interior angles of a pentagon?", "options": ["360°", "540°", "720°", "900°"], "correct": "540°" },
+      { question: "Which of the following is a pair of corresponding angles?", "options": ["Angles on opposite sides of a transversal", "Angles that add to 180°", "Angles in the same relative position", "Angles that share a common side"], "correct": "Angles in the same relative position" },
+      { "question": "How many degrees are there in one full rotation?", "options": ["180°", "270°", "360°", "90°"], "correct": "360°" }
+
     ]
   },
   {
@@ -136,7 +154,13 @@ export const mathsClass7 = [
       { question: "What is the altitude of a triangle?", options: ["The height of the triangle", "The side opposite the base", "The perimeter of the triangle", "The sum of the angles"], correct: "The height of the triangle" },
       { question: "In a triangle, if one angle is 90° and another is 45°, what is the measure of the third angle?", options: ["45°", "60°", "90°", "80°"], correct: "45°" },
       { question: "Which of the following is a property of an isosceles triangle?", options: ["It has only one angle of 90°", "It has exactly two equal sides", "It has exactly two equal angles", "All angles are different"], correct: "It has exactly two equal angles" },
-      { question: "What is the longest side in a right-angled triangle?", options: ["Base", "Height", "Hypotenuse", "Adjacent"], correct: "Hypotenuse" }
+      { question: "What is the longest side in a right-angled triangle?", options: ["Base", "Height", "Hypotenuse", "Adjacent"], correct: "Hypotenuse" },
+      { question: "If a triangle has sides measuring 3 cm, 4 cm, and 5 cm, what type of triangle is it?", "options": ["Equilateral", "Isosceles", "Scalene", "Right-angled"], "correct": "Right-angled" },
+      { question: "What is the centroid of a triangle?", "options": ["The point where medians intersect", "The point where altitudes intersect", "The midpoint of one side", "The longest side"], "correct": "The point where medians intersect" },
+      { question: "Which type of triangle has all angles less than 90°?", "options": ["Acute", "Right", "Obtuse", "Scalene"], "correct": "Acute" },
+      { question: "If two sides of a triangle are 7 cm and 24 cm, and the hypotenuse is 25 cm, is it a right triangle?", "options": ["Yes", "No", "Cannot be determined", "Only if it is isosceles"], "correct": "Yes" },
+      { question: "Which of the following is always true for the sum of any two sides of a triangle?", "options": ["It is equal to the third side", "It is less than the third side", "It is greater than the third side", "It is twice the third side"], "correct": "It is greater than the third side" }
+
     ]
   },
   {
@@ -162,7 +186,14 @@ export const mathsClass7 = [
       { question: "If the ratio of boys to girls in a school is 7:5, and there are 280 boys, how many girls are there?", options: ["200", "180", "150", "160"], correct: "200" },
       { question: "If the ratio of the circumference to the diameter of a circle is 22:7, what is the diameter if the circumference is 44 cm?", options: ["10 cm", "14 cm", "7 cm", "6 cm"], correct: "14 cm" },
       { question: "What is the ratio of 48 to 16?", options: ["3:1", "4:1", "1:4", "2:3"], correct: "3:1" },
-      { question: "What is the ratio of 100 ml to 1 liter?", options: ["1:10", "1:100", "1:1000", "10:1"], correct: "1:10" }
+      { question: "What is the ratio of 100 ml to 1 liter?", options: ["1:10", "1:100", "1:1000", "10:1"], correct: "1:10" },
+      { question: "A school has 360 students, and the ratio of boys to girls is 5:4. How many girls are there?", "options": ["160", "140", "180", "200"], "correct": "160" },
+      { question: "What is the ratio of 25 to 75?", "options": ["1:3", "3:1", "2:3", "1:2"], "correct": "1:3" },
+      { question: "If a shop sells apples and oranges in the ratio 3:2, and there are 90 apples, how many oranges are there?", "options": ["45", "50", "60", "30"], "correct": "60" },
+      { question: "If a bag contains 20 red marbles and 30 blue marbles, what is the ratio of red to blue marbles?", "options": ["2:3", "3:2", "1:2", "2:1"], "correct": "2:3" },
+      { question: "The ratio of sugar to water in a syrup is 5:8. If there are 40 grams of sugar, how much water is needed?", "options": ["64 g", "50 g", "60 g", "80 g"], "correct": "64 g" },
+      { question: "A train covers 300 km in 5 hours. What is the ratio of distance to time?", "options": ["60:1", "50:1", "30:1", "20:1"], "correct": "60:1" }
+
     ]
   },
   {
@@ -186,7 +217,15 @@ export const mathsClass7 = [
       { question: "What does a line graph primarily show?", options: ["Trends over time", "Parts of a whole", "Frequency distribution", "Outliers"], correct: "Trends over time" },
       { question: "In a data set, if the values are 1, 3, 5, 7, 9, what is the median?", options: ["3", "5", "7", "9"], correct: "5" },
       { question: "Which graph is used to display the distribution of a data set?", options: ["Bar graph", "Pie chart", "Histogram", "Line graph"], correct: "Histogram" },
-      { question: "Which of the following best describes the mode in a data set?", options: ["Most frequent value", "Average value", "Middle value", "Range"], correct: "Most frequent value" }
+      { question: "Which of the following best describes the mode in a data set?", options: ["Most frequent value", "Average value", "Middle value", "Range"], correct: "Most frequent value" },
+      { question: "In a data set, if the values are 2, 4, 6, 8, 10, what is the mean?", "options": ["6", "8", "4", "5"], "correct": "6" },
+      { question: "What does the range of a data set represent?", "options": ["Middle value", "Most frequent value", "Difference between the highest and lowest values", "Sum of all values"], "correct": "Difference between the highest and lowest values" },
+      { question: "Which of the following can be represented using a pie chart?", "options": ["Categorical data", "Continuous data", "Ordinal data", "All of the above"], "correct": "Categorical data" },
+      { question: "In the data set {1, 2, 3, 4, 5, 5, 5, 6}, what is the mode?", "options": ["1", "5", "6", "3"], "correct": "5" },
+      { question: "What type of graph is used to represent frequency distributions?", "options": ["Bar graph", "Histogram", "Pie chart", "Line graph"], "correct": "Histogram" },
+      { question: "Which measure of central tendency is best for skewed data?", "options": ["Mean", "Mode", "Median", "Range"], "correct": "Median" },
+      { question: "In a box plot, what do the two outer lines represent?", "options": ["Mean", "Median", "Lower and upper quartiles", "Outliers"], "correct": "Lower and upper quartiles" },
+      { question: "If the data set contains 10 values, and 4 of them are 5, what is the mode?", "options": ["5", "10", "4", "None of the above"], "correct": "5" }
     ]
   },
   {
@@ -212,7 +251,14 @@ export const mathsClass7 = [
       { "question": "The criteria for proving triangles congruent by SSS is:", "options": ["All corresponding sides are equal", "Two corresponding sides and the included angle are equal", "One side and the adjacent angles are equal", "Two corresponding angles and the included side are equal"], "correct": "All corresponding sides are equal" },
       { "question": "If two triangles are congruent, then their corresponding:", "options": ["Angles and sides are equal", "Sides and areas are equal", "Sides and perimeters are equal", "Angles and perimeters are equal"], "correct": "Angles and sides are equal" },
       { "question": "In the SSS congruence criterion, 'S' stands for:", "options": ["Side", "Shape", "Symmetry", "Simple"], "correct": "Side" },
-      { "question": "Which of the following is not a criterion for congruence of triangles?", "options": ["SSS", "ASA", "AAA", "SAS"], "correct": "AAA" }
+      { "question": "Which of the following is not a criterion for congruence of triangles?", "options": ["SSS", "ASA", "AAA", "SAS"], "correct": "AAA" },
+      { "question": "If two triangles have equal corresponding angles but not sides, they are:", "options": ["Congruent", "Similar", "Equal", "Not possible"], "correct": "Not possible" },
+      { "question": "Which criterion requires two angles and one side to be equal?", "options": ["SSS", "ASA", "AAS", "SAS"], "correct": "AAS" },
+      { "question": "What is the condition for two triangles to be congruent by the SAS criterion?", "options": ["Two sides and the included angle must be equal", "Three sides must be equal", "Two angles and one side must be equal", "All corresponding angles must be equal"], "correct": "Two sides and the included angle must be equal" },
+      { "question": "If two triangles have equal corresponding sides but not corresponding angles, they are:", "options": ["Congruent", "Similar", "Not possible", "Equal"], "correct": "Not possible" },
+      { "question": "What is the condition for congruence according to the ASA criterion?", "options": ["Two sides and the included angle must be equal", "Two angles and one side must be equal", "Three sides must be equal", "Two angles must be equal"], "correct": "Two angles and one side must be equal" },
+      { "question": "Which of the following is not necessary to prove congruence by the SSS criterion?", "options": ["Equal angles", "Equal sides", "Same shape", "Same size"], "correct": "Equal angles" }
+
     ]
   },
   {
@@ -237,7 +283,15 @@ export const mathsClass7 = [
       { "question": "What do we need to know to construct an isosceles triangle?", "options": ["Base and height", "Two equal sides and an included angle", "One angle and two unequal sides", "Base and two angles"], "correct": "Two equal sides and an included angle" },
       { "question": "Which angle is used to construct a triangle using the SAS method?", "options": ["The included angle", "The opposite angle", "The exterior angle", "Any angle"], "correct": "The included angle" },
       { "question": "Which of the following statements is true when constructing an equilateral triangle?", "options": ["All sides are equal", "One angle is 90°", "Only two sides are equal", "Only angles are equal"], "correct": "All sides are equal" },
-      { "question": "What is the first step to construct a triangle when given three sides?", "options": ["Draw one side", "Construct the height", "Find the angles", "Set the compass"], "correct": "Draw one side" }
+      { "question": "What is the first step to construct a triangle when given three sides?", "options": ["Draw one side", "Construct the height", "Find the angles", "Set the compass"], "correct": "Draw one side" },
+      { "question": "To construct a triangle using two angles and one side, which method is used?", "options": ["AAS", "SSA", "SAS", "ASA"], "correct": "AAS" },
+      { "question": "Which construction method can be used to construct a right-angled triangle?", "options": ["SAS", "AAS", "SSS", "ASA"], "correct": "SAS" },
+      { "question": "In triangle construction, what does the 'base' refer to?", "options": ["The longest side", "The side opposite the largest angle", "Any side used as a reference", "The vertical side"], "correct": "Any side used as a reference" },
+      { "question": "When constructing a triangle, how can we ensure accuracy in angle measurement?", "options": ["By using a protractor", "By adjusting the compass", "By measuring the sides precisely", "By checking the sides after construction"], "correct": "By using a protractor" },
+      { "question": "What type of triangle construction requires the use of the Pythagorean theorem?", "options": ["Right-angled triangle", "Scalene triangle", "Equilateral triangle", "Isosceles triangle"], "correct": "Right-angled triangle" },
+      { "question": "If a triangle is constructed using the ASA method, which elements are known?", "options": ["Two sides and an included angle", "Two angles and one side", "Three sides", "Three angles"], "correct": "Two angles and one side" },
+      { "question": "Which of the following cannot be constructed using only the SSA method?", "options": ["Right-angled triangle", "Acute triangle", "Obtuse triangle", "Scalene triangle"], "correct": "Obtuse triangle" }
+
     ]
   },
   {
@@ -261,7 +315,17 @@ export const mathsClass7 = [
       { "question": "Which is the simplified form of 3x + 2x?", "options": ["5x", "6x", "x", "5"], "correct": "5x" },
       { "question": "What is the degree of the expression 4x³ - 2x² + x?", "options": ["3", "2", "1", "0"], "correct": "3" },
       { "question": "What is the result of subtracting 2x from 5x?", "options": ["3x", "2x", "7x", "None"], "correct": "3x" },
-      { "question": "Which of these is not a term in an algebraic expression?", "options": ["Variable", "Constant", "Exponent", "None"], "correct": "Exponent" }
+      { "question": "Which of these is not a term in an algebraic expression?", "options": ["Variable", "Constant", "Exponent", "None"], "correct": "Exponent" },
+      { "question": "What is the result of adding 3x² and 2x²?", "options": ["5x²", "6x²", "5x", "6x"], "correct": "5x²" },
+      { "question": "Which of the following represents a binomial expression?", "options": ["x + 2", "x² + 3x + 2", "2x + 3x", "x² + 2x"], "correct": "x² + 2x" },
+      { "question": "What is the coefficient of y in the expression 4xy + 5y - 3?", "options": ["4", "5", "-3", "None"], "correct": "5" },
+      { "question": "In the expression 7(x + 2), what is the factor outside the parentheses?", "options": ["7", "x", "2", "None"], "correct": "7" },
+      { "question": "What is the result of multiplying 5x by -2?", "options": ["-10x", "10x", "-7x", "7x"], "correct": "-10x" },
+      { "question": "Which of the following is a like term of 4x?", "options": ["4x²", "3x", "4", "3y"], "correct": "3x" },
+      { "question": "Simplify: 6x + 3 - 4x + 5.", "options": ["2x + 8", "3x + 8", "2x + 5", "3x + 5"], "correct": "2x + 8" },
+      { "question": "What is the result of multiplying 4x by 3y?", "options": ["12xy", "7xy", "12x", "7x"], "correct": "12xy" }
+
+
     ]
   },
   {
@@ -465,7 +529,34 @@ export const mathsClass7 = [
         "question": "Which quadrilateral has diagonals that are equal and bisect each other at right angles?",
         "options": ["Square", "Parallelogram", "Rhombus", "Trapezium"],
         "correct": "Square"
+      },
+      {
+        "question": "What is the value of 7² × 7³?",
+        "options": ["7⁵", "7⁶", "7⁴", "7⁷"],
+        "correct": "7⁵"
+      },
+      {
+        "question": "What is 5⁻²?",
+        "options": ["1/25", "25", "1/5", "5"],
+        "correct": "1/25"
+      },
+      {
+        "question": "What is 6³ ÷ 6²?",
+        "options": ["6³", "6²", "6⁴", "6¹"],
+        "correct": "6¹"
+      },
+      {
+        "question": "What is 4⁰ × 4³?",
+        "options": ["4³", "4⁰", "4⁴", "4⁵"],
+        "correct": "4³"
+      },
+      {
+        "question": "What is the value of 2⁵ × 2²?",
+        "options": ["2⁷", "2⁶", "2⁵", "2⁸"],
+        "correct": "2⁷"
       }
+
+      
     ]
   },
   {
