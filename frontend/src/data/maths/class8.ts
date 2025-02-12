@@ -103,7 +103,33 @@ export const mathsClass8 = [
         "question": "Which of the following is not a property of rational numbers?",
         "options": ["Closure under addition", "Closure under multiplication", "Closure under division", "Closure under subtraction"],
         "correct": "Closure under division"
-      }
+      },
+      {
+        "question": "What is the decimal form of 7/20?",
+        "options": ["0.35", "0.4", "0.45", "0.5"],
+        "correct": "0.35"
+    },
+    {
+        "question": "Which of the following is an example of a repeating decimal?",
+        "options": ["1/4", "2/5", "1/3", "5/8"],
+        "correct": "1/3"
+    },
+    {
+        "question": "What is the least common denominator (LCD) of 3/8 and 5/6?",
+        "options": ["48", "24", "12", "18"],
+        "correct": "24"
+    },
+    {
+        "question": "Which of the following operations is not always closed under rational numbers?",
+        "options": ["Addition", "Multiplication", "Subtraction", "Division"],
+        "correct": "Division"
+    },
+    {
+        "question": "What is the value of (5/6) ÷ (1/2)?",
+        "options": ["5/3", "2/6", "10/6", "3/5"],
+        "correct": "5/3"
+    }
+
     ]
   },
   {
@@ -200,7 +226,43 @@ export const mathsClass8 = [
         "question": "What is the solution of x - 7 = 10?",
         "options": ["x = 17", "x = 18", "x = 10", "x = 3"],
         "correct": "x = 17"
-      }
+      },
+      {
+        "question": "Solve: 7x - 3 = 4x + 9.",
+        "options": ["x = 4", "x = 3", "x = 5", "x = 6"],
+        "correct": "x = 4"
+    },
+    {
+        "question": "What is the value of x in 6x + 2 = 20?",
+        "options": ["x = 3", "x = 4", "x = 5", "x = 6"],
+        "correct": "x = 3"
+    },
+    {
+        "question": "Solve: 8x - 5 = 3x + 10.",
+        "options": ["x = 3", "x = 5", "x = 2", "x = 6"],
+        "correct": "x = 3"
+    },
+    {
+        "question": "Find the solution of 4(x - 2) = 12.",
+        "options": ["x = 5", "x = 4", "x = 6", "x = 3"],
+        "correct": "x = 5"
+    },
+    {
+        "question": "Solve: 3(x + 4) = 21.",
+        "options": ["x = 3", "x = 4", "x = 5", "x = 6"],
+        "correct": "x = 3"
+    },
+    {
+        "question": "What is the value of x in 10x - 15 = 5x + 20?",
+        "options": ["x = 5", "x = 6", "x = 7", "x = 8"],
+        "correct": "x = 7"
+    },
+    {
+      "question": "Solve: 5(x + 2) = 3x + 14.",
+      "options": ["x = 2", "x = 3", "x = 4", "x = 5"],
+      "correct": "x = 2"
+  }
+  
     ]
   },
   {
@@ -277,7 +339,62 @@ export const mathsClass8 = [
         "question": "What do the diagonals of a rectangle do?",
         "options": ["They bisect each other", "They are equal in length", "They are perpendicular", "They are unequal in length"],
         "correct": "They are equal in length"
-      }
+      },
+      {
+        "question": "Which quadrilateral has opposite sides equal and diagonals that bisect each other but are not necessarily equal?",
+        "options": ["Parallelogram", "Rectangle", "Rhombus", "Square"],
+        "correct": "Parallelogram"
+    },
+    {
+        "question": "To construct a rhombus, which measurements are necessary?",
+        "options": ["Two adjacent sides", "One side and one angle", "Two diagonals", "One diagonal and one side"],
+        "correct": "Two diagonals"
+    },
+    {
+        "question": "Which of the following conditions are necessary to construct a square?",
+        "options": ["One side and one diagonal", "One side", "Two adjacent sides", "One diagonal"],
+        "correct": "One side"
+    },
+    {
+        "question": "Which quadrilateral has equal diagonals but is not a square?",
+        "options": ["Parallelogram", "Trapezium", "Rhombus", "Rectangle"],
+        "correct": "Rectangle"
+    },
+    {
+        "question": "If the diagonals of a quadrilateral bisect each other and are equal, then it must be a:",
+        "options": ["Parallelogram", "Rhombus", "Rectangle", "Trapezium"],
+        "correct": "Rectangle"
+    },
+    {
+        "question": "What is the minimum number of elements required to construct a unique quadrilateral?",
+        "options": ["3", "4", "5", "6"],
+        "correct": "5"
+    },
+    {
+      "question": "Which of the following quadrilaterals can always be constructed using only one side length?",
+      "options": ["Parallelogram", "Rectangle", "Square", "Trapezium"],
+      "correct": "Square"
+  },
+  {
+      "question": "If a quadrilateral has two pairs of equal adjacent sides and its diagonals bisect each other at right angles, it must be a:",
+      "options": ["Parallelogram", "Rectangle", "Rhombus", "Trapezium"],
+      "correct": "Rhombus"
+  },
+  {
+      "question": "To construct a parallelogram, which set of information is necessary?",
+      "options": ["One side and one diagonal", "Two adjacent sides and one angle", "Three sides", "One angle and one diagonal"],
+      "correct": "Two adjacent sides and one angle"
+  },
+  {
+      "question": "Which quadrilateral is symmetric about both of its diagonals?",
+      "options": ["Rectangle", "Rhombus", "Square", "Trapezium"],
+      "correct": "Square"
+  },
+  {
+      "question": "In a quadrilateral, the sum of interior angles is always:",
+      "options": ["180°", "360°", "270°", "450°"],
+      "correct": "360°"
+  }
     ]
   },
   {
@@ -384,7 +501,32 @@ export const mathsClass8 = [
         "question": "Simplify: (8^2 × 8^3).",
         "options": ["8^5", "8^6", "8^4", "8^7"],
         "correct": "8^5"
-      }
+      },
+      {
+        "question": "What is the value of 4^-2?",
+        "options": ["1/16", "16", "1/4", "8"],
+        "correct": "1/16"
+    },
+    {
+        "question": "Simplify: (9^3) ÷ (9^2).",
+        "options": ["9", "9^6", "9^1", "9^5"],
+        "correct": "9^1"
+    },
+    {
+        "question": "Which of the following is equal to 2^(x+y)?",
+        "options": ["2^x × 2^y", "2^x + 2^y", "2^(x-y)", "(2^x) ÷ (2^y)"],
+        "correct": "2^x × 2^y"
+    },
+    {
+        "question": "Simplify: (3^4 ÷ 3^2) × 3^3.",
+        "options": ["3^9", "3^5", "3^6", "3^7"],
+        "correct": "3^5"
+    },
+    {
+        "question": "What is the value of (2^-3 × 2^5)?",
+        "options": ["2^2", "2^-8", "2^8", "2^3"],
+        "correct": "2^2"
+    }
     ]
   },
   {
@@ -481,7 +623,42 @@ export const mathsClass8 = [
         "question": "The ratio of the number of males to females in a class is 4 : 5. If the total number of students is 36, how many females are there?",
         "options": ["20", "16", "18", "21"],
         "correct": "20"
-      }
+      },
+      {
+        "question": "If the ratio of the weights of two objects is 5 : 7 and the lighter object weighs 25 kg, what is the weight of the heavier object?",
+        "options": ["30 kg", "35 kg", "40 kg", "45 kg"],
+        "correct": "35 kg"
+    },
+    {
+        "question": "A sum of money is divided between A and B in the ratio 3 : 5. If B gets ₹200 more than A, how much does A receive?",
+        "options": ["₹200", "₹300", "₹400", "₹500"],
+        "correct": "₹300"
+    },
+    {
+        "question": "If the cost of 8 pens is ₹64, what is the cost of 12 pens at the same rate?",
+        "options": ["₹96", "₹80", "₹72", "₹100"],
+        "correct": "₹96"
+    },
+    {
+        "question": "The ratio of two numbers is 4 : 7. If their difference is 18, find the numbers.",
+        "options": ["24, 42", "36, 54", "40, 70", "28, 46"],
+        "correct": "36, 54"
+    },
+    {
+        "question": "If a train covers 240 km in 3 hours, how far will it travel in 5 hours at the same speed?",
+        "options": ["300 km", "360 km", "400 km", "420 km"],
+        "correct": "400 km"
+    },
+    {
+      "question": "If the ratio of red balls to blue balls in a box is 5 : 3 and there are 40 red balls, how many blue balls are there?",
+      "options": ["24", "30", "32", "25"],
+      "correct": "24"
+  },
+  {
+      "question": "A map has a scale of 1 cm : 5 km. If the distance between two cities on the map is 8 cm, what is the actual distance between them?",
+      "options": ["30 km", "35 km", "40 km", "45 km"],
+      "correct": "40 km"
+  }
     ]
   },
   {
@@ -588,7 +765,32 @@ export const mathsClass8 = [
         "question": "The cube root of 512 is:",
         "options": ["8", "9", "7", "5"],
         "correct": "8"
-      }
+      },
+      {
+        "question": "The square root of 289 is:",
+        "options": ["15", "16", "17", "18"],
+        "correct": "17"
+    },
+    {
+        "question": "The cube root of 216 is:",
+        "options": ["4", "5", "6", "7"],
+        "correct": "6"
+    },
+    {
+      "question": "The square root of 169 is:",
+      "options": ["11", "12", "13", "14"],
+      "correct": "13"
+  },
+  {
+      "question": "The cube root of 1000 is:",
+      "options": ["8", "9", "10", "11"],
+      "correct": "10"
+  },
+  {
+      "question": "The square root of 324 is:",
+      "options": ["16", "17", "18", "19"],
+      "correct": "18"
+  }
     ]
   },
   {
@@ -700,7 +902,28 @@ export const mathsClass8 = [
         "question": "What does the width of a bar in a histogram represent?",
         "options": ["Class interval", "Frequency", "Data values", "Cumulative frequency"],
         "correct": "Class interval"
-      }
+      },
+      {
+        "question": "In a cumulative frequency graph, what does the highest point on the graph represent?",
+        "options": ["Mean of the data", "Total frequency", "Mode of the data", "Class interval"],
+        "correct": "Total frequency"
+    },
+    {
+        "question": "Which type of graph is used to display relative frequencies in percentage form?",
+        "options": ["Histogram", "Pie Chart", "Line Graph", "Dot Plot"],
+        "correct": "Pie Chart"
+    },
+    {
+        "question": "What is the key difference between a bar graph and a histogram?",
+        "options": ["Bars in a bar graph touch each other, while in a histogram they don’t", "A histogram represents categorical data, while a bar graph represents numerical data", "A bar graph represents categorical data, while a histogram represents numerical data", "There is no difference"],
+        "correct": "A bar graph represents categorical data, while a histogram represents numerical data"
+    },
+    {
+      "question": "Which of the following best describes a frequency polygon?",
+      "options": ["A bar chart with gaps", "A line graph that connects the midpoints of histogram bars", "A pie chart divided into segments", "A scatter plot of data points"],
+      "correct": "A line graph that connects the midpoints of histogram bars"
+  }
+  
     ]
   },
   {
@@ -812,7 +1035,28 @@ export const mathsClass8 = [
         "question": "Which of the following is a property of a square?",
         "options": ["All sides are equal", "Opposite sides are equal", "Opposite angles are equal", "It has only one diagonal"],
         "correct": "All sides are equal"
-      }
+      },
+      {
+        "question": "A shape with all sides and angles equal is called:",
+        "options": ["Rectangle", "Rhombus", "Square", "Parallelogram"],
+        "correct": "Square"
+    },
+    {
+        "question": "The longest side of a right-angled triangle is called:",
+        "options": ["Base", "Height", "Hypotenuse", "Diagonal"],
+        "correct": "Hypotenuse"
+    },
+    {
+        "question": "A quadrilateral with only one pair of parallel sides is called:",
+        "options": ["Square", "Rectangle", "Trapezium", "Parallelogram"],
+        "correct": "Trapezium"
+    },
+    {
+        "question": "The number of faces in a rectangular prism is:",
+        "options": ["4", "5", "6", "8"],
+        "correct": "6"
+    }
+    
     ]
   },
   {
@@ -919,7 +1163,33 @@ export const mathsClass8 = [
         "question": "The area of a circle with radius 2.5 cm is:",
         "options": ["19.63 cm²", "25.00 cm²", "15.70 cm²", "20.00 cm²"],
         "correct": "19.63 cm²"
-      }
+      },
+      {
+        "question": "The area of a semicircle is given by:",
+        "options": ["πr²", "½πr²", "2πr", "¼πr²"],
+        "correct": "½πr²"
+    },
+    {
+        "question": "If the side of a square is doubled, its area becomes:",
+        "options": ["Twice the original", "Three times the original", "Four times the original", "Half the original"],
+        "correct": "Four times the original"
+    },
+    {
+        "question": "A rectangle has an area of 24 cm² and a length of 6 cm. What is its width?",
+        "options": ["2 cm", "3 cm", "4 cm", "5 cm"],
+        "correct": "4 cm"
+    },
+    {
+        "question": "If a circle has a diameter of 10 cm, its area is:",
+        "options": ["25π cm²", "50π cm²", "100π cm²", "10π cm²"],
+        "correct": "25π cm²"
+    },
+    {
+        "question": "The area of a triangle with base 12 cm and height 5 cm is:",
+        "options": ["30 cm²", "60 cm²", "24 cm²", "40 cm²"],
+        "correct": "30 cm²"
+    }
+    
     ]
   },
   {
@@ -1026,7 +1296,33 @@ export const mathsClass8 = [
         "question": "If x and y are directly proportional, and x = 5 when y = 2, what is y when x = 25?",
         "options": ["10", "15", "20", "25"],
         "correct": "10"
-      }
+      },
+      {
+        "question": "If x and y are directly proportional, and x = 6 when y = 18, what is y when x = 9?",
+        "options": ["21", "24", "27", "30"],
+        "correct": "27"
+    },
+    {
+        "question": "If x is inversely proportional to y, and x = 2 when y = 16, what is x when y = 8?",
+        "options": ["2", "4", "6", "8"],
+        "correct": "4"
+    },
+    {
+        "question": "If x and y are directly proportional, and x = 15 when y = 45, what is y when x = 5?",
+        "options": ["5", "10", "15", "30"],
+        "correct": "15"
+    },
+    {
+        "question": "If x is inversely proportional to y, and x = 12 when y = 6, what is x when y = 3?",
+        "options": ["6", "9", "18", "24"],
+        "correct": "24"
+    },
+    {
+        "question": "If x and y are directly proportional, and x = 2 when y = 7, what is y when x = 6?",
+        "options": ["14", "21", "28", "35"],
+        "correct": "21"
+    }
+    
     ]
   },
   {
@@ -1123,7 +1419,43 @@ export const mathsClass8 = [
         "question": "Simplify: 6a + 2b - 4a + 3b.",
         "options": ["2a + 5b", "3a + 5b", "3a + 4b", "None of these"],
         "correct": "2a + 5b"
-      }
+      },
+      {
+        "question": "Factorize: x^2 - 4x + 4.",
+        "options": ["(x - 2)(x - 2)", "(x + 2)(x + 2)", "(x - 4)(x + 1)", "None of these"],
+        "correct": "(x - 2)(x - 2)"
+    },
+    {
+        "question": "Simplify: 3x - 2y + 5x + 4y.",
+        "options": ["8x + 2y", "8x - 2y", "3x + 2y", "None of these"],
+        "correct": "8x + 2y"
+    },
+    {
+        "question": "Factorize: 4x^2 - 9.",
+        "options": ["(2x - 3)(2x + 3)", "(4x - 3)(4x + 3)", "(2x - 9)(2x + 1)", "None of these"],
+        "correct": "(2x - 3)(2x + 3)"
+    },
+    {
+        "question": "What is the coefficient of x in 9x - 4y + 7?",
+        "options": ["9", "-4", "7", "None"],
+        "correct": "9"
+    },
+    {
+        "question": "Simplify: 2m + 4n - 5m + 3n.",
+        "options": ["-3m + 7n", "-3m + n", "7m - 3n", "None of these"],
+        "correct": "-3m + 7n"
+    },
+    {
+        "question": "Factorize: x^2 - 5x.",
+        "options": ["x(x - 5)", "x(x + 5)", "(x - 5)(x + 5)", "None of these"],
+        "correct": "x(x - 5)"
+    },
+    {
+        "question": "Simplify: 10p - 3q + 2p + 6q.",
+        "options": ["12p + 3q", "8p + 9q", "12p - 9q", "None of these"],
+        "correct": "12p + 3q"
+    }
+    
     ]
   },
   {
@@ -1200,6 +1532,61 @@ export const mathsClass8 = [
         "question": "Factorize: x^2 + 2x - 3.",
         "options": ["(x + 3)(x - 1)", "(x - 1)(x + 3)", "(x + 2)(x + 3)", "None of these"],
         "correct": "(x + 3)(x - 1)"
+      },
+      {
+        "question": "Factorize: x^2 - 2x - 8.",
+        "options": ["(x - 4)(x + 2)", "(x - 2)(x + 4)", "(x + 4)(x - 2)", "None of these"],
+        "correct": "(x - 4)(x + 2)"
+      },
+      {
+        "question": "Factorize: 6x^2 + 11x + 3.",
+        "options": ["(2x + 3)(3x + 1)", "(3x + 2)(2x + 1)", "(6x + 3)(x + 1)", "None of these"],
+        "correct": "(2x + 3)(3x + 1)"
+      },
+      {
+        "question": "Factorize: x^2 - 5x + 6.",
+        "options": ["(x - 2)(x - 3)", "(x - 1)(x - 6)", "(x - 5)(x + 1)", "None of these"],
+        "correct": "(x - 2)(x - 3)"
+      },
+      {
+        "question": "Factorize: 2x^2 - 8x + 6.",
+        "options": ["2(x - 3)(x - 1)", "2(x - 2)(x - 3)", "(x - 3)(2x - 2)", "None of these"],
+        "correct": "2(x - 2)(x - 3)"
+      },
+      {
+        "question": "Factorize: x^2 - 4x + 4.",
+        "options": ["(x - 2)(x - 2)", "(x - 4)(x + 1)", "(x - 2)^2", "None of these"],
+        "correct": "(x - 2)^2"
+      },
+      {
+        "question": "Factorize: 9x^2 - 25.",
+        "options": ["(3x + 5)(3x - 5)", "(3x - 5)^2", "(x - 3)(x + 5)", "None of these"],
+        "correct": "(3x + 5)(3x - 5)"
+      },
+      {
+        "question": "Factorize: x^2 + 4x - 12.",
+        "options": ["(x + 6)(x - 2)", "(x - 6)(x + 2)", "(x - 4)(x + 3)", "None of these"],
+        "correct": "(x + 6)(x - 2)"
+      },
+      {
+        "question": "Factorize: 4x^2 - 9y^2.",
+        "options": ["(2x - 3y)(2x + 3y)", "(2x + 3y)^2", "(4x - 9y)(x + y)", "None of these"],
+        "correct": "(2x - 3y)(2x + 3y)"
+      },
+      {
+        "question": "Factorize: x^2 - 12x + 36.",
+        "options": ["(x - 6)^2", "(x - 3)(x - 4)", "(x - 6)(x + 6)", "None of these"],
+        "correct": "(x - 6)^2"
+      },
+      {
+        "question": "Factorize: 2x^2 + 7x + 3.",
+        "options": ["(2x + 1)(x + 3)", "(2x + 3)(x + 1)", "(2x - 1)(x + 3)", "None of these"],
+        "correct": "(2x + 1)(x + 3)"
+      },
+      {
+        "question": "Factorize: 5x^2 + 10x + 5.",
+        "options": ["5(x + 1)(x + 1)", "5(x + 2)(x + 1)", "(x + 5)(x + 1)", "None of these"],
+        "correct": "5(x + 1)(x + 1)"
       }
     ]
   },
@@ -1313,6 +1700,26 @@ export const mathsClass8 = [
           "question": "Which shape is the 2D projection of the top of a cone?",
           "options": ["Circle", "Rectangle", "Square", "Triangle"],
           "correct": "Circle"
+        },
+        {
+          "question": "Which shape can represent the side view of a cube?",
+          "options": ["Square", "Rectangle", "Circle", "Triangle"],
+          "correct": "Square"
+        },
+        {
+          "question": "What 2D shape does a sphere's shadow typically resemble?",
+          "options": ["Circle", "Rectangle", "Square", "Triangle"],
+          "correct": "Circle"
+        },
+        {
+          "question": "Which 3D shape has a net composed of six squares?",
+          "options": ["Cube", "Cuboid", "Cylinder", "Sphere"],
+          "correct": "Cube"
+        },
+        {
+          "question": "A cylinder's net consists of how many shapes?",
+          "options": ["One rectangle and two circles", "Two rectangles and one circle", "Three squares", "One triangle and one rectangle"],
+          "correct": "One rectangle and two circles"
         }
       ]
     },
@@ -1410,6 +1817,41 @@ export const mathsClass8 = [
           "question": "The surface area of a cube with side length 10 cm is:",
           "options": ["600 cm^2", "400 cm^2", "300 cm^2", "200 cm^2"],
           "correct": "600 cm^2"
+        },
+        {
+          "question": "If a cube has a side length of 6 cm, what is its volume?",
+          "options": ["216 cm^3", "36 cm^3", "72 cm^3", "144 cm^3"],
+          "correct": "216 cm^3"
+        },
+        {
+          "question": "A cuboid has a length of 8 cm, width of 3 cm, and height of 2 cm. What is its surface area?",
+          "options": ["76 cm^2", "48 cm^2", "52 cm^2", "72 cm^2"],
+          "correct": "76 cm^2"
+        },
+        {
+          "question": "If the side of a cube is doubled, by what factor does its volume increase?",
+          "options": ["2", "4", "6", "8"],
+          "correct": "8"
+        },
+        {
+          "question": "A cube has a total surface area of 96 cm². What is the length of one side?",
+          "options": ["4 cm", "6 cm", "8 cm", "10 cm"],
+          "correct": "4 cm"
+        },
+        {
+          "question": "What happens to the surface area of a cube if its side length is doubled?",
+          "options": ["Doubles", "Triples", "Quadruples", "Remains the same"],
+          "correct": "Quadruples"
+        },
+        {
+          "question": "If a cuboid has a volume of 150 cm³ and its height is 5 cm, what is the product of its length and width?",
+          "options": ["50 cm²", "30 cm²", "40 cm²", "25 cm²"],
+          "correct": "30 cm²"
+        },
+        {
+          "question": "The length, width, and height of a cuboid are 6 cm, 4 cm, and 3 cm, respectively. What is its volume?",
+          "options": ["72 cm³", "48 cm³", "60 cm³", "84 cm³"],
+          "correct": "72 cm³"
         }
       ]
     },
@@ -1512,6 +1954,36 @@ export const mathsClass8 = [
           "question": "Which of the following numbers is divisible by 7?",
           "options": ["98", "145", "666", "321"],
           "correct": "98"
+        },
+        {
+          "question": "The number 144 is divisible by:",
+          "options": ["2", "3", "4", "All of the above"],
+          "correct": "All of the above"
+        },
+        {
+          "question": "Which of the following numbers is divisible by 15?",
+          "options": ["120", "135", "150", "160"],
+          "correct": "150"
+        },
+        {
+          "question": "If the last digit of a number is 0, it is always divisible by:",
+          "options": ["2", "5", "10", "All of the above"],
+          "correct": "All of the above"
+        },
+        {
+          "question": "Which of the following numbers is NOT divisible by 3?",
+          "options": ["132", "246", "370", "513"],
+          "correct": "370"
+        },
+        {
+          "question": "A number is divisible by 6 if it is divisible by both:",
+          "options": ["2 and 3", "3 and 4", "2 and 5", "4 and 6"],
+          "correct": "2 and 3"
+        },
+        {
+          "question": "Which of the following numbers is divisible by 25?",
+          "options": ["150", "275", "325", "400"],
+          "correct": "400"
         }
       ]
     }
