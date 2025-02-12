@@ -432,6 +432,31 @@ export const mathsClass7 = [
         "question": "What is 10² × 10³ ÷ 10⁴?",
         "options": ["10²", "10³", "10⁴", "10¹"],
         "correct": "10¹"
+      },
+      {
+        "question": "What is the value of 2⁵?",
+        "options": ["10", "25", "32", "16"],
+        "correct": "32"
+      },
+      {
+        "question": "What is (3²)³?",
+        "options": ["3⁶", "3⁵", "3⁴", "3³"],
+        "correct": "3⁶"
+      },
+      {
+        "question": "Which of the following is equal to 2⁸ ÷ 2⁵?",
+        "options": ["2²", "2³", "2⁴", "2⁵"],
+        "correct": "2³"
+      },
+      {
+        "question": "What is 7² × 7³?",
+        "options": ["7⁵", "7⁶", "7⁷", "7⁸"],
+        "correct": "7⁵"
+      },
+      {
+        "question": "What is the value of (5³ ÷ 5⁰)?",
+        "options": ["5³", "5⁰", "5", "1"],
+        "correct": "5³"
       }
     ]
   },
@@ -531,30 +556,42 @@ export const mathsClass7 = [
         "correct": "Square"
       },
       {
-        "question": "What is the value of 7² × 7³?",
-        "options": ["7⁵", "7⁶", "7⁴", "7⁷"],
-        "correct": "7⁵"
+        "question": "Which quadrilateral has diagonals that are perpendicular but not necessarily equal?",
+        "options": ["Square", "Rhombus", "Rectangle", "Parallelogram"],
+        "correct": "Rhombus"
       },
       {
-        "question": "What is 5⁻²?",
-        "options": ["1/25", "25", "1/5", "5"],
-        "correct": "1/25"
+        "question": "Which quadrilateral has exactly one pair of opposite sides parallel and the other two sides non-parallel?",
+        "options": ["Trapezium", "Parallelogram", "Kite", "Rhombus"],
+        "correct": "Trapezium"
       },
       {
-        "question": "What is 6³ ÷ 6²?",
-        "options": ["6³", "6²", "6⁴", "6¹"],
-        "correct": "6¹"
-      },
-      {
-        "question": "What is 4⁰ × 4³?",
-        "options": ["4³", "4⁰", "4⁴", "4⁵"],
-        "correct": "4³"
-      },
-      {
-        "question": "What is the value of 2⁵ × 2²?",
-        "options": ["2⁷", "2⁶", "2⁵", "2⁸"],
-        "correct": "2⁷"
-      }
+        "question": "Which quadrilateral has all sides equal but does not necessarily have all angles equal?",
+        "options": ["Rhombus", "Square", "Rectangle", "Parallelogram"],
+        "correct": "Rhombus"
+    },
+    {
+        "question": "What is a special type of parallelogram that has equal diagonals?",
+        "options": ["Rectangle", "Rhombus", "Square", "Trapezium"],
+        "correct": "Rectangle"
+    },
+    {
+        "question": "Which quadrilateral has one pair of parallel sides and non-parallel sides of equal length?",
+        "options": ["Isosceles Trapezium", "Parallelogram", "Rhombus", "Kite"],
+        "correct": "Isosceles Trapezium"
+    },
+    {
+        "question": "In which quadrilateral are the opposite angles supplementary?",
+        "options": ["Parallelogram", "Rectangle", "Rhombus", "Trapezium"],
+        "correct": "Parallelogram"
+    },
+    {
+        "question": "The diagonals of a parallelogram divide it into how many congruent triangles?",
+        "options": ["2", "3", "4", "6"],
+        "correct": "4"
+    }
+    
+      
 
       
     ]
@@ -653,7 +690,43 @@ export const mathsClass7 = [
         "question": "What is the perimeter of a rectangle with length 8 and width 5?",
         "options": ["26", "24", "22", "20"],
         "correct": "26"
-      }
+      },
+      {
+        "question": "What is the area of a trapezium with bases 6 and 10 and height 4?",
+        "options": ["32", "40", "48", "28"],
+        "correct": "32"
+    },
+    {
+        "question": "What is the perimeter of a square with side 7?",
+        "options": ["28", "21", "35", "14"],
+        "correct": "28"
+    },
+    {
+        "question": "What is the area of a triangle with base 8 and height 7?",
+        "options": ["28", "32", "36", "56"],
+        "correct": "28"
+    },
+    {
+        "question": "What is the circumference of a circle with radius 5?",
+        "options": ["31.42", "30", "34.15", "32"],
+        "correct": "31.42"
+    },
+    {
+        "question": "What is the perimeter of a pentagon with side length 6?",
+        "options": ["24", "30", "36", "40"],
+        "correct": "30"
+    },
+    {
+        "question": "What is the area of a sector of a circle with radius 5 and angle 60°?",
+        "options": ["13.09", "10.47", "15.71", "12.42"],
+        "correct": "13.09"
+    },
+    {
+        "question": "What is the perimeter of a rectangle with length 9 and width 4?",
+        "options": ["26", "28", "22", "24"],
+        "correct": "26"
+    }
+    
     ]
   },
   {
@@ -760,7 +833,33 @@ export const mathsClass7 = [
         "question": "What is the area formula for a circle?",
         "options": ["πr²", "2πr", "4πr", "πd²"],
         "correct": "πr²"
-      }
+      },
+      {
+        "question": "How many edges does a cube have?",
+        "options": ["6", "8", "12", "10"],
+        "correct": "12"
+    },
+    {
+        "question": "Which of the following 3D shapes has both a curved surface and a flat surface?",
+        "options": ["Sphere", "Cube", "Cone", "Pyramid"],
+        "correct": "Cone"
+    },
+    {
+        "question": "What is the volume formula for a cylinder?",
+        "options": ["πr²h", "4/3πr³", "l×b×h", "2πr²"],
+        "correct": "πr²h"
+    },
+    {
+        "question": "How many faces does a triangular pyramid (tetrahedron) have?",
+        "options": ["3", "4", "5", "6"],
+        "correct": "4"
+    },
+    {
+        "question": "Which 3D shape has two identical circular bases?",
+        "options": ["Cube", "Cylinder", "Cone", "Pyramid"],
+        "correct": "Cylinder"
+    }
+    
     ]
   },
   {
@@ -862,7 +961,38 @@ export const mathsClass7 = [
         "question": "How many lines of symmetry does a parallelogram have?",
         "options": ["1", "2", "3", "4"],
         "correct": "0"
-      }
+      },
+      {
+        "question": "Which of the following shapes has four lines of symmetry?",
+        "options": ["Square", "Rectangle", "Rhombus", "Trapezium"],
+        "correct": "Square"
+    },
+    {
+        "question": "How many lines of symmetry does a regular hexagon have?",
+        "options": ["3", "4", "5", "6"],
+        "correct": "6"
+    },
+    {
+        "question": "Which type of symmetry does the letter 'A' exhibit?",
+        "options": ["Horizontal", "Vertical", "Rotational", "No symmetry"],
+        "correct": "Vertical"
+    },
+    {
+        "question": "A shape that looks the same after a 180-degree rotation has what type of symmetry?",
+        "options": ["Mirror symmetry", "Translational symmetry", "Rotational symmetry", "No symmetry"],
+        "correct": "Rotational symmetry"
+    },
+    {
+        "question": "How many lines of symmetry does a regular octagon have?",
+        "options": ["4", "6", "8", "10"],
+        "correct": "8"
+    },
+    {
+        "question": "Which of the following shapes has exactly one line of symmetry?",
+        "options": ["Isosceles Triangle", "Rectangle", "Rhombus", "Square"],
+        "correct": "Isosceles Triangle"
+    }
+    
     ]
   }  
 ];
