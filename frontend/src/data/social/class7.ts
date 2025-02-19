@@ -38,16 +38,16 @@ export const socialClass7 = [
       }
     ]
   },
-  {
-    id: 3,
-    title: 'Tanks and Ground Water',
-    description: 'Learn about the importance of tanks and groundwater management.',
-    questions: [
-      {
-        question: 'Which structure is commonly used in India to store rainwater?',
-        options: ['Tanks', 'Dams', 'Canals', 'Pipelines'],
-        correct: 'Tanks'
-      },
+    {
+      id: 3,
+      title: 'Tanks and Ground Water',
+      description: 'Learn about the importance of tanks and groundwater management.',
+      questions: [
+        {
+          question: 'Which structure is commonly used in India to store rainwater?',
+          options: ['Tanks', 'Dams', 'Canals', 'Pipelines'],
+          correct: 'Tanks'
+        },
       {
         question: 'What is the main cause of groundwater depletion?',
         options: ['Deforestation', 'Overuse of borewells', 'Heavy rainfall', 'Less agriculture'],

@@ -5,7 +5,33 @@ export const scienceClass8 = [
       description: 'Learn about the effects and types of force.',
       questions: [
         { question: 'What is force measured in?', options: ['Newton', 'Joule', 'Watt', 'Pascal'], correct: 'Newton' },
-        { question: 'Which force opposes motion?', options: ['Gravitational', 'Magnetic', 'Frictional', 'Electrostatic'], correct: 'Frictional' }
+        { question: 'Which force opposes motion?', options: ['Gravitational', 'Magnetic', 'Frictional', 'Electrostatic'], correct: 'Frictional' },
+        { question: 'What is force measured in?', options: ['Newton', 'Joule', 'Watt', 'Pascal'], correct: 'Newton' },
+        { question: 'Which force opposes motion?', options: ['Gravitational', 'Magnetic', 'Frictional', 'Electrostatic'], correct: 'Frictional' },
+        { question: 'Which of the following is a contact force?', options: ['Gravitational Force', 'Magnetic Force', 'Frictional Force', 'Electrostatic Force'], correct: 'Frictional Force' },
+        { question: 'What happens to an object when balanced forces act on it?', options: ['It accelerates', 'It stops moving', 'Its motion remains unchanged', 'It moves in a circular path'], correct: 'Its motion remains unchanged' },
+        { question: 'Which force pulls objects toward the center of the Earth?', options: ['Magnetic Force', 'Frictional Force', 'Gravitational Force', 'Electrostatic Force'], correct: 'Gravitational Force' },
+        { question: 'Which force is responsible for holding planets in their orbits?', options: ['Frictional Force', 'Nuclear Force', 'Gravitational Force', 'Tension Force'], correct: 'Gravitational Force' },
+        { question: 'What is the SI unit of pressure?', options: ['Newton', 'Pascal', 'Joule', 'Watt'], correct: 'Pascal' },
+        { question: 'What does force cause an object to do?', options: ['Change its shape', 'Change its motion', 'Remain at rest', 'Both A and B'], correct: 'Both A and B' },
+        { question: 'What type of force does a magnet exert?', options: ['Frictional Force', 'Electrostatic Force', 'Magnetic Force', 'Gravitational Force'], correct: 'Magnetic Force' },
+        { question: 'What type of force causes a stretched rubber band to return to its original shape?', options: ['Gravitational Force', 'Frictional Force', 'Elastic Force', 'Nuclear Force'], correct: 'Elastic Force' },
+        { question: 'Which law of motion states that an object at rest stays at rest unless acted upon by an external force?', options: ['Newton’s First Law', 'Newton’s Second Law', 'Newton’s Third Law', 'Law of Gravitation'], correct: 'Newton’s First Law' },
+        { question: 'What is the effect of friction on a moving object?', options: ['Increases speed', 'Stops the object', 'Opposes motion', 'Helps in acceleration'], correct: 'Opposes motion' },
+        { question: 'Which force acts on a charged body?', options: ['Magnetic Force', 'Electrostatic Force', 'Gravitational Force', 'Nuclear Force'], correct: 'Electrostatic Force' },
+        { question: 'What happens to friction when surfaces are made smoother?', options: ['Increases', 'Decreases', 'Remains the same', 'Doubles'], correct: 'Decreases' },
+        { question: 'What is the force applied by a person while pushing a cart?', options: ['Muscular Force', 'Gravitational Force', 'Electrostatic Force', 'Nuclear Force'], correct: 'Muscular Force' },
+        { question: 'Which of the following is NOT a type of force?', options: ['Gravitational', 'Magnetic', 'Frictional', 'Temperature'], correct: 'Temperature' },
+        { question: 'Which force helps us in walking?', options: ['Magnetic Force', 'Frictional Force', 'Gravitational Force', 'Electrostatic Force'], correct: 'Frictional Force' },
+        { question: 'What is the relationship between force and acceleration?', options: ['Force is inversely proportional to acceleration', 'Force is directly proportional to acceleration', 'Force is independent of acceleration', 'Force equals acceleration'], correct: 'Force is directly proportional to acceleration' },
+        { question: 'Which force keeps a stretched string or rope tight?', options: ['Tension Force', 'Magnetic Force', 'Gravitational Force', 'Nuclear Force'], correct: 'Tension Force' },
+        { question: 'What is a non-contact force?', options: ['Frictional Force', 'Magnetic Force', 'Tension Force', 'Muscular Force'], correct: 'Magnetic Force' },
+        { question: 'Which force is responsible for keeping us on the Earth’s surface?', options: ['Electrostatic Force', 'Gravitational Force', 'Magnetic Force', 'Nuclear Force'], correct: 'Gravitational Force' },
+        { question: 'Which force prevents us from slipping while walking?', options: ['Frictional Force', 'Gravitational Force', 'Magnetic Force', 'Electrostatic Force'], correct: 'Frictional Force' },
+        { question: 'What force is required to compress or stretch an object?', options: ['Tension Force', 'Elastic Force', 'Gravitational Force', 'Electrostatic Force'], correct: 'Elastic Force' },
+        { question: 'Which force helps an airplane to stay in the air?', options: ['Gravitational Force', 'Lift Force', 'Magnetic Force', 'Frictional Force'], correct: 'Lift Force' },
+        { question: 'Which force acts between two surfaces in contact and opposes motion?', options: ['Gravitational Force', 'Frictional Force', 'Electrostatic Force', 'Magnetic Force'], correct: 'Frictional Force' }
+
       ]
     },
     {
@@ -14,7 +40,32 @@ export const scienceClass8 = [
       description: 'Understand the concept and effects of friction.',
       questions: [
         { question: 'Which surface will produce the most friction?', options: ['Ice', 'Glass', 'Rough road', 'Oiled surface'], correct: 'Rough road' },
-        { question: 'What is used to reduce friction?', options: ['Lubricants', 'Water', 'Air', 'Rubber'], correct: 'Lubricants' }
+        { question: 'What is used to reduce friction?', options: ['Lubricants', 'Water', 'Air', 'Rubber'], correct: 'Lubricants' },
+        { question: 'Which surface will produce the most friction?', options: ['Ice', 'Glass', 'Rough road', 'Oiled surface'], correct: 'Rough road' },
+    { question: 'What is used to reduce friction?', options: ['Lubricants', 'Water', 'Air', 'Rubber'], correct: 'Lubricants' },
+    { question: 'Which type of friction occurs when an object is moving?', options: ['Static friction', 'Sliding friction', 'Rolling friction', 'Fluid friction'], correct: 'Sliding friction' },
+    { question: 'What is the force that opposes the start of motion?', options: ['Rolling friction', 'Static friction', 'Sliding friction', 'Fluid friction'], correct: 'Static friction' },
+    { question: 'Why do ball bearings reduce friction?', options: ['They increase contact surface', 'They convert sliding friction to rolling friction', 'They create more roughness', 'They increase air resistance'], correct: 'They convert sliding friction to rolling friction' },
+    { question: 'Which type of friction is the weakest?', options: ['Static friction', 'Sliding friction', 'Rolling friction', 'Fluid friction'], correct: 'Rolling friction' },
+    { question: 'Which of the following experiences fluid friction?', options: ['Car on road', 'Bird in air', 'Box on table', 'Train on track'], correct: 'Bird in air' },
+    { question: 'Which factor does NOT affect friction?', options: ['Surface roughness', 'Weight of object', 'Color of surface', 'Type of material'], correct: 'Color of surface' },
+    { question: 'Why do tires have grooves?', options: ['To increase friction', 'To reduce weight', 'To store air', 'To increase speed'], correct: 'To increase friction' },
+    { question: 'Which friction allows us to walk properly?', options: ['Static friction', 'Sliding friction', 'Rolling friction', 'Fluid friction'], correct: 'Static friction' },
+    { question: 'Which action is an example of reducing friction?', options: ['Using sandpaper on wood', 'Applying oil on a door hinge', 'Pressing hard while writing', 'Walking with bare feet'], correct: 'Applying oil on a door hinge' },
+    { question: 'Which sport needs LESS friction?', options: ['Football', 'Athletics', 'Swimming', 'Rock climbing'], correct: 'Swimming' },
+    { question: 'What happens if friction is completely removed?', options: ['Objects will stop moving', 'Objects will never stop moving', 'Objects will move in a circular path', 'Objects will sink'], correct: 'Objects will never stop moving' },
+    { question: 'Which natural force reduces friction?', options: ['Gravity', 'Wind', 'Magnetism', 'Electrostatic force'], correct: 'Wind' },
+    { question: 'Which friction acts on a rolling object?', options: ['Static friction', 'Rolling friction', 'Sliding friction', 'Fluid friction'], correct: 'Rolling friction' },
+    { question: 'How does friction produce heat?', options: ['By increasing pressure', 'By causing particles to vibrate', 'By reducing energy', 'By increasing speed'], correct: 'By causing particles to vibrate' },
+    { question: 'What happens when friction is increased between two objects?', options: ['They move faster', 'They slow down', 'They repel each other', 'They float'], correct: 'They slow down' },
+    { question: 'Which device is used to measure friction?', options: ['Spring balance', 'Barometer', 'Thermometer', 'Dynamometer'], correct: 'Spring balance' },
+    { question: 'Why does a wet floor feel slippery?', options: ['Water reduces friction', 'Water increases friction', 'Water increases air resistance', 'Water creates static friction'], correct: 'Water reduces friction' },
+    { question: 'Why do shoes wear out over time?', options: ['Due to gravity', 'Due to friction', 'Due to air pressure', 'Due to weight'], correct: 'Due to friction' },
+    { question: 'Which of the following is an example of helpful friction?', options: ['Engine overheating', 'Brakes in a car', 'Rope burn', 'Shoe wear'], correct: 'Brakes in a car' },
+    { question: 'What is an example of fluid friction?', options: ['Car moving on road', 'Boat sailing in water', 'Ball rolling on ground', 'Book on table'], correct: 'Boat sailing in water' },
+    { question: 'Which factor increases friction?', options: ['Smooth surfaces', 'Rough surfaces', 'Lubricants', 'Wheels'], correct: 'Rough surfaces' },
+    { question: 'Which of the following is NOT a type of friction?', options: ['Static friction', 'Dynamic friction', 'Rolling friction', 'Sliding friction'], correct: 'Dynamic friction' },
+    { question: 'Which force helps a parachute slow down?', options: ['Gravity', 'Air resistance (fluid friction)', 'Magnetic force', 'Tension force'], correct: 'Air resistance (fluid friction)' }
       ]
     },
     {
@@ -23,7 +74,32 @@ export const scienceClass8 = [
       description: 'Explore man-made fibres and plastics.',
       questions: [
         { question: 'Which of the following is a synthetic fibre?', options: ['Cotton', 'Silk', 'Nylon', 'Wool'], correct: 'Nylon' },
-        { question: 'Which type of plastic can be recycled?', options: ['Thermoplastics', 'Thermosetting plastics', 'Rubber', 'Glass'], correct: 'Thermoplastics' }
+        { question: 'Which type of plastic can be recycled?', options: ['Thermoplastics', 'Thermosetting plastics', 'Rubber', 'Glass'], correct: 'Thermoplastics' },
+        { question: 'Which of the following is a synthetic fibre?', options: ['Cotton', 'Silk', 'Nylon', 'Wool'], correct: 'Nylon' },
+        { question: 'Which type of plastic can be recycled?', options: ['Thermoplastics', 'Thermosetting plastics', 'Rubber', 'Glass'], correct: 'Thermoplastics' },
+        { question: 'Which synthetic fibre is used to make ropes and fishing nets?', options: ['Polyester', 'Nylon', 'Acrylic', 'Rayon'], correct: 'Nylon' },
+          { question: 'Which synthetic fibre is known as artificial silk?', options: ['Nylon', 'Rayon', 'Acrylic', 'Polyester'], correct: 'Rayon' },
+          { question: 'Which fibre is commonly used to make PET bottles?', options: ['Nylon', 'Polyester', 'Acrylic', 'Rayon'], correct: 'Polyester' },
+          { question: 'Which type of plastic is used to make electrical switches?', options: ['Thermoplastics', 'Thermosetting plastics', 'Rubber', 'PVC'], correct: 'Thermosetting plastics' },
+          { question: 'Which of the following is a property of synthetic fibres?', options: ['Absorbs water', 'Wrinkles easily', 'Strong and durable', 'Made from plant materials'], correct: 'Strong and durable' },
+          { question: 'Which synthetic fibre is similar to wool?', options: ['Rayon', 'Nylon', 'Acrylic', 'Polyester'], correct: 'Acrylic' },
+          { question: 'Which plastic is commonly used for making pipes?', options: ['Nylon', 'Polyester', 'PVC', 'Acrylic'], correct: 'PVC' },
+          { question: 'Why are synthetic fibres preferred over natural fibres?', options: ['They are biodegradable', 'They are cheaper and more durable', 'They are obtained from plants', 'They are heavy and expensive'], correct: 'They are cheaper and more durable' },
+          { question: 'Which plastic is used to make kitchen utensils and containers?', options: ['PVC', 'Teflon', 'Bakelite', 'Polyethylene'], correct: 'Polyethylene' },
+          { question: 'Which of the following is an example of a thermoplastic?', options: ['Bakelite', 'Melamine', 'PVC', 'All of these'], correct: 'PVC' },
+          { question: 'Which plastic is used as a non-stick coating on cookware?', options: ['Teflon', 'PVC', 'Bakelite', 'Acrylic'], correct: 'Teflon' },
+          { question: 'Which of the following is NOT a property of synthetic fibres?', options: ['Lightweight', 'Dries quickly', 'Biodegradable', 'Durable'], correct: 'Biodegradable' },
+          { question: 'Why are plastics harmful to the environment?', options: ['They decompose quickly', 'They cause soil pollution', 'They are water-soluble', 'They help in plant growth'], correct: 'They cause soil pollution' },
+          { question: 'Which plastic is used to make electrical insulation?', options: ['Bakelite', 'PVC', 'Polyester', 'Acrylic'], correct: 'Bakelite' },
+          { question: 'Which fibre is commonly used in making raincoats?', options: ['Cotton', 'Nylon', 'Acrylic', 'Silk'], correct: 'Nylon' },
+          { question: 'What is the main raw material for making synthetic fibres?', options: ['Wood', 'Petroleum', 'Cotton', 'Silk'], correct: 'Petroleum' },
+          { question: 'Which of these plastics is fire-resistant?', options: ['PVC', 'Bakelite', 'Polyester', 'Melamine'], correct: 'Melamine' },
+          { question: 'Which synthetic fibre is used in parachutes?', options: ['Rayon', 'Acrylic', 'Nylon', 'Polyester'], correct: 'Nylon' },
+          { question: 'Which plastic is used for making transparent water bottles?', options: ['Bakelite', 'Nylon', 'PET', 'Melamine'], correct: 'PET' },
+          { question: 'Why do synthetic fibres melt on heating?', options: ['They are made of proteins', 'They contain plant cellulose', 'They are made of polymers', 'They absorb water'], correct: 'They are made of polymers' },
+          { question: 'Which synthetic fibre is commonly used for making clothes?', options: ['Acrylic', 'Nylon', 'Polyester', 'Rayon'], correct: 'Polyester' },
+          { question: 'Which of these is an example of a biodegradable material?', options: ['Nylon', 'Polyester', 'Cotton', 'PVC'], correct: 'Cotton' },
+          { question: 'Which of the following plastics is hard and cannot be bent easily?', options: ['Thermoplastics', 'Thermosetting plastics', 'Rubber', 'Polyester'], correct: 'Thermosetting plastics' }      
       ]
     },
     {
@@ -32,7 +108,33 @@ export const scienceClass8 = [
       description: 'Learn about the properties of metals and non-metals.',
       questions: [
         { question: 'Which of these is a metal?', options: ['Oxygen', 'Sulfur', 'Iron', 'Carbon'], correct: 'Iron' },
-        { question: 'Which property is common in metals?', options: ['Brittle', 'Malleable', 'Insulator', 'Non-conductor'], correct: 'Malleable' }
+        { question: 'Which property is common in metals?', options: ['Brittle', 'Malleable', 'Insulator', 'Non-conductor'], correct: 'Malleable' },
+        { question: 'Which of these is a metal?', options: ['Oxygen', 'Sulfur', 'Iron', 'Carbon'], correct: 'Iron' },
+        { question: 'Which property is common in metals?', options: ['Brittle', 'Malleable', 'Insulator', 'Non-conductor'], correct: 'Malleable' },
+        { question: 'Which metal is the best conductor of electricity?', options: ['Iron', 'Copper', 'Aluminium', 'Silver'], correct: 'Silver' },
+        { question: 'Which non-metal is essential for respiration?', options: ['Carbon', 'Oxygen', 'Nitrogen', 'Sulfur'], correct: 'Oxygen' },
+        { question: 'Which metal is liquid at room temperature?', options: ['Iron', 'Mercury', 'Aluminium', 'Sodium'], correct: 'Mercury' },
+        { question: 'What happens when metals react with acids?', options: ['They produce oxygen', 'They release hydrogen gas', 'They burn', 'They form bases'], correct: 'They release hydrogen gas' },
+        { question: 'Which non-metal is used in making fertilizers?', options: ['Sulfur', 'Phosphorus', 'Carbon', 'Helium'], correct: 'Phosphorus' },
+        { question: 'Which property is common in non-metals?', options: ['Malleability', 'Ductility', 'Brittleness', 'Conductivity'], correct: 'Brittleness' },
+        { question: 'What is the property of metals that allows them to be drawn into wires?', options: ['Malleability', 'Brittleness', 'Ductility', 'Conductivity'], correct: 'Ductility' },
+        { question: 'Which metal is used to make aircraft bodies due to its light weight?', options: ['Iron', 'Copper', 'Aluminium', 'Gold'], correct: 'Aluminium' },
+        { question: 'Which metal is used in making electrical wires?', options: ['Iron', 'Gold', 'Copper', 'Lead'], correct: 'Copper' },
+        { question: 'Which gas is produced when metals react with water?', options: ['Oxygen', 'Carbon dioxide', 'Hydrogen', 'Nitrogen'], correct: 'Hydrogen' },
+        { question: 'Which of the following is a non-metal?', options: ['Silver', 'Copper', 'Sulfur', 'Iron'], correct: 'Sulfur' },
+        { question: 'Which metal is the most malleable?', options: ['Iron', 'Gold', 'Aluminium', 'Copper'], correct: 'Gold' },
+        { question: 'Which of the following is a noble metal?', options: ['Iron', 'Copper', 'Gold', 'Sodium'], correct: 'Gold' },
+        { question: 'Which metal is used in making thermometers?', options: ['Silver', 'Copper', 'Mercury', 'Lead'], correct: 'Mercury' },
+        { question: 'Which non-metal is used in making matchsticks?', options: ['Sulfur', 'Carbon', 'Oxygen', 'Phosphorus'], correct: 'Phosphorus' },
+        { question: 'Which metal is used in making coins?', options: ['Lead', 'Zinc', 'Copper', 'Mercury'], correct: 'Copper' },
+        { question: 'Which non-metal is used in making graphite electrodes?', options: ['Sulfur', 'Phosphorus', 'Carbon', 'Oxygen'], correct: 'Carbon' },
+        { question: 'Which property allows metals to be hammered into thin sheets?', options: ['Ductility', 'Malleability', 'Brittleness', 'Hardness'], correct: 'Malleability' },
+        { question: 'Which metal is used for making foil for packaging food?', options: ['Copper', 'Silver', 'Aluminium', 'Iron'], correct: 'Aluminium' },
+        { question: 'What happens when iron is exposed to moisture and air?', options: ['It melts', 'It rusts', 'It evaporates', 'It becomes shiny'], correct: 'It rusts' },
+        { question: 'Which non-metal is used in making balloons and advertising signs?', options: ['Carbon', 'Sulfur', 'Helium', 'Oxygen'], correct: 'Helium' },
+        { question: 'Which metal is used in making jewellery?', options: ['Aluminium', 'Iron', 'Copper', 'Gold'], correct: 'Gold' },
+        { question: 'Which metal is highly reactive with water?', options: ['Gold', 'Silver', 'Sodium', 'Copper'], correct: 'Sodium' }
+          
       ]
     },
     {
@@ -41,7 +143,32 @@ export const scienceClass8 = [
       description: 'Understand the nature and properties of sound.',
       questions: [
         { question: 'What is the unit of frequency?', options: ['Hertz', 'Decibel', 'Watt', 'Newton'], correct: 'Hertz' },
-        { question: 'Which medium allows sound to travel the fastest?', options: ['Air', 'Water', 'Vacuum', 'Solid'], correct: 'Solid' }
+        { question: 'Which medium allows sound to travel the fastest?', options: ['Air', 'Water', 'Vacuum', 'Solid'], correct: 'Solid' },
+        { question: 'What is the unit of frequency?', options: ['Hertz', 'Decibel', 'Watt', 'Newton'], correct: 'Hertz' },
+    { question: 'Which medium allows sound to travel the fastest?', options: ['Air', 'Water', 'Vacuum', 'Solid'], correct: 'Solid' },
+    { question: 'What is the speed of sound in air at room temperature?', options: ['330 m/s', '1500 m/s', '5000 m/s', '3 × 10⁸ m/s'], correct: '330 m/s' },
+    { question: 'Which part of the human body helps in producing sound?', options: ['Lungs', 'Vocal cords', 'Ear drum', 'Nose'], correct: 'Vocal cords' },
+    { question: 'Which of the following does not allow sound to travel?', options: ['Air', 'Water', 'Vacuum', 'Solid'], correct: 'Vacuum' },
+    { question: 'What is the unit of loudness?', options: ['Hertz', 'Decibel', 'Joule', 'Newton'], correct: 'Decibel' },
+    { question: 'Which instrument is used to measure the frequency of sound?', options: ['Thermometer', 'Oscilloscope', 'Stethoscope', 'Speedometer'], correct: 'Oscilloscope' },
+    { question: 'What kind of wave is sound?', options: ['Transverse', 'Longitudinal', 'Electromagnetic', 'Stationary'], correct: 'Longitudinal' },
+    { question: 'Which part of the ear helps in detecting sound?', options: ['Ear drum', 'Nose', 'Brain', 'Lungs'], correct: 'Ear drum' },
+    { question: 'What is the range of audible sound for humans?', options: ['10-100 Hz', '20-20000 Hz', '100-5000 Hz', '20000-50000 Hz'], correct: '20-20000 Hz' },
+    { question: 'What type of sound wave do humans produce while speaking?', options: ['Ultrasonic', 'Infrasonic', 'Audible', 'Electromagnetic'], correct: 'Audible' },
+    { question: 'Which animal can hear ultrasonic sounds?', options: ['Humans', 'Dogs', 'Dolphins', 'Both Dogs and Dolphins'], correct: 'Both Dogs and Dolphins' },
+    { question: 'What happens to the pitch of sound if frequency increases?', options: ['Increases', 'Decreases', 'Remains same', 'Becomes zero'], correct: 'Increases' },
+    { question: 'Which type of waves do earthquakes produce?', options: ['Longitudinal waves', 'Transverse waves', 'Seismic waves', 'Electromagnetic waves'], correct: 'Seismic waves' },
+    { question: 'What is an echo?', options: ['Reflected sound', 'Absorbed sound', 'Sound produced by vibration', 'Ultrasonic sound'], correct: 'Reflected sound' },
+    { question: 'Which property of sound determines how loud or soft it is?', options: ['Frequency', 'Pitch', 'Amplitude', 'Speed'], correct: 'Amplitude' },
+    { question: 'Which characteristic of sound determines its shrillness?', options: ['Pitch', 'Amplitude', 'Loudness', 'Echo'], correct: 'Pitch' },
+    { question: 'What is the time taken by sound to travel 330 meters in air?', options: ['1 sec', '0.1 sec', '10 sec', '0.01 sec'], correct: '1 sec' },
+    { question: 'Which wave property is related to the loudness of sound?', options: ['Frequency', 'Amplitude', 'Speed', 'Wavelength'], correct: 'Amplitude' },
+    { question: 'What is the reflection of sound called?', options: ['Absorption', 'Echo', 'Refraction', 'Interference'], correct: 'Echo' },
+    { question: 'Which of these musical instruments produces sound by vibration of air?', options: ['Guitar', 'Flute', 'Drums', 'Piano'], correct: 'Flute' },
+    { question: 'Which device is used to detect heartbeat using sound?', options: ['Oscilloscope', 'Stethoscope', 'Seismograph', 'Thermometer'], correct: 'Stethoscope' },
+    { question: 'Which of the following is not a property of sound waves?', options: ['Reflection', 'Refraction', 'Dispersion', 'Interference'], correct: 'Dispersion' },
+    { question: 'What is the term for sound that is below human hearing range?', options: ['Infrasonic', 'Ultrasonic', 'Audible', 'Electromagnetic'], correct: 'Infrasonic' },
+    { question: 'Which factor affects the speed of sound?', options: ['Medium', 'Color', 'Mass', 'Size'], correct: 'Medium' }
       ]
     },
     {
@@ -50,7 +177,32 @@ export const scienceClass8 = [
       description: 'Study the laws of reflection and mirror images.',
       questions: [
         { question: 'Which type of mirror is used in a car’s side-view mirror?', options: ['Plane', 'Concave', 'Convex', 'Cylindrical'], correct: 'Convex' },
-        { question: 'What is the angle of incidence equal to?', options: ['Angle of reflection', '90°', '45°', 'Angle of refraction'], correct: 'Angle of reflection' }
+        { question: 'What is the angle of incidence equal to?', options: ['Angle of reflection', '90°', '45°', 'Angle of refraction'], correct: 'Angle of reflection' },
+        { question: 'Which type of mirror is used in a car’s side-view mirror?', options: ['Plane', 'Concave', 'Convex', 'Cylindrical'], correct: 'Convex' },
+        { question: 'What is the angle of incidence equal to?', options: ['Angle of reflection', '90°', '45°', 'Angle of refraction'], correct: 'Angle of reflection' },
+        { question: 'Which law of reflection states that the incident ray, reflected ray, and normal all lie in the same plane?', options: ['First law', 'Second law', 'Third law', 'Newton’s law'], correct: 'First law' },
+        { question: 'What type of image is formed by a plane mirror?', options: ['Real and inverted', 'Virtual and upright', 'Magnified', 'Diminished'], correct: 'Virtual and upright' },
+        { question: 'Which type of mirror always forms a virtual image?', options: ['Concave', 'Convex', 'Plane', 'Parabolic'], correct: 'Plane' },
+        { question: 'What is the nature of an image formed in a plane mirror?', options: ['Real', 'Virtual', 'Inverted', 'Magnified'], correct: 'Virtual' },
+        { question: 'If an object moves 5 cm towards a plane mirror, how much will the image move?', options: ['5 cm', '10 cm', '2.5 cm', 'It does not move'], correct: '10 cm' },
+        { question: 'Which of these is an example of lateral inversion?', options: ['Real image formation', 'The letter "b" appearing as "d" in a mirror', 'Virtual image formation', 'Concave mirror image'], correct: 'The letter "b" appearing as "d" in a mirror' },
+        { question: 'What happens to the image if you rotate a plane mirror by 30°?', options: ['Shifts by 15°', 'Shifts by 30°', 'Shifts by 60°', 'Does not shift'], correct: 'Shifts by 60°' },
+        { question: 'What is the focal length of a plane mirror?', options: ['Infinity', 'Zero', '10 cm', 'Variable'], correct: 'Infinity' },
+        { question: 'What is the magnification produced by a plane mirror?', options: ['Less than 1', 'More than 1', 'Exactly 1', 'Zero'], correct: 'Exactly 1' },
+        { question: 'Which of the following follows the laws of reflection?', options: ['Plane mirrors', 'Convex mirrors', 'Concave mirrors', 'All of the above'], correct: 'All of the above' },
+        { question: 'Which of these mirrors is used in periscopes?', options: ['Concave', 'Convex', 'Plane', 'Parabolic'], correct: 'Plane' },
+        { question: 'If a person is 2 meters away from a plane mirror, how far is their image from them?', options: ['1 meter', '2 meters', '4 meters', '0 meters'], correct: '4 meters' },
+        { question: 'What type of reflection occurs on a smooth surface?', options: ['Regular', 'Diffuse', 'Scattered', 'No reflection'], correct: 'Regular' },
+        { question: 'What type of reflection occurs on a rough surface?', options: ['Regular', 'Diffuse', 'Specular', 'None'], correct: 'Diffuse' },
+        { question: 'What is the primary function of a plane mirror?', options: ['Converging light', 'Diverging light', 'Forming virtual images', 'Absorbing light'], correct: 'Forming virtual images' },
+        { question: 'Which of the following is an application of plane mirrors?', options: ['Magnification in telescopes', 'Rearview mirrors in vehicles', 'Focus light in torches', 'Collecting solar energy'], correct: 'Rearview mirrors in vehicles' },
+        { question: 'What is the angle between the incident ray and the normal in normal incidence?', options: ['0°', '30°', '45°', '90°'], correct: '0°' },
+        { question: 'Which type of image is formed by a plane mirror at any distance?', options: ['Real and magnified', 'Virtual and same size', 'Inverted and diminished', 'None of the above'], correct: 'Virtual and same size' },
+        { question: 'What happens if a plane mirror is rotated by 10°?', options: ['Image shifts by 10°', 'Image shifts by 20°', 'Image does not shift', 'Image disappears'], correct: 'Image shifts by 20°' },
+        { question: 'What is the minimum height of a mirror required for a person to see their full image?', options: ['Equal to their height', 'Half their height', 'Twice their height', 'One-fourth their height'], correct: 'Half their height' },
+        { question: 'Which of the following uses multiple plane mirrors?', options: ['Microscope', 'Periscope', 'Telescope', 'Projector'], correct: 'Periscope' },
+        { question: 'If an incident ray makes a 35° angle with the mirror surface, what is the angle of reflection?', options: ['35°', '55°', '90°', 'Cannot be determined'], correct: '55°' },
+        { question: 'What happens when a plane mirror is placed perpendicular to another?', options: ['One image is formed', 'Two images are formed', 'Three images are formed', 'Infinite images are formed'], correct: 'Three images are formed' }
       ]
     },
     {
@@ -59,7 +211,32 @@ export const scienceClass8 = [
       description: 'Learn about fossil fuels and their uses.',
       questions: [
         { question: 'What is petroleum commonly known as?', options: ['Coal', 'Crude oil', 'Natural gas', 'Biogas'], correct: 'Crude oil' },
-        { question: 'Which gas is a major component of natural gas?', options: ['Oxygen', 'Methane', 'Carbon dioxide', 'Nitrogen'], correct: 'Methane' }
+        { question: 'Which gas is a major component of natural gas?', options: ['Oxygen', 'Methane', 'Carbon dioxide', 'Nitrogen'], correct: 'Methane' },
+        { question: 'What is petroleum commonly known as?', options: ['Coal', 'Crude oil', 'Natural gas', 'Biogas'], correct: 'Crude oil' },
+        { question: 'Which gas is a major component of natural gas?', options: ['Oxygen', 'Methane', 'Carbon dioxide', 'Nitrogen'], correct: 'Methane' },
+        { question: 'Which of the following is a fossil fuel?', options: ['Wood', 'Charcoal', 'Coal', 'Biogas'], correct: 'Coal' },
+        { question: 'What is the purest form of coal?', options: ['Lignite', 'Peat', 'Bituminous', 'Anthracite'], correct: 'Anthracite' },
+        { question: 'What is coke mainly used for?', options: ['Cooking', 'Fuel in power plants', 'Steel manufacturing', 'Generating electricity'], correct: 'Steel manufacturing' },
+        { question: 'Which fossil fuel is the least polluting?', options: ['Coal', 'Petroleum', 'Natural gas', 'Wood'], correct: 'Natural gas' },
+        { question: 'Which process is used to separate crude oil into different components?', options: ['Distillation', 'Filtration', 'Evaporation', 'Sedimentation'], correct: 'Distillation' },
+        { question: 'Which product is obtained by destructive distillation of coal?', options: ['Petrol', 'Diesel', 'Coke', 'Kerosene'], correct: 'Coke' },
+        { question: 'What is the main component of LPG?', options: ['Methane', 'Propane and Butane', 'Oxygen', 'Carbon monoxide'], correct: 'Propane and Butane' },
+        { question: 'Which of the following is a non-renewable resource?', options: ['Solar energy', 'Wind energy', 'Coal', 'Water'], correct: 'Coal' },
+        { question: 'Why is petroleum called "black gold"?', options: ['It is black in color', 'It is highly valuable', 'It is found with gold', 'It is expensive'], correct: 'It is highly valuable' },
+        { question: 'Which gas is released when coal is burned?', options: ['Oxygen', 'Carbon dioxide', 'Nitrogen', 'Argon'], correct: 'Carbon dioxide' },
+        { question: 'Which of these is NOT a fraction of petroleum?', options: ['Diesel', 'Kerosene', 'Petrol', 'Coke'], correct: 'Coke' },
+        { question: 'What is the main disadvantage of using fossil fuels?', options: ['Expensive', 'Causes pollution', 'Rarely available', 'Hard to use'], correct: 'Causes pollution' },
+        { question: 'Which of these fuels is used in jet engines?', options: ['Diesel', 'Petrol', 'Kerosene', 'Natural gas'], correct: 'Kerosene' },
+        { question: 'What is the main use of petroleum?', options: ['Making plastics', 'Generating electricity', 'Cooking', 'All of the above'], correct: 'All of the above' },
+        { question: 'Which country has the largest petroleum reserves?', options: ['USA', 'Saudi Arabia', 'India', 'Russia'], correct: 'Saudi Arabia' },
+        { question: 'Which of these is a byproduct of petroleum refining?', options: ['Charcoal', 'Bitumen', 'Limestone', 'Graphite'], correct: 'Bitumen' },
+        { question: 'What is formed by the slow decomposition of dead plants and animals?', options: ['Wood', 'Coal and petroleum', 'Plastic', 'Metal'], correct: 'Coal and petroleum' },
+        { question: 'Which substance is used to make roads?', options: ['Coal tar', 'Coke', 'Diesel', 'Petrol'], correct: 'Coal tar' },
+        { question: 'Which of these fuels is considered the cleanest?', options: ['Coal', 'Diesel', 'Natural gas', 'Wood'], correct: 'Natural gas' },
+        { question: 'How long does it take for petroleum to form?', options: ['A few years', 'A few decades', 'Millions of years', 'A few days'], correct: 'Millions of years' },
+        { question: 'Which gas is responsible for acid rain due to burning fossil fuels?', options: ['Oxygen', 'Sulfur dioxide', 'Methane', 'Nitrogen'], correct: 'Sulfur dioxide' },
+        { question: 'Which fossil fuel is used to make synthetic fibres?', options: ['Coal', 'Petroleum', 'Natural gas', 'Coke'], correct: 'Petroleum' },
+        { question: 'Why is conservation of fossil fuels important?', options: ['They are unlimited', 'They are renewable', 'They take millions of years to form', 'They are cheap'], correct: 'They take millions of years to form' }
       ]
     },
     {
@@ -68,7 +245,32 @@ export const scienceClass8 = [
       description: 'Explore combustion and different types of flames.',
       questions: [
         { question: 'Which is the best fuel for domestic use?', options: ['Wood', 'LPG', 'Coal', 'Diesel'], correct: 'LPG' },
-        { question: 'Which zone of the flame is the hottest?', options: ['Blue', 'Yellow', 'Red', 'Dark'], correct: 'Blue' }
+        { question: 'Which zone of the flame is the hottest?', options: ['Blue', 'Yellow', 'Red', 'Dark'], correct: 'Blue' },
+        { question: 'Which is the best fuel for domestic use?', options: ['Wood', 'LPG', 'Coal', 'Diesel'], correct: 'LPG' },
+    { question: 'Which zone of the flame is the hottest?', options: ['Blue', 'Yellow', 'Red', 'Dark'], correct: 'Blue' },
+    { question: 'Which type of combustion occurs without external heat supply?', options: ['Spontaneous', 'Rapid', 'Explosion', 'Incomplete'], correct: 'Spontaneous' },
+    { question: 'Which gas is necessary for combustion?', options: ['Nitrogen', 'Carbon dioxide', 'Oxygen', 'Argon'], correct: 'Oxygen' },
+    { question: 'Which fuel is used in vehicles?', options: ['Kerosene', 'Diesel', 'Charcoal', 'Wood'], correct: 'Diesel' },
+    { question: 'Which fuel causes the least pollution?', options: ['Coal', 'Petrol', 'LPG', 'Wood'], correct: 'LPG' },
+    { question: 'What is a characteristic of a good fuel?', options: ['High ignition temperature', 'High energy output', 'Low calorific value', 'High pollution'], correct: 'High energy output' },
+    { question: 'Which fuel is used in rocket propulsion?', options: ['Coal', 'Diesel', 'Hydrogen', 'Kerosene'], correct: 'Hydrogen' },
+    { question: 'Which component of a candle flame is the brightest?', options: ['Outer blue zone', 'Inner dark zone', 'Luminous yellow zone', 'Non-luminous zone'], correct: 'Luminous yellow zone' },
+    { question: 'Which substance is used to extinguish an oil fire?', options: ['Water', 'Sand', 'CO₂ extinguisher', 'Wood'], correct: 'CO₂ extinguisher' },
+    { question: 'Which is NOT a type of combustion?', options: ['Complete', 'Incomplete', 'Rapid', 'Solid'], correct: 'Solid' },
+    { question: 'Which fuel is used in thermal power plants?', options: ['Diesel', 'Wood', 'Coal', 'Petrol'], correct: 'Coal' },
+    { question: 'What is the calorific value of a fuel?', options: ['Amount of smoke produced', 'Amount of energy produced per unit mass', 'Amount of heat lost', 'Amount of air required'], correct: 'Amount of energy produced per unit mass' },
+    { question: 'Which of the following fuels is solid?', options: ['Petrol', 'Kerosene', 'Charcoal', 'Diesel'], correct: 'Charcoal' },
+    { question: 'Which flame is used for welding metals?', options: ['Blue', 'Yellow', 'Red', 'Green'], correct: 'Blue' },
+    { question: 'Which of the following is NOT a fossil fuel?', options: ['Coal', 'Petroleum', 'Natural gas', 'Hydrogen'], correct: 'Hydrogen' },
+    { question: 'Which type of combustion produces carbon monoxide?', options: ['Complete', 'Incomplete', 'Spontaneous', 'Explosive'], correct: 'Incomplete' },
+    { question: 'What is the main component of LPG?', options: ['Methane', 'Ethane', 'Propane and Butane', 'Carbon monoxide'], correct: 'Propane and Butane' },
+    { question: 'Which of the following is an example of a non-renewable fuel?', options: ['Wood', 'Solar energy', 'Petroleum', 'Wind energy'], correct: 'Petroleum' },
+    { question: 'Which type of fire extinguisher is used for electrical fires?', options: ['Water', 'Foam', 'CO₂', 'Sand'], correct: 'CO₂' },
+    { question: 'Which gas is released when fuels burn completely?', options: ['Carbon dioxide', 'Methane', 'Carbon monoxide', 'Sulfur dioxide'], correct: 'Carbon dioxide' },
+    { question: 'Which is a characteristic of an ideal fuel?', options: ['Produces high pollution', 'Is expensive', 'Has high calorific value', 'Burns slowly'], correct: 'Has high calorific value' },
+    { question: 'Which substance is added to LPG to detect leaks?', options: ['Sulfur', 'Methanol', 'Mercaptan', 'Nitrogen'], correct: 'Mercaptan' },
+    { question: 'Which fuel is commonly used in villages for cooking?', options: ['Kerosene', 'Coal', 'Wood', 'Petrol'], correct: 'Wood' },
+    { question: 'What happens if a burning candle is covered with a glass jar?', options: ['Burns faster', 'Burns brighter', 'Extinguishes', 'No effect'], correct: 'Extinguishes' }
       ]
     },
     {
@@ -77,7 +279,32 @@ export const scienceClass8 = [
       description: 'Understand how liquids conduct electricity.',
       questions: [
         { question: 'Which liquid is a good conductor of electricity?', options: ['Distilled water', 'Saltwater', 'Alcohol', 'Kerosene'], correct: 'Saltwater' },
-        { question: 'What is used in electrolysis?', options: ['Resistor', 'Electrodes', 'Transistor', 'Capacitor'], correct: 'Electrodes' }
+        { question: 'What is used in electrolysis?', options: ['Resistor', 'Electrodes', 'Transistor', 'Capacitor'], correct: 'Electrodes' },
+        { question: 'Which liquid is a good conductor of electricity?', options: ['Distilled water', 'Saltwater', 'Alcohol', 'Kerosene'], correct: 'Saltwater' },
+        { question: 'What is used in electrolysis?', options: ['Resistor', 'Electrodes', 'Transistor', 'Capacitor'], correct: 'Electrodes' },
+        { question: 'Which substance is added to water to make it a better conductor?', options: ['Sugar', 'Salt', 'Oil', 'Alcohol'], correct: 'Salt' },
+        { question: 'What is the process of breaking down a compound using electricity called?', options: ['Electrolysis', 'Sublimation', 'Evaporation', 'Filtration'], correct: 'Electrolysis' },
+        { question: 'Which of the following is a poor conductor of electricity?', options: ['Lemon juice', 'Vinegar', 'Distilled water', 'Saltwater'], correct: 'Distilled water' },
+        { question: 'What is the positive electrode in electrolysis called?', options: ['Anode', 'Cathode', 'Resistor', 'Capacitor'], correct: 'Anode' },
+        { question: 'What is the negative electrode in electrolysis called?', options: ['Anode', 'Cathode', 'Emitter', 'Collector'], correct: 'Cathode' },
+        { question: 'Which of the following liquids is a conductor of electricity?', options: ['Oil', 'Vinegar', 'Kerosene', 'Alcohol'], correct: 'Vinegar' },
+        { question: 'What happens when an electric current passes through a conducting liquid?', options: ['Bubbles form', 'The liquid freezes', 'The liquid evaporates', 'Nothing happens'], correct: 'Bubbles form' },
+        { question: 'Which of the following is an electrolyte?', options: ['Plastic', 'Rubber', 'Salt solution', 'Glass'], correct: 'Salt solution' },
+        { question: 'Which metal is commonly used for electrodes?', options: ['Copper', 'Plastic', 'Wood', 'Glass'], correct: 'Copper' },
+        { question: 'Which of the following will NOT conduct electricity?', options: ['Salt solution', 'Lemon juice', 'Alcohol', 'Vinegar'], correct: 'Alcohol' },
+        { question: 'What is the main function of electrodes in a circuit?', options: ['Store electricity', 'Conduct electricity through liquid', 'Block current', 'Heat up'], correct: 'Conduct electricity through liquid' },
+        { question: 'Which gas is released at the cathode during electrolysis of water?', options: ['Oxygen', 'Hydrogen', 'Carbon dioxide', 'Nitrogen'], correct: 'Hydrogen' },
+        { question: 'Which gas is released at the anode during electrolysis of water?', options: ['Oxygen', 'Hydrogen', 'Carbon dioxide', 'Nitrogen'], correct: 'Oxygen' },
+        { question: 'Which of the following materials is an insulator?', options: ['Saltwater', 'Vinegar', 'Distilled water', 'Lemon juice'], correct: 'Distilled water' },
+        { question: 'What is the purpose of electroplating?', options: ['Improve appearance', 'Increase resistance', 'Reduce conduction', 'Generate electricity'], correct: 'Improve appearance' },
+        { question: 'Which liquid is used in car batteries?', options: ['Distilled water', 'Sulfuric acid', 'Vinegar', 'Lemon juice'], correct: 'Sulfuric acid' },
+        { question: 'Electrolysis is commonly used in which industry?', options: ['Textile', 'Electroplating', 'Paper', 'Glass'], correct: 'Electroplating' },
+        { question: 'Which of the following is required for a liquid to conduct electricity?', options: ['Electrolyte', 'Plastic cup', 'Wooden rod', 'Glass plate'], correct: 'Electrolyte' },
+        { question: 'What happens if sugar is added to water?', options: ['It conducts electricity', 'It becomes an electrolyte', 'It remains an insulator', 'It glows'], correct: 'It remains an insulator' },
+        { question: 'What do we call a liquid that allows electricity to pass through it?', options: ['Insulator', 'Electrolyte', 'Capacitor', 'Conductor'], correct: 'Electrolyte' },
+        { question: 'Which of the following is used for electroplating?', options: ['Wood', 'Rubber', 'Gold', 'Plastic'], correct: 'Gold' },
+        { question: 'Which of the following liquids is NOT an electrolyte?', options: ['Lemon juice', 'Saltwater', 'Distilled water', 'Vinegar'], correct: 'Distilled water' },
+        { question: 'Which part of electrolysis attracts negative ions?', options: ['Anode', 'Cathode', 'Resistor', 'Capacitor'], correct: 'Anode' }
       ]
     },
     {
@@ -86,7 +313,32 @@ export const scienceClass8 = [
       description: 'Explore lightning, earthquakes, and related phenomena.',
       questions: [
         { question: 'What causes lightning?', options: ['Strong winds', 'Electric charges', 'Rainfall', 'Clouds'], correct: 'Electric charges' },
-        { question: 'Which instrument measures earthquakes?', options: ['Thermometer', 'Seismograph', 'Barometer', 'Hygrometer'], correct: 'Seismograph' }
+        { question: 'Which instrument measures earthquakes?', options: ['Thermometer', 'Seismograph', 'Barometer', 'Hygrometer'], correct: 'Seismograph' },
+        { question: 'What causes lightning?', options: ['Strong winds', 'Electric charges', 'Rainfall', 'Clouds'], correct: 'Electric charges' },
+        { question: 'Which instrument measures earthquakes?', options: ['Thermometer', 'Seismograph', 'Barometer', 'Hygrometer'], correct: 'Seismograph' },
+        { question: 'What is the point inside the Earth where an earthquake originates?', options: ['Epicenter', 'Focus', 'Tremor', 'Fault line'], correct: 'Focus' },
+        { question: 'What is the point on the surface directly above the earthquake’s origin?', options: ['Epicenter', 'Focus', 'Seismic zone', 'Crust'], correct: 'Epicenter' },
+        { question: 'Which scale is used to measure earthquake magnitude?', options: ['Richter scale', 'Barometer', 'Thermometer', 'Anemometer'], correct: 'Richter scale' },
+        { question: 'Which layer of the Earth do earthquakes mostly occur in?', options: ['Crust', 'Mantle', 'Outer core', 'Inner core'], correct: 'Crust' },
+        { question: 'What is a sudden shaking of the ground due to seismic activity called?', options: ['Hurricane', 'Earthquake', 'Tsunami', 'Landslide'], correct: 'Earthquake' },
+        { question: 'Which type of natural disaster is caused by an underwater earthquake?', options: ['Hurricane', 'Tornado', 'Tsunami', 'Volcano'], correct: 'Tsunami' },
+        { question: 'Which force is responsible for holding objects on the Earth?', options: ['Friction', 'Gravity', 'Magnetism', 'Electric force'], correct: 'Gravity' },
+        { question: 'What should you do during an earthquake if you are indoors?', options: ['Stand near windows', 'Run outside immediately', 'Drop, cover, and hold', 'Use an elevator'], correct: 'Drop, cover, and hold' },
+        { question: 'Which material is best for protecting electronic devices from lightning?', options: ['Plastic', 'Rubber', 'Metal', 'Wood'], correct: 'Rubber' },
+        { question: 'Which gas is produced during a volcanic eruption?', options: ['Oxygen', 'Nitrogen', 'Sulfur dioxide', 'Hydrogen'], correct: 'Sulfur dioxide' },
+        { question: 'What type of charge does a lightning bolt carry?', options: ['Positive', 'Negative', 'Both positive and negative', 'Neutral'], correct: 'Both positive and negative' },
+        { question: 'What is a cloud-to-ground lightning strike called?', options: ['Thunderstorm', 'Lightning bolt', 'Flash flood', 'Tornado'], correct: 'Lightning bolt' },
+        { question: 'Which safety measure should be followed during a thunderstorm?', options: ['Stand under a tree', 'Use electrical appliances', 'Stay indoors', 'Go swimming'], correct: 'Stay indoors' },
+        { question: 'Which natural phenomenon is linked to the movement of tectonic plates?', options: ['Hurricanes', 'Tsunamis', 'Earthquakes', 'Cyclones'], correct: 'Earthquakes' },
+        { question: 'What is a series of ocean waves caused by an earthquake or volcanic eruption?', options: ['Flood', 'Hurricane', 'Tsunami', 'Tornado'], correct: 'Tsunami' },
+        { question: 'Which scientist invented the lightning rod?', options: ['Isaac Newton', 'Benjamin Franklin', 'Thomas Edison', 'Albert Einstein'], correct: 'Benjamin Franklin' },
+        { question: 'What is the major cause of most natural disasters?', options: ['Climate change', 'Solar activity', 'Human activities', 'Tectonic plate movement'], correct: 'Tectonic plate movement' },
+        { question: 'What is a sudden downward movement of rock and soil called?', options: ['Tsunami', 'Hurricane', 'Landslide', 'Cyclone'], correct: 'Landslide' },
+        { question: 'Which layer of the Earth is made up of moving tectonic plates?', options: ['Crust', 'Mantle', 'Outer core', 'Inner core'], correct: 'Crust' },
+        { question: 'Which disaster preparedness step is useful before an earthquake?', options: ['Stock emergency supplies', 'Stand near windows', 'Use elevators', 'Go outside immediately'], correct: 'Stock emergency supplies' },
+        { question: 'Why do lightning rods help protect buildings?', options: ['They attract lightning', 'They repel lightning', 'They conduct electricity safely to the ground', 'They generate electricity'], correct: 'They conduct electricity safely to the ground' },
+        { question: 'Which waves are generated by earthquakes?', options: ['Radio waves', 'Sound waves', 'Seismic waves', 'Ocean waves'], correct: 'Seismic waves' },
+        { question: 'What should you do if you are outside during an earthquake?', options: ['Stay under a tree', 'Run towards buildings', 'Move to an open space', 'Use a vehicle'], correct: 'Move to an open space' }
       ]
     },
     {
@@ -95,7 +347,32 @@ export const scienceClass8 = [
       description: 'Learn about celestial bodies.',
       questions: [
         { question: 'Which planet is known as the Red Planet?', options: ['Earth', 'Mars', 'Venus', 'Jupiter'], correct: 'Mars' },
-        { question: 'What is the largest planet in the solar system?', options: ['Saturn', 'Earth', 'Jupiter', 'Neptune'], correct: 'Jupiter' }
+        { question: 'What is the largest planet in the solar system?', options: ['Saturn', 'Earth', 'Jupiter', 'Neptune'], correct: 'Jupiter' },
+        { question: 'Which planet is known as the Red Planet?', options: ['Earth', 'Mars', 'Venus', 'Jupiter'], correct: 'Mars' },
+        { question: 'What is the largest planet in the solar system?', options: ['Saturn', 'Earth', 'Jupiter', 'Neptune'], correct: 'Jupiter' },
+        { question: 'Which celestial body is at the center of our solar system?', options: ['Earth', 'The Moon', 'The Sun', 'Mars'], correct: 'The Sun' },
+        { question: 'Which planet is known for its beautiful rings?', options: ['Mars', 'Saturn', 'Uranus', 'Neptune'], correct: 'Saturn' },
+        { question: 'Which is the smallest planet in the solar system?', options: ['Mercury', 'Mars', 'Venus', 'Pluto'], correct: 'Mercury' },
+        { question: 'What is the natural satellite of Earth?', options: ['Mars', 'Venus', 'The Moon', 'Jupiter'], correct: 'The Moon' },
+        { question: 'Which planet is called Earth’s twin due to its similar size and structure?', options: ['Mars', 'Venus', 'Mercury', 'Jupiter'], correct: 'Venus' },
+        { question: 'Which planet is known as the "morning star" or "evening star"?', options: ['Mars', 'Venus', 'Jupiter', 'Saturn'], correct: 'Venus' },
+        { question: 'Which planet has the most moons?', options: ['Jupiter', 'Saturn', 'Mars', 'Uranus'], correct: 'Saturn' },
+        { question: 'Which galaxy is Earth a part of?', options: ['Andromeda', 'Milky Way', 'Whirlpool', 'Sombrero'], correct: 'Milky Way' },
+        { question: 'Which space telescope has provided detailed images of distant galaxies?', options: ['Hubble Telescope', 'James Webb Telescope', 'Kepler Telescope', 'Spitzer Telescope'], correct: 'Hubble Telescope' },
+        { question: 'Which planet is farthest from the Sun?', options: ['Uranus', 'Neptune', 'Pluto', 'Saturn'], correct: 'Neptune' },
+        { question: 'What is the bright streak of light seen in the sky when a meteoroid enters Earth’s atmosphere?', options: ['Comet', 'Meteor', 'Asteroid', 'Galaxy'], correct: 'Meteor' },
+        { question: 'Which celestial body is often called a "dirty snowball"?', options: ['Asteroid', 'Meteor', 'Comet', 'Nebula'], correct: 'Comet' },
+        { question: 'What is the force that keeps planets in orbit around the Sun?', options: ['Magnetism', 'Gravity', 'Nuclear force', 'Friction'], correct: 'Gravity' },
+        { question: 'What is the sun mostly made of?', options: ['Oxygen and nitrogen', 'Hydrogen and helium', 'Iron and nickel', 'Carbon and hydrogen'], correct: 'Hydrogen and helium' },
+        { question: 'Which planet has the Great Red Spot?', options: ['Mars', 'Jupiter', 'Saturn', 'Neptune'], correct: 'Jupiter' },
+        { question: 'Which planet rotates on its side?', options: ['Neptune', 'Uranus', 'Jupiter', 'Saturn'], correct: 'Uranus' },
+        { question: 'What is a group of stars forming a recognizable pattern in the sky called?', options: ['Galaxy', 'Constellation', 'Nebula', 'Cluster'], correct: 'Constellation' },
+        { question: 'Which was the first planet to be discovered using a telescope?', options: ['Uranus', 'Neptune', 'Pluto', 'Saturn'], correct: 'Uranus' },
+        { question: 'Which celestial body is known as a "dwarf planet"?', options: ['Mars', 'Pluto', 'Neptune', 'Jupiter'], correct: 'Pluto' },
+        { question: 'Which star is closest to Earth?', options: ['Sirius', 'Proxima Centauri', 'The Sun', 'Alpha Centauri'], correct: 'The Sun' },
+        { question: 'What is the study of celestial objects and the universe called?', options: ['Geology', 'Meteorology', 'Astronomy', 'Astrology'], correct: 'Astronomy' },
+        { question: 'Which planet is known for its extreme winds and dark storm spots?', options: ['Saturn', 'Neptune', 'Jupiter', 'Uranus'], correct: 'Neptune' },
+        { question: 'Which spacecraft was the first to land humans on the Moon?', options: ['Apollo 11', 'Voyager 1', 'Hubble', 'Curiosity'], correct: 'Apollo 11' }
       ]
     },
     {
@@ -104,41 +381,95 @@ export const scienceClass8 = [
       description: 'Understand motion and its graphical representation.',
       questions: [
         { question: 'What does the slope of a distance-time graph represent?', options: ['Speed', 'Acceleration', 'Velocity', 'Time'], correct: 'Speed' },
-        { question: 'What type of motion has constant acceleration?', options: ['Uniform motion', 'Non-uniform motion', 'Projectile motion', 'Circular motion'], correct: 'Uniform motion' }
+        { question: 'What type of motion has constant acceleration?', options: ['Uniform motion', 'Non-uniform motion', 'Projectile motion', 'Circular motion'], correct: 'Uniform motion' },
+        { question: 'What does the slope of a distance-time graph represent?', options: ['Speed', 'Acceleration', 'Velocity', 'Time'], correct: 'Speed' },
+        { question: 'What type of motion has constant acceleration?', options: ['Uniform motion', 'Non-uniform motion', 'Projectile motion', 'Circular motion'], correct: 'Uniform motion' },
+        { question: 'What does a horizontal line in a distance-time graph indicate?', options: ['Constant speed', 'Acceleration', 'Rest', 'Increasing speed'], correct: 'Rest' },
+        { question: 'Which physical quantity is represented by the area under a velocity-time graph?', options: ['Displacement', 'Speed', 'Acceleration', 'Time'], correct: 'Displacement' },
+        { question: 'What does a straight line with a positive slope in a velocity-time graph indicate?', options: ['Increasing velocity', 'Decreasing velocity', 'Constant velocity', 'Rest'], correct: 'Increasing velocity' },
+        { question: 'What does the slope of a velocity-time graph represent?', options: ['Velocity', 'Displacement', 'Acceleration', 'Time'], correct: 'Acceleration' },
+        { question: 'Which graph shows an object moving with uniform acceleration?', options: ['Straight line in a velocity-time graph', 'Curved line in a distance-time graph', 'Horizontal line in a velocity-time graph', 'Straight line in a displacement-time graph'], correct: 'Straight line in a velocity-time graph' },
+        { question: 'What does a curved distance-time graph indicate?', options: ['Uniform motion', 'Uniform acceleration', 'Non-uniform acceleration', 'Rest'], correct: 'Non-uniform acceleration' },
+        { question: 'Which type of motion is represented by a straight-line distance-time graph?', options: ['Uniform motion', 'Non-uniform motion', 'Acceleration', 'Retardation'], correct: 'Uniform motion' },
+        { question: 'What does a negative slope in a velocity-time graph indicate?', options: ['Acceleration', 'Deceleration', 'Uniform motion', 'Stationary motion'], correct: 'Deceleration' },
+        { question: 'Which graph represents free fall motion?', options: ['Curved distance-time graph', 'Straight velocity-time graph with positive slope', 'Horizontal velocity-time graph', 'Straight displacement-time graph'], correct: 'Straight velocity-time graph with positive slope' },
+        { question: 'What does a straight-line velocity-time graph parallel to the time axis indicate?', options: ['Constant acceleration', 'Constant velocity', 'Increasing acceleration', 'Decreasing velocity'], correct: 'Constant velocity' },
+        { question: 'What is the nature of the displacement-time graph for an object at rest?', options: ['Straight line parallel to time axis', 'Straight line with positive slope', 'Straight line with negative slope', 'Curved line'], correct: 'Straight line parallel to time axis' },
+        { question: 'What does a steeper slope in a distance-time graph indicate?', options: ['Higher speed', 'Lower speed', 'Uniform motion', 'Acceleration'], correct: 'Higher speed' },
+        { question: 'What does the area under an acceleration-time graph represent?', options: ['Velocity', 'Speed', 'Displacement', 'Momentum'], correct: 'Velocity' },
+        { question: 'Which graph represents an object moving with decreasing speed?', options: ['Velocity-time graph with negative slope', 'Distance-time graph with negative slope', 'Acceleration-time graph with positive slope', 'Velocity-time graph with horizontal line'], correct: 'Velocity-time graph with negative slope' },
+        { question: 'If an object has zero acceleration, what is the shape of its velocity-time graph?', options: ['Horizontal line', 'Curved line', 'Increasing slope', 'Decreasing slope'], correct: 'Horizontal line' },
+        { question: 'If an object moves with constant acceleration, what is the shape of its acceleration-time graph?', options: ['Straight horizontal line', 'Curved line', 'Decreasing slope', 'Increasing slope'], correct: 'Straight horizontal line' },
+        { question: 'What does a straight line passing through the origin in a distance-time graph represent?', options: ['Object at rest', 'Uniform motion', 'Accelerated motion', 'Non-uniform motion'], correct: 'Uniform motion' },
+        { question: 'Which graph helps in finding instantaneous velocity?', options: ['Distance-time graph', 'Velocity-time graph', 'Acceleration-time graph', 'Displacement-time graph'], correct: 'Distance-time graph' },
+        { question: 'What does a zero slope in a velocity-time graph indicate?', options: ['Zero velocity', 'Zero acceleration', 'Uniform acceleration', 'Constant acceleration'], correct: 'Zero acceleration' },
+        { question: 'Which physical quantity is given by the area under an acceleration-time graph?', options: ['Velocity', 'Distance', 'Momentum', 'Force'], correct: 'Velocity' },
+        { question: 'What is the nature of the velocity-time graph of an object moving with non-uniform acceleration?', options: ['Curved line', 'Straight line', 'Horizontal line', 'Vertical line'], correct: 'Curved line' },
       ]
     },
-    {
-        id: 13,
-        title: 'What is Science?',
-        description: 'Understand the fundamental nature and process of science.',
-        questions: [
-          {
-            question: 'What is the primary goal of science?',
-            options: ['To make money', 'To understand the natural world', 'To create magic', 'To follow traditions'],
-            correct: 'To understand the natural world'
-          },
-          {
-            question: 'Which method is primarily used in scientific investigations?',
-            options: ['Astrology', 'Scientific method', 'Superstition', 'Random guessing'],
-            correct: 'Scientific method'
-          }
-        ]
-      },
+      {
+          id: 13,
+          title: 'What is Science?',
+          description: 'Understand the fundamental nature and process of science.',
+          questions: [
+            { question: 'What is the primary goal of science?', options: ['To make money', 'To understand the natural world', 'To create magic', 'To follow traditions'], correct: 'To understand the natural world' },
+            { question: 'Which method is primarily used in scientific investigations?', options: ['Astrology', 'Scientific method', 'Superstition', 'Random guessing'], correct: 'Scientific method' },
+            { question: 'What is a hypothesis?', options: ['A proven fact', 'An untestable idea', 'A testable explanation', 'A guess with no evidence'], correct: 'A testable explanation' },
+            { question: 'Which step comes first in the scientific method?', options: ['Experimentation', 'Observation', 'Conclusion', 'Data analysis'], correct: 'Observation' },
+            { question: 'What is a scientific theory?', options: ['A well-tested explanation', 'A random guess', 'A personal belief', 'An unproven hypothesis'], correct: 'A well-tested explanation' },
+            { question: 'Which of the following is NOT a branch of science?', options: ['Physics', 'Chemistry', 'Biology', 'Mythology'], correct: 'Mythology' },
+            { question: 'What is the role of experiments in science?', options: ['To prove opinions', 'To test hypotheses', 'To confirm superstitions', 'To create new beliefs'], correct: 'To test hypotheses' },
+            { question: 'What is empirical evidence?', options: ['Evidence based on personal beliefs', 'Evidence gathered through experiments and observations', 'Evidence from religious texts', 'Random thoughts'], correct: 'Evidence gathered through experiments and observations' },
+            { question: 'What is a variable in an experiment?', options: ['A constant factor', 'Something that can be changed', 'An untestable idea', 'A proven law'], correct: 'Something that can be changed' },
+            { question: 'Which field of science studies living organisms?', options: ['Physics', 'Astronomy', 'Biology', 'Geology'], correct: 'Biology' },
+            { question: 'What is a scientific law?', options: ['A flexible opinion', 'A rule determined by scientists', 'A description of natural phenomena', 'A new hypothesis'], correct: 'A description of natural phenomena' },
+            { question: 'Which of the following is NOT a characteristic of science?', options: ['Based on evidence', 'Repeatable', 'Unchangeable', 'Objective'], correct: 'Unchangeable' },
+            { question: 'What does peer review ensure in science?', options: ['Personal opinions are valued', 'Scientific work is critically evaluated', 'Unverified claims are published', 'Scientists can hide their mistakes'], correct: 'Scientific work is critically evaluated' },
+            { question: 'Which of the following is an example of applied science?', options: ['Studying black holes', 'Investigating cell structure', 'Developing new medicines', 'Exploring distant galaxies'], correct: 'Developing new medicines' },
+            { question: 'What distinguishes science from pseudoscience?', options: ['It is based on personal opinions', 'It can be tested and repeated', 'It does not change with new evidence', 'It relies on ancient texts'], correct: 'It can be tested and repeated' },
+            { question: 'Why is skepticism important in science?', options: ['It slows down progress', 'It ensures that claims are tested and verified', 'It encourages bias', 'It prevents new discoveries'], correct: 'It ensures that claims are tested and verified' },
+            { question: 'What is the importance of a control group in an experiment?', options: ['To make experiments more difficult', 'To compare with the test group', 'To introduce bias', 'To ensure a desired outcome'], correct: 'To compare with the test group' },
+            { question: 'Which of the following is NOT a step in the scientific method?', options: ['Forming a hypothesis', 'Conducting experiments', 'Ignoring evidence', 'Drawing conclusions'], correct: 'Ignoring evidence' },
+            { question: 'Why must scientific experiments be repeatable?', options: ['To allow for personal interpretations', 'To confirm results and eliminate errors', 'To make experiments easier', 'To ensure scientists agree with each other'], correct: 'To confirm results and eliminate errors' },
+            { question: 'What does objectivity in science mean?', options: ['Basing conclusions on personal beliefs', 'Relying on opinions', 'Drawing conclusions from unbiased evidence', 'Ignoring contradictory evidence'], correct: 'Drawing conclusions from unbiased evidence' },
+            { question: 'Which of the following is an example of a scientific question?', options: ['What is the meaning of life?', 'How does gravity affect objects?', 'Is astrology real?', 'What is the best color?'], correct: 'How does gravity affect objects?' },
+            { question: 'How does new evidence affect scientific theories?', options: ['Theories are discarded', 'Theories are modified or refined', 'Theories remain unchanged', 'Theories become laws'], correct: 'Theories are modified or refined' },
+            { question: 'Which of the following is NOT a characteristic of a good scientific hypothesis?', options: ['It is testable', 'It is based on evidence', 'It is a random guess', 'It is falsifiable'], correct: 'It is a random guess' },
+            { question: 'What is the final step in the scientific method?', options: ['Conducting experiments', 'Observations', 'Drawing conclusions', 'Asking new questions'], correct: 'Drawing conclusions' },
+            { question: 'Why do scientists publish their findings?', options: ['To earn more money', 'To let others verify and build upon their work', 'To make science mysterious', 'To avoid criticism'], correct: 'To let others verify and build upon their work' }
+            
+          ]
+        },
       {
         id: 14,
         title: 'Cell – The Basic Unit of Life',
         description: 'Learn about cells, their structure, and functions.',
         questions: [
-          {
-            question: 'What is the basic unit of life?',
-            options: ['Organ', 'Cell', 'Tissue', 'Organism'],
-            correct: 'Cell'
-          },
-          {
-            question: 'Which organelle is known as the powerhouse of the cell?',
-            options: ['Nucleus', 'Mitochondria', 'Ribosome', 'Golgi body'],
-            correct: 'Mitochondria'
-          }
+          { question: 'What is the basic unit of life?', options: ['Organ', 'Cell', 'Tissue', 'Organism'], correct: 'Cell' },
+          { question: 'Which organelle is known as the powerhouse of the cell?', options: ['Nucleus', 'Mitochondria', 'Ribosome', 'Golgi body'], correct: 'Mitochondria' },
+          { question: 'What is the function of the nucleus?', options: ['Digestion', 'Protein synthesis', 'Control center of the cell', 'Energy production'], correct: 'Control center of the cell' },
+          { question: 'Which organelle is responsible for photosynthesis?', options: ['Chloroplast', 'Mitochondria', 'Ribosome', 'Lysosome'], correct: 'Chloroplast' },
+          { question: 'What is the jelly-like substance inside the cell?', options: ['Nucleus', 'Cytoplasm', 'Vacuole', 'Membrane'], correct: 'Cytoplasm' },
+          { question: 'Which cell organelle is responsible for protein synthesis?', options: ['Mitochondria', 'Ribosome', 'Lysosome', 'Golgi body'], correct: 'Ribosome' },
+          { question: 'What is the function of the cell membrane?', options: ['Stores food', 'Provides energy', 'Controls entry and exit of substances', 'Digests waste materials'], correct: 'Controls entry and exit of substances' },
+          { question: 'Which structure is found only in plant cells?', options: ['Nucleus', 'Mitochondria', 'Chloroplast', 'Golgi body'], correct: 'Chloroplast' },
+          { question: 'What is the function of the vacuole in a plant cell?', options: ['Store food and water', 'Break down waste', 'Synthesize proteins', 'Produce energy'], correct: 'Store food and water' },
+          { question: 'Which part of the cell provides structural support and protection in plants?', options: ['Cell membrane', 'Cytoplasm', 'Cell wall', 'Nucleus'], correct: 'Cell wall' },
+          { question: 'What is the function of lysosomes?', options: ['Energy production', 'Protein synthesis', 'Digestion of waste', 'Cell division'], correct: 'Digestion of waste' },
+          { question: 'Which organelle modifies, sorts, and packages proteins?', options: ['Ribosome', 'Golgi body', 'Mitochondria', 'Lysosome'], correct: 'Golgi body' },
+          { question: 'Which structure helps in cell division in animal cells?', options: ['Centrioles', 'Chloroplast', 'Nucleus', 'Vacuole'], correct: 'Centrioles' },
+          { question: 'What is the function of endoplasmic reticulum?', options: ['Transport of materials', 'Photosynthesis', 'Energy production', 'Digestion'], correct: 'Transport of materials' },
+          { question: 'Which part of the cell contains genetic material?', options: ['Cytoplasm', 'Nucleus', 'Mitochondria', 'Golgi body'], correct: 'Nucleus' },
+          { question: 'What is the outermost layer of an animal cell?', options: ['Cell wall', 'Cell membrane', 'Cytoplasm', 'Nucleus'], correct: 'Cell membrane' },
+          { question: 'Which organelle contains digestive enzymes?', options: ['Ribosome', 'Mitochondria', 'Lysosome', 'Golgi body'], correct: 'Lysosome' },
+          { question: 'What is the function of the cytoskeleton?', options: ['Provides structure and shape', 'Produces energy', 'Synthesizes proteins', 'Stores nutrients'], correct: 'Provides structure and shape' },
+          { question: 'Which of these is a unicellular organism?', options: ['Human', 'Dog', 'Bacteria', 'Tree'], correct: 'Bacteria' },
+          { question: 'What is the function of peroxisomes?', options: ['Breaks down fatty acids', 'Synthesizes proteins', 'Produces ATP', 'Stores waste'], correct: 'Breaks down fatty acids' },
+          { question: 'What is the full form of DNA?', options: ['Deoxyribonucleic Acid', 'Dynamite Natural Acid', 'Double Network Association', 'Direct Nucleic Acid'], correct: 'Deoxyribonucleic Acid' },
+          { question: 'Which structure helps in the movement of some cells?', options: ['Nucleus', 'Flagella', 'Vacuole', 'Golgi body'], correct: 'Flagella' },
+          { question: 'What are prokaryotic cells?', options: ['Cells without a nucleus', 'Cells with a nucleus', 'Plant cells', 'Animal cells'], correct: 'Cells without a nucleus' },
+          { question: 'Which organelle is responsible for lipid synthesis?', options: ['Smooth ER', 'Rough ER', 'Golgi body', 'Lysosome'], correct: 'Smooth ER' },
+          { question: 'What is the difference between rough ER and smooth ER?', options: ['Rough ER has ribosomes, smooth ER does not', 'Rough ER stores waste, smooth ER does not', 'Rough ER produces energy, smooth ER does not', 'Rough ER transports proteins, smooth ER does not'], correct: 'Rough ER has ribosomes, smooth ER does not' }
         ]
       },
       {
@@ -146,16 +477,31 @@ export const scienceClass8 = [
         title: 'Microbial World - 1',
         description: 'Explore microorganisms and their impact on life.',
         questions: [
-          {
-            question: 'Which of the following is a microorganism?',
-            options: ['Dog', 'Bacteria', 'Tree', 'Fish'],
-            correct: 'Bacteria'
-          },
-          {
-            question: 'Which microorganism is used in making curd?',
-            options: ['Fungus', 'Virus', 'Lactobacillus', 'Algae'],
-            correct: 'Lactobacillus'
-          }
+          { question: 'Which of the following is a microorganism?', options: ['Dog', 'Bacteria', 'Tree', 'Fish'], correct: 'Bacteria' },
+          { question: 'Which microorganism is used in making curd?', options: ['Fungus', 'Virus', 'Lactobacillus', 'Algae'], correct: 'Lactobacillus' },
+          { question: 'Which microorganism causes malaria?', options: ['Bacteria', 'Fungus', 'Plasmodium', 'Virus'], correct: 'Plasmodium' },
+          { question: 'Which microorganism is used in baking bread?', options: ['Virus', 'Yeast', 'Algae', 'Bacteria'], correct: 'Yeast' },
+          { question: 'Which of the following diseases is caused by a virus?', options: ['Tuberculosis', 'Common Cold', 'Cholera', 'Typhoid'], correct: 'Common Cold' },
+          { question: 'Which microorganism is used in antibiotics production?', options: ['Virus', 'Fungus', 'Algae', 'Bacteria'], correct: 'Bacteria' },
+          { question: 'Which of the following is a unicellular organism?', options: ['Fungus', 'Amoeba', 'Mushroom', 'Worm'], correct: 'Amoeba' },
+          { question: 'Which microorganism helps in nitrogen fixation?', options: ['Rhizobium', 'Lactobacillus', 'Plasmodium', 'Algae'], correct: 'Rhizobium' },
+          { question: 'Which type of microorganism causes the flu?', options: ['Bacteria', 'Protozoa', 'Virus', 'Fungus'], correct: 'Virus' },
+          { question: 'Which of the following is a beneficial microorganism?', options: ['E. coli in the gut', 'Salmonella', 'Plasmodium', 'HIV'], correct: 'E. coli in the gut' },
+          { question: 'Which microorganism is responsible for making antibiotics like penicillin?', options: ['Bacteria', 'Virus', 'Penicillium fungus', 'Protozoa'], correct: 'Penicillium fungus' },
+          { question: 'Which microorganisms are used in the production of alcohol?', options: ['Fungi', 'Yeast', 'Algae', 'Bacteria'], correct: 'Yeast' },
+          { question: 'What do bacteria need to grow?', options: ['Sunlight', 'Nutrients and moisture', 'Oxygen only', 'Cold temperature'], correct: 'Nutrients and moisture' },
+          { question: 'Which microorganism is used in the fermentation of milk into cheese?', options: ['Lactobacillus', 'Salmonella', 'Plasmodium', 'E. coli'], correct: 'Lactobacillus' },
+          { question: 'Which of the following is an example of a harmful microorganism?', options: ['Yeast', 'Rhizobium', 'HIV', 'Lactobacillus'], correct: 'HIV' },
+          { question: 'Which microorganism helps in making antibiotics?', options: ['Fungi', 'Bacteria', 'Algae', 'Both A and B'], correct: 'Both A and B' },
+          { question: 'Which microorganism is used in wastewater treatment?', options: ['Fungi', 'Protozoa', 'Bacteria', 'Virus'], correct: 'Bacteria' },
+          { question: 'Which microorganism is used in making vaccines?', options: ['Algae', 'Bacteria', 'Viruses', 'All of the above'], correct: 'All of the above' },
+          { question: 'What do decomposer microorganisms do?', options: ['Cause diseases', 'Break down dead matter', 'Grow in extreme heat', 'Absorb sunlight'], correct: 'Break down dead matter' },
+          { question: 'Which of these microorganisms is used in antibiotic production?', options: ['Rhizobium', 'Salmonella', 'Penicillium', 'Plasmodium'], correct: 'Penicillium' },
+          { question: 'Which microorganism is used in biogas production?', options: ['Bacteria', 'Fungi', 'Virus', 'Algae'], correct: 'Bacteria' },
+          { question: 'Which microorganisms are mainly responsible for food spoilage?', options: ['Bacteria and fungi', 'Viruses and bacteria', 'Protozoa and fungi', 'Algae and bacteria'], correct: 'Bacteria and fungi' },
+          { question: 'Which microorganism is used to make soy sauce?', options: ['Yeast', 'Bacteria', 'Fungi', 'All of the above'], correct: 'All of the above' },
+          { question: 'Which microorganism helps in digestion in the human intestine?', options: ['E. coli', 'Streptococcus', 'Salmonella', 'Plasmodium'], correct: 'E. coli' },
+          { question: 'Which of the following is a virus?', options: ['HIV', 'Amoeba', 'Rhizobium', 'Lactobacillus'], correct: 'HIV' }
         ]
       },
       {
@@ -163,16 +509,31 @@ export const scienceClass8 = [
         title: 'Microbial World - 2',
         description: 'Learn more about the role of microorganisms in different fields.',
         questions: [
-          {
-            question: 'Which microorganism is used in making antibiotics?',
-            options: ['Virus', 'Fungi', 'Algae', 'Protozoa'],
-            correct: 'Fungi'
-          },
-          {
-            question: 'Which disease is caused by a virus?',
-            options: ['Tuberculosis', 'Influenza', 'Cholera', 'Typhoid'],
-            correct: 'Influenza'
-          }
+          { question: 'Which microorganism is used in making antibiotics?', options: ['Virus', 'Fungi', 'Algae', 'Protozoa'], correct: 'Fungi' },
+    { question: 'Which disease is caused by a virus?', options: ['Tuberculosis', 'Influenza', 'Cholera', 'Typhoid'], correct: 'Influenza' },
+    { question: 'Which microorganism is used in making yogurt?', options: ['Virus', 'Bacteria', 'Algae', 'Fungi'], correct: 'Bacteria' },
+    { question: 'Which microorganism is used in vinegar production?', options: ['Bacteria', 'Fungi', 'Algae', 'Protozoa'], correct: 'Bacteria' },
+    { question: 'Which of the following is an example of a pathogenic microorganism?', options: ['Lactobacillus', 'Rhizobium', 'Salmonella', 'Penicillium'], correct: 'Salmonella' },
+    { question: 'Which microorganism is used in baking?', options: ['Yeast', 'Bacteria', 'Algae', 'Virus'], correct: 'Yeast' },
+    { question: 'Which microorganism is responsible for causing food poisoning?', options: ['Rhizobium', 'Lactobacillus', 'Salmonella', 'Yeast'], correct: 'Salmonella' },
+    { question: 'Which microorganism is used in producing ethanol?', options: ['Bacteria', 'Fungi', 'Yeast', 'Algae'], correct: 'Yeast' },
+    { question: 'Which microorganism is used to produce insulin through genetic engineering?', options: ['Fungus', 'Bacteria', 'Virus', 'Protozoa'], correct: 'Bacteria' },
+    { question: 'Which of the following diseases is NOT caused by a microorganism?', options: ['Malaria', 'Diabetes', 'Typhoid', 'AIDS'], correct: 'Diabetes' },
+    { question: 'Which microorganism is commonly used in bioremediation?', options: ['Fungi', 'Bacteria', 'Algae', 'Virus'], correct: 'Bacteria' },
+    { question: 'Which of the following is a viral disease?', options: ['Dengue', 'Tuberculosis', 'Cholera', 'Anthrax'], correct: 'Dengue' },
+    { question: 'Which microorganism is responsible for nitrogen fixation?', options: ['Rhizobium', 'Yeast', 'Penicillium', 'Salmonella'], correct: 'Rhizobium' },
+    { question: 'Which microorganism is used in the production of antibiotics like streptomycin?', options: ['Fungi', 'Bacteria', 'Algae', 'Virus'], correct: 'Bacteria' },
+    { question: 'Which microorganism is responsible for the decomposition of organic matter?', options: ['Algae', 'Virus', 'Fungi', 'Protozoa'], correct: 'Fungi' },
+    { question: 'Which microorganism is used in the production of biofertilizers?', options: ['Bacteria', 'Virus', 'Algae', 'Protozoa'], correct: 'Bacteria' },
+    { question: 'Which microorganism is used in wastewater treatment?', options: ['Fungi', 'Protozoa', 'Bacteria', 'Virus'], correct: 'Bacteria' },
+    { question: 'Which microorganism is commonly found in spoiled bread?', options: ['Bacteria', 'Virus', 'Fungi', 'Algae'], correct: 'Fungi' },
+    { question: 'Which microorganism helps in the digestion of cellulose in cows?', options: ['Fungi', 'Protozoa', 'Bacteria', 'Virus'], correct: 'Bacteria' },
+    { question: 'Which microorganism is used in vaccine production?', options: ['Algae', 'Bacteria', 'Viruses', 'All of the above'], correct: 'All of the above' },
+    { question: 'Which of the following is NOT a benefit of microorganisms?', options: ['Making antibiotics', 'Fermenting food', 'Causing diseases', 'Decomposing waste'], correct: 'Causing diseases' },
+    { question: 'Which microorganism is used to make blue cheese?', options: ['Lactobacillus', 'Rhizobium', 'Penicillium', 'Plasmodium'], correct: 'Penicillium' },
+    { question: 'Which microorganisms are used in the production of soy sauce?', options: ['Yeast', 'Bacteria', 'Fungi', 'All of the above'], correct: 'All of the above' },
+    { question: 'Which microorganism is used in producing enzymes for detergents?', options: ['Bacteria', 'Fungi', 'Protozoa', 'Virus'], correct: 'Bacteria' },
+    { question: 'Which microorganism is known for causing the Black Death?', options: ['Bacteria', 'Fungi', 'Virus', 'Protozoa'], correct: 'Bacteria' }
         ]
       },
       {
@@ -197,16 +558,30 @@ export const scienceClass8 = [
         title: 'Adolescence',
         description: 'Learn about the physical and emotional changes during adolescence.',
         questions: [
-          {
-            question: 'Which hormone is responsible for male puberty changes?',
-            options: ['Estrogen', 'Progesterone', 'Testosterone', 'Insulin'],
-            correct: 'Testosterone'
-          },
-          {
-            question: 'Which of these is a secondary sexual characteristic in females?',
-            options: ['Facial hair', 'Deep voice', 'Development of breasts', 'Muscle growth'],
-            correct: 'Development of breasts'
-          }
+          { question: 'Which type of reproduction requires two parents?', options: ['Asexual', 'Binary fission', 'Budding', 'Sexual'], correct: 'Sexual' },
+    { question: 'Which organ produces eggs in female animals?', options: ['Ovary', 'Testis', 'Liver', 'Kidney'], correct: 'Ovary' },
+    { question: 'Which organ produces sperm in male animals?', options: ['Ovary', 'Testis', 'Liver', 'Kidney'], correct: 'Testis' },
+    { question: 'Which type of reproduction occurs without the fusion of gametes?', options: ['Sexual', 'Asexual', 'Internal', 'External'], correct: 'Asexual' },
+    { question: 'Which of the following is an asexual method of reproduction?', options: ['Budding', 'Fertilization', 'Copulation', 'Ovulation'], correct: 'Budding' },
+    { question: 'Which of these animals reproduce by external fertilization?', options: ['Humans', 'Frogs', 'Dogs', 'Birds'], correct: 'Frogs' },
+    { question: 'What is the name of the male reproductive cell?', options: ['Ovum', 'Egg', 'Sperm', 'Zygote'], correct: 'Sperm' },
+    { question: 'Which process results in the formation of a zygote?', options: ['Mitosis', 'Budding', 'Fertilization', 'Binary fission'], correct: 'Fertilization' },
+    { question: 'Which animal reproduces through binary fission?', options: ['Frog', 'Amoeba', 'Cow', 'Fish'], correct: 'Amoeba' },
+    { question: 'Which of the following organisms reproduces by budding?', options: ['Hydra', 'Earthworm', 'Frog', 'Lizard'], correct: 'Hydra' },
+    { question: 'Which of the following is an example of oviparous animals?', options: ['Humans', 'Cows', 'Snakes', 'Dogs'], correct: 'Snakes' },
+    { question: 'Which term refers to animals that give birth to live young?', options: ['Oviparous', 'Viviparous', 'Amphibians', 'Metamorphic'], correct: 'Viviparous' },
+    { question: 'Which hormone is responsible for sperm production in males?', options: ['Testosterone', 'Estrogen', 'Progesterone', 'Insulin'], correct: 'Testosterone' },
+    { question: 'Which hormone regulates the menstrual cycle in females?', options: ['Testosterone', 'Adrenaline', 'Progesterone', 'Insulin'], correct: 'Progesterone' },
+    { question: 'Which of these is NOT a mode of asexual reproduction?', options: ['Budding', 'Fission', 'Fertilization', 'Fragmentation'], correct: 'Fertilization' },
+    { question: 'In which part of the female body does fertilization occur?', options: ['Ovary', 'Uterus', 'Fallopian tube', 'Vagina'], correct: 'Fallopian tube' },
+    { question: 'What is the developing baby called in the mother’s womb?', options: ['Embryo', 'Zygote', 'Sperm', 'Ovum'], correct: 'Embryo' },
+    { question: 'Which of these is a viviparous animal?', options: ['Frog', 'Bird', 'Snake', 'Cat'], correct: 'Cat' },
+    { question: 'What is the function of the placenta in mammals?', options: ['To protect the baby', 'To transfer nutrients and oxygen', 'To help in digestion', 'To produce sperm'], correct: 'To transfer nutrients and oxygen' },
+    { question: 'What is the term for the release of an egg from the ovary?', options: ['Menstruation', 'Ovulation', 'Fertilization', 'Implantation'], correct: 'Ovulation' },
+    { question: 'Which of these is NOT a characteristic of sexual reproduction?', options: ['Genetic variation', 'Two parents', 'Rapid reproduction', 'Fertilization'], correct: 'Rapid reproduction' },
+    { question: 'Which of these is a type of asexual reproduction seen in starfish?', options: ['Budding', 'Binary fission', 'Fragmentation', 'Oviparity'], correct: 'Fragmentation' },
+    { question: 'How does a frog reproduce?', options: ['Internal fertilization', 'External fertilization', 'Asexual reproduction', 'Cloning'], correct: 'External fertilization' },
+    { question: 'Which reproductive structure carries sperm from the testis in males?', options: ['Ovary', 'Vas deferens', 'Fallopian tube', 'Bladder'], correct: 'Vas deferens' }
         ]
       },
       {
@@ -214,16 +589,30 @@ export const scienceClass8 = [
         title: 'Biodiversity and its Conservation',
         description: 'Explore the importance of biodiversity and ways to conserve it.',
         questions: [
-          {
-            question: 'What is biodiversity?',
-            options: ['Variety of life forms on Earth', 'A type of pollution', 'A weather pattern', 'A farming method'],
-            correct: 'Variety of life forms on Earth'
-          },
-          {
-            question: 'Which of these is a method of biodiversity conservation?',
-            options: ['Deforestation', 'Poaching', 'Wildlife sanctuaries', 'Urbanization'],
-            correct: 'Wildlife sanctuaries'
-          }
+          { question: 'What is biodiversity?', options: ['Variety of life forms on Earth', 'A type of pollution', 'A weather pattern', 'A farming method'], correct: 'Variety of life forms on Earth' },
+          { question: 'Which of these is a method of biodiversity conservation?', options: ['Deforestation', 'Poaching', 'Wildlife sanctuaries', 'Urbanization'], correct: 'Wildlife sanctuaries' },
+          { question: 'Which biome has the highest biodiversity?', options: ['Desert', 'Tundra', 'Tropical rainforest', 'Grasslands'], correct: 'Tropical rainforest' },
+          { question: 'What is the main cause of biodiversity loss?', options: ['Afforestation', 'Climate change', 'Sustainable development', 'Organic farming'], correct: 'Climate change' },
+          { question: 'Which type of conservation focuses on protecting species in their natural habitat?', options: ['Ex-situ conservation', 'In-situ conservation', 'Artificial conservation', 'Ecotourism'], correct: 'In-situ conservation' },
+          { question: 'Which of the following is an example of ex-situ conservation?', options: ['National parks', 'Wildlife sanctuaries', 'Botanical gardens', 'Biosphere reserves'], correct: 'Botanical gardens' },
+          { question: 'Which organization works for the conservation of biodiversity globally?', options: ['WHO', 'NASA', 'IUCN', 'IMF'], correct: 'IUCN' },
+          { question: 'Which species are at risk of extinction?', options: ['Invasive species', 'Endangered species', 'Carnivorous species', 'Herbivorous species'], correct: 'Endangered species' },
+          { question: 'What is the Red List?', options: ['A list of deforested areas', 'A list of critically endangered species', 'A list of protected forests', 'A list of eco-friendly businesses'], correct: 'A list of critically endangered species' },
+          { question: 'Which of these human activities affects biodiversity the most?', options: ['Tree planting', 'Deforestation', 'Organic farming', 'Wildlife conservation'], correct: 'Deforestation' },
+          { question: 'Which of the following is an example of an invasive species?', options: ['Bengal tiger', 'Cactus', 'Water hyacinth', 'Elephant'], correct: 'Water hyacinth' },
+          { question: 'Which international agreement focuses on biodiversity conservation?', options: ['Kyoto Protocol', 'Paris Agreement', 'CBD (Convention on Biological Diversity)', 'Montreal Protocol'], correct: 'CBD (Convention on Biological Diversity)' },
+          { question: 'Why is biodiversity important?', options: ['It helps in pollination and ecosystem stability', 'It increases deforestation', 'It decreases soil fertility', 'It prevents evolution'], correct: 'It helps in pollination and ecosystem stability' },
+          { question: 'Which of the following is NOT a threat to biodiversity?', options: ['Pollution', 'Climate change', 'Reforestation', 'Overhunting'], correct: 'Reforestation' },
+          { question: 'Which of these species is critically endangered?', options: ['House Sparrow', 'Bengal Tiger', 'Javan Rhino', 'Peacock'], correct: 'Javan Rhino' },
+          { question: 'Which of these is a natural cause of biodiversity loss?', options: ['Habitat destruction', 'Pollution', 'Natural disasters', 'Overfishing'], correct: 'Natural disasters' },
+          { question: 'Which practice can help conserve biodiversity?', options: ['Using pesticides', 'Overfishing', 'Crop rotation', 'Urbanization'], correct: 'Crop rotation' },
+          { question: 'Which of the following is an example of a biosphere reserve in India?', options: ['Kaziranga', 'Nilgiri', 'Gir Forest', 'Manas'], correct: 'Nilgiri' },
+          { question: 'What is an endemic species?', options: ['A species found only in a particular area', 'A species found worldwide', 'A species that is extinct', 'A species introduced by humans'], correct: 'A species found only in a particular area' },
+          { question: 'Which of these is NOT a category of biodiversity?', options: ['Genetic biodiversity', 'Species biodiversity', 'Climate biodiversity', 'Ecosystem biodiversity'], correct: 'Climate biodiversity' },
+          { question: 'What is the primary goal of national parks?', options: ['Tourism', 'Conservation of wildlife', 'Urban development', 'Agriculture'], correct: 'Conservation of wildlife' },
+          { question: 'What is the term for the variety of genes within a species?', options: ['Ecosystem diversity', 'Genetic diversity', 'Habitat diversity', 'Trophic diversity'], correct: 'Genetic diversity' },
+          { question: 'Which of the following is NOT a biodiversity hotspot?', options: ['Amazon Rainforest', 'Himalayas', 'Sahara Desert', 'Western Ghats'], correct: 'Sahara Desert' },
+          { question: 'How can individuals contribute to biodiversity conservation?', options: ['Cutting down more trees', 'Reducing waste and recycling', 'Hunting endangered species', 'Using plastic bags'], correct: 'Reducing waste and recycling' }
         ]
       },
       {
@@ -231,16 +620,31 @@ export const scienceClass8 = [
         title: 'Different Ecosystems',
         description: 'Learn about different ecosystems and their components.',
         questions: [
-          {
-            question: 'Which of the following is an aquatic ecosystem?',
-            options: ['Desert', 'Pond', 'Forest', 'Grassland'],
-            correct: 'Pond'
-          },
-          {
-            question: 'What is the role of producers in an ecosystem?',
-            options: ['Consume other organisms', 'Decompose waste', 'Produce energy through photosynthesis', 'Compete for resources'],
-            correct: 'Produce energy through photosynthesis'
-          }
+          { question: 'Which of the following is an aquatic ecosystem?', options: ['Desert', 'Pond', 'Forest', 'Grassland'], correct: 'Pond' },
+    { question: 'What is the role of producers in an ecosystem?', options: ['Consume other organisms', 'Decompose waste', 'Produce energy through photosynthesis', 'Compete for resources'], correct: 'Produce energy through photosynthesis' },
+    { question: 'Which of these is an example of a terrestrial ecosystem?', options: ['Ocean', 'Desert', 'Lake', 'Pond'], correct: 'Desert' },
+    { question: 'Which ecosystem is characterized by extreme dryness and sparse vegetation?', options: ['Tundra', 'Desert', 'Rainforest', 'Wetlands'], correct: 'Desert' },
+    { question: 'What is the primary energy source for most ecosystems?', options: ['Wind', 'Sunlight', 'Water', 'Soil'], correct: 'Sunlight' },
+    { question: 'Which ecosystem has the highest biodiversity?', options: ['Grassland', 'Desert', 'Tundra', 'Tropical rainforest'], correct: 'Tropical rainforest' },
+    { question: 'Which of the following is an example of a freshwater ecosystem?', options: ['Coral reef', 'River', 'Mangrove', 'Estuary'], correct: 'River' },
+    { question: 'Which type of ecosystem includes both fresh and saltwater?', options: ['Desert', 'Wetland', 'Estuary', 'Tundra'], correct: 'Estuary' },
+    { question: 'What is the role of decomposers in an ecosystem?', options: ['Produce oxygen', 'Break down dead matter', 'Store energy', 'Compete for food'], correct: 'Break down dead matter' },
+    { question: 'Which of these is an example of a marine ecosystem?', options: ['Lake', 'Pond', 'Coral reef', 'Grassland'], correct: 'Coral reef' },
+    { question: 'Which type of ecosystem is dominated by grasses and few trees?', options: ['Desert', 'Tundra', 'Grassland', 'Rainforest'], correct: 'Grassland' },
+    { question: 'What is an ecosystem?', options: ['A collection of planets', 'A community of organisms and their environment', 'A type of animal', 'A type of rock formation'], correct: 'A community of organisms and their environment' },
+    { question: 'Which of these is an abiotic factor in an ecosystem?', options: ['Plants', 'Animals', 'Temperature', 'Microorganisms'], correct: 'Temperature' },
+    { question: 'What do herbivores eat in an ecosystem?', options: ['Meat', 'Plants', 'Fungi', 'Soil'], correct: 'Plants' },
+    { question: 'Which ecosystem is permanently frozen?', options: ['Desert', 'Tundra', 'Grassland', 'Rainforest'], correct: 'Tundra' },
+    { question: 'What is the main characteristic of a desert ecosystem?', options: ['High rainfall', 'Low temperature', 'Scarce water availability', 'Dense vegetation'], correct: 'Scarce water availability' },
+    { question: 'Which ecosystem is also called the “lungs of the planet”?', options: ['Tundra', 'Ocean', 'Rainforest', 'Desert'], correct: 'Rainforest' },
+    { question: 'What is the top predator in most food chains?', options: ['Herbivores', 'Primary consumers', 'Carnivores', 'Decomposers'], correct: 'Carnivores' },
+    { question: 'Which ecosystem is found at the highest altitudes?', options: ['Coral reef', 'Tundra', 'Grassland', 'Wetland'], correct: 'Tundra' },
+    { question: 'Which of the following is NOT a component of an ecosystem?', options: ['Plants', 'Animals', 'Rocks', 'None of the above'], correct: 'None of the above' },
+    { question: 'Which type of forest ecosystem loses its leaves seasonally?', options: ['Rainforest', 'Tundra', 'Deciduous forest', 'Desert'], correct: 'Deciduous forest' },
+    { question: 'Which of the following is NOT an example of an aquatic ecosystem?', options: ['Coral reef', 'Ocean', 'Pond', 'Savanna'], correct: 'Savanna' },
+    { question: 'Why are wetlands important ecosystems?', options: ['They support agriculture', 'They store carbon and prevent floods', 'They are used for construction', 'They prevent ocean currents'], correct: 'They store carbon and prevent floods' },
+    { question: 'Which ecosystem is home to camels and cacti?', options: ['Tundra', 'Desert', 'Wetlands', 'Grasslands'], correct: 'Desert' },
+    { question: 'Which ecosystem plays a major role in oxygen production?', options: ['Ocean', 'Tundra', 'Grassland', 'Mountain'], correct: 'Ocean' }
         ]
       },
       {
@@ -248,16 +652,31 @@ export const scienceClass8 = [
         title: 'Food Production from Plants',
         description: 'Understand how plants are used for food production.',
         questions: [
-          {
-            question: 'Which process helps plants produce food?',
-            options: ['Respiration', 'Fermentation', 'Photosynthesis', 'Germination'],
-            correct: 'Photosynthesis'
-          },
-          {
-            question: 'Which part of the plant is used to produce wheat?',
-            options: ['Root', 'Stem', 'Seed', 'Leaf'],
-            correct: 'Seed'
-          }
+          { question: 'Which process helps plants produce food?', options: ['Respiration', 'Fermentation', 'Photosynthesis', 'Germination'], correct: 'Photosynthesis' },
+    { question: 'Which part of the plant is used to produce wheat?', options: ['Root', 'Stem', 'Seed', 'Leaf'], correct: 'Seed' },
+    { question: 'Which gas is absorbed by plants during photosynthesis?', options: ['Oxygen', 'Nitrogen', 'Carbon dioxide', 'Hydrogen'], correct: 'Carbon dioxide' },
+    { question: 'What do plants need for photosynthesis?', options: ['Sunlight, water, and carbon dioxide', 'Oxygen, nitrogen, and soil', 'Water, sugar, and oxygen', 'Carbon dioxide, proteins, and vitamins'], correct: 'Sunlight, water, and carbon dioxide' },
+    { question: 'Which part of the plant is used to make sugar?', options: ['Flower', 'Root', 'Stem', 'Leaf'], correct: 'Stem' },
+    { question: 'Which of the following is a cereal crop?', options: ['Apple', 'Wheat', 'Tomato', 'Carrot'], correct: 'Wheat' },
+    { question: 'Which plant part is used in making tea?', options: ['Flower', 'Stem', 'Leaf', 'Seed'], correct: 'Leaf' },
+    { question: 'Which of these is an example of a pulse crop?', options: ['Rice', 'Wheat', 'Lentil', 'Sugarcane'], correct: 'Lentil' },
+    { question: 'What is the main purpose of fertilizers in farming?', options: ['Increase soil erosion', 'Enhance soil fertility', 'Prevent plant growth', 'Destroy harmful insects'], correct: 'Enhance soil fertility' },
+    { question: 'Which of these is a fruit?', options: ['Potato', 'Carrot', 'Mango', 'Spinach'], correct: 'Mango' },
+    { question: 'Which of these is a root vegetable?', options: ['Lettuce', 'Carrot', 'Wheat', 'Tomato'], correct: 'Carrot' },
+    { question: 'Which plant is used to make oil?', options: ['Coconut', 'Potato', 'Sugarcane', 'Lettuce'], correct: 'Coconut' },
+    { question: 'Which crop is commonly grown for making bread?', options: ['Rice', 'Wheat', 'Corn', 'Soybean'], correct: 'Wheat' },
+    { question: 'What type of farming uses natural fertilizers?', options: ['Organic farming', 'Industrial farming', 'Hydroponics', 'Aquaculture'], correct: 'Organic farming' },
+    { question: 'Which plant part is mainly responsible for absorbing water?', options: ['Leaves', 'Stem', 'Flowers', 'Roots'], correct: 'Roots' },
+    { question: 'Which of these is a cash crop?', options: ['Wheat', 'Cotton', 'Lentils', 'Spinach'], correct: 'Cotton' },
+    { question: 'Which plant is commonly grown for its edible tubers?', options: ['Carrot', 'Wheat', 'Potato', 'Corn'], correct: 'Potato' },
+    { question: 'Which of these is a fiber crop?', options: ['Rice', 'Cotton', 'Mango', 'Lettuce'], correct: 'Cotton' },
+    { question: 'Which agricultural method is used to grow plants without soil?', options: ['Organic farming', 'Hydroponics', 'Crop rotation', 'Plowing'], correct: 'Hydroponics' },
+    { question: 'Which of these is a medicinal plant?', options: ['Neem', 'Rice', 'Potato', 'Wheat'], correct: 'Neem' },
+    { question: 'Which plant provides cocoa beans for making chocolate?', options: ['Tea plant', 'Cocoa tree', 'Coffee plant', 'Banana tree'], correct: 'Cocoa tree' },
+    { question: 'Which crop is mainly grown for its oil-rich seeds?', options: ['Sunflower', 'Wheat', 'Spinach', 'Mango'], correct: 'Sunflower' },
+    { question: 'Which farming method involves growing different crops in a planned sequence?', options: ['Mono-cropping', 'Crop rotation', 'Hydroponics', 'Genetic farming'], correct: 'Crop rotation' },
+    { question: 'Which of the following plants is grown for its latex, used in making rubber?', options: ['Rubber tree', 'Coconut tree', 'Neem tree', 'Bamboo'], correct: 'Rubber tree' },
+    { question: 'Which fruit is commonly used to make oil?', options: ['Apple', 'Banana', 'Olive', 'Strawberry'], correct: 'Olive' }
         ]
       },
       {
@@ -265,16 +684,31 @@ export const scienceClass8 = [
         title: 'Food Production from Animals',
         description: 'Learn how animals contribute to food production.',
         questions: [
-          {
-            question: 'Which animal product is a rich source of protein?',
-            options: ['Milk', 'Silk', 'Wool', 'Leather'],
-            correct: 'Milk'
-          },
-          {
-            question: 'Which bird is commonly raised for egg production?',
-            options: ['Peacock', 'Eagle', 'Hen', 'Parrot'],
-            correct: 'Hen'
-          }
+          { question: 'Which animal product is a rich source of protein?', options: ['Milk', 'Silk', 'Wool', 'Leather'], correct: 'Milk' },
+    { question: 'Which bird is commonly raised for egg production?', options: ['Peacock', 'Eagle', 'Hen', 'Parrot'], correct: 'Hen' },
+    { question: 'Which animal product is used to make cheese?', options: ['Eggs', 'Milk', 'Wool', 'Honey'], correct: 'Milk' },
+    { question: 'Which of the following is a dairy product?', options: ['Honey', 'Cheese', 'Wool', 'Silk'], correct: 'Cheese' },
+    { question: 'Which insect is responsible for producing honey?', options: ['Butterfly', 'Mosquito', 'Bee', 'Termite'], correct: 'Bee' },
+    { question: 'Which of these is obtained from sheep?', options: ['Milk', 'Eggs', 'Wool', 'Leather'], correct: 'Wool' },
+    { question: 'Which nutrient is milk rich in?', options: ['Vitamin C', 'Iron', 'Calcium', 'Carbohydrates'], correct: 'Calcium' },
+    { question: 'Which animal is commonly raised for meat production?', options: ['Cow', 'Horse', 'Dog', 'Rabbit'], correct: 'Cow' },
+    { question: 'Which seafood is rich in omega-3 fatty acids?', options: ['Chicken', 'Fish', 'Mutton', 'Beef'], correct: 'Fish' },
+    { question: 'Which animal product is used to make butter?', options: ['Egg', 'Milk', 'Honey', 'Leather'], correct: 'Milk' },
+    { question: 'Which of these is a poultry bird?', options: ['Duck', 'Pigeon', 'Eagle', 'Crow'], correct: 'Duck' },
+    { question: 'Which animal is mainly used for obtaining leather?', options: ['Cow', 'Sheep', 'Goat', 'All of these'], correct: 'All of these' },
+    { question: 'Which animal is commonly raised for wool production?', options: ['Goat', 'Sheep', 'Cow', 'Pig'], correct: 'Sheep' },
+    { question: 'Which of the following is an animal-based food?', options: ['Rice', 'Cheese', 'Wheat', 'Potato'], correct: 'Cheese' },
+    { question: 'Which bird is reared for meat and egg production?', options: ['Sparrow', 'Pigeon', 'Hen', 'Crow'], correct: 'Hen' },
+    { question: 'Which of these is a milk-producing animal?', options: ['Goat', 'Dog', 'Cat', 'Tiger'], correct: 'Goat' },
+    { question: 'What is the process of keeping and raising fish for food called?', options: ['Apiculture', 'Pisciculture', 'Horticulture', 'Sericulture'], correct: 'Pisciculture' },
+    { question: 'Which animal’s milk is used to make paneer?', options: ['Dog', 'Cat', 'Buffalo', 'Rabbit'], correct: 'Buffalo' },
+    { question: 'Which of the following is a fermented dairy product?', options: ['Curd', 'Milk', 'Butter', 'Honey'], correct: 'Curd' },
+    { question: 'What is the process of rearing honey bees for honey called?', options: ['Horticulture', 'Pisciculture', 'Apiculture', 'Sericulture'], correct: 'Apiculture' },
+    { question: 'Which of these is NOT an animal-based food product?', options: ['Milk', 'Eggs', 'Cheese', 'Wheat'], correct: 'Wheat' },
+    { question: 'Which bird provides us with quail eggs?', options: ['Hen', 'Pigeon', 'Quail', 'Eagle'], correct: 'Quail' },
+    { question: 'Which animal’s meat is commonly known as mutton?', options: ['Cow', 'Goat', 'Chicken', 'Fish'], correct: 'Goat' },
+    { question: 'Which of these is obtained from silkworms?', options: ['Cotton', 'Silk', 'Leather', 'Jute'], correct: 'Silk' },
+    { question: 'Which of these dairy products is solid?', options: ['Milk', 'Yogurt', 'Butter', 'Honey'], correct: 'Butter' }
         ]
       },
       {
@@ -282,16 +716,30 @@ export const scienceClass8 = [
         title: 'Not for Drinking – Not for Breathing',
         description: 'Understand pollution and its effects on air and water.',
         questions: [
-          {
-            question: 'Which gas is a major pollutant in vehicle emissions?',
-            options: ['Oxygen', 'Carbon dioxide', 'Sulfur dioxide', 'Nitrogen'],
-            correct: 'Sulfur dioxide'
-          },
-          {
-            question: 'What is the main cause of water pollution?',
-            options: ['Deforestation', 'Industrial waste', 'Volcanic eruptions', 'Solar radiation'],
-            correct: 'Industrial waste'
-          }
+          { question: 'Which gas is a major pollutant in vehicle emissions?', options: ['Oxygen', 'Carbon dioxide', 'Sulfur dioxide', 'Nitrogen'], correct: 'Sulfur dioxide' },
+          { question: 'What is the main cause of water pollution?', options: ['Deforestation', 'Industrial waste', 'Volcanic eruptions', 'Solar radiation'], correct: 'Industrial waste' },
+          { question: 'Which of these is a greenhouse gas?', options: ['Oxygen', 'Methane', 'Hydrogen', 'Argon'], correct: 'Methane' },
+          { question: 'Which of these is a major air pollutant?', options: ['Nitrogen', 'Sulfur dioxide', 'Helium', 'Neon'], correct: 'Sulfur dioxide' },
+          { question: 'Which of these is a major source of noise pollution?', options: ['Birds chirping', 'Waterfall', 'Construction activities', 'Wind blowing'], correct: 'Construction activities' },
+          { question: 'Which disease is caused by prolonged exposure to polluted air?', options: ['Diabetes', 'Asthma', 'Arthritis', 'Malaria'], correct: 'Asthma' },
+          { question: 'What is the major cause of acid rain?', options: ['Oxygen', 'Carbon monoxide', 'Sulfur dioxide', 'Nitrogen gas'], correct: 'Sulfur dioxide' },
+          { question: 'Which water pollutant affects marine life the most?', options: ['Plastic waste', 'Oxygen', 'Nitrogen', 'Hydrogen'], correct: 'Plastic waste' },
+          { question: 'What is the main effect of deforestation on air pollution?', options: ['Increases oxygen levels', 'Reduces carbon dioxide', 'Increases carbon dioxide levels', 'Reduces noise pollution'], correct: 'Increases carbon dioxide levels' },
+          { question: 'Which gas is responsible for ozone layer depletion?', options: ['Oxygen', 'CFCs', 'Carbon dioxide', 'Nitrogen'], correct: 'CFCs' },
+          { question: 'Which of these activities leads to air pollution?', options: ['Planting trees', 'Burning fossil fuels', 'Using solar panels', 'Harvesting rainwater'], correct: 'Burning fossil fuels' },
+          { question: 'What is the main source of indoor air pollution?', options: ['Furniture', 'Cooking gas emissions', 'Ceiling fans', 'Paintings'], correct: 'Cooking gas emissions' },
+          { question: 'Which of these is a consequence of air pollution?', options: ['Lung diseases', 'Stronger immunity', 'Better vision', 'Faster growth of trees'], correct: 'Lung diseases' },
+          { question: 'What is the main effect of oil spills on marine life?', options: ['Increases fish population', 'Kills aquatic animals', 'Improves water quality', 'Makes water fresher'], correct: 'Kills aquatic animals' },
+          { question: 'Which human activity is a major contributor to water pollution?', options: ['Recycling waste', 'Reducing plastic use', 'Dumping industrial waste in rivers', 'Using organic fertilizers'], correct: 'Dumping industrial waste in rivers' },
+          { question: 'Which of these is a non-biodegradable pollutant?', options: ['Paper', 'Plastic', 'Fruit peels', 'Cotton'], correct: 'Plastic' },
+          { question: 'Which action helps reduce air pollution?', options: ['Using more fossil fuels', 'Planting more trees', 'Burning waste', 'Using diesel vehicles'], correct: 'Planting more trees' },
+          { question: 'What is the effect of excess carbon dioxide in the atmosphere?', options: ['Reduces global warming', 'Causes global warming', 'Improves air quality', 'Purifies the air'], correct: 'Causes global warming' },
+          { question: 'Which of these pollutants causes respiratory diseases?', options: ['Oxygen', 'Sulfur dioxide', 'Water vapor', 'Nitrogen gas'], correct: 'Sulfur dioxide' },
+          { question: 'Which of these practices helps reduce water pollution?', options: ['Throwing garbage in rivers', 'Using organic fertilizers', 'Dumping oil into water bodies', 'Using more pesticides'], correct: 'Using organic fertilizers' },
+          { question: 'Which of the following contributes to smog formation?', options: ['High oxygen levels', 'Industrial emissions', 'Clean energy sources', 'Increased tree plantation'], correct: 'Industrial emissions' },
+          { question: 'Which pollutant is responsible for acid rain?', options: ['Sulfur dioxide', 'Oxygen', 'Nitrogen gas', 'Methane'], correct: 'Sulfur dioxide' },
+          { question: 'Which of the following is a major health effect of air pollution?', options: ['Stronger immune system', 'Lung infections', 'Better digestion', 'Increased appetite'], correct: 'Lung infections' },
+          { question: 'Which of the following human activities leads to increased carbon dioxide levels?', options: ['Using electric vehicles', 'Burning coal and petrol', 'Growing more trees', 'Using wind energy'], correct: 'Burning coal and petrol' }
         ]
       },
       {
@@ -299,16 +747,31 @@ export const scienceClass8 = [
         title: 'Why do we fall ill?',
         description: 'Explore the causes and prevention of diseases.',
         questions: [
-          {
-            question: 'Which of these is a non-communicable disease?',
-            options: ['Malaria', 'Tuberculosis', 'Diabetes', 'Influenza'],
-            correct: 'Diabetes'
-          },
-          {
-            question: 'What is the best way to prevent infectious diseases?',
-            options: ['Eating junk food', 'Avoiding exercise', 'Vaccination', 'Ignoring hygiene'],
-            correct: 'Vaccination'
-          }
+          { question: 'Which of these is a non-communicable disease?', options: ['Malaria', 'Tuberculosis', 'Diabetes', 'Influenza'], correct: 'Diabetes' },
+    { question: 'What is the best way to prevent infectious diseases?', options: ['Eating junk food', 'Avoiding exercise', 'Vaccination', 'Ignoring hygiene'], correct: 'Vaccination' },
+    { question: 'Which microorganism causes the common cold?', options: ['Bacteria', 'Fungi', 'Virus', 'Protozoa'], correct: 'Virus' },
+    { question: 'Which nutrient is essential to boost immunity?', options: ['Carbohydrates', 'Vitamins', 'Fats', 'Sugars'], correct: 'Vitamins' },
+    { question: 'Which of the following spreads through contaminated water?', options: ['Typhoid', 'Diabetes', 'Hypertension', 'Asthma'], correct: 'Typhoid' },
+    { question: 'Which of these diseases is caused by a deficiency of Vitamin C?', options: ['Scurvy', 'Rickets', 'Goiter', 'Night blindness'], correct: 'Scurvy' },
+    { question: 'What is a major cause of lifestyle diseases?', options: ['Genetic mutation', 'Lack of exercise', 'Bacteria', 'Parasites'], correct: 'Lack of exercise' },
+    { question: 'Which organ is mainly affected by tuberculosis?', options: ['Heart', 'Lungs', 'Liver', 'Kidney'], correct: 'Lungs' },
+    { question: 'Which of these is an example of a communicable disease?', options: ['Cancer', 'Heart disease', 'Influenza', 'Diabetes'], correct: 'Influenza' },
+    { question: 'Which type of pathogen causes malaria?', options: ['Bacteria', 'Virus', 'Protozoa', 'Fungi'], correct: 'Protozoa' },
+    { question: 'Which deficiency causes night blindness?', options: ['Vitamin A', 'Vitamin C', 'Iron', 'Calcium'], correct: 'Vitamin A' },
+    { question: 'Which system of the body fights against diseases?', options: ['Digestive system', 'Respiratory system', 'Immune system', 'Skeletal system'], correct: 'Immune system' },
+    { question: 'Which disease is transmitted by mosquitoes?', options: ['Asthma', 'Malaria', 'Diabetes', 'Hypertension'], correct: 'Malaria' },
+    { question: 'What is a common symptom of food poisoning?', options: ['Headache', 'Blurred vision', 'Vomiting', 'Back pain'], correct: 'Vomiting' },
+    { question: 'Which of these diseases is genetic?', options: ['Hypertension', 'Hemophilia', 'Influenza', 'Typhoid'], correct: 'Hemophilia' },
+    { question: 'Which organ does hepatitis affect?', options: ['Lungs', 'Heart', 'Liver', 'Kidneys'], correct: 'Liver' },
+    { question: 'What is the best way to maintain hygiene?', options: ['Ignoring vaccinations', 'Drinking unclean water', 'Regular hand washing', 'Avoiding fresh fruits'], correct: 'Regular hand washing' },
+    { question: 'Which of these can be caused by stress?', options: ['Common cold', 'Heart disease', 'Malaria', 'Tuberculosis'], correct: 'Heart disease' },
+    { question: 'Which disease is caused by an iodine deficiency?', options: ['Diabetes', 'Goiter', 'Scurvy', 'Rickets'], correct: 'Goiter' },
+    { question: 'Which of these is a bacterial disease?', options: ['COVID-19', 'Influenza', 'Cholera', 'Measles'], correct: 'Cholera' },
+    { question: 'What is the main function of white blood cells?', options: ['Carry oxygen', 'Store energy', 'Fight infections', 'Digest food'], correct: 'Fight infections' },
+    { question: 'Which type of disease is not caused by microorganisms?', options: ['Viral infection', 'Bacterial infection', 'Lifestyle disease', 'Fungal infection'], correct: 'Lifestyle disease' },
+    { question: 'Which of these is a major factor in spreading infections?', options: ['Boiling water', 'Hand washing', 'Poor sanitation', 'Vaccination'], correct: 'Poor sanitation' },
+    { question: 'Which of the following is a viral disease?', options: ['Tetanus', 'Influenza', 'Tuberculosis', 'Cholera'], correct: 'Influenza' },
+    { question: 'Which is the best method to prevent mosquito-borne diseases?', options: ['Using mosquito nets', 'Drinking unfiltered water', 'Consuming fast food', 'Avoiding fresh air'], correct: 'Using mosquito nets' }
         ]
       }
   ];
