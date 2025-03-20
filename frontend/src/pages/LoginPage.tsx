@@ -24,7 +24,8 @@ export function LoginPage() {
             return handleError("All fields are required")
         }
         try{
-          const url = "http://localhost:8080/auth/login"
+          const url = `${import.meta.env.VITE_BACKEND_URL}/auth/login`;
+          console.log("Request URL:", url);
           const response = await fetch(url, {
             method: "POST",
             headers: {
