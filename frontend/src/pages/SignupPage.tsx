@@ -32,7 +32,8 @@ export function SignupPage() {
             headers: {
             'Content-Type': 'application/json'
             },
-            body: JSON.stringify(signupInfo)
+            body: JSON.stringify(signupInfo),
+            credentials: 'include'
           });
           const result = await response.json();
           const {success,message,error} = result;
