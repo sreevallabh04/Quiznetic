@@ -1,4 +1,4 @@
-export const socialClass8 = [
+export const socialClass10 = [
   // History: Our Pasts III (8 Chapters)
   {
     id: 1,
