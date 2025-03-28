@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/layout/Header';
+import { Footer } from './components/layout/Footer';
 import { LandingPage } from './pages/LandingPage';
 import ClassSelection from './components/ClassSelection';
 import SubjectSelection from './components/SubjectSelection';
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="/class/:classId/:subject/:chapter" element={<Quiz />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );
