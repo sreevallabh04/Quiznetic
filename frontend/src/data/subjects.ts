@@ -1,4 +1,4 @@
-import { Calculator, Microscope, GlobeIcon } from 'lucide-react';
+import { Calculator, Microscope, GlobeIcon, Map } from 'lucide-react';
 
 export const subjects = [
   { 
@@ -21,5 +21,12 @@ export const subjects = [
     icon: GlobeIcon, 
     color: 'bg-yellow-500/20',
     description: 'Discover history, geography, and civics through interactive lessons'
+  },
+  { 
+    id: 'mapPointing', 
+    name: 'Map Pointing', 
+    icon: Map, 
+    color: 'bg-purple-500/20',
+    description: 'Test your geography knowledge with interactive map-based questions'
   },
 ];
