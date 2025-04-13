@@ -11,20 +11,16 @@ import RefreshHandler from './pages/RefreshHandler';
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="relative min-h-screen text-white overflow-hidden">
-        {/* Space/Astronomy theme background elements */}
-        <div className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3')] bg-cover bg-center z-[-3]"></div>
-        <div className="fixed inset-0 bg-gradient-to-br from-indigo-900/90 via-purple-900/80 to-black z-[-2]"></div>
+      <div className="relative min-h-screen text-secondary-800 overflow-hidden bg-white">
+        {/* Light professional theme background elements */}
+        <div className="fixed inset-0 bg-gradient-to-b from-white to-secondary-50 z-[-3]"></div>
         
-        {/* Constellation/stars elements */}
-        <div className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3')] bg-cover bg-center opacity-40 mix-blend-screen z-[-1]"></div>
+        {/* Subtle pattern background */}
+        <div className="fixed inset-0 bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] bg-[size:20px_20px] opacity-30 z-[-2]"></div>
         
-        {/* Animated stars */}
-        <div className="fixed inset-0 bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:50px_50px] z-0 opacity-30"></div>
-        
-        {/* Cosmic glow effect */}
-        <div className="fixed top-0 right-0 w-1/3 h-1/3 bg-amber-500/10 blur-[150px] rounded-full z-0"></div>
-        <div className="fixed bottom-0 left-0 w-1/2 h-1/2 bg-fuchsia-500/10 blur-[150px] rounded-full z-0"></div>
+        {/* Light green accents */}
+        <div className="fixed top-0 right-0 w-1/3 h-1/3 bg-primary-200/20 blur-[150px] rounded-full z-[-1]"></div>
+        <div className="fixed bottom-0 left-0 w-1/2 h-1/2 bg-primary-100/30 blur-[150px] rounded-full z-[-1]"></div>
         
         <Header />
         <main className="pt-16 relative z-10">
