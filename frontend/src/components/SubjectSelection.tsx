@@ -26,39 +26,12 @@ export default function SubjectSelection() {
   };
 
   return (
-    <div className="relative overflow-hidden min-h-screen text-white">
-      {/* Tech-inspired background elements - same as other components for consistency */}
-      <div className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3')] bg-cover bg-center opacity-10 z-[-3]"></div>
-      <div className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1624378515195-8385174173f1?ixlib=rb-4.0.3')] bg-repeat opacity-5 z-[-2]"></div>
-      <div className="fixed inset-0 bg-gradient-to-br from-blue-900/80 via-slate-900/90 to-slate-900/80 z-[-1]"></div>
+    <div className="relative overflow-hidden min-h-screen text-secondary-800">
+      {/* Subtle pattern background */}
+      <div className="fixed inset-0 bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] bg-[size:20px_20px] opacity-30 z-0"></div>
       
-      {/* Grid decorative element */}
-      <div className="fixed bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-cyan-500/5 to-transparent z-0"></div>
-      <div className="fixed inset-0 bg-[radial-gradient(rgba(6,182,212,0.1)_1px,transparent_1px)] bg-[size:20px_20px] z-0 opacity-30"></div>
-      
-      {/* Digital particles */}
-      <div className="fixed inset-0 overflow-hidden z-0">
-        {Array.from({ length: 15 }).map((_, i) => (
-          <motion.div 
-            key={i}
-            initial={{ 
-              x: Math.random() * 100 + "%", 
-              y: Math.random() * 100 + "%", 
-              opacity: Math.random() * 0.5 
-            }}
-            animate={{ 
-              y: [null, Math.random() * 100 + "%"], 
-              opacity: [null, Math.random() * 0.7, 0] 
-            }}
-            transition={{ 
-              duration: Math.random() * 30 + 20, 
-              repeat: Infinity, 
-              ease: "linear" 
-            }}
-            className="absolute rounded-full bg-cyan-500 w-1 h-1"
-          />
-        ))}
-      </div>
+      {/* Light green accent */}
+      <div className="fixed bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-primary-100/30 to-transparent z-0"></div>
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -67,7 +40,7 @@ export default function SubjectSelection() {
       >
         <button
           onClick={() => navigate('/')}
-          className="mb-6 flex items-center gap-2 text-cyan-300 hover:text-blue-300 transition-colors backdrop-blur-sm px-4 py-2 rounded-full border border-cyan-600/30 shadow-lg shadow-cyan-900/20 w-fit"
+          className="mb-6 flex items-center gap-2 text-primary-600 hover:text-primary-700 transition-colors px-4 py-2 rounded-full border border-primary-200 shadow-sm w-fit"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Classes
@@ -84,9 +57,9 @@ export default function SubjectSelection() {
             initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="inline-block px-6 py-3 bg-blue-900/30 backdrop-blur-sm rounded-lg border border-cyan-500/20"
+            className="inline-block px-6 py-3 bg-white rounded-lg border border-primary-200 shadow-md"
           >
-            <span className="text-cyan-300/70">
+            <span className="text-secondary-600">
               {subjects.length} subjects available with curriculum-aligned content
             </span>
           </motion.div>
@@ -102,16 +75,16 @@ export default function SubjectSelection() {
             <motion.div key={id} variants={item}>
               <Card 
                 onClick={() => navigate(`/class/${classId}/${id}`)}
-                icon={<Icon className="w-6 h-6 text-cyan-400" />}
+                icon={<Icon className="w-6 h-6 text-primary-600" />}
               >
                 <div className="flex flex-col">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-200">
+                    <h3 className="text-xl font-bold text-secondary-800">
                       {name}
                     </h3>
-                    <ChevronRight className="w-5 h-5 text-cyan-400/70" />
+                    <ChevronRight className="w-5 h-5 text-primary-500" />
                   </div>
-                  <p className="mt-2 text-sm text-cyan-200/70">
+                  <p className="mt-2 text-sm text-secondary-600">
                     {description}
                   </p>
                 </div>
