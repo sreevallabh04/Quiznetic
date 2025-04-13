@@ -260,26 +260,232 @@ const shuffleArray = <T>(array: T[]): T[] => {
   return shuffled;
 };
 
+// Map-related keywords categorized by type
+const mapKeywords = {
+  general: ['map', 'location', 'identify', 'highlighted', 'shown', 'marked', 'point', 'direction', 'symbol'],
+  country: ['country', 'nation', 'territory', 'border', 'international'],
+  state: ['state', 'province', 'region', 'district', 'area', 'territory'],
+  city: ['city', 'town', 'capital', 'metropolitan', 'urban'],
+  water: ['river', 'ocean', 'sea', 'lake', 'waterway', 'stream', 'tributary', 'delta', 'coast', 'bay', 'gulf'],
+  land: ['mountain', 'peninsula', 'desert', 'plateau', 'valley', 'plain', 'hill', 'range'],
+  continent: ['continent', 'africa', 'asia', 'europe', 'australia', 'america', 'antarctica'],
+  direction: ['north', 'south', 'east', 'west', 'northeastern', 'northwestern', 'southeastern', 'southwestern']
+};
+
+// Common countries with their center coordinates
+const commonCountries: Record<string, [number, number]> = {
+  'india': [20.5937, 78.9629],
+  'united states': [37.0902, -95.7129],
+  'china': [35.8617, 104.1954],
+  'russia': [61.5240, 105.3188],
+  'brazil': [-14.2350, -51.9253],
+  'australia': [-25.2744, 133.7751],
+  'canada': [56.1304, -106.3468],
+  'japan': [36.2048, 138.2529],
+  'france': [46.2276, 2.2137],
+  'germany': [51.1657, 10.4515],
+  'united kingdom': [55.3781, -3.4360],
+  'south africa': [-30.5595, 22.9375],
+  'egypt': [26.8206, 30.8025],
+  'nigeria': [9.0820, 8.6753]
+};
+
+// Common Indian states with their center coordinates
+const indianStates: Record<string, [number, number]> = {
+  'telangana': [17.8495, 79.1151],
+  'andhra pradesh': [15.9129, 79.7400],
+  'tamil nadu': [11.1271, 78.6569],
+  'kerala': [10.8505, 76.2711],
+  'karnataka': [15.3173, 75.7139],
+  'maharashtra': [19.7515, 75.7139],
+  'gujarat': [22.2587, 71.1924],
+  'rajasthan': [27.0238, 74.2179],
+  'punjab': [31.1471, 75.3412],
+  'haryana': [29.0588, 76.0856],
+  'delhi': [28.7041, 77.1025],
+  'uttar pradesh': [26.8467, 80.9462],
+  'bihar': [25.0961, 85.3131],
+  'west bengal': [22.9868, 87.8550],
+  'odisha': [20.9517, 85.0985],
+  'madhya pradesh': [22.9734, 78.6569],
+  'chhattisgarh': [21.2787, 81.8661],
+  'jharkhand': [23.6102, 85.2799],
+  'assam': [26.2006, 92.9376],
+  'arunachal pradesh': [28.2180, 94.7278],
+  'sikkim': [27.5330, 88.5122],
+  'meghalaya': [25.4670, 91.3662],
+  'tripura': [23.9408, 91.9882],
+  'mizoram': [23.1645, 92.9376],
+  'manipur': [24.6637, 93.9063],
+  'nagaland': [26.1584, 94.5624],
+  'himachal pradesh': [31.1048, 77.1734],
+  'uttarakhand': [30.0668, 79.0193],
+  'jammu and kashmir': [33.7782, 76.5762],
+  'goa': [15.2993, 74.1240]
+};
+
 /**
  * Check if a question is map-related based on its content
  * @param question The question text to check
- * @returns true if the question is map-related
+ * @returns An object with isMap flag and detected map category
  */
-const isMapRelatedQuestion = (question: string): boolean => {
-  // Keywords that suggest the question is related to maps or geography
-  const mapKeywords = [
-    'map', 'location', 'region', 'country', 'state', 'capital', 'city',
-    'river', 'mountain', 'ocean', 'sea', 'lake', 'peninsula', 'desert',
-    'continent', 'border', 'coast', 'region', 'area', 'identify', 'located',
-    'geographical', 'geography', 'territory', 'highlighted', 'shown',
-    'north', 'south', 'east', 'west', 'point', 'direction', 'symbol'
-  ];
-  
+const analyzeMapQuestion = (question: string): { isMap: boolean; category?: string; entity?: string } => {
   // Convert to lowercase for case-insensitive matching
   const lowercaseQuestion = question.toLowerCase();
   
-  // Check if any keyword appears in the question
-  return mapKeywords.some(keyword => lowercaseQuestion.includes(keyword));
+  // Check if it contains any map-related keywords
+  const isGeneral = mapKeywords.general.some(keyword => lowercaseQuestion.includes(keyword));
+  
+  if (!isGeneral) {
+    // If no general map keywords, check other categories
+    for (const [category, keywords] of Object.entries(mapKeywords)) {
+      if (category === 'general') continue; // Skip general as we already checked
+      
+      if (keywords.some(keyword => lowercaseQuestion.includes(keyword))) {
+        // Find specific entity if possible
+        let entity = '';
+        
+        if (category === 'country') {
+          for (const country of Object.keys(commonCountries)) {
+            if (lowercaseQuestion.includes(country)) {
+              entity = country;
+              break;
+            }
+          }
+        } else if (category === 'state') {
+          for (const state of Object.keys(indianStates)) {
+            if (lowercaseQuestion.includes(state)) {
+              entity = state;
+              break;
+            }
+          }
+        }
+        
+        return { isMap: true, category, entity };
+      }
+    }
+    
+    return { isMap: false };
+  }
+  
+  // If contains general map keywords, determine the most relevant category
+  for (const [category, keywords] of Object.entries(mapKeywords)) {
+    if (category === 'general') continue; // Skip general as we're looking for specifics
+    
+    if (keywords.some(keyword => lowercaseQuestion.includes(keyword))) {
+      // Find specific entity if possible
+      let entity = '';
+      
+      if (category === 'country') {
+        for (const country of Object.keys(commonCountries)) {
+          if (lowercaseQuestion.includes(country)) {
+            entity = country;
+            break;
+          }
+        }
+      } else if (category === 'state') {
+        for (const state of Object.keys(indianStates)) {
+          if (lowercaseQuestion.includes(state)) {
+            entity = state;
+            break;
+          }
+        }
+      }
+      
+      return { isMap: true, category, entity };
+    }
+  }
+  
+  // If has general map keywords but no specific category was found
+  return { isMap: true, category: 'general' };
+};
+
+/**
+ * Generate appropriate map data based on question content
+ * @param question The question text
+ * @param analysis The result of question analysis
+ * @returns A mapData object or undefined if can't generate valid map data
+ */
+const generateMapData = (question: string, analysis: ReturnType<typeof analyzeMapQuestion>) => {
+  if (!analysis.isMap) return undefined;
+  
+  // Default map settings
+  let center: [number, number] = [20.5937, 78.9629]; // Center of India by default
+  let zoom = 5;
+  let marker: [number, number] = [...center];
+  let highlightFeature: string | undefined;
+  let highlightState: string | undefined;
+  let highlightCountry: string | undefined;
+  
+  // Adjust settings based on category
+  if (analysis.category === 'country' && analysis.entity && commonCountries[analysis.entity]) {
+    center = commonCountries[analysis.entity];
+    marker = [...center];
+    highlightCountry = analysis.entity.replace(/\s+/g, '_').toLowerCase();
+    zoom = 4;
+  } else if (analysis.category === 'state' && analysis.entity && indianStates[analysis.entity]) {
+    center = indianStates[analysis.entity];
+    marker = [...center];
+    highlightState = analysis.entity.replace(/\s+/g, '_').toLowerCase();
+    zoom = 6;
+  } else if (analysis.category === 'city') {
+    zoom = 8;
+    highlightFeature = 'city';
+  } else if (analysis.category === 'water') {
+    highlightFeature = 'water';
+    if (question.toLowerCase().includes('river')) {
+      highlightFeature = 'river';
+    } else if (question.toLowerCase().includes('ocean')) {
+      highlightFeature = 'ocean';
+      zoom = 3;
+    } else if (question.toLowerCase().includes('sea')) {
+      highlightFeature = 'sea';
+      zoom = 4;
+    } else if (question.toLowerCase().includes('lake')) {
+      highlightFeature = 'lake';
+      zoom = 7;
+    }
+  } else if (analysis.category === 'land') {
+    highlightFeature = 'land';
+    if (question.toLowerCase().includes('mountain')) {
+      highlightFeature = 'mountain';
+    } else if (question.toLowerCase().includes('desert')) {
+      highlightFeature = 'desert';
+    }
+  } else if (analysis.category === 'continent') {
+    zoom = 2;
+    highlightFeature = 'continent';
+    
+    // Try to determine which continent
+    const continents = ['africa', 'asia', 'europe', 'australia', 'north america', 'south america', 'antarctica'];
+    for (const continent of continents) {
+      if (question.toLowerCase().includes(continent)) {
+        if (continent === 'africa') center = [8.7832, 17.5731];
+        else if (continent === 'asia') center = [34.0479, 100.6197];
+        else if (continent === 'europe') center = [54.5260, 15.2551];
+        else if (continent === 'australia') center = [-25.2744, 133.7751];
+        else if (continent === 'north america') center = [54.5260, -105.2551];
+        else if (continent === 'south america') center = [-8.7832, -55.4915];
+        else if (continent === 'antarctica') center = [-82.8628, 135.0000];
+        marker = [...center];
+        break;
+      }
+    }
+  }
+  
+  // Create the mapData object
+  const mapData: any = {
+    center,
+    zoom,
+    marker
+  };
+  
+  // Add highlight information if relevant
+  if (highlightFeature) mapData.highlightFeature = highlightFeature;
+  if (highlightState) mapData.highlightState = highlightState;
+  if (highlightCountry) mapData.highlightCountry = highlightCountry;
+  
+  return mapData;
 };
 
 /**
@@ -312,7 +518,7 @@ const processApiResponse = (data: any): Question[] => {
     throw new Error('Invalid questions format from API');
   }
 
-  // Process each question to add MaP prefix and shuffle options
+  // Process each question to add MaP prefix, shuffle options, and add map data
   const processedQuestions = questions.map(q => {
     // Only proceed if question has required properties
     if (
@@ -325,13 +531,23 @@ const processApiResponse = (data: any): Question[] => {
       return null; // Skip invalid questions
     }
     
-    // Check if this is a map-related question
-    const isMapQuestion = isMapRelatedQuestion(q.question);
+    // Analyze if this is a map-related question and what kind
+    const mapAnalysis = analyzeMapQuestion(q.question);
     
-    // Add "MaP" prefix to map-related questions
-    const processedQuestion = isMapQuestion 
-      ? `MaP: ${q.question}` 
-      : q.question;
+    // Variables for processed question
+    let processedQuestion = q.question;
+    let mapData = q.mapData; // Keep existing mapData if any
+    
+    // If map-related, add prefix and generate mapData if needed
+    if (mapAnalysis.isMap) {
+      // Add "MaP" prefix
+      processedQuestion = `MaP: ${q.question}`;
+      
+      // Generate mapData if none exists
+      if (!mapData) {
+        mapData = generateMapData(q.question, mapAnalysis);
+      }
+    }
     
     // Save the correct answer
     const correctAnswer = q.correct;
@@ -344,8 +560,9 @@ const processApiResponse = (data: any): Question[] => {
       question: processedQuestion,
       options: shuffledOptions,
       correct: correctAnswer,
+      // Include mapData if available
+      ...(mapData && { mapData }),
       // Maintain any other properties
-      ...(q.mapData && { mapData: q.mapData }),
       ...(q.imageUrl && { imageUrl: q.imageUrl })
     };
   }).filter(q => q !== null) as Question[]; // Remove any null entries
