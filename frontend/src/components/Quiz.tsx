@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
-import { CheckCircle2, XCircle, Trophy, ArrowLeft, AlertCircle, Loader2, Check, ArrowDown, RefreshCw, GripVertical } from 'lucide-react';
+import { CheckCircle2, XCircle, Trophy, ArrowLeft, AlertCircle, Loader2, Check, ArrowDown, RefreshCw, GripVertical, ArrowRight } from 'lucide-react';
 import { chapterData } from '../data/chapterData';
 import { subjects } from '../data/subjects';
 import { Card } from './ui/Card';
