@@ -17,6 +17,7 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [userAnswers, setUserAnswers] = useState<(string | null)[]>([]); // State to store user's answers
   
   // New states for API integration
   const [isLoading, setIsLoading] = useState(false);
@@ -80,6 +81,11 @@ export default function Quiz() {
 
   const handleAnswer = (answer: string) => {
     setSelectedAnswer(answer);
+    // Record user's answer
+    const newUserAnswers = [...userAnswers];
+    newUserAnswers[currentQuestion] = answer;
+    setUserAnswers(newUserAnswers);
+
     if (answer === questions[currentQuestion].correct) {
       setScore(score + 1);
     }
@@ -145,11 +151,31 @@ export default function Quiz() {
               setScore(0);
               setShowResult(false);
               setSelectedAnswer(null);
+              setUserAnswers([]); // Reset user answers
             }}
             className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors"
           >
             Try Again
           </button>
+        </div>
+
+        {/* Review Section */}
+        <div className="mt-8 text-left max-w-xl mx-auto">
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-800">Review Your Answers</h3>
+          {questions.map((q, index) => (
+            <div key={index} className="mb-6 p-4 border border-secondary-200 rounded-lg bg-white shadow-sm">
+              <p className="font-semibold text-secondary-700 mb-2">Question {index + 1}: {q.question}</p>
+              <p className={`text-sm ${userAnswers[index] === q.correct ? 'text-green-600' : 'text-red-600'}`}>
+                Your Answer: {userAnswers[index] || 'Not Answered'} 
+                {userAnswers[index] && (
+                  userAnswers[index] === q.correct 
+                    ? <CheckCircle2 className="inline w-4 h-4 ml-1" /> 
+                    : <XCircle className="inline w-4 h-4 ml-1" />
+                )}
+              </p>
+              <p className="text-sm text-blue-600">Correct Answer: {q.correct}</p>
+            </div>
+          ))}
         </div>
       </motion.div>
     );
