@@ -1,14 +1,20 @@
 // GROQ API utilities for fetching questions
 // Array of API keys to rotate through when hitting rate limits
 const GROQ_API_KEYS = [
-  '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', // First key to try
   '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',
   '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',
   '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',
   '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',
   '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',
   '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',
-  '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'
+  // Duplicated key from user feedback - assuming it's intentional or a mistake in feedback
+  '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', 
+  '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', // Duplicated key
+  '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', // Duplicated key
+  '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',
+  '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',
+  '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',
+  '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'
 ];
 
 // Track key status for intelligent rotation
