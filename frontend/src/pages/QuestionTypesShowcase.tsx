@@ -394,15 +394,14 @@ function DragDropDemo() {
           as="div" 
           axis="y" 
           values={orderedItems} 
-          onReorder={!submitted ? setOrderedItems : undefined}
+          onReorder={submitted ? () => {} : setOrderedItems}
           className="space-y-3"
         >
           {orderedItems.map(item => (
             <Reorder.Item
               key={item.id}
               value={item}
-              className={`p-3 rounded-lg border ${submitted ? 'bg-gray-50' : 'bg-white'} shadow-sm ${!submitted ? 'cursor-move hover:border-green-300' : ''} transition-all`}
-              disabled={submitted}
+              className={`p-3 rounded-lg border ${submitted ? 'bg-gray-50' : 'bg-white'} shadow-sm ${!submitted ? 'cursor-move hover:border-green-300' : 'pointer-events-none'} transition-all`}
             >
               <div className="flex justify-between items-center">
                 <span className="font-medium text-secondary-800">{item.text}</span>
