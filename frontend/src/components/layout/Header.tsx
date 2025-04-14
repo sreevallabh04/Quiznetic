@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, Layout } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-primary-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
+          {/* Logo Section */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -14,7 +16,21 @@ export function Header() {
             <div className="p-1.5 bg-primary-50 rounded-md border border-primary-200 overflow-hidden group">
               <BookOpen className="w-5 h-5 text-primary-600" />
             </div>
-            
+          
+          {/* Navigation Links */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="flex items-center"
+          >
+            <Link 
+              to="/question-types" 
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-secondary-700 hover:text-primary-600 hover:bg-primary-50 transition-colors"
+            >
+              <Layout className="w-4 h-4" />
+              <span className="font-medium">Question Types</span>
+            </Link>
+          </motion.div>
             <motion.span 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
