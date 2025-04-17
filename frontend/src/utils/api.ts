@@ -105,11 +105,65 @@ const rotateToNextApiKey = (): string => {
 
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
-interface Question {
-  question: string;
+// Define interfaces for different question types
+export type QuestionType = 'multiple_choice' | 'fill_blank' | 'matching' | 'drag_drop_order' | 'dropdown';
+
+export interface BaseQuestion {
+  id: string; // Add a unique ID for each question
+  type: QuestionType;
+  question: string; // The main question text or instruction
+}
+
+export interface MultipleChoiceQuestion extends BaseQuestion {
+  type: 'multiple_choice';
   options: string[];
   correct: string;
+  mapData?: any; // Keep map data for relevant MCQs
+  imageUrl?: string; // Keep image URL
 }
+
+export interface FillBlankQuestion extends BaseQuestion {
+  type: 'fill_blank';
+  // Question text should contain a placeholder like '[BLANK]'
+  correct: string; // The word(s) that fill the blank
+}
+
+export interface MatchingItem {
+  id: string;
+  text: string;
+}
+
+export interface MatchingQuestion extends BaseQuestion {
+  type: 'matching';
+  prompt: string; // e.g., "Match the terms with their definitions"
+  pairs: { left: MatchingItem; right: MatchingItem }[]; // Correctly matched pairs
+  // For the quiz, we'll shuffle the 'right' items
+}
+
+export interface DragDropOrderItem {
+  id: string;
+  text: string;
+}
+
+export interface DragDropOrderQuestion extends BaseQuestion {
+  type: 'drag_drop_order';
+  prompt: string; // e.g., "Arrange the following events in chronological order"
+  items: DragDropOrderItem[]; // Items in the correct order
+  // For the quiz, we'll shuffle the items
+}
+
+export interface DropdownQuestion extends BaseQuestion {
+  type: 'dropdown';
+  // Question text contains placeholders like '[DROPDOWN_1]', '[DROPDOWN_2]'
+  dropdowns: {
+    placeholder: string; // e.g., '[DROPDOWN_1]'
+    options: string[];
+    correct: string;
+  }[];
+}
+
+// Union type for any question
+export type Question = MultipleChoiceQuestion | FillBlankQuestion | MatchingQuestion | DragDropOrderQuestion | DropdownQuestion;
 
 export interface APIResponse {
   success: boolean;
@@ -517,60 +571,91 @@ const processApiResponse = (data: any): Question[] => {
   }
   
   // Parse the JSON content
-  const questions = JSON.parse(jsonContent);
-
-  // Validate the questions format
-  if (!Array.isArray(questions) || questions.length === 0) {
-    throw new Error('Invalid questions format from API');
+  let parsedQuestions: any[];
+  try {
+    parsedQuestions = JSON.parse(jsonContent);
+  } catch (e) {
+    console.error("Failed to parse JSON content:", jsonContent);
+    throw new Error('Failed to parse JSON from API response');
   }
 
-  // Process each question to add MaP prefix, shuffle options, and add map data
-  const processedQuestions = questions.map(q => {
-    // Only proceed if question has required properties
-    if (
-      !q.question || 
-      !Array.isArray(q.options) || 
-      q.options.length !== 4 || 
-      !q.correct || 
-      !q.options.includes(q.correct)
-    ) {
-      return null; // Skip invalid questions
+  // Validate the questions format
+  if (!Array.isArray(parsedQuestions) || parsedQuestions.length === 0) {
+    throw new Error('Invalid questions format from API: Expected a non-empty array.');
+  }
+
+  // Process and validate each question based on its type
+  const processedQuestions: Question[] = parsedQuestions.map((q, index) => {
+    // Add a unique ID
+    const questionId = `q_${Date.now()}_${index}`;
+    
+    // Basic validation
+    if (!q.type || !q.question) {
+      console.warn(`Skipping question ${index + 1}: Missing type or question text.`);
+      return null;
     }
-    
-    // Analyze if this is a map-related question and what kind
-    const mapAnalysis = analyzeMapQuestion(q.question);
-    
-    // Variables for processed question
-    let processedQuestion = q.question;
-    let mapData = q.mapData; // Keep existing mapData if any
-    
-    // If map-related, add prefix and generate mapData if needed
-    if (mapAnalysis.isMap) {
-      // Add "MaP" prefix
-      processedQuestion = `MaP: ${q.question}`;
-      
-      // Generate mapData if none exists
-      if (!mapData) {
-        mapData = generateMapData(q.question, mapAnalysis);
-      }
+
+    // Type-specific validation and processing
+    switch (q.type) {
+      case 'multiple_choice':
+        if (!Array.isArray(q.options) || q.options.length < 2 || !q.correct || !q.options.includes(q.correct)) {
+           console.warn(`Skipping MCQ ${index + 1}: Invalid options or correct answer.`);
+           return null;
+        }
+        // Analyze if this is a map-related question
+        const mapAnalysis = analyzeMapQuestion(q.question);
+        let processedMCQuestion = q.question;
+        let mapData = q.mapData;
+        if (mapAnalysis.isMap) {
+          processedMCQuestion = `MaP: ${q.question}`;
+          if (!mapData) {
+            mapData = generateMapData(q.question, mapAnalysis);
+          }
+        }
+        return {
+          ...q,
+          id: questionId,
+          type: 'multiple_choice',
+          question: processedMCQuestion,
+          options: shuffleArray(q.options), // Shuffle options
+          correct: q.correct,
+          ...(mapData && { mapData }),
+        } as MultipleChoiceQuestion;
+
+      case 'fill_blank':
+        if (!q.correct || typeof q.correct !== 'string' || !q.question.includes('[BLANK]')) {
+          console.warn(`Skipping FillBlank ${index + 1}: Missing correct answer or [BLANK] placeholder.`);
+          return null;
+        }
+        return { ...q, id: questionId, type: 'fill_blank' } as FillBlankQuestion;
+
+      case 'matching':
+        if (!q.prompt || !Array.isArray(q.pairs) || q.pairs.length < 2 || !q.pairs.every((p: any) => p.left?.id && p.left?.text && p.right?.id && p.right?.text)) {
+          console.warn(`Skipping Matching ${index + 1}: Invalid prompt or pairs structure.`);
+          return null;
+        }
+        // We'll shuffle the 'right' side options in the component later
+        return { ...q, id: questionId, type: 'matching' } as MatchingQuestion;
+
+      case 'drag_drop_order':
+         if (!q.prompt || !Array.isArray(q.items) || q.items.length < 2 || !q.items.every((item: any) => item.id && item.text)) {
+           console.warn(`Skipping DragDropOrder ${index + 1}: Invalid prompt or items structure.`);
+           return null;
+         }
+         // We'll shuffle the items in the component later
+         return { ...q, id: questionId, type: 'drag_drop_order' } as DragDropOrderQuestion;
+
+      case 'dropdown':
+        if (!Array.isArray(q.dropdowns) || q.dropdowns.length === 0 || !q.dropdowns.every((dd: any) => dd.placeholder && Array.isArray(dd.options) && dd.options.length > 1 && dd.correct && dd.options.includes(dd.correct) && q.question.includes(dd.placeholder))) {
+           console.warn(`Skipping Dropdown ${index + 1}: Invalid dropdowns structure or placeholder missing in question.`);
+           return null;
+        }
+        return { ...q, id: questionId, type: 'dropdown' } as DropdownQuestion;
+
+      default:
+        console.warn(`Skipping question ${index + 1}: Unknown type "${q.type}".`);
+        return null;
     }
-    
-    // Save the correct answer
-    const correctAnswer = q.correct;
-    
-    // Shuffle options
-    const shuffledOptions = shuffleArray(q.options);
-    
-    // Return processed question
-    return {
-      question: processedQuestion,
-      options: shuffledOptions,
-      correct: correctAnswer,
-      // Include mapData if available
-      ...(mapData && { mapData }),
-      // Maintain any other properties
-      ...(q.imageUrl && { imageUrl: q.imageUrl })
-    };
   }).filter(q => q !== null) as Question[]; // Remove any null entries
   
   if (processedQuestions.length === 0) {
@@ -596,23 +681,47 @@ export const fetchQuestionsFromAPI = async (
   chapterTitle: string,
   chapterDescription: string
 ): Promise<APIResponse> => {
-  // Create a prompt that specifies exactly what we need
-  const prompt = `Generate 20 multiple-choice questions with 4 options each for class ${classLevel} Telangana state board curriculum on the topic "${chapterTitle}" (${chapterDescription}) for subject ${subject}. 
-  
-  Each question should:
-  1. Be appropriate for the grade level (Class ${classLevel})
-  2. Follow the Telangana state board syllabus for ${subject}
-  3. Have exactly 4 options with one correct answer
-  4. Be formatted as a JSON array of objects with this exact structure:
-  [
-    {
-      "question": "Question text here?",
-      "options": ["Option A", "Option B", "Option C", "Option D"],
-      "correct": "The exact text of the correct option"
-    }
-  ]
-  
-  Only respond with the JSON array, no other text.`;
+  // Create a prompt that requests a mix of question types
+  const prompt = `Generate a diverse set of 15-20 quiz questions for class ${classLevel} Telangana state board curriculum on the topic "${chapterTitle}" (${chapterDescription}) for subject ${subject}. 
+Include a mix of the following question types: 'multiple_choice', 'fill_blank', 'matching', 'drag_drop_order', 'dropdown'. Ensure questions are appropriate for the grade level.
+
+Format the output as a single JSON array containing question objects. Each object must have a unique "id" (string), "type" (string, one of the types above), and "question" (string). Follow the specific structure for each type:
+
+1.  **multiple_choice**: 
+    - "question": Question text. Can include map references (prefix with "MaP: ").
+    - "options": Array of 4 strings.
+    - "correct": The correct string option.
+    - "imageUrl": (Optional) URL string for an image.
+    - "mapData": (Optional) Object for map display (auto-generated if "MaP: " prefix is used).
+    Example: 
+    { "id": "mcq1", "type": "multiple_choice", "question": "What is the capital of Telangana?", "options": ["Hyderabad", "Warangal", "Nizamabad", "Karimnagar"], "correct": "Hyderabad" }
+
+2.  **fill_blank**:
+    - "question": Text containing one or more '[BLANK]' placeholders.
+    - "correct": String or array of strings representing the correct word(s) for the blank(s). If multiple blanks, provide answers in order.
+    Example:
+    { "id": "fb1", "type": "fill_blank", "question": "The Godavari river flows through [BLANK].", "correct": "Telangana" }
+
+3.  **matching**:
+    - "prompt": Instruction text (e.g., "Match the leader with their contribution").
+    - "pairs": Array of objects, each with { "left": { "id": "L1", "text": "Term A" }, "right": { "id": "R1", "text": "Definition A" } }. Ensure 'left' and 'right' ids within a pair are unique but correspond (e.g., L1 matches R1). Provide at least 3 pairs.
+    Example:
+    { "id": "m1", "type": "matching", "prompt": "Match rivers and states:", "pairs": [ { "left": { "id": "L1", "text": "Godavari" }, "right": { "id": "R1", "text": "Telangana" } }, { "left": { "id": "L2", "text": "Krishna" }, "right": { "id": "R2", "text": "Andhra Pradesh" } } ] }
+
+4.  **drag_drop_order**:
+    - "prompt": Instruction text (e.g., "Arrange these historical events chronologically").
+    - "items": Array of objects { "id": "item1", "text": "Event A" } in the CORRECT order. Provide at least 3 items.
+    Example:
+    { "id": "ddo1", "type": "drag_drop_order", "prompt": "Order the numbers smallest to largest:", "items": [ { "id": "i1", "text": "10" }, { "id": "i2", "text": "25" }, { "id": "i3", "text": "50" } ] }
+
+5.  **dropdown**:
+    - "question": Text containing one or more unique placeholders like '[DROPDOWN_1]', '[DROPDOWN_2]'.
+    - "dropdowns": Array of objects, one for each placeholder: { "placeholder": "[DROPDOWN_1]", "options": ["OptionA", "OptionB", "Correct"], "correct": "Correct" }. Ensure options array includes the correct answer.
+    Example:
+    { "id": "dd1", "type": "dropdown", "question": "Select the correct word: The sky is [DROPDOWN_1] and the grass is [DROPDOWN_2].", "dropdowns": [ { "placeholder": "[DROPDOWN_1]", "options": ["blue", "red", "green"], "correct": "blue" }, { "placeholder": "[DROPDOWN_2]", "options": ["yellow", "green", "purple"], "correct": "green" } ] }
+
+Generate around 15-20 questions total, mixing the types. Respond ONLY with the JSON array. Do not include any other text, explanations, or markdown formatting outside the JSON structure itself.
+`;
 
   try {
     // Make the API request with advanced retry logic
