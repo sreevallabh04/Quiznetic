@@ -7,6 +7,7 @@ import SubjectSelection from './components/SubjectSelection';
 import ChapterSelection from './components/ChapterSelection';
 import Quiz from './components/Quiz';
 import RefreshHandler from './pages/RefreshHandler';
+import QuestionTypesShowcase from './pages/QuestionTypesShowcase';
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/class/:classId" element={<SubjectSelection />} />
             <Route path="/class/:classId/:subject" element={<ChapterSelection />} />
             <Route path="/class/:classId/:subject/:chapter" element={<Quiz />} />
+            <Route path="/question-types" element={<QuestionTypesShowcase />} />
           </Routes>
         </main>
         <Footer />

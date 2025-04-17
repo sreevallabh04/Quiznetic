@@ -1,14 +1,33 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, XCircle, Trophy, ArrowLeft, AlertCircle, Loader2 } from 'lucide-react';
+import { motion, AnimatePresence, Reorder } from 'framer-motion';
+import { CheckCircle2, XCircle, Trophy, ArrowLeft, AlertCircle, Loader2, Check, ArrowDown, RefreshCw, GripVertical, ArrowRight } from 'lucide-react';
 import { chapterData } from '../data/chapterData';
 import { subjects } from '../data/subjects';
 import { Card } from './ui/Card';
 import { PageTitle } from './ui/PageTitle';
 import { ProgressBar } from './ui/ProgressBar';
-import { fetchQuestionsFromAPI } from '../utils/api';
+import { 
+  fetchQuestionsFromAPI, 
+  Question, 
+  QuestionType,
+  MultipleChoiceQuestion,
+  FillBlankQuestion,
+  MatchingQuestion,
+  DragDropOrderQuestion,
+  DropdownQuestion
+} from '../utils/api';
 import MapDisplay from './MapDisplay';
+
+// Helper function to shuffle an array
+function shuffleArray<T>(array: T[]): T[] {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+}
 
 export default function Quiz() {
   const navigate = useNavigate();
@@ -17,11 +36,11 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [userAnswers, setUserAnswers] = useState<(string | null)[]>([]); // State to store user's answers
+  const [userAnswers, setUserAnswers] = useState<Record<string, any>>({}); // Enhanced to store various answer types
   
   // New states for API integration
   const [isLoading, setIsLoading] = useState(false);
-  const [apiQuestions, setApiQuestions] = useState<any[]>([]);
+  const [apiQuestions, setApiQuestions] = useState<Question[]>([]);
   const [apiError, setApiError] = useState<string | null>(null);
 
   const currentSubject = subjects.find((s) => s.id === subject);
@@ -38,11 +57,33 @@ export default function Quiz() {
   // Find the specific chapter based on chapter parameter
   const currentChapter = subjectChapters.find((c: { id: number }) => c.id === Number(chapter));
   
-  // Static questions from data files
-  const staticQuestions = currentChapter?.questions || [];
+  // Convert static questions to follow the Question interface format
+  const staticQuestions = currentChapter?.questions 
+    ? currentChapter.questions.map((q: any, index: number) => ({
+        id: `static_${index}`,
+        type: 'multiple_choice' as QuestionType,
+        question: q.question,
+        options: q.options,
+        correct: q.correct,
+        ...(q.mapData && { mapData: q.mapData }),
+        ...(q.imageUrl && { imageUrl: q.imageUrl })
+      }))
+    : [];
   
   // Combined questions from both static and API sources
-  const questions = [...staticQuestions, ...apiQuestions];
+  const questions: Question[] = [...staticQuestions, ...apiQuestions];
+
+  // For matching questions
+  const [matchingPairs, setMatchingPairs] = useState<Record<string, string>>({});
+  
+  // For drag and drop questions
+  const [orderedItems, setOrderedItems] = useState<any[]>([]);
+  
+  // For fill in the blank questions
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // For dropdown questions
+  const [dropdownSelections, setDropdownSelections] = useState<Record<string, string>>({});
 
   // Fetch additional questions from API
   useEffect(() => {
@@ -79,17 +120,137 @@ export default function Quiz() {
     fetchQuestions();
   }, [classId, subject, chapter, currentChapter]);
 
-  const handleAnswer = (answer: string) => {
+  // Initialize state based on current question
+  useEffect(() => {
+    if (questions.length === 0) return;
+    
+    const currentQ = questions[currentQuestion];
+    
+    if (currentQ.type === 'matching') {
+      // Initialize with empty selections
+      setMatchingPairs({});
+    } else if (currentQ.type === 'drag_drop_order') {
+      // Initialize with shuffled items
+      const itemsToOrder = (currentQ as DragDropOrderQuestion).items;
+      setOrderedItems(shuffleArray([...itemsToOrder]));
+    } else if (currentQ.type === 'dropdown') {
+      // Initialize dropdown selections
+      setDropdownSelections({});
+    }
+  }, [currentQuestion, questions]);
+
+  const handleMultipleChoiceAnswer = (answer: string) => {
+    const question = questions[currentQuestion] as MultipleChoiceQuestion;
     setSelectedAnswer(answer);
+    
     // Record user's answer
-    const newUserAnswers = [...userAnswers];
-    newUserAnswers[currentQuestion] = answer;
+    const newUserAnswers = { ...userAnswers };
+    newUserAnswers[question.id] = answer;
     setUserAnswers(newUserAnswers);
 
-    if (answer === questions[currentQuestion].correct) {
+    if (answer === question.correct) {
       setScore(score + 1);
     }
 
+    moveToNextQuestion();
+  };
+
+  const handleFillBlankAnswer = () => {
+    if (!inputRef.current) return;
+    
+    const question = questions[currentQuestion] as FillBlankQuestion;
+    const userAnswer = inputRef.current.value.trim();
+    setSelectedAnswer(userAnswer);
+    
+    // Record user's answer
+    const newUserAnswers = { ...userAnswers };
+    newUserAnswers[question.id] = userAnswer;
+    setUserAnswers(newUserAnswers);
+
+    // Check if the answer is correct (case insensitive)
+    if (userAnswer.toLowerCase() === question.correct.toLowerCase()) {
+      setScore(score + 1);
+    }
+
+    moveToNextQuestion();
+  };
+
+  const handleMatchingAnswer = () => {
+    const question = questions[currentQuestion] as MatchingQuestion;
+    
+    // Record user's answer
+    const newUserAnswers = { ...userAnswers };
+    newUserAnswers[question.id] = { ...matchingPairs };
+    setUserAnswers(newUserAnswers);
+
+    // Check if all pairs are correctly matched
+    let allCorrect = true;
+    for (const pair of question.pairs) {
+      if (matchingPairs[pair.left.id] !== pair.right.id) {
+        allCorrect = false;
+        break;
+      }
+    }
+
+    if (allCorrect) {
+      setScore(score + 1);
+    }
+
+    moveToNextQuestion();
+  };
+
+  const handleDragDropAnswer = () => {
+    const question = questions[currentQuestion] as DragDropOrderQuestion;
+    
+    // Record user's answer
+    const newUserAnswers = { ...userAnswers };
+    newUserAnswers[question.id] = [...orderedItems];
+    setUserAnswers(newUserAnswers);
+
+    // Check if items are in correct order
+    const correctOrder = question.items.map(item => item.id);
+    const userOrder = orderedItems.map(item => item.id);
+    
+    let isCorrect = true;
+    for (let i = 0; i < correctOrder.length; i++) {
+      if (correctOrder[i] !== userOrder[i]) {
+        isCorrect = false;
+        break;
+      }
+    }
+
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+
+    moveToNextQuestion();
+  };
+
+  const handleDropdownAnswer = () => {
+    const question = questions[currentQuestion] as DropdownQuestion;
+    
+    // Record user's answer
+    const newUserAnswers = { ...userAnswers };
+    newUserAnswers[question.id] = { ...dropdownSelections };
+    setUserAnswers(newUserAnswers);
+
+    // Check if all dropdowns have correct selections
+    let allCorrect = true;
+    for (const dropdown of question.dropdowns) {
+      if (dropdownSelections[dropdown.placeholder] !== dropdown.correct) {
+        allCorrect = false;
+        break;
+      }
+    }
+
+    if (allCorrect) {
+      setScore(score + 1);
+    }
+
+    moveToNextQuestion();
+  };
+
+  const moveToNextQuestion = () => {
     setTimeout(() => {
       if (currentQuestion < questions.length - 1) {
         setCurrentQuestion(currentQuestion + 1);
@@ -98,6 +259,453 @@ export default function Quiz() {
         setShowResult(true);
       }
     }, 1000);
+  };
+
+  const handlePairSelection = (leftId: string, rightId: string) => {
+    setMatchingPairs(prev => ({
+      ...prev,
+      [leftId]: rightId
+    }));
+  };
+
+  const getFormattedDropdownQuestion = (question: DropdownQuestion) => {
+    // Replace dropdown placeholders with actual dropdown elements
+    let text = question.question;
+    const dropdowns = question.dropdowns || [];
+    
+    return text;
+  };
+
+  const renderQuestionByType = () => {
+    if (!questions.length || currentQuestion >= questions.length) {
+      return <div className="text-center text-secondary-800">No questions available</div>;
+    }
+
+    const currentQ = questions[currentQuestion];
+
+    switch (currentQ.type) {
+      case 'multiple_choice':
+        return renderMultipleChoiceQuestion(currentQ as MultipleChoiceQuestion);
+      case 'fill_blank':
+        return renderFillBlankQuestion(currentQ as FillBlankQuestion);
+      case 'matching':
+        return renderMatchingQuestion(currentQ as MatchingQuestion);
+      case 'drag_drop_order':
+        return renderDragDropQuestion(currentQ as DragDropOrderQuestion);
+      case 'dropdown':
+        return renderDropdownQuestion(currentQ as DropdownQuestion);
+      default:
+        return <div className="text-center text-secondary-800">Unsupported question type</div>;
+    }
+  };
+
+  const renderMultipleChoiceQuestion = (question: MultipleChoiceQuestion) => {
+    return (
+      <>
+        {/* Interactive Map Display */}
+        {question.mapData && (
+          <div className="mb-8 relative z-10">
+            <div className="rounded-xl border-2 border-primary-200 overflow-hidden shadow-md transform hover:scale-[1.02] transition-transform duration-300 relative">
+              {/* Map Overlay Elements */}
+              <div className="absolute inset-0 pointer-events-none z-10">
+                <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-primary-200 rounded-tl-lg"></div>
+                <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-primary-200 rounded-tr-lg"></div>
+                <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-primary-200 rounded-bl-lg"></div>
+                <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-primary-200 rounded-br-lg"></div>
+              </div>
+              <MapDisplay mapData={question.mapData} />
+            </div>
+            <p className="text-sm text-center text-secondary-600 mt-3 bg-primary-50 p-2 rounded-full inline-block px-6 mx-auto border border-primary-100 shadow-sm">
+              Explore the map and select the correct answer
+            </p>
+          </div>
+        )}
+        
+        {/* Static Image Display */}
+        {!question.mapData && question.imageUrl && (
+          <div className="mb-8 relative z-10">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary-200 to-primary-300 rounded-xl blur-md opacity-50 group-hover:opacity-75 transition duration-300"></div>
+              <img 
+                src={question.imageUrl} 
+                alt="Map reference" 
+                className="relative rounded-lg w-full max-w-2xl mx-auto z-10"
+              />
+            </div>
+            <p className="text-sm text-center text-secondary-600 mt-3 bg-primary-50 p-2 rounded-full inline-block px-6 mx-auto border border-primary-100 shadow-sm">
+              Look at the map and select the correct answer
+            </p>
+          </div>
+        )}
+
+        {/* Answer Options */}
+        <div className="space-y-4 relative z-10">
+          <AnimatePresence mode="wait">
+            {question.options.map((option: string, index: number) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ delay: index * 0.1 }}
+                className="relative group"
+              >
+                {/* Subtle highlight effect */}
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-200/0 via-primary-300/0 to-primary-200/0 rounded-lg blur opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                
+                <Card 
+                  onClick={() => !selectedAnswer && handleMultipleChoiceAnswer(option)}
+                  className={`relative border ${
+                    selectedAnswer === option
+                      ? option === question.correct
+                        ? 'border-green-500 bg-green-50'
+                        : 'border-red-500 bg-red-50'
+                      : 'border-secondary-200 bg-white hover:bg-primary-50'
+                  } transition-all duration-300`}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className={`font-medium ${selectedAnswer === option ? (option === question.correct ? 'text-green-700' : 'text-red-700') : 'text-secondary-800'}`}>
+                      {option}
+                    </span>
+                    {selectedAnswer === option && (
+                      <motion.span
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                      >
+                        {option === question.correct ? (
+                          <CheckCircle2 className="w-5 h-5 text-green-600" />
+                        ) : (
+                          <XCircle className="w-5 h-5 text-red-600" />
+                        )}
+                      </motion.span>
+                    )}
+                  </div>
+                </Card>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
+      </>
+    );
+  };
+
+  const renderFillBlankQuestion = (question: FillBlankQuestion) => {
+    // Split the question text by [BLANK] placeholder
+    const parts = question.question.split('[BLANK]');
+    
+    return (
+      <div className="space-y-6">
+        <div className="p-4 rounded-lg bg-white border border-primary-100 shadow-sm">
+          <div className="flex flex-wrap items-center text-xl font-medium text-secondary-800">
+            {parts.map((part, index) => (
+              <React.Fragment key={index}>
+                <span>{part}</span>
+                {index < parts.length - 1 && (
+                  <div className="inline-block mx-1 my-1 w-32 h-10">
+                    <input
+                      ref={inputRef}
+                      type="text"
+                      className="w-full h-full px-3 py-1 border-b-2 bg-primary-50 border-primary-300 focus:border-primary-500 focus:outline-none rounded text-center"
+                      placeholder="Type answer..."
+                      disabled={selectedAnswer !== null}
+                    />
+                  </div>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+        
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className={`w-full py-3 px-6 rounded-lg text-white font-medium transition-colors ${
+            selectedAnswer ? 'bg-gray-400 cursor-not-allowed' : 'bg-primary-600 hover:bg-primary-700'
+          }`}
+          onClick={() => !selectedAnswer && handleFillBlankAnswer()}
+          disabled={selectedAnswer !== null}
+        >
+          {selectedAnswer ? (
+            <div className="flex items-center justify-center space-x-2">
+              <span>
+                {selectedAnswer.toLowerCase() === question.correct.toLowerCase() 
+                  ? 'Correct!' 
+                  : `Incorrect! The answer is "${question.correct}"`}
+              </span>
+              {selectedAnswer.toLowerCase() === question.correct.toLowerCase() ? (
+                <CheckCircle2 className="w-5 h-5 text-green-200" />
+              ) : (
+                <XCircle className="w-5 h-5 text-red-200" />
+              )}
+            </div>
+          ) : (
+            'Submit Answer'
+          )}
+        </motion.button>
+      </div>
+    );
+  };
+
+  const renderMatchingQuestion = (question: MatchingQuestion) => {
+    // Create a shuffled array of right side items
+    const shuffledRightItems = shuffleArray(question.pairs.map(pair => pair.right));
+    
+    return (
+      <div className="space-y-6">
+        <div className="p-4 rounded-lg bg-white border border-primary-100 shadow-sm">
+          <p className="mb-4 text-lg font-medium text-secondary-700">{question.prompt}</p>
+          
+          <div className="grid grid-cols-2 gap-6">
+            {/* Left column - terms */}
+            <div className="space-y-3">
+              <h4 className="font-semibold text-primary-600 mb-2 text-center">Terms</h4>
+              {question.pairs.map((pair, index) => (
+                <div 
+                  key={`left-${index}`}
+                  className={`p-3 rounded-lg border ${
+                    matchingPairs[pair.left.id] 
+                      ? 'border-primary-400 bg-primary-50' 
+                      : 'border-gray-200'
+                  } transition-colors`}
+                >
+                  <div className="flex justify-between items-center">
+                    <span>{pair.left.text}</span>
+                    {matchingPairs[pair.left.id] && (
+                      <ArrowRight className="w-4 h-4 text-primary-500" />
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            {/* Right column - definitions */}
+            <div className="space-y-3">
+              <h4 className="font-semibold text-primary-600 mb-2 text-center">Definitions</h4>
+              {shuffledRightItems.map((rightItem, index) => (
+                <div 
+                  key={`right-${index}`}
+                  className={`p-3 rounded-lg border cursor-pointer ${
+                    Object.values(matchingPairs).includes(rightItem.id)
+                      ? 'border-primary-400 bg-primary-50 opacity-50'
+                      : 'border-gray-200 hover:border-primary-300 hover:bg-primary-50/30'
+                  } transition-colors`}
+                  onClick={() => {
+                    // Find the first unmatched left item
+                    const unmatchedLeftId = question.pairs.find(
+                      pair => !matchingPairs[pair.left.id]
+                    )?.left.id;
+                    
+                    if (unmatchedLeftId && !Object.values(matchingPairs).includes(rightItem.id)) {
+                      handlePairSelection(unmatchedLeftId, rightItem.id);
+                    }
+                  }}
+                >
+                  {rightItem.text}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        
+        <div className="flex space-x-4">
+          <motion.button
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="py-3 px-6 rounded-lg text-white font-medium bg-secondary-500 hover:bg-secondary-600 transition-colors"
+            onClick={() => setMatchingPairs({})}
+          >
+            <div className="flex items-center space-x-2">
+              <RefreshCw className="w-4 h-4" />
+              <span>Reset</span>
+            </div>
+          </motion.button>
+          
+          <motion.button
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className={`flex-1 py-3 px-6 rounded-lg text-white font-medium transition-colors ${
+              Object.keys(matchingPairs).length === question.pairs.length
+                ? 'bg-primary-600 hover:bg-primary-700'
+                : 'bg-gray-400 cursor-not-allowed'
+            }`}
+            onClick={() => Object.keys(matchingPairs).length === question.pairs.length && handleMatchingAnswer()}
+            disabled={Object.keys(matchingPairs).length !== question.pairs.length}
+          >
+            <div className="flex items-center justify-center space-x-2">
+              <span>Submit Matches</span>
+              <Check className="w-4 h-4" />
+            </div>
+          </motion.button>
+        </div>
+      </div>
+    );
+  };
+
+  const renderDragDropQuestion = (question: DragDropOrderQuestion) => {
+    return (
+      <div className="space-y-6">
+        <div className="p-4 rounded-lg bg-white border border-primary-100 shadow-sm">
+          <p className="mb-4 text-lg font-medium text-secondary-700">{question.prompt}</p>
+          
+          <div className="mb-4 flex justify-center">
+            <div className="inline-flex items-center px-4 py-2 bg-primary-50 rounded-full border border-primary-100">
+              <ArrowDown className="w-4 h-4 mr-2 text-primary-500" />
+              <span className="text-sm font-medium text-primary-700">Drag items to rearrange</span>
+            </div>
+          </div>
+          
+          <Reorder.Group 
+            as="div" 
+            axis="y" 
+            values={orderedItems} 
+            onReorder={setOrderedItems}
+            className="space-y-3"
+          >
+            {orderedItems.map(item => (
+              <Reorder.Item
+                key={item.id}
+                value={item}
+                className="p-3 rounded-lg border border-gray-200 bg-white shadow-sm cursor-move hover:border-primary-300 transition-all"
+              >
+                <div className="flex justify-between items-center">
+                  <span className="font-medium text-secondary-800">{item.text}</span>
+                  <GripVertical className="w-5 h-5 text-gray-400" />
+                </div>
+              </Reorder.Item>
+            ))}
+          </Reorder.Group>
+        </div>
+        
+        <div className="flex space-x-4">
+          <motion.button
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="py-3 px-6 rounded-lg text-white font-medium bg-secondary-500 hover:bg-secondary-600 transition-colors"
+            onClick={() => setOrderedItems(shuffleArray([...question.items]))}
+          >
+            <div className="flex items-center space-x-2">
+              <RefreshCw className="w-4 h-4" />
+              <span>Shuffle</span>
+            </div>
+          </motion.button>
+          
+          <motion.button
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="flex-1 py-3 px-6 rounded-lg text-white font-medium bg-primary-600 hover:bg-primary-700 transition-colors"
+            onClick={handleDragDropAnswer}
+          >
+            <div className="flex items-center justify-center space-x-2">
+              <span>Submit Order</span>
+              <Check className="w-4 h-4" />
+            </div>
+          </motion.button>
+        </div>
+      </div>
+    );
+  };
+
+  const renderDropdownQuestion = (question: DropdownQuestion) => {
+    // Split the question text by dropdown placeholders and create elements
+    let questionElements: JSX.Element[] = [];
+    let lastIndex = 0;
+    
+    // Regular expression to find dropdown placeholders like [DROPDOWN_1]
+    const regex = /\[DROPDOWN_(\d+)\]/g;
+    let match;
+    let text = question.question;
+
+    while ((match = regex.exec(text)) !== null) {
+      // Add text before the placeholder
+      if (match.index > lastIndex) {
+        questionElements.push(
+          <span key={`text-${lastIndex}`}>{text.substring(lastIndex, match.index)}</span>
+        );
+      }
+      
+      // Find the corresponding dropdown from the question data
+      const placeholder = match[0];
+      const dropdown = question.dropdowns.find(d => d.placeholder === placeholder);
+      
+      if (dropdown) {
+        // Add the dropdown element
+        questionElements.push(
+          <select
+            key={`dropdown-${match[1]}`}
+            value={dropdownSelections[placeholder] || ''}
+            onChange={(e) => {
+              setDropdownSelections(prev => ({
+                ...prev,
+                [placeholder]: e.target.value
+              }));
+            }}
+            className="mx-1 px-2 py-1 rounded border border-primary-300 bg-primary-50 focus:border-primary-500 focus:outline-none text-secondary-800 font-medium disabled:opacity-60"
+            disabled={selectedAnswer !== null}
+          >
+            <option value="">Select...</option>
+            {dropdown.options.map((option, idx) => (
+              <option key={idx} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        );
+      }
+      
+      // Update lastIndex to after the current match
+      lastIndex = match.index + match[0].length;
+    }
+    
+    // Add any remaining text
+    if (lastIndex < text.length) {
+      questionElements.push(
+        <span key={`text-${lastIndex}`}>{text.substring(lastIndex)}</span>
+      );
+    }
+    
+    return (
+      <div className="space-y-6">
+        <div className="p-4 rounded-lg bg-white border border-primary-100 shadow-sm">
+          <div className="flex flex-wrap items-center text-xl font-medium text-secondary-800 space-x-1">
+            {questionElements}
+          </div>
+        </div>
+        
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className={`w-full py-3 px-6 rounded-lg text-white font-medium transition-colors ${
+            Object.keys(dropdownSelections).length === question.dropdowns.length && !selectedAnswer
+              ? 'bg-primary-600 hover:bg-primary-700'
+              : 'bg-gray-400 cursor-not-allowed'
+          }`}
+          onClick={() => {
+            if (Object.keys(dropdownSelections).length === question.dropdowns.length && !selectedAnswer) {
+              setSelectedAnswer('submitted');
+              handleDropdownAnswer();
+            }
+          }}
+          disabled={Object.keys(dropdownSelections).length !== question.dropdowns.length || selectedAnswer !== null}
+        >
+          {selectedAnswer ? (
+            <div className="flex items-center justify-center space-x-2">
+              <span>
+                {question.dropdowns.every(dd => dropdownSelections[dd.placeholder] === dd.correct) 
+                  ? 'Correct!' 
+                  : 'Incorrect!'}
+              </span>
+              {question.dropdowns.every(dd => dropdownSelections[dd.placeholder] === dd.correct) ? (
+                <CheckCircle2 className="w-5 h-5 text-green-200" />
+              ) : (
+                <XCircle className="w-5 h-5 text-red-200" />
+              )}
+            </div>
+          ) : (
+            'Submit Answer'
+          )}
+        </motion.button>
+      </div>
+    );
   };
 
   if (!currentChapter || (staticQuestions.length === 0 && !isLoading && apiQuestions.length === 0)) {
@@ -151,7 +759,7 @@ export default function Quiz() {
               setScore(0);
               setShowResult(false);
               setSelectedAnswer(null);
-              setUserAnswers([]); // Reset user answers
+              setUserAnswers({}); // Reset user answers
             }}
             className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors"
           >
@@ -165,15 +773,8 @@ export default function Quiz() {
           {questions.map((q, index) => (
             <div key={index} className="mb-6 p-4 border border-secondary-200 rounded-lg bg-white shadow-sm">
               <p className="font-semibold text-secondary-700 mb-2">Question {index + 1}: {q.question}</p>
-              <p className={`text-sm ${userAnswers[index] === q.correct ? 'text-green-600' : 'text-red-600'}`}>
-                Your Answer: {userAnswers[index] || 'Not Answered'} 
-                {userAnswers[index] && (
-                  userAnswers[index] === q.correct 
-                    ? <CheckCircle2 className="inline w-4 h-4 ml-1" /> 
-                    : <XCircle className="inline w-4 h-4 ml-1" />
-                )}
-              </p>
-              <p className="text-sm text-blue-600">Correct Answer: {q.correct}</p>
+              
+              {renderAnswerReview(q, index)}
             </div>
           ))}
         </div>
@@ -196,6 +797,180 @@ export default function Quiz() {
       </motion.div>
     );
   }
+
+  const renderAnswerReview = (question: Question, index: number) => {
+    const userAnswer = userAnswers[question.id];
+    
+    switch (question.type) {
+      case 'multiple_choice': {
+        const mcQuestion = question as MultipleChoiceQuestion;
+        const isCorrect = userAnswer === mcQuestion.correct;
+        
+        return (
+          <>
+            <p className={`text-sm ${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
+              Your Answer: {userAnswer || 'Not Answered'} 
+              {userAnswer && (
+                isCorrect 
+                  ? <CheckCircle2 className="inline w-4 h-4 ml-1" /> 
+                  : <XCircle className="inline w-4 h-4 ml-1" />
+              )}
+            </p>
+            <p className="text-sm text-blue-600">Correct Answer: {mcQuestion.correct}</p>
+          </>
+        );
+      }
+      
+      case 'fill_blank': {
+        const fbQuestion = question as FillBlankQuestion;
+        const isCorrect = userAnswer?.toLowerCase() === fbQuestion.correct.toLowerCase();
+        
+        return (
+          <>
+            <p className={`text-sm ${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
+              Your Answer: {userAnswer || 'Not Answered'} 
+              {userAnswer && (
+                isCorrect 
+                  ? <CheckCircle2 className="inline w-4 h-4 ml-1" /> 
+                  : <XCircle className="inline w-4 h-4 ml-1" />
+              )}
+            </p>
+            <p className="text-sm text-blue-600">Correct Answer: {fbQuestion.correct}</p>
+          </>
+        );
+      }
+      
+      case 'matching': {
+        const matchQuestion = question as MatchingQuestion;
+        const userPairs = userAnswer || {};
+        
+        return (
+          <div className="mt-2">
+            <table className="w-full text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="p-2 text-left">Term</th>
+                  <th className="p-2 text-left">Your Match</th>
+                  <th className="p-2 text-left">Correct Match</th>
+                  <th className="p-2 text-center">Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                {matchQuestion.pairs.map((pair, i) => {
+                  const userRightId = userPairs[pair.left.id];
+                  const userRight = matchQuestion.pairs.find(p => p.right.id === userRightId)?.right;
+                  const isCorrect = userRightId === pair.right.id;
+                  
+                  return (
+                    <tr key={i} className="border-t border-gray-100">
+                      <td className="p-2">{pair.left.text}</td>
+                      <td className="p-2">{userRight ? userRight.text : 'Not matched'}</td>
+                      <td className="p-2">{pair.right.text}</td>
+                      <td className="p-2 text-center">
+                        {userRight ? (
+                          isCorrect 
+                            ? <CheckCircle2 className="inline w-4 h-4 text-green-600" /> 
+                            : <XCircle className="inline w-4 h-4 text-red-600" />
+                        ) : (
+                          <span className="text-gray-400">-</span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        );
+      }
+      
+      case 'drag_drop_order': {
+        const ddQuestion = question as DragDropOrderQuestion;
+        const userOrder = userAnswer || [];
+        const correctOrder = ddQuestion.items;
+        
+        return (
+          <div className="mt-2">
+            <div className="flex flex-col space-y-2">
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="font-medium text-sm mb-1">Your Order:</p>
+                  {userOrder.length ? (
+                    <ol className="list-decimal list-inside text-sm pl-2">
+                      {userOrder.map((item: any, i: number) => (
+                        <li key={i} className="py-1 px-2 rounded bg-gray-50">
+                          {item.text}
+                        </li>
+                      ))}
+                    </ol>
+                  ) : (
+                    <p className="text-sm text-gray-500 italic">Not answered</p>
+                  )}
+                </div>
+                
+                <div>
+                  <p className="font-medium text-sm mb-1">Correct Order:</p>
+                  <ol className="list-decimal list-inside text-sm pl-2">
+                    {correctOrder.map((item, i) => (
+                      <li key={i} className="py-1 px-2 rounded bg-gray-50">
+                        {item.text}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+      
+      case 'dropdown': {
+        const ddQuestion = question as DropdownQuestion;
+        const userSelections = userAnswer || {};
+        
+        return (
+          <div className="mt-2">
+            <table className="w-full text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="p-2 text-left">Placeholder</th>
+                  <th className="p-2 text-left">Your Selection</th>
+                  <th className="p-2 text-left">Correct Answer</th>
+                  <th className="p-2 text-center">Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                {ddQuestion.dropdowns.map((dropdown, i) => {
+                  const userSelection = userSelections[dropdown.placeholder];
+                  const isCorrect = userSelection === dropdown.correct;
+                  
+                  return (
+                    <tr key={i} className="border-t border-gray-100">
+                      <td className="p-2">{dropdown.placeholder}</td>
+                      <td className="p-2">{userSelection || 'Not selected'}</td>
+                      <td className="p-2">{dropdown.correct}</td>
+                      <td className="p-2 text-center">
+                        {userSelection ? (
+                          isCorrect 
+                            ? <CheckCircle2 className="inline w-4 h-4 text-green-600" /> 
+                            : <XCircle className="inline w-4 h-4 text-red-600" />
+                        ) : (
+                          <span className="text-gray-400">-</span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        );
+      }
+      
+      default:
+        return <p className="text-sm text-gray-500">Answer review not available for this question type.</p>;
+    }
+  };
 
   return (
     <motion.div
@@ -250,90 +1025,13 @@ export default function Quiz() {
         </div>
 
         {/* Question Text */}
-        <h3 className="text-xl font-semibold mb-6 text-secondary-800 relative z-10">{questions[currentQuestion]?.question}</h3>
+        <h3 className="text-xl font-semibold mb-6 text-secondary-800 relative z-10">
+          {questions[currentQuestion]?.question?.replace(/MaP: /, '')}
+        </h3>
 
-        {/* Interactive Map Display */}
-        {questions[currentQuestion]?.mapData && (
-          <div className="mb-8 relative z-10">
-            <div className="rounded-xl border-2 border-primary-200 overflow-hidden shadow-md transform hover:scale-[1.02] transition-transform duration-300 relative">
-              {/* Map Overlay Elements */}
-              <div className="absolute inset-0 pointer-events-none z-10">
-                <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-primary-200 rounded-tl-lg"></div>
-                <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-primary-200 rounded-tr-lg"></div>
-                <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-primary-200 rounded-bl-lg"></div>
-                <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-primary-200 rounded-br-lg"></div>
-              </div>
-              <MapDisplay mapData={questions[currentQuestion].mapData} />
-            </div>
-            <p className="text-sm text-center text-secondary-600 mt-3 bg-primary-50 p-2 rounded-full inline-block px-6 mx-auto border border-primary-100 shadow-sm">
-              Explore the map and select the correct answer
-            </p>
-          </div>
-        )}
-        
-        {/* Static Image Display */}
-        {!questions[currentQuestion]?.mapData && questions[currentQuestion]?.imageUrl && (
-          <div className="mb-8 relative z-10">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary-200 to-primary-300 rounded-xl blur-md opacity-50 group-hover:opacity-75 transition duration-300"></div>
-              <img 
-                src={questions[currentQuestion].imageUrl} 
-                alt="Map reference" 
-                className="relative rounded-lg w-full max-w-2xl mx-auto z-10"
-              />
-            </div>
-            <p className="text-sm text-center text-secondary-600 mt-3 bg-primary-50 p-2 rounded-full inline-block px-6 mx-auto border border-primary-100 shadow-sm">
-              Look at the map and select the correct answer
-            </p>
-          </div>
-        )}
-
-        {/* Answer Options */}
-        <div className="space-y-4 relative z-10">
-          <AnimatePresence mode="wait">
-            {questions[currentQuestion]?.options.map((option: string, index: number) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ delay: index * 0.1 }}
-                className="relative group"
-              >
-                {/* Subtle highlight effect */}
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-200/0 via-primary-300/0 to-primary-200/0 rounded-lg blur opacity-0 group-hover:opacity-50 transition duration-300"></div>
-                
-                <Card 
-                  onClick={() => !selectedAnswer && handleAnswer(option)}
-                  className={`relative border ${
-                    selectedAnswer === option
-                      ? option === questions[currentQuestion].correct
-                        ? 'border-green-500 bg-green-50'
-                        : 'border-red-500 bg-red-50'
-                      : 'border-secondary-200 bg-white hover:bg-primary-50'
-                  } transition-all duration-300`}
-                >
-                  <div className="flex items-center justify-between">
-                    <span className={`font-medium ${selectedAnswer === option ? (option === questions[currentQuestion].correct ? 'text-green-700' : 'text-red-700') : 'text-secondary-800'}`}>
-                      {option}
-                    </span>
-                    {selectedAnswer === option && (
-                      <motion.span
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                      >
-                        {option === questions[currentQuestion].correct ? (
-                          <CheckCircle2 className="w-5 h-5 text-green-600" />
-                        ) : (
-                          <XCircle className="w-5 h-5 text-red-600" />
-                        )}
-                      </motion.span>
-                    )}
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
-          </AnimatePresence>
+        {/* Render different question types */}
+        <div className="relative z-10">
+          {renderQuestionByType()}
         </div>
       </div>
     </motion.div>
