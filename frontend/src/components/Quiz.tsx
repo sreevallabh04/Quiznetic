@@ -605,68 +605,133 @@ export default function Quiz() {
     );
   };
 
+  // Error boundary function to safely render dropdown elements
   const renderDropdownQuestion = (question: DropdownQuestion) => {
-    // Split the question text by dropdown placeholders and create elements
+    // Initialize this array variable at the function scope level
     let questionElements: JSX.Element[] = [];
-    let lastIndex = 0;
-    
-    // Regular expression to find dropdown placeholders like [DROPDOWN_1]
-    const regex = /\[DROPDOWN_(\d+)\]/g;
-    let match;
-    let text = question.question;
+      
+    // Try-catch block to handle any issues with regex or rendering
+    try {
+      // Split the question text by dropdown placeholders and create elements
+      let lastIndex = 0;
+      
+      // Regular expression to find dropdown placeholders like [DROPDOWN_1]
+      const regex = /\[DROPDOWN_(\d+)\]/g;
+      let match;
+      const text = question.question || ''; // Fallback to empty string if question is undefined
+      const dropdowns = question.dropdowns || []; // Fallback to empty array
 
-    while ((match = regex.exec(text)) !== null) {
-      // Add text before the placeholder
-      if (match.index > lastIndex) {
-        questionElements.push(
-          <span key={`text-${lastIndex}`}>{text.substring(lastIndex, match.index)}</span>
-        );
+      while ((match = regex.exec(text)) !== null) {
+        try {
+          // Add text before the placeholder
+          if (match.index > lastIndex) {
+            questionElements.push(
+              <span key={`text-${lastIndex}`}>{text.substring(lastIndex, match.index)}</span>
+            );
+          }
+          
+          // Find the corresponding dropdown from the question data
+          const placeholder = match[0];
+          const dropdown = dropdowns.find(d => d.placeholder === placeholder);
+          
+          if (dropdown) {
+            // Add the dropdown element with improved styling and z-index
+            questionElements.push(
+              <div 
+                key={`dropdown-container-${match[1]}`} 
+                className="inline-block relative mx-2 my-2 min-w-[150px] z-20"
+              >
+                <select
+                  key={`dropdown-${match[1]}`}
+                  value={dropdownSelections[placeholder] || ''}
+                  onChange={(e) => {
+                    e.stopPropagation(); // Prevent event bubbling
+                    setDropdownSelections(prev => ({
+                      ...prev,
+                      [placeholder]: e.target.value
+                    }));
+                  }}
+                  className="w-full px-3 py-2 rounded border-2 border-primary-400 bg-white shadow-sm focus:border-primary-600 focus:outline-none text-secondary-800 font-medium disabled:opacity-60 cursor-pointer appearance-none"
+                  disabled={selectedAnswer !== null}
+                  aria-label={`Dropdown selection for ${placeholder}`}
+                >
+                  <option value="">Select...</option>
+                  {dropdown.options.map((option, idx) => (
+                    <option key={idx} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+                {/* Custom dropdown arrow for better visibility */}
+                <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                  <ArrowDown className="h-4 w-4 text-primary-500" />
+                </div>
+              </div>
+            );
+          } else {
+            // If dropdown not found, show a placeholder with error styling
+            questionElements.push(
+              <span key={`missing-${match[1]}`} className="mx-1 px-2 py-1 bg-red-100 text-red-600 rounded">
+                [Missing dropdown]
+              </span>
+            );
+          }
+          
+          // Update lastIndex to after the current match
+          lastIndex = match.index + match[0].length;
+        } catch (e) {
+          console.error("Error rendering specific dropdown:", e);
+          // Add error placeholder
+          questionElements.push(
+            <span key={`error-${match ? match[1] : 'unknown'}`} className="mx-1 px-2 py-1 bg-red-100 text-red-600 rounded">
+              [Error]
+            </span>
+          );
+          break;
+        }
       }
       
-      // Find the corresponding dropdown from the question data
-      const placeholder = match[0];
-      const dropdown = question.dropdowns.find(d => d.placeholder === placeholder);
-      
-      if (dropdown) {
-        // Add the dropdown element
+      // Add any remaining text
+      if (lastIndex < text.length) {
         questionElements.push(
-          <select
-            key={`dropdown-${match[1]}`}
-            value={dropdownSelections[placeholder] || ''}
-            onChange={(e) => {
-              setDropdownSelections(prev => ({
-                ...prev,
-                [placeholder]: e.target.value
-              }));
+          <span key={`text-${lastIndex}`}>{text.substring(lastIndex)}</span>
+        );
+      }
+
+      // If no dropdown elements were created due to regex issues, show the raw text
+      if (questionElements.length === 0) {
+        questionElements.push(
+          <span key="fallback-text">{text}</span>
+        );
+      }
+    } catch (error) {
+      console.error("Error parsing dropdown question:", error);
+      // If the entire rendering process fails, return an error message
+      return (
+        <div className="space-y-6">
+          <div className="p-4 rounded-lg bg-red-50 border border-red-200 shadow-sm">
+            <p className="text-red-600">There was an error displaying this question. Please try again or skip to the next question.</p>
+            <p className="text-sm text-red-500 mt-2">{question.question}</p>
+          </div>
+          
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="w-full py-3 px-6 rounded-lg text-white font-medium bg-secondary-600 hover:bg-secondary-700 transition-colors"
+            onClick={() => {
+              moveToNextQuestion();
             }}
-            className="mx-1 px-2 py-1 rounded border border-primary-300 bg-primary-50 focus:border-primary-500 focus:outline-none text-secondary-800 font-medium disabled:opacity-60"
-            disabled={selectedAnswer !== null}
           >
-            <option value="">Select...</option>
-            {dropdown.options.map((option, idx) => (
-              <option key={idx} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        );
-      }
-      
-      // Update lastIndex to after the current match
-      lastIndex = match.index + match[0].length;
-    }
-    
-    // Add any remaining text
-    if (lastIndex < text.length) {
-      questionElements.push(
-        <span key={`text-${lastIndex}`}>{text.substring(lastIndex)}</span>
+            Skip This Question
+          </motion.button>
+        </div>
       );
     }
     
     return (
       <div className="space-y-6">
-        <div className="p-4 rounded-lg bg-white border border-primary-100 shadow-sm">
-          <div className="flex flex-wrap items-center text-xl font-medium text-secondary-800 space-x-1">
+        <div className="p-4 rounded-lg bg-white border border-primary-100 shadow-sm overflow-visible">
+          <div className="flex flex-wrap items-center text-xl font-medium text-secondary-800 gap-x-2 gap-y-3">
             {questionElements}
           </div>
         </div>
@@ -675,26 +740,26 @@ export default function Quiz() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className={`w-full py-3 px-6 rounded-lg text-white font-medium transition-colors ${
-            Object.keys(dropdownSelections).length === question.dropdowns.length && !selectedAnswer
+            Object.keys(dropdownSelections).length === (question.dropdowns?.length || 0) && !selectedAnswer
               ? 'bg-primary-600 hover:bg-primary-700'
               : 'bg-gray-400 cursor-not-allowed'
           }`}
           onClick={() => {
-            if (Object.keys(dropdownSelections).length === question.dropdowns.length && !selectedAnswer) {
+            if (Object.keys(dropdownSelections).length === (question.dropdowns?.length || 0) && !selectedAnswer) {
               setSelectedAnswer('submitted');
               handleDropdownAnswer();
             }
           }}
-          disabled={Object.keys(dropdownSelections).length !== question.dropdowns.length || selectedAnswer !== null}
+          disabled={Object.keys(dropdownSelections).length !== (question.dropdowns?.length || 0) || selectedAnswer !== null}
         >
           {selectedAnswer ? (
             <div className="flex items-center justify-center space-x-2">
               <span>
-                {question.dropdowns.every(dd => dropdownSelections[dd.placeholder] === dd.correct) 
+                {(question.dropdowns || []).every(dd => dropdownSelections[dd.placeholder] === dd.correct)
                   ? 'Correct!' 
                   : 'Incorrect!'}
               </span>
-              {question.dropdowns.every(dd => dropdownSelections[dd.placeholder] === dd.correct) ? (
+              {(question.dropdowns || []).every(dd => dropdownSelections[dd.placeholder] === dd.correct) ? (
                 <CheckCircle2 className="w-5 h-5 text-green-200" />
               ) : (
                 <XCircle className="w-5 h-5 text-red-200" />
@@ -704,103 +769,19 @@ export default function Quiz() {
             'Submit Answer'
           )}
         </motion.button>
+        
+        {/* Help text for dropdown questions */}
+        <div className="text-sm text-center text-secondary-500 mt-1">
+          Select options from each dropdown menu before submitting
+        </div>
       </div>
-    );
-  };
+    ); // Added missing closing parenthesis and semicolon
+  }; // Added missing closing brace and semicolon
 
-  if (!currentChapter || (staticQuestions.length === 0 && !isLoading && apiQuestions.length === 0)) {
-    return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="max-w-2xl mx-auto text-center"
-      >
-        <h2 className="text-3xl font-bold mb-4 text-secondary-800">Chapter Not Found</h2>
-        <button
-          onClick={() => navigate(`/class/${classId}/${subject}`)}
-          className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors"
-        >
-          Back to Chapters
-        </button>
-      </motion.div>
-    );
-  }
-
-  if (showResult) {
-    return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="max-w-2xl mx-auto text-center"
-      >
-        <div className="flex justify-center mb-6">
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            className="p-4 bg-primary-100 rounded-full"
-          >
-            <Trophy className="w-16 h-16 text-primary-600" />
-          </motion.div>
-        </div>
-        <h2 className="text-3xl font-bold mb-4 text-secondary-800">Quiz Complete!</h2>
-        <p className="text-xl mb-4 text-secondary-700">
-          Your score: {score} out of {questions.length}
-        </p>
-        <div className="space-x-4">
-          <button
-            onClick={() => navigate(`/class/${classId}/${subject}`)}
-            className="bg-secondary-500 hover:bg-secondary-600 text-white px-6 py-2 rounded-lg transition-colors"
-          >
-            Back to Chapters
-          </button>
-          <button
-            onClick={() => {
-              setCurrentQuestion(0);
-              setScore(0);
-              setShowResult(false);
-              setSelectedAnswer(null);
-              setUserAnswers({}); // Reset user answers
-            }}
-            className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors"
-          >
-            Try Again
-          </button>
-        </div>
-
-        {/* Review Section */}
-        <div className="mt-8 text-left max-w-xl mx-auto">
-          <h3 className="text-2xl font-semibold mb-4 text-secondary-800">Review Your Answers</h3>
-          {questions.map((q, index) => (
-            <div key={index} className="mb-6 p-4 border border-secondary-200 rounded-lg bg-white shadow-sm">
-              <p className="font-semibold text-secondary-700 mb-2">Question {index + 1}: {q.question}</p>
-              
-              {renderAnswerReview(q, index)}
-            </div>
-          ))}
-        </div>
-      </motion.div>
-    );
-  }
-
-  // If we're loading and have no static questions, show loading indicator
-  if (isLoading && staticQuestions.length === 0) {
-    return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="max-w-2xl mx-auto text-center"
-      >
-        <div className="flex flex-col items-center justify-center h-32">
-          <Loader2 className="w-8 h-8 text-primary-500 animate-spin mb-4" />
-          <p className="text-lg text-primary-600">Loading questions from Telangana board syllabus...</p>
-        </div>
-      </motion.div>
-    );
-  }
-
+  // Helper function to render the review of an answer
   const renderAnswerReview = (question: Question, index: number) => {
     const userAnswer = userAnswers[question.id];
-    
+
     switch (question.type) {
       case 'multiple_choice': {
         const mcQuestion = question as MultipleChoiceQuestion;
@@ -972,6 +953,113 @@ export default function Quiz() {
     }
   };
 
+  // --- Main Component Return ---
+
+  // Loading State (only show if no static questions are available yet)
+  if (isLoading && staticQuestions.length === 0) {
+    return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="max-w-2xl mx-auto text-center"
+      >
+        <div className="flex flex-col items-center justify-center h-32">
+          <Loader2 className="w-8 h-8 text-primary-500 animate-spin mb-4" />
+          <p className="text-lg text-primary-600">Loading questions from Telangana board syllabus...</p>
+        </div>
+      </motion.div>
+    );
+  }
+
+  // Chapter Not Found State
+  if (!currentChapter) {
+    return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="max-w-2xl mx-auto text-center"
+      >
+        {/* Back Button */}
+        <button
+          onClick={() => navigate(`/class/${classId}/${subject}`)}
+          className="mb-4 flex items-center gap-2 text-primary-600 hover:text-primary-700 transition-colors px-4 py-2 rounded-full border border-primary-200 shadow-sm mx-auto"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back to Chapters
+        </button>
+        <h2 className="text-3xl font-bold mb-4 text-secondary-800">Chapter Not Found</h2>
+        <p className="text-secondary-600 mb-6">Could not find the chapter details for Class {classId}, {currentSubject?.name}, Chapter {chapter}.</p>
+      </motion.div>
+    );
+  }
+
+  // Result State
+  if (showResult) {
+    return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="max-w-2xl mx-auto text-center"
+      >
+        <div className="flex justify-center mb-6">
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            className="p-4 bg-primary-100 rounded-full"
+          >
+            <Trophy className="w-16 h-16 text-primary-600" />
+          </motion.div>
+        </div>
+        <h2 className="text-3xl font-bold mb-4 text-secondary-800">Quiz Complete!</h2>
+        <p className="text-xl mb-4 text-secondary-700">
+          Your score: {score} out of {questions.length}
+        </p>
+        <div className="space-x-4">
+          <button
+            onClick={() => navigate(`/class/${classId}/${subject}`)}
+            className="bg-secondary-500 hover:bg-secondary-600 text-white px-6 py-2 rounded-lg transition-colors"
+          >
+            Back to Chapters
+          </button>
+          <button
+            onClick={() => {
+              setCurrentQuestion(0);
+              setScore(0);
+              setShowResult(false);
+              setSelectedAnswer(null);
+              setUserAnswers({}); // Reset user answers
+              // Re-initialize question-specific states if needed
+              if (questions[0]?.type === 'matching') setMatchingPairs({});
+              if (questions[0]?.type === 'drag_drop_order') setOrderedItems(shuffleArray([...(questions[0] as DragDropOrderQuestion).items]));
+              if (questions[0]?.type === 'dropdown') setDropdownSelections({});
+            }}
+            className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors"
+          >
+            Try Again
+          </button>
+        </div>
+
+        {/* Review Section */}
+        <div className="mt-8 text-left max-w-xl mx-auto">
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-800">Review Your Answers</h3>
+          {questions.map((q, index) => (
+            <div key={index} className="mb-6 p-4 border border-secondary-200 rounded-lg bg-white shadow-sm">
+              <p className="font-semibold text-secondary-700 mb-2">Question {index + 1}: {q.question?.replace(/MaP: /, '')}</p>
+              {renderAnswerReview(q, index)}
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    );
+  }
+
+  // Active Quiz State
+  // Add a check here to satisfy TypeScript, although the earlier check should prevent this state
+  if (!currentChapter) {
+      // This should ideally not be reached due to the check above, but satisfies TS
+      return null; 
+  }
+    
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -993,8 +1081,8 @@ export default function Quiz() {
       {/* Chapter Title */}
       <PageTitle title={currentChapter.title} className="text-secondary-800" />
       
-      {/* Loading Indicator */}
-      {isLoading && (
+      {/* Loading Indicator (for API questions when static ones are already shown) */}
+      {isLoading && staticQuestions.length > 0 && (
         <div className="mb-4 flex items-center justify-center gap-2 text-sm text-primary-600 bg-primary-50 p-3 rounded-lg border border-primary-200 shadow-sm">
           <Loader2 className="w-4 h-4 animate-spin text-primary-600" />
           <span>Loading more questions...</span>
@@ -1036,4 +1124,4 @@ export default function Quiz() {
       </div>
     </motion.div>
   );
-}
+} // Added missing closing brace
