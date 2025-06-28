@@ -14,6 +14,7 @@ export function LoginPage() {
     password: '',
   });
   const navigate = useNavigate();
+  
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     console.log(name, value);
@@ -28,33 +29,31 @@ export function LoginPage() {
     if (!email || !password) {
       return handleError("All fields are required");
     }
+    
     try {
-      const url = "http://localhost:3001/auth/login";
-      const response = await fetch(url, {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(loginInfo)
-      });
-      const result = await response.json();
-      const { success, message, jwtToken, name, error } = result;
-      if (success) {
-        handleSuccess(message);
-        localStorage.setItem('token', jwtToken);
-        localStorage.setItem('loggedInUser', name);
+      // Simple client-side authentication
+      // In a real app, you would validate against a backend
+      if (email && password) {
+        // For demo purposes, accept any valid email/password combination
+        const mockUser = {
+          name: email.split('@')[0], // Use email prefix as name
+          email: email,
+          token: 'mock-jwt-token-' + Date.now()
+        };
+        
+        handleSuccess("Login successful!");
+        localStorage.setItem('token', mockUser.token);
+        localStorage.setItem('loggedInUser', mockUser.name);
+        localStorage.setItem('userEmail', mockUser.email);
+        
         setTimeout(() => {
           navigate('/home');
         }, 1000);
-      } else if (error) {
-        const details = error?.details[0].message;
-        handleError(details);
-      } else if (!success) {
-        handleError(message);
+      } else {
+        handleError("Invalid credentials");
       }
-      console.log(result);
     } catch (err: any) {
-      handleError(err);
+      handleError(err.message || "Login failed");
     }
   }
 
