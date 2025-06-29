@@ -13,6 +13,121 @@ export const scienceClass10 = [
         question: 'What is the focal length of a spherical mirror?',
         options: ['Half of the radius of curvature', 'Twice the radius of curvature', 'Equal to the radius of curvature', 'None of the above'],
         correct: 'Half of the radius of curvature'
+      },
+      {
+        question: 'What is the mirror formula?',
+        options: ['1/f = 1/u + 1/v', '1/f = 1/u - 1/v', 'f = u + v', 'f = u - v'],
+        correct: '1/f = 1/u + 1/v'
+      },
+      {
+        question: 'Which mirror always forms a virtual, erect, and diminished image?',
+        options: ['Concave mirror', 'Convex mirror', 'Plane mirror', 'Cylindrical mirror'],
+        correct: 'Convex mirror'
+      },
+      {
+        question: 'What is the nature of the image formed by a convex mirror?',
+        options: ['Real and inverted', 'Virtual and erect', 'Real and erect', 'Virtual and inverted'],
+        correct: 'Virtual and erect'
+      },
+      {
+        question: 'Where is the image formed when an object is placed at the center of curvature of a concave mirror?',
+        options: ['At infinity', 'At the center of curvature', 'At the focus', 'Between focus and center'],
+        correct: 'At the center of curvature'
+      },
+      {
+        question: 'What is the magnification when object and image are of the same size?',
+        options: ['1', '-1', '0', 'Infinity'],
+        correct: '-1'
+      },
+      {
+        question: 'Which mirror is used in torches and headlights?',
+        options: ['Plane mirror', 'Concave mirror', 'Convex mirror', 'Spherical mirror'],
+        correct: 'Concave mirror'
+      },
+      {
+        question: 'What happens to the focal length when a concave mirror is immersed in water?',
+        options: ['Increases', 'Decreases', 'Remains same', 'Becomes zero'],
+        correct: 'Remains same'
+      },
+      {
+        question: 'The radius of curvature of a plane mirror is:',
+        options: ['Zero', 'Infinity', 'Equal to focal length', 'Half of focal length'],
+        correct: 'Infinity'
+      },
+      {
+        question: 'Which mirror can form both real and virtual images?',
+        options: ['Plane mirror', 'Concave mirror', 'Convex mirror', 'None of these'],
+        correct: 'Concave mirror'
+      },
+      {
+        question: 'What is the relationship between focal length and radius of curvature?',
+        options: ['f = R', 'f = R/2', 'f = 2R', 'f = R²'],
+        correct: 'f = R/2'
+      },
+      {
+        question: 'When does a concave mirror form a real image?',
+        options: ['When object is at focus', 'When object is beyond focus', 'When object is between pole and focus', 'Never'],
+        correct: 'When object is beyond focus'
+      },
+      {
+        question: 'What is the power of a concave mirror of focal length 50 cm?',
+        options: ['+2 D', '-2 D', '+0.5 D', '-0.5 D'],
+        correct: '-2 D'
+      },
+      {
+        question: 'Which type of mirror is used in solar cookers?',
+        options: ['Plane mirror', 'Concave mirror', 'Convex mirror', 'Parabolic mirror'],
+        correct: 'Concave mirror'
+      },
+      {
+        question: 'What is the nature of image formed by a plane mirror?',
+        options: ['Real and inverted', 'Virtual and erect', 'Real and erect', 'Virtual and inverted'],
+        correct: 'Virtual and erect'
+      },
+      {
+        question: 'The magnification produced by a convex mirror is always:',
+        options: ['Greater than 1', 'Less than 1', 'Equal to 1', 'Negative'],
+        correct: 'Less than 1'
+      },
+      {
+        question: 'What is the field of view of a convex mirror compared to a plane mirror?',
+        options: ['Smaller', 'Larger', 'Same', 'Zero'],
+        correct: 'Larger'
+      },
+      {
+        question: 'When an object is placed at infinity in front of a concave mirror, where is the image formed?',
+        options: ['At infinity', 'At focus', 'At center of curvature', 'At pole'],
+        correct: 'At focus'
+      },
+      {
+        question: 'What is the sign convention for focal length of a concave mirror?',
+        options: ['Positive', 'Negative', 'Zero', 'Depends on object position'],
+        correct: 'Negative'
+      },
+      {
+        question: 'Which mirror is used as a shaving mirror?',
+        options: ['Plane mirror', 'Concave mirror', 'Convex mirror', 'Cylindrical mirror'],
+        correct: 'Concave mirror'
+      },
+      {
+        question: 'What happens to the image size when an object moves closer to a concave mirror from infinity?',
+        options: ['Decreases', 'Increases', 'Remains same', 'First increases then decreases'],
+        correct: 'Increases'
+      },
+      {
+        question: 'The image formed by a convex mirror is always:',
+        options: ['Between pole and focus', 'At focus', 'Beyond focus', 'At infinity'],
+        correct: 'Between pole and focus'
+      },
+      {
+        question: 'What is the principal axis of a spherical mirror?',
+        options: ['Line joining pole and focus', 'Line passing through center of curvature and pole', 'Any line on the mirror', 'Perpendicular to the mirror'],
+        correct: 'Line passing through center of curvature and pole'
+      },
+      {
+        question: 'Which phenomenon is responsible for the formation of images in mirrors?',
+        options: ['Refraction', 'Reflection', 'Dispersion', 'Diffraction'],
+        correct: 'Reflection'
       }
     ]
   },
@@ -30,6 +145,121 @@ export const scienceClass10 = [
         question: 'What is the unit of refractive index?',
         options: ['Diopter', 'Meter', 'No unit', 'Hertz'],
         correct: 'No unit'
+      },
+      {
+        question: 'What is the lens formula?',
+        options: ['1/f = 1/v - 1/u', '1/f = 1/u + 1/v', 'f = u + v', 'f = v - u'],
+        correct: '1/f = 1/v - 1/u'
+      },
+      {
+        question: 'Which lens is thicker at the center?',
+        options: ['Concave lens', 'Convex lens', 'Cylindrical lens', 'Plane lens'],
+        correct: 'Convex lens'
+      },
+      {
+        question: 'What is the power of a lens of focal length 25 cm?',
+        options: ['+4 D', '-4 D', '+0.25 D', '-0.25 D'],
+        correct: '+4 D'
+      },
+      {
+        question: 'Which lens is used to correct myopia?',
+        options: ['Convex lens', 'Concave lens', 'Cylindrical lens', 'Bifocal lens'],
+        correct: 'Concave lens'
+      },
+      {
+        question: 'What happens to light rays after passing through a convex lens?',
+        options: ['They diverge', 'They converge', 'They remain parallel', 'They get absorbed'],
+        correct: 'They converge'
+      },
+      {
+        question: 'What is the nature of image formed by a concave lens?',
+        options: ['Always real', 'Always virtual', 'Sometimes real, sometimes virtual', 'Depends on object distance'],
+        correct: 'Always virtual'
+      },
+      {
+        question: 'What is the focal length of a lens with power +2 D?',
+        options: ['50 cm', '25 cm', '0.5 m', '2 m'],
+        correct: '50 cm'
+      },
+      {
+        question: 'Which type of lens is used in a magnifying glass?',
+        options: ['Concave lens', 'Convex lens', 'Cylindrical lens', 'Plane lens'],
+        correct: 'Convex lens'
+      },
+      {
+        question: 'What is the refractive index of water?',
+        options: ['1.0', '1.33', '1.5', '2.4'],
+        correct: '1.33'
+      },
+      {
+        question: 'When does total internal reflection occur?',
+        options: ['Light goes from denser to rarer medium', 'Light goes from rarer to denser medium', 'Angle of incidence is less than critical angle', 'Light travels in same medium'],
+        correct: 'Light goes from denser to rarer medium'
+      },
+      {
+        question: 'What is Snell\'s law?',
+        options: ['n₁sinθ₁ = n₂sinθ₂', 'n₁cosθ₁ = n₂cosθ₂', 'n₁tanθ₁ = n₂tanθ₂', 'n₁ + n₂ = constant'],
+        correct: 'n₁sinθ₁ = n₂sinθ₂'
+      },
+      {
+        question: 'Which lens combination is used in a compound microscope?',
+        options: ['Two concave lenses', 'Two convex lenses', 'One concave and one convex', 'One cylindrical and one convex'],
+        correct: 'Two convex lenses'
+      },
+      {
+        question: 'What is the least distance of distinct vision for a normal eye?',
+        options: ['25 cm', '25 mm', '2.5 cm', '250 cm'],
+        correct: '25 cm'
+      },
+      {
+        question: 'Which defect of vision is corrected by cylindrical lenses?',
+        options: ['Myopia', 'Hypermetropia', 'Astigmatism', 'Presbyopia'],
+        correct: 'Astigmatism'
+      },
+      {
+        question: 'What happens to the focal length of a lens when it is immersed in water?',
+        options: ['Increases', 'Decreases', 'Remains same', 'Becomes zero'],
+        correct: 'Increases'
+      },
+      {
+        question: 'Which phenomenon explains the working of optical fibers?',
+        options: ['Refraction', 'Reflection', 'Total internal reflection', 'Dispersion'],
+        correct: 'Total internal reflection'
+      },
+      {
+        question: 'What is the critical angle for total internal reflection?',
+        options: ['Angle of incidence = 90°', 'Angle of refraction = 90°', 'Angle of incidence = critical angle', 'Angle of refraction = 0°'],
+        correct: 'Angle of refraction = 90°'
+      },
+      {
+        question: 'Which lens is used in a telescope to view distant objects?',
+        options: ['Concave lens only', 'Convex lens only', 'Both convex and concave', 'Cylindrical lens'],
+        correct: 'Both convex and concave'
+      },
+      {
+        question: 'What is the sign convention for focal length of a convex lens?',
+        options: ['Positive', 'Negative', 'Zero', 'Depends on object position'],
+        correct: 'Positive'
+      },
+      {
+        question: 'When an object is placed at 2F in front of a convex lens, where is the image formed?',
+        options: ['At F', 'At 2F', 'Between F and 2F', 'Beyond 2F'],
+        correct: 'At 2F'
+      },
+      {
+        question: 'What is the magnification when object and image are equidistant from a convex lens?',
+        options: ['+1', '-1', '0', 'Infinity'],
+        correct: '-1'
+      },
+      {
+        question: 'Which type of image is formed by a convex lens when object is placed between F and 2F?',
+        options: ['Real, inverted, magnified', 'Virtual, erect, magnified', 'Real, erect, diminished', 'Virtual, inverted, diminished'],
+        correct: 'Real, inverted, magnified'
+      },
+      {
+        question: 'What is the relationship between object distance, image distance, and focal length for a lens?',
+        options: ['1/f = 1/u + 1/v', '1/f = 1/v - 1/u', 'f = u + v', 'f = v - u'],
+        correct: '1/f = 1/v - 1/u'
       }
     ]
   },
@@ -43,10 +273,125 @@ export const scienceClass10 = [
         options: ['H₂ + Cl₂ → 2HCl', '2H₂O₂ → 2H₂O + O₂', 'C + O₂ → CO₂', 'NaOH + HCl → NaCl + H₂O'],
         correct: '2H₂O₂ → 2H₂O + O₂'
       },
+              {
+          question: 'Which law is followed in a balanced chemical equation?',
+          options: ['Law of gravity', 'Law of conservation of mass', 'Boyles law', 'Avogadros law'],
+          correct: 'Law of conservation of mass'
+        },
       {
-        question: 'Which law is followed in a balanced chemical equation?',
-        options: ['Law of gravity', 'Law of conservation of mass', 'Boyle’s law', 'Avogadro’s law'],
-        correct: 'Law of conservation of mass'
+        question: 'What is a combination reaction?',
+        options: ['Two or more reactants form one product', 'One reactant breaks into two products', 'Exchange of ions', 'Reaction with oxygen'],
+        correct: 'Two or more reactants form one product'
+      },
+      {
+        question: 'Which type of reaction is represented by AB + CD → AD + CB?',
+        options: ['Combination', 'Decomposition', 'Displacement', 'Double displacement'],
+        correct: 'Double displacement'
+      },
+      {
+        question: 'What is an oxidation reaction?',
+        options: ['Addition of hydrogen', 'Removal of oxygen', 'Addition of oxygen', 'None of these'],
+        correct: 'Addition of oxygen'
+      },
+      {
+        question: 'What is a reduction reaction?',
+        options: ['Addition of oxygen', 'Removal of hydrogen', 'Removal of oxygen', 'Addition of electrons'],
+        correct: 'Removal of oxygen'
+      },
+      {
+        question: 'Which gas is evolved when zinc reacts with hydrochloric acid?',
+        options: ['Oxygen', 'Hydrogen', 'Carbon dioxide', 'Chlorine'],
+        correct: 'Hydrogen'
+      },
+      {
+        question: 'What happens when magnesium burns in air?',
+        options: ['MgO is formed', 'Mg(OH)₂ is formed', 'MgCl₂ is formed', 'No reaction'],
+        correct: 'MgO is formed'
+      },
+      {
+        question: 'Which of the following is a displacement reaction?',
+        options: ['Zn + CuSO₄ → ZnSO₄ + Cu', '2H₂ + O₂ → 2H₂O', 'CaCO₃ → CaO + CO₂', 'AgNO₃ + NaCl → AgCl + NaNO₃'],
+        correct: 'Zn + CuSO₄ → ZnSO₄ + Cu'
+      },
+      {
+        question: 'What is the balanced equation for the reaction between hydrogen and oxygen?',
+        options: ['H₂ + O₂ → H₂O', '2H₂ + O₂ → 2H₂O', 'H₂ + 2O₂ → H₂O', '4H₂ + O₂ → 2H₂O'],
+        correct: '2H₂ + O₂ → 2H₂O'
+      },
+      {
+        question: 'Which type of reaction occurs during respiration?',
+        options: ['Combination', 'Decomposition', 'Oxidation', 'Reduction'],
+        correct: 'Oxidation'
+      },
+      {
+        question: 'What is the product when calcium carbonate is heated?',
+        options: ['CaO + CO₂', 'Ca(OH)₂ + CO₂', 'CaCl₂ + O₂', 'Ca + CO₃'],
+        correct: 'CaO + CO₂'
+      },
+      {
+        question: 'Which metal is more reactive: zinc or copper?',
+        options: ['Zinc', 'Copper', 'Both equally reactive', 'Cannot be determined'],
+        correct: 'Zinc'
+      },
+      {
+        question: 'What is a precipitate?',
+        options: ['A gas evolved', 'An insoluble solid formed', 'A liquid product', 'A catalyst'],
+        correct: 'An insoluble solid formed'
+      },
+      {
+        question: 'Which reaction produces a white precipitate when silver nitrate is added to sodium chloride?',
+        options: ['Combination', 'Decomposition', 'Double displacement', 'Redox'],
+        correct: 'Double displacement'
+      },
+      {
+        question: 'What is the chemical formula for rust?',
+        options: ['FeO', 'Fe₂O₃', 'Fe₂O₃·xH₂O', 'FeCl₃'],
+        correct: 'Fe₂O₃·xH₂O'
+      },
+      {
+        question: 'Which process prevents rusting?',
+        options: ['Galvanization', 'Painting', 'Oiling', 'All of these'],
+        correct: 'All of these'
+      },
+      {
+        question: 'What happens when iron nails are kept in copper sulphate solution?',
+        options: ['No reaction', 'Iron gets coated with copper', 'Copper gets coated with iron', 'Gas is evolved'],
+        correct: 'Iron gets coated with copper'
+      },
+      {
+        question: 'Which type of chemical reaction is photosynthesis?',
+        options: ['Combination', 'Decomposition', 'Endothermic', 'Exothermic'],
+        correct: 'Endothermic'
+      },
+      {
+        question: 'What is an exothermic reaction?',
+        options: ['Reaction that absorbs heat', 'Reaction that releases heat', 'Reaction at high temperature', 'Reaction with catalyst'],
+        correct: 'Reaction that releases heat'
+      },
+      {
+        question: 'Which gas is produced when limestone is heated?',
+        options: ['Oxygen', 'Hydrogen', 'Carbon dioxide', 'Nitrogen'],
+        correct: 'Carbon dioxide'
+      },
+      {
+        question: 'What is the chemical equation for the reaction between sodium and water?',
+        options: ['Na + H₂O → NaOH + H₂', '2Na + 2H₂O → 2NaOH + H₂', 'Na + 2H₂O → NaOH + H₂', '2Na + H₂O → 2NaOH'],
+        correct: '2Na + 2H₂O → 2NaOH + H₂'
+      },
+      {
+        question: 'Which indicator is used to test for the presence of starch?',
+        options: ['Litmus', 'Phenolphthalein', 'Iodine', 'Methyl orange'],
+        correct: 'Iodine'
+      },
+      {
+        question: 'What type of reaction is digestion of food?',
+        options: ['Combination', 'Decomposition', 'Oxidation', 'Hydrolysis'],
+        correct: 'Decomposition'
+      },
+      {
+        question: 'Which element is oxidized in the reaction: Zn + CuSO₄ → ZnSO₄ + Cu?',
+        options: ['Zinc', 'Copper', 'Sulphur', 'Oxygen'],
+        correct: 'Zinc'
       }
     ]
   },
@@ -64,6 +409,121 @@ export const scienceClass10 = [
         question: 'What is the pH of a neutral solution?',
         options: ['0', '7', '14', '1'],
         correct: '7'
+      },
+      {
+        question: 'Which indicator turns red in acidic solution?',
+        options: ['Blue litmus', 'Red litmus', 'Phenolphthalein', 'Methyl orange'],
+        correct: 'Blue litmus'
+      },
+      {
+        question: 'What is the pH range of acids?',
+        options: ['0-7', '7-14', '0-14', '1-6'],
+        correct: '0-7'
+      },
+      {
+        question: 'Which base is found in soap?',
+        options: ['NaOH', 'Ca(OH)₂', 'Mg(OH)₂', 'All of these'],
+        correct: 'NaOH'
+      },
+      {
+        question: 'What happens when an acid reacts with a base?',
+        options: ['Salt and water are formed', 'Gas is evolved', 'Precipitate is formed', 'No reaction'],
+        correct: 'Salt and water are formed'
+      },
+      {
+        question: 'Which gas is evolved when zinc reacts with dilute HCl?',
+        options: ['Oxygen', 'Hydrogen', 'Carbon dioxide', 'Chlorine'],
+        correct: 'Hydrogen'
+      },
+      {
+        question: 'What is the chemical name of baking soda?',
+        options: ['Sodium carbonate', 'Sodium bicarbonate', 'Sodium hydroxide', 'Sodium chloride'],
+        correct: 'Sodium bicarbonate'
+      },
+      {
+        question: 'Which acid is present in ant sting?',
+        options: ['Acetic acid', 'Formic acid', 'Citric acid', 'Lactic acid'],
+        correct: 'Formic acid'
+      },
+      {
+        question: 'What is the pH of human blood?',
+        options: ['6.5', '7.4', '8.5', '9.0'],
+        correct: '7.4'
+      },
+      {
+        question: 'Which salt is formed when HCl reacts with NaOH?',
+        options: ['NaCl', 'Na₂SO₄', 'NaNO₃', 'Na₂CO₃'],
+        correct: 'NaCl'
+      },
+      {
+        question: 'What is the chemical formula of washing soda?',
+        options: ['Na₂CO₃', 'Na₂CO₃·10H₂O', 'NaHCO₃', 'NaOH'],
+        correct: 'Na₂CO₃·10H₂O'
+      },
+      {
+        question: 'Which acid is used in car batteries?',
+        options: ['Hydrochloric acid', 'Sulfuric acid', 'Nitric acid', 'Acetic acid'],
+        correct: 'Sulfuric acid'
+      },
+      {
+        question: 'What happens to phenolphthalein in basic solution?',
+        options: ['Remains colorless', 'Turns pink', 'Turns red', 'Turns blue'],
+        correct: 'Turns pink'
+      },
+      {
+        question: 'Which compound is used to treat acidity?',
+        options: ['HCl', 'NaOH', 'Mg(OH)₂', 'H₂SO₄'],
+        correct: 'Mg(OH)₂'
+      },
+      {
+        question: 'What is the common name of calcium hydroxide?',
+        options: ['Lime water', 'Slaked lime', 'Quick lime', 'Chalk'],
+        correct: 'Slaked lime'
+      },
+      {
+        question: 'Which gas turns lime water milky?',
+        options: ['Oxygen', 'Hydrogen', 'Carbon dioxide', 'Nitrogen'],
+        correct: 'Carbon dioxide'
+      },
+      {
+        question: 'What is the pH of lemon juice?',
+        options: ['2', '7', '9', '12'],
+        correct: '2'
+      },
+      {
+        question: 'Which base is used in making glass?',
+        options: ['NaOH', 'Ca(OH)₂', 'Na₂CO₃', 'Mg(OH)₂'],
+        correct: 'Na₂CO₃'
+      },
+      {
+        question: 'What type of salts are formed by strong acid and strong base?',
+        options: ['Acidic', 'Basic', 'Neutral', 'Amphoteric'],
+        correct: 'Neutral'
+      },
+      {
+        question: 'Which process is used to obtain salt from sea water?',
+        options: ['Filtration', 'Evaporation', 'Distillation', 'Crystallization'],
+        correct: 'Evaporation'
+      },
+      {
+        question: 'What is the chemical formula of plaster of Paris?',
+        options: ['CaSO₄·2H₂O', 'CaSO₄·½H₂O', 'CaCO₃', 'Ca(OH)₂'],
+        correct: 'CaSO₄·½H₂O'
+      },
+      {
+        question: 'Which salt is used in making bread fluffy?',
+        options: ['NaCl', 'NaHCO₃', 'Na₂CO₃', 'NaOH'],
+        correct: 'NaHCO₃'
+      },
+      {
+        question: 'What happens when copper carbonate is heated?',
+        options: ['CuO + CO₂', 'Cu + CO₂', 'Cu(OH)₂ + CO₂', 'CuCl₂ + O₂'],
+        correct: 'CuO + CO₂'
+      },
+      {
+        question: 'Which indicator is extracted from lichen?',
+        options: ['Phenolphthalein', 'Methyl orange', 'Litmus', 'Universal indicator'],
+        correct: 'Litmus'
       }
     ]
   },
@@ -121,7 +581,7 @@ export const scienceClass10 = [
   {
     id: 8,
     title: 'Electric Current',
-    description: 'Learn about electric circuits and Ohm’s Law.',
+    description: 'Learn about electric circuits and Ohms Law.',
     questions: [
       {
         question: 'What is the SI unit of resistance?',
