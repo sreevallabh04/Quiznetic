@@ -18,6 +18,121 @@ export const socialClass7 = [
           'To display latitude and longitude'
         ],
         correct: 'To measure distance'
+      },
+      {
+        question: 'What does a political map primarily show?',
+        options: ['Mountains and rivers', 'Countries and states', 'Climate patterns', 'Population density'],
+        correct: 'Countries and states'
+      },
+      {
+        question: 'What is a thematic map?',
+        options: ['Shows physical features', 'Shows specific themes or topics', 'Shows political boundaries', 'Shows transportation routes'],
+        correct: 'Shows specific themes or topics'
+      },
+      {
+        question: 'Which symbol is commonly used to represent a capital city on a map?',
+        options: ['Circle', 'Star', 'Triangle', 'Square'],
+        correct: 'Star'
+      },
+      {
+        question: 'What is the purpose of a compass rose on a map?',
+        options: ['To show distance', 'To show direction', 'To show elevation', 'To show population'],
+        correct: 'To show direction'
+      },
+      {
+        question: 'What does a contour line on a map represent?',
+        options: ['Political boundaries', 'Equal elevation', 'Rivers', 'Roads'],
+        correct: 'Equal elevation'
+      },
+      {
+        question: 'Which type of map would you use to find the shortest route between two cities?',
+        options: ['Physical map', 'Political map', 'Road map', 'Climate map'],
+        correct: 'Road map'
+      },
+      {
+        question: 'What is the purpose of a legend on a map?',
+        options: ['To show scale', 'To explain symbols', 'To show direction', 'To show coordinates'],
+        correct: 'To explain symbols'
+      },
+      {
+        question: 'What does a topographic map show?',
+        options: ['Political boundaries', 'Land elevation and features', 'Population density', 'Climate zones'],
+        correct: 'Land elevation and features'
+      },
+      {
+        question: 'Which color is typically used to represent water bodies on a map?',
+        options: ['Green', 'Brown', 'Blue', 'Yellow'],
+        correct: 'Blue'
+      },
+      {
+        question: 'What is a relief map?',
+        options: ['Shows political boundaries', 'Shows physical features in 3D', 'Shows climate', 'Shows population'],
+        correct: 'Shows physical features in 3D'
+      },
+      {
+        question: 'What does GPS stand for?',
+        options: ['Global Positioning System', 'Geographic Position Scale', 'General Purpose Survey', 'Ground Position System'],
+        correct: 'Global Positioning System'
+      },
+      {
+        question: 'Which projection is commonly used for world maps?',
+        options: ['Mercator', 'Robinson', 'Peters', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is the difference between a large scale and small scale map?',
+        options: ['Large scale shows more detail', 'Small scale shows more detail', 'No difference', 'Large scale covers more area'],
+        correct: 'Large scale shows more detail'
+      },
+      {
+        question: 'What is latitude?',
+        options: ['Distance from Prime Meridian', 'Distance from Equator', 'Height above sea level', 'Time zone'],
+        correct: 'Distance from Equator'
+      },
+      {
+        question: 'What is longitude?',
+        options: ['Distance from Equator', 'Distance from Prime Meridian', 'Height above sea level', 'Climate zone'],
+        correct: 'Distance from Prime Meridian'
+      },
+      {
+        question: 'Which line of latitude is at 0 degrees?',
+        options: ['Prime Meridian', 'Equator', 'Tropic of Cancer', 'Arctic Circle'],
+        correct: 'Equator'
+      },
+      {
+        question: 'What is the Prime Meridian?',
+        options: ['0 degrees latitude', '0 degrees longitude', 'International Date Line', 'Equator'],
+        correct: '0 degrees longitude'
+      },
+      {
+        question: 'What information can you get from a weather map?',
+        options: ['Political boundaries', 'Physical features', 'Weather patterns', 'Population density'],
+        correct: 'Weather patterns'
+      },
+      {
+        question: 'What is an atlas?',
+        options: ['A single map', 'A collection of maps', 'A type of projection', 'A measuring tool'],
+        correct: 'A collection of maps'
+      },
+      {
+        question: 'What does a demographic map show?',
+        options: ['Physical features', 'Population characteristics', 'Political boundaries', 'Climate zones'],
+        correct: 'Population characteristics'
+      },
+      {
+        question: 'Which type of map is best for studying ocean currents?',
+        options: ['Political map', 'Physical map', 'Oceanographic map', 'Road map'],
+        correct: 'Oceanographic map'
+      },
+      {
+        question: 'What is the purpose of grid lines on a map?',
+        options: ['Decoration', 'To locate places precisely', 'To show elevation', 'To show climate'],
+        correct: 'To locate places precisely'
+      },
+      {
+        question: 'What does a cadastral map show?',
+        options: ['Climate zones', 'Property boundaries', 'Transportation routes', 'Population density'],
+        correct: 'Property boundaries'
       }
     ]
   },
@@ -35,6 +150,121 @@ export const socialClass7 = [
         question: 'Which process is responsible for rainfall?',
         options: ['Condensation', 'Evaporation', 'Precipitation', 'Transpiration'],
         correct: 'Precipitation'
+      },
+      {
+        question: 'What is the water cycle?',
+        options: ['Movement of water through Earth and atmosphere', 'Flow of rivers', 'Formation of clouds', 'Ocean currents'],
+        correct: 'Movement of water through Earth and atmosphere'
+      },
+      {
+        question: 'What causes evaporation?',
+        options: ['Cold temperature', 'Heat from the sun', 'Wind', 'Pressure'],
+        correct: 'Heat from the sun'
+      },
+      {
+        question: 'What happens to water vapor when it rises high in the atmosphere?',
+        options: ['It heats up', 'It condenses', 'It disappears', 'It becomes ice'],
+        correct: 'It condenses'
+      },
+      {
+        question: 'What are the different types of rainfall?',
+        options: ['Convectional, Orographic, Cyclonic', 'Heavy, Light, Medium', 'Summer, Winter, Monsoon', 'Local, Regional, Global'],
+        correct: 'Convectional, Orographic, Cyclonic'
+      },
+      {
+        question: 'What is orographic rainfall?',
+        options: ['Rain caused by mountains', 'Rain in cities', 'Rain in deserts', 'Rain in oceans'],
+        correct: 'Rain caused by mountains'
+      },
+      {
+        question: 'What is the source of most rivers?',
+        options: ['Lakes', 'Mountains', 'Oceans', 'Underground springs'],
+        correct: 'Mountains'
+      },
+      {
+        question: 'What is a watershed?',
+        options: ['A dam', 'Area drained by a river system', 'A type of rainfall', 'A water storage tank'],
+        correct: 'Area drained by a river system'
+      },
+      {
+        question: 'What is a tributary?',
+        options: ['Main river', 'Smaller river joining main river', 'River mouth', 'River source'],
+        correct: 'Smaller river joining main river'
+      },
+      {
+        question: 'What is a delta?',
+        options: ['River source', 'Triangular land at river mouth', 'River bend', 'River island'],
+        correct: 'Triangular land at river mouth'
+      },
+      {
+        question: 'Which river is known as the lifeline of India?',
+        options: ['Yamuna', 'Ganga', 'Godavari', 'Krishna'],
+        correct: 'Ganga'
+      },
+      {
+        question: 'What is monsoon?',
+        options: ['Seasonal wind pattern', 'Type of cloud', 'Ocean current', 'Mountain range'],
+        correct: 'Seasonal wind pattern'
+      },
+      {
+        question: 'What causes floods?',
+        options: ['Too little rain', 'Too much rain in short time', 'Drought', 'Cold weather'],
+        correct: 'Too much rain in short time'
+      },
+      {
+        question: 'What is drought?',
+        options: ['Too much rain', 'Lack of rainfall', 'Heavy winds', 'Cold weather'],
+        correct: 'Lack of rainfall'
+      },
+      {
+        question: 'What is the role of forests in the water cycle?',
+        options: ['They stop rain', 'They increase rainfall and reduce floods', 'They cause drought', 'They have no effect'],
+        correct: 'They increase rainfall and reduce floods'
+      },
+      {
+        question: 'What is transpiration?',
+        options: ['Water evaporation from plants', 'Water absorption by plants', 'Plant growth', 'Photosynthesis'],
+        correct: 'Water evaporation from plants'
+      },
+      {
+        question: 'What is precipitation?',
+        options: ['Water falling from clouds', 'Water evaporation', 'Cloud formation', 'Wind movement'],
+        correct: 'Water falling from clouds'
+      },
+      {
+        question: 'What is a river basin?',
+        options: ['River mouth', 'Area drained by a river and its tributaries', 'River source', 'River island'],
+        correct: 'Area drained by a river and its tributaries'
+      },
+      {
+        question: 'What is an estuary?',
+        options: ['River source', 'Where river meets sea', 'River bend', 'River tributary'],
+        correct: 'Where river meets sea'
+      },
+      {
+        question: 'What is the importance of rivers?',
+        options: ['Water supply only', 'Transportation only', 'Water supply, irrigation, transportation', 'Recreation only'],
+        correct: 'Water supply, irrigation, transportation'
+      },
+      {
+        question: 'What is surface runoff?',
+        options: ['Underground water', 'Water flowing over land surface', 'Water in clouds', 'Water in plants'],
+        correct: 'Water flowing over land surface'
+      },
+      {
+        question: 'What factors affect the amount of rainfall in a region?',
+        options: ['Latitude, altitude, distance from sea', 'Population only', 'Economic development', 'Political boundaries'],
+        correct: 'Latitude, altitude, distance from sea'
+      },
+      {
+        question: 'What is the difference between weather and climate?',
+        options: ['No difference', 'Weather is daily, climate is long-term average', 'Climate is daily, weather is long-term', 'Both are same'],
+        correct: 'Weather is daily, climate is long-term average'
+      },
+      {
+        question: 'How do rivers shape the landscape?',
+        options: ['They don\'t affect landscape', 'Through erosion and deposition', 'Only through flooding', 'Only through drying up'],
+        correct: 'Through erosion and deposition'
       }
     ]
   },
