@@ -28,6 +28,10 @@ export const QUESTION_TYPES = {
  * API configuration
  */
 export const API_CONFIG = {
+<<<<<<< HEAD
+=======
+  BASE_URL: 'http://localhost:3001',
+>>>>>>> 7b0177345a45c7c6239071678bcb8665e19d3380
   TIMEOUT: 10000,
   RETRY_ATTEMPTS: 3
 };
