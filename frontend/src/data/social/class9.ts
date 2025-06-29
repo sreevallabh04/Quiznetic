@@ -3169,4 +3169,4 @@ export const socialClass9 = [
        }
      ]
    }
-]; 
+];

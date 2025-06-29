@@ -2243,4 +2243,4 @@ export const socialClass8 = [
       }
     ]
   }
-]; 
+];

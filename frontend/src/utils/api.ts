@@ -215,14 +215,14 @@ const makeGeminiApiRequest = async (prompt: string): Promise<any> => {
           contents: [
             {
               parts: [
-                {
+            {
                   text: "You are an educational content creator specializing in creating multiple-choice questions for students following the Telangana state board curriculum. " + prompt
                 }
               ]
             }
           ],
           generationConfig: {
-            temperature: 0.3,
+          temperature: 0.3,
             maxOutputTokens: 4000
           }
         })
@@ -717,4 +717,4 @@ Generate around 15-20 questions total, mixing the types. Respond ONLY with the J
         : 'Failed to fetch questions due to API errors'
     };
   }
-}; 
+};

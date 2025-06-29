@@ -268,16 +268,16 @@ export const socialClass7 = [
       }
     ]
   },
-      {
-    id: 3,
-    title: 'Tanks and Ground Water',
-    description: 'Learn about the importance of tanks and groundwater management.',
-    questions: [
-      {
-        question: 'Which structure is commonly used in India to store rainwater?',
-        options: ['Tanks', 'Dams', 'Canals', 'Pipelines'],
-        correct: 'Tanks'
-      },
+    {
+      id: 3,
+      title: 'Tanks and Ground Water',
+      description: 'Learn about the importance of tanks and groundwater management.',
+      questions: [
+        {
+          question: 'Which structure is commonly used in India to store rainwater?',
+          options: ['Tanks', 'Dams', 'Canals', 'Pipelines'],
+          correct: 'Tanks'
+        },
       {
         question: 'What is the main cause of groundwater depletion?',
         options: ['Deforestation', 'Overuse of borewells', 'Heavy rainfall', 'Less agriculture'],
@@ -1326,15 +1326,15 @@ export const socialClass7 = [
         question: 'How can transport be improved?',
         options: ['Better infrastructure', 'Technology use', 'Policy support', 'All of the above'],
         correct: 'All of the above'
-             }
-     ]
-   },
-   {
-     id: 11,
-     title: 'New Kings and Kingdoms',
+      }
+    ]
+  },
+  {
+    id: 11,
+    title: 'New Kings and Kingdoms',
      description: 'Study the emergence of new kingdoms in medieval India.',
-     questions: [
-       {
+    questions: [
+      {
          question: 'What period is called the early medieval period in India?',
          options: ['6th to 12th centuries', '10th to 15th centuries', '12th to 18th centuries', '15th to 18th centuries'],
          correct: '6th to 12th centuries'
@@ -2778,7 +2778,7 @@ export const socialClass7 = [
          question: 'What is the relevance of Bhakti movement today?',
          options: ['Message of unity and equality', 'Rich cultural heritage', 'Spiritual inspiration', 'All of the above'],
          correct: 'All of the above'
-       }
-     ]
-   }
+      }
+    ]
+  }
 ];
