@@ -541,6 +541,121 @@ export const scienceClass10 = [
         question: 'What causes the sky to appear blue?',
         options: ['Dispersion', 'Reflection', 'Scattering', 'Absorption'],
         correct: 'Scattering'
+      },
+      {
+        question: 'Which part of the eye forms the image?',
+        options: ['Cornea', 'Lens', 'Retina', 'Iris'],
+        correct: 'Retina'
+      },
+      {
+        question: 'What is the near point of a normal eye?',
+        options: ['25 cm', '25 mm', '2.5 cm', '250 cm'],
+        correct: '25 cm'
+      },
+      {
+        question: 'What is the far point of a normal eye?',
+        options: ['25 cm', '25 m', 'Infinity', '250 cm'],
+        correct: 'Infinity'
+      },
+      {
+        question: 'Which defect of vision is caused by elongation of eyeball?',
+        options: ['Hypermetropia', 'Myopia', 'Astigmatism', 'Presbyopia'],
+        correct: 'Myopia'
+      },
+      {
+        question: 'Which lens is used to correct myopia?',
+        options: ['Convex lens', 'Concave lens', 'Cylindrical lens', 'Bifocal lens'],
+        correct: 'Concave lens'
+      },
+      {
+        question: 'Which defect occurs due to gradual weakening of ciliary muscles?',
+        options: ['Myopia', 'Hypermetropia', 'Presbyopia', 'Astigmatism'],
+        correct: 'Presbyopia'
+      },
+      {
+        question: 'What is the function of the cornea?',
+        options: ['Controls light entry', 'Focuses light', 'Forms image', 'Provides most refraction'],
+        correct: 'Provides most refraction'
+      },
+      {
+        question: 'Which phenomenon is responsible for the twinkling of stars?',
+        options: ['Reflection', 'Refraction', 'Dispersion', 'Atmospheric refraction'],
+        correct: 'Atmospheric refraction'
+      },
+      {
+        question: 'Why do stars appear to twinkle?',
+        options: ['They emit varying light', 'Atmospheric refraction', 'Distance from Earth', 'Size of stars'],
+        correct: 'Atmospheric refraction'
+      },
+      {
+        question: 'Which color of light is scattered the most?',
+        options: ['Red', 'Blue', 'Green', 'Yellow'],
+        correct: 'Blue'
+      },
+      {
+        question: 'Which color of light is scattered the least?',
+        options: ['Violet', 'Blue', 'Green', 'Red'],
+        correct: 'Red'
+      },
+      {
+        question: 'What causes the red color of the sun at sunrise and sunset?',
+        options: ['Dispersion', 'Scattering of blue light', 'Reflection', 'Absorption'],
+        correct: 'Scattering of blue light'
+      },
+      {
+        question: 'Which part of the eye is like the aperture of a camera?',
+        options: ['Lens', 'Retina', 'Pupil', 'Cornea'],
+        correct: 'Pupil'
+      },
+      {
+        question: 'What is the function of the iris?',
+        options: ['Forms image', 'Controls light entry', 'Focuses light', 'Protects eye'],
+        correct: 'Controls light entry'
+      },
+      {
+        question: 'Which phenomenon explains the formation of rainbow?',
+        options: ['Reflection', 'Refraction', 'Dispersion', 'Scattering'],
+        correct: 'Dispersion'
+      },
+      {
+        question: 'How many colors are there in the spectrum of white light?',
+        options: ['5', '6', '7', '8'],
+        correct: '7'
+      },
+      {
+        question: 'Which device is used to disperse white light?',
+        options: ['Lens', 'Mirror', 'Prism', 'Glass plate'],
+        correct: 'Prism'
+      },
+      {
+        question: 'What is the order of colors in the spectrum?',
+        options: ['ROYGBIV', 'VIBGYOR', 'RYGBIVO', 'VOYBGIR'],
+        correct: 'VIBGYOR'
+      },
+      {
+        question: 'Which color has the maximum wavelength?',
+        options: ['Red', 'Violet', 'Blue', 'Green'],
+        correct: 'Red'
+      },
+      {
+        question: 'Which color has the minimum wavelength?',
+        options: ['Red', 'Violet', 'Blue', 'Green'],
+        correct: 'Violet'
+      },
+      {
+        question: 'What is the power of accommodation?',
+        options: ['Ability to see distant objects', 'Ability to see near objects', 'Ability to adjust focal length', 'Ability to detect colors'],
+        correct: 'Ability to adjust focal length'
+      },
+      {
+        question: 'Which part of the eye helps in accommodation?',
+        options: ['Iris', 'Cornea', 'Ciliary muscles', 'Retina'],
+        correct: 'Ciliary muscles'
+      },
+      {
+        question: 'What happens to the eye lens when we look at distant objects?',
+        options: ['Becomes thick', 'Becomes thin', 'Remains same', 'Moves away from retina'],
+        correct: 'Becomes thin'
       }
     ]
   },
@@ -558,6 +673,121 @@ export const scienceClass10 = [
         question: 'What is the basis of periodic classification?',
         options: ['Atomic mass', 'Atomic number', 'Number of neutrons', 'Number of electrons'],
         correct: 'Atomic number'
+      },
+      {
+        question: 'How many periods are there in the modern periodic table?',
+        options: ['6', '7', '8', '9'],
+        correct: '7'
+      },
+      {
+        question: 'How many groups are there in the modern periodic table?',
+        options: ['16', '17', '18', '19'],
+        correct: '18'
+      },
+      {
+        question: 'Which group elements are called noble gases?',
+        options: ['Group 1', 'Group 2', 'Group 17', 'Group 18'],
+        correct: 'Group 18'
+      },
+      {
+        question: 'Which group elements are called alkali metals?',
+        options: ['Group 1', 'Group 2', 'Group 17', 'Group 18'],
+        correct: 'Group 1'
+      },
+      {
+        question: 'Which group elements are called halogens?',
+        options: ['Group 1', 'Group 2', 'Group 17', 'Group 18'],
+        correct: 'Group 17'
+      },
+      {
+        question: 'What is the atomic number of hydrogen?',
+        options: ['1', '2', '3', '4'],
+        correct: '1'
+      },
+      {
+        question: 'Which element has the highest atomic number in period 2?',
+        options: ['Lithium', 'Carbon', 'Nitrogen', 'Neon'],
+        correct: 'Neon'
+      },
+      {
+        question: 'What happens to atomic size across a period?',
+        options: ['Increases', 'Decreases', 'Remains same', 'First increases then decreases'],
+        correct: 'Decreases'
+      },
+      {
+        question: 'What happens to atomic size down a group?',
+        options: ['Increases', 'Decreases', 'Remains same', 'First decreases then increases'],
+        correct: 'Increases'
+      },
+      {
+        question: 'Which element is the smallest in period 2?',
+        options: ['Lithium', 'Carbon', 'Nitrogen', 'Neon'],
+        correct: 'Neon'
+      },
+      {
+        question: 'Which element is the largest in group 1?',
+        options: ['Lithium', 'Sodium', 'Potassium', 'Francium'],
+        correct: 'Francium'
+      },
+      {
+        question: 'What happens to metallic character across a period?',
+        options: ['Increases', 'Decreases', 'Remains same', 'First increases then decreases'],
+        correct: 'Decreases'
+      },
+      {
+        question: 'What happens to metallic character down a group?',
+        options: ['Increases', 'Decreases', 'Remains same', 'First decreases then increases'],
+        correct: 'Increases'
+      },
+      {
+        question: 'Which is the most metallic element in period 3?',
+        options: ['Sodium', 'Magnesium', 'Aluminum', 'Silicon'],
+        correct: 'Sodium'
+      },
+      {
+        question: 'Which is the most non-metallic element in period 3?',
+        options: ['Silicon', 'Phosphorus', 'Sulfur', 'Chlorine'],
+        correct: 'Chlorine'
+      },
+      {
+        question: 'What is the valency of elements in group 1?',
+        options: ['1', '2', '3', '4'],
+        correct: '1'
+      },
+      {
+        question: 'What is the valency of elements in group 2?',
+        options: ['1', '2', '3', '4'],
+        correct: '2'
+      },
+      {
+        question: 'Which period contains the maximum number of elements?',
+        options: ['Period 4', 'Period 5', 'Period 6', 'Period 7'],
+        correct: 'Period 6'
+      },
+      {
+        question: 'Which elements are called transition elements?',
+        options: ['Group 1-2 elements', 'Group 3-12 elements', 'Group 13-18 elements', 'Noble gases'],
+        correct: 'Group 3-12 elements'
+      },
+      {
+        question: 'What is the electronic configuration of sodium?',
+        options: ['2,8,1', '2,8,2', '2,8,8', '2,8,8,1'],
+        correct: '2,8,1'
+      },
+      {
+        question: 'What is the electronic configuration of chlorine?',
+        options: ['2,8,7', '2,8,8', '2,8,6', '2,8,5'],
+        correct: '2,8,7'
+      },
+      {
+        question: 'Which law states that properties of elements are periodic functions of their atomic numbers?',
+        options: ['Mendeleevs law', 'Modern periodic law', 'Newlands law', 'Dobereiner law'],
+        correct: 'Modern periodic law'
+      },
+      {
+        question: 'What was the basis of Mendeleevs periodic classification?',
+        options: ['Atomic number', 'Atomic mass', 'Number of electrons', 'Number of neutrons'],
+        correct: 'Atomic mass'
       }
     ]
   },
