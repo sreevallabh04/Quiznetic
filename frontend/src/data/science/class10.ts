@@ -1597,6 +1597,121 @@ export const scienceClass10 = [
         question: 'Where does anaerobic respiration occur in humans?',
         options: ['Lungs', 'Liver', 'Muscles', 'Brain'],
         correct: 'Muscles'
+      },
+      {
+        question: 'What is respiration?',
+        options: ['Process of breathing', 'Process of energy release from food', 'Process of digestion', 'Process of circulation'],
+        correct: 'Process of energy release from food'
+      },
+      {
+        question: 'Which organelle is called the powerhouse of the cell?',
+        options: ['Nucleus', 'Mitochondria', 'Chloroplast', 'Ribosome'],
+        correct: 'Mitochondria'
+      },
+      {
+        question: 'What is the end product of aerobic respiration?',
+        options: ['Lactic acid', 'Ethyl alcohol', 'Carbon dioxide and water', 'Glucose'],
+        correct: 'Carbon dioxide and water'
+      },
+      {
+        question: 'What is the end product of anaerobic respiration in muscles?',
+        options: ['Lactic acid', 'Ethyl alcohol', 'Carbon dioxide', 'Glucose'],
+        correct: 'Lactic acid'
+      },
+      {
+        question: 'What is the end product of anaerobic respiration in yeast?',
+        options: ['Lactic acid', 'Ethyl alcohol', 'Carbon dioxide only', 'Glucose'],
+        correct: 'Ethyl alcohol'
+      },
+      {
+        question: 'Which type of respiration produces more energy?',
+        options: ['Aerobic', 'Anaerobic', 'Both equal', 'Neither'],
+        correct: 'Aerobic'
+      },
+      {
+        question: 'What is the chemical equation for aerobic respiration?',
+        options: ['C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy', 'C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ + Energy', 'C₆H₁₂O₆ → 2C₃H₆O₃ + Energy', 'None of these'],
+        correct: 'C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy'
+      },
+      {
+        question: 'How many ATP molecules are produced in aerobic respiration?',
+        options: ['2', '36-38', '4', '10'],
+        correct: '36-38'
+      },
+      {
+        question: 'How many ATP molecules are produced in anaerobic respiration?',
+        options: ['2', '36-38', '4', '10'],
+        correct: '2'
+      },
+      {
+        question: 'Which gas is released during respiration?',
+        options: ['Oxygen', 'Carbon dioxide', 'Nitrogen', 'Hydrogen'],
+        correct: 'Carbon dioxide'
+      },
+      {
+        question: 'Where does glycolysis occur?',
+        options: ['Mitochondria', 'Cytoplasm', 'Nucleus', 'Chloroplast'],
+        correct: 'Cytoplasm'
+      },
+      {
+        question: 'Where does Krebs cycle occur?',
+        options: ['Mitochondria', 'Cytoplasm', 'Nucleus', 'Chloroplast'],
+        correct: 'Mitochondria'
+      },
+      {
+        question: 'What is breathing?',
+        options: ['Process of energy release', 'Process of taking in oxygen and giving out carbon dioxide', 'Process of digestion', 'Process of circulation'],
+        correct: 'Process of taking in oxygen and giving out carbon dioxide'
+      },
+      {
+        question: 'What is the difference between breathing and respiration?',
+        options: ['No difference', 'Breathing is physical, respiration is biochemical', 'Breathing is biochemical, respiration is physical', 'Both are same'],
+        correct: 'Breathing is physical, respiration is biochemical'
+      },
+      {
+        question: 'Which muscle helps in breathing?',
+        options: ['Heart muscle', 'Diaphragm', 'Biceps', 'Triceps'],
+        correct: 'Diaphragm'
+      },
+      {
+        question: 'What happens during inspiration?',
+        options: ['Air goes out', 'Air comes in', 'No air movement', 'Air circulation'],
+        correct: 'Air comes in'
+      },
+      {
+        question: 'What happens during expiration?',
+        options: ['Air goes out', 'Air comes in', 'No air movement', 'Air circulation'],
+        correct: 'Air goes out'
+      },
+      {
+        question: 'Which process occurs in the absence of oxygen?',
+        options: ['Aerobic respiration', 'Anaerobic respiration', 'Photosynthesis', 'Transpiration'],
+        correct: 'Anaerobic respiration'
+      },
+      {
+        question: 'What is fermentation?',
+        options: ['Type of aerobic respiration', 'Type of anaerobic respiration', 'Type of photosynthesis', 'Type of transpiration'],
+        correct: 'Type of anaerobic respiration'
+      },
+      {
+        question: 'Which organisms can perform both aerobic and anaerobic respiration?',
+        options: ['Plants only', 'Animals only', 'Yeast', 'Bacteria only'],
+        correct: 'Yeast'
+      },
+      {
+        question: 'What causes muscle fatigue during exercise?',
+        options: ['Lack of glucose', 'Accumulation of lactic acid', 'Lack of oxygen', 'Excess of carbon dioxide'],
+        correct: 'Accumulation of lactic acid'
+      },
+      {
+        question: 'Which type of respiration occurs during vigorous exercise?',
+        options: ['Aerobic only', 'Anaerobic only', 'Both aerobic and anaerobic', 'Neither'],
+        correct: 'Both aerobic and anaerobic'
+      },
+      {
+        question: 'What is the role of oxygen in respiration?',
+        options: ['Final electron acceptor', 'Initial electron donor', 'Enzyme', 'Substrate'],
+        correct: 'Final electron acceptor'
       }
     ]
   },
@@ -1614,6 +1729,121 @@ export const scienceClass10 = [
         question: 'Which vitamin is essential for good vision?',
         options: ['Vitamin A', 'Vitamin B', 'Vitamin C', 'Vitamin D'],
         correct: 'Vitamin A'
+      },
+      {
+        question: 'What is nutrition?',
+        options: ['Process of eating food', 'Process of obtaining and utilizing nutrients', 'Process of digestion', 'Process of respiration'],
+        correct: 'Process of obtaining and utilizing nutrients'
+      },
+      {
+        question: 'What is autotrophic nutrition?',
+        options: ['Organisms make their own food', 'Organisms depend on others for food', 'Organisms eat dead matter', 'Organisms are parasites'],
+        correct: 'Organisms make their own food'
+      },
+      {
+        question: 'What is heterotrophic nutrition?',
+        options: ['Organisms make their own food', 'Organisms depend on others for food', 'Organisms photosynthesize', 'Organisms are producers'],
+        correct: 'Organisms depend on others for food'
+      },
+      {
+        question: 'Which process do green plants use to make food?',
+        options: ['Respiration', 'Photosynthesis', 'Transpiration', 'Absorption'],
+        correct: 'Photosynthesis'
+      },
+      {
+        question: 'What is the equation for photosynthesis?',
+        options: ['6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂', '6CO₂ + 6H₂O + Light → C₆H₁₂O₆ + 6O₂', 'C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O', 'None of these'],
+        correct: '6CO₂ + 6H₂O + Light → C₆H₁₂O₆ + 6O₂'
+      },
+      {
+        question: 'Which pigment is essential for photosynthesis?',
+        options: ['Chlorophyll', 'Carotene', 'Xanthophyll', 'Anthocyanin'],
+        correct: 'Chlorophyll'
+      },
+      {
+        question: 'Where does photosynthesis occur in plants?',
+        options: ['Roots', 'Stem', 'Leaves', 'Flowers'],
+        correct: 'Leaves'
+      },
+      {
+        question: 'Which organelle is responsible for photosynthesis?',
+        options: ['Mitochondria', 'Chloroplast', 'Nucleus', 'Ribosome'],
+        correct: 'Chloroplast'
+      },
+      {
+        question: 'What are the raw materials for photosynthesis?',
+        options: ['CO₂ and H₂O', 'O₂ and H₂O', 'CO₂ and O₂', 'Glucose and O₂'],
+        correct: 'CO₂ and H₂O'
+      },
+      {
+        question: 'What are the products of photosynthesis?',
+        options: ['CO₂ and H₂O', 'Glucose and O₂', 'CO₂ and O₂', 'Glucose and H₂O'],
+        correct: 'Glucose and O₂'
+      },
+      {
+        question: 'Which gas is released during photosynthesis?',
+        options: ['Carbon dioxide', 'Oxygen', 'Nitrogen', 'Hydrogen'],
+        correct: 'Oxygen'
+      },
+      {
+        question: 'What is the source of energy for photosynthesis?',
+        options: ['Heat', 'Light', 'Chemical energy', 'Mechanical energy'],
+        correct: 'Light'
+      },
+      {
+        question: 'Which type of heterotrophic nutrition is seen in fungi?',
+        options: ['Holozoic', 'Parasitic', 'Saprophytic', 'Symbiotic'],
+        correct: 'Saprophytic'
+      },
+      {
+        question: 'What is saprophytic nutrition?',
+        options: ['Feeding on living organisms', 'Feeding on dead and decaying matter', 'Making own food', 'Mutual benefit'],
+        correct: 'Feeding on dead and decaying matter'
+      },
+      {
+        question: 'What is parasitic nutrition?',
+        options: ['Feeding on living organisms and harming them', 'Feeding on dead matter', 'Making own food', 'Mutual benefit'],
+        correct: 'Feeding on living organisms and harming them'
+      },
+      {
+        question: 'What is symbiotic nutrition?',
+        options: ['One organism benefits, other is harmed', 'Both organisms benefit', 'One benefits, other unaffected', 'Both are harmed'],
+        correct: 'Both organisms benefit'
+      },
+      {
+        question: 'Which vitamin deficiency causes scurvy?',
+        options: ['Vitamin A', 'Vitamin B', 'Vitamin C', 'Vitamin D'],
+        correct: 'Vitamin C'
+      },
+      {
+        question: 'Which vitamin deficiency causes rickets?',
+        options: ['Vitamin A', 'Vitamin B', 'Vitamin C', 'Vitamin D'],
+        correct: 'Vitamin D'
+      },
+      {
+        question: 'Which vitamin deficiency causes beriberi?',
+        options: ['Vitamin A', 'Vitamin B', 'Vitamin C', 'Vitamin D'],
+        correct: 'Vitamin B'
+      },
+      {
+        question: 'Which vitamin deficiency causes night blindness?',
+        options: ['Vitamin A', 'Vitamin B', 'Vitamin C', 'Vitamin D'],
+        correct: 'Vitamin A'
+      },
+      {
+        question: 'What are the main components of food?',
+        options: ['Carbohydrates, proteins, fats', 'Carbohydrates, proteins, fats, vitamins, minerals, water', 'Proteins and fats only', 'Vitamins and minerals only'],
+        correct: 'Carbohydrates, proteins, fats, vitamins, minerals, water'
+      },
+      {
+        question: 'Which nutrient provides maximum energy?',
+        options: ['Carbohydrates', 'Proteins', 'Fats', 'Vitamins'],
+        correct: 'Fats'
+      },
+      {
+        question: 'Which nutrient is called bodybuilding food?',
+        options: ['Carbohydrates', 'Proteins', 'Fats', 'Vitamins'],
+        correct: 'Proteins'
       }
     ]
   },
@@ -1631,6 +1861,121 @@ export const scienceClass10 = [
         question: 'Which tissue helps in transport of water in plants?',
         options: ['Phloem', 'Xylem', 'Parenchyma', 'Collenchyma'],
         correct: 'Xylem'
+      },
+      {
+        question: 'What is transportation?',
+        options: ['Movement of substances within organisms', 'Movement of organisms', 'Process of respiration', 'Process of digestion'],
+        correct: 'Movement of substances within organisms'
+      },
+      {
+        question: 'Which tissue transports food in plants?',
+        options: ['Xylem', 'Phloem', 'Parenchyma', 'Collenchyma'],
+        correct: 'Phloem'
+      },
+      {
+        question: 'What does xylem transport?',
+        options: ['Food', 'Water and minerals', 'Gases', 'Hormones'],
+        correct: 'Water and minerals'
+      },
+      {
+        question: 'What does phloem transport?',
+        options: ['Water', 'Food', 'Gases', 'Minerals only'],
+        correct: 'Food'
+      },
+      {
+        question: 'Which direction does water move in xylem?',
+        options: ['Upward only', 'Downward only', 'Both directions', 'No specific direction'],
+        correct: 'Upward only'
+      },
+      {
+        question: 'Which direction does food move in phloem?',
+        options: ['Upward only', 'Downward only', 'Both directions', 'No specific direction'],
+        correct: 'Both directions'
+      },
+      {
+        question: 'What is the main component of blood?',
+        options: ['Red blood cells', 'White blood cells', 'Platelets', 'Plasma'],
+        correct: 'Plasma'
+      },
+      {
+        question: 'What is the function of red blood cells?',
+        options: ['Fight infection', 'Clot blood', 'Carry oxygen', 'Carry nutrients'],
+        correct: 'Carry oxygen'
+      },
+      {
+        question: 'What is the function of white blood cells?',
+        options: ['Carry oxygen', 'Fight infection', 'Clot blood', 'Carry nutrients'],
+        correct: 'Fight infection'
+      },
+      {
+        question: 'What is the function of platelets?',
+        options: ['Carry oxygen', 'Fight infection', 'Clot blood', 'Carry nutrients'],
+        correct: 'Clot blood'
+      },
+      {
+        question: 'What is the function of plasma?',
+        options: ['Carry oxygen only', 'Fight infection only', 'Transport various substances', 'Clot blood only'],
+        correct: 'Transport various substances'
+      },
+      {
+        question: 'Which protein in red blood cells carries oxygen?',
+        options: ['Albumin', 'Globulin', 'Hemoglobin', 'Fibrinogen'],
+        correct: 'Hemoglobin'
+      },
+      {
+        question: 'What is the normal count of RBC in humans?',
+        options: ['4-6 million per mm³', '4000-11000 per mm³', '150000-400000 per mm³', '1-2 million per mm³'],
+        correct: '4-6 million per mm³'
+      },
+      {
+        question: 'What is the normal count of WBC in humans?',
+        options: ['4-6 million per mm³', '4000-11000 per mm³', '150000-400000 per mm³', '1-2 million per mm³'],
+        correct: '4000-11000 per mm³'
+      },
+      {
+        question: 'Which chamber of heart receives oxygenated blood?',
+        options: ['Right atrium', 'Right ventricle', 'Left atrium', 'Left ventricle'],
+        correct: 'Left atrium'
+      },
+      {
+        question: 'Which chamber of heart pumps blood to the body?',
+        options: ['Right atrium', 'Right ventricle', 'Left atrium', 'Left ventricle'],
+        correct: 'Left ventricle'
+      },
+      {
+        question: 'How many chambers does human heart have?',
+        options: ['2', '3', '4', '5'],
+        correct: '4'
+      },
+      {
+        question: 'What is double circulation?',
+        options: ['Blood passes through heart once', 'Blood passes through heart twice', 'Blood circulates twice in body', 'Heart beats twice'],
+        correct: 'Blood passes through heart twice'
+      },
+      {
+        question: 'Which blood vessel carries blood away from heart?',
+        options: ['Artery', 'Vein', 'Capillary', 'Venule'],
+        correct: 'Artery'
+      },
+      {
+        question: 'Which blood vessel carries blood to the heart?',
+        options: ['Artery', 'Vein', 'Capillary', 'Arteriole'],
+        correct: 'Vein'
+      },
+      {
+        question: 'Which blood vessels are involved in exchange of materials?',
+        options: ['Arteries', 'Veins', 'Capillaries', 'Aorta'],
+        correct: 'Capillaries'
+      },
+      {
+        question: 'What is transpiration?',
+        options: ['Loss of water from plants', 'Absorption of water by plants', 'Transport of food', 'Transport of minerals'],
+        correct: 'Loss of water from plants'
+      },
+      {
+        question: 'Through which part of leaf does transpiration mainly occur?',
+        options: ['Cuticle', 'Stomata', 'Veins', 'Epidermis'],
+        correct: 'Stomata'
       }
     ]
   },
@@ -1648,6 +1993,121 @@ export const scienceClass10 = [
         question: 'Which part of the nephron is responsible for filtration?',
         options: ['Glomerulus', 'Loop of Henle', 'Ureter', 'Collecting duct'],
         correct: 'Glomerulus'
+      },
+      {
+        question: 'What is excretion?',
+        options: ['Removal of metabolic waste', 'Removal of undigested food', 'Process of digestion', 'Process of respiration'],
+        correct: 'Removal of metabolic waste'
+      },
+      {
+        question: 'What is the main excretory organ in humans?',
+        options: ['Liver', 'Lungs', 'Kidneys', 'Skin'],
+        correct: 'Kidneys'
+      },
+      {
+        question: 'What is the functional unit of kidney?',
+        options: ['Neuron', 'Nephron', 'Alveoli', 'Hepatocyte'],
+        correct: 'Nephron'
+      },
+      {
+        question: 'How many kidneys do humans have?',
+        options: ['1', '2', '3', '4'],
+        correct: '2'
+      },
+      {
+        question: 'What is the main nitrogenous waste in humans?',
+        options: ['Ammonia', 'Urea', 'Uric acid', 'Creatinine'],
+        correct: 'Urea'
+      },
+      {
+        question: 'Where is urea produced?',
+        options: ['Kidneys', 'Liver', 'Lungs', 'Skin'],
+        correct: 'Liver'
+      },
+      {
+        question: 'What is the composition of urine?',
+        options: ['Water only', 'Urea only', 'Water, urea, salts, other wastes', 'Blood'],
+        correct: 'Water, urea, salts, other wastes'
+      },
+      {
+        question: 'Which tube carries urine from kidney to bladder?',
+        options: ['Urethra', 'Ureter', 'Renal artery', 'Renal vein'],
+        correct: 'Ureter'
+      },
+      {
+        question: 'Which tube carries urine from bladder to outside?',
+        options: ['Urethra', 'Ureter', 'Renal artery', 'Renal vein'],
+        correct: 'Urethra'
+      },
+      {
+        question: 'Where is urine stored?',
+        options: ['Kidneys', 'Ureter', 'Bladder', 'Urethra'],
+        correct: 'Bladder'
+      },
+      {
+        question: 'What happens in glomerular filtration?',
+        options: ['Reabsorption of useful substances', 'Filtration of blood', 'Secretion of wastes', 'Storage of urine'],
+        correct: 'Filtration of blood'
+      },
+      {
+        question: 'What happens in tubular reabsorption?',
+        options: ['Filtration of blood', 'Reabsorption of useful substances', 'Secretion of wastes', 'Storage of urine'],
+        correct: 'Reabsorption of useful substances'
+      },
+      {
+        question: 'Which substances are reabsorbed in nephron?',
+        options: ['Glucose, amino acids, salts, water', 'Urea only', 'Wastes only', 'Nothing is reabsorbed'],
+        correct: 'Glucose, amino acids, salts, water'
+      },
+      {
+        question: 'What is artificial kidney?',
+        options: ['Transplanted kidney', 'Dialysis machine', 'Artificial organ', 'Kidney stone'],
+        correct: 'Dialysis machine'
+      },
+      {
+        question: 'What is dialysis?',
+        options: ['Kidney transplant', 'Artificial filtration of blood', 'Kidney surgery', 'Kidney examination'],
+        correct: 'Artificial filtration of blood'
+      },
+      {
+        question: 'Which animals excrete ammonia?',
+        options: ['Terrestrial animals', 'Aquatic animals', 'Flying animals', 'All animals'],
+        correct: 'Aquatic animals'
+      },
+      {
+        question: 'Which animals excrete uric acid?',
+        options: ['Mammals', 'Fish', 'Birds and reptiles', 'Amphibians'],
+        correct: 'Birds and reptiles'
+      },
+      {
+        question: 'Why do aquatic animals excrete ammonia?',
+        options: ['It is less toxic', 'It is more toxic but diluted by water', 'It requires less energy', 'It is solid waste'],
+        correct: 'It is more toxic but diluted by water'
+      },
+      {
+        question: 'Why do birds excrete uric acid?',
+        options: ['It is less toxic', 'It requires less water', 'It is liquid', 'It is more toxic'],
+        correct: 'It requires less water'
+      },
+      {
+        question: 'What do plants excrete through stomata?',
+        options: ['Oxygen', 'Carbon dioxide', 'Water vapor', 'All of these'],
+        correct: 'All of these'
+      },
+      {
+        question: 'How do plants excrete solid wastes?',
+        options: ['Through roots', 'By shedding leaves', 'Through stomata', 'Through flowers'],
+        correct: 'By shedding leaves'
+      },
+      {
+        question: 'What is the role of liver in excretion?',
+        options: ['Filters blood', 'Produces urea', 'Stores urine', 'Removes CO₂'],
+        correct: 'Produces urea'
+      },
+      {
+        question: 'What is the role of lungs in excretion?',
+        options: ['Remove urea', 'Remove CO₂ and water vapor', 'Filter blood', 'Store wastes'],
+        correct: 'Remove CO₂ and water vapor'
       }
     ]
   },
@@ -1665,6 +2125,121 @@ export const scienceClass10 = [
         question: 'What is the functional unit of the nervous system?',
         options: ['Neuron', 'Axon', 'Synapse', 'Dendrite'],
         correct: 'Neuron'
+      },
+      {
+        question: 'What is control and coordination?',
+        options: ['Process of movement', 'Process of maintaining body functions', 'Process of growth', 'Process of reproduction'],
+        correct: 'Process of maintaining body functions'
+      },
+      {
+        question: 'Which system controls and coordinates in animals?',
+        options: ['Nervous system only', 'Endocrine system only', 'Both nervous and endocrine', 'Circulatory system'],
+        correct: 'Both nervous and endocrine'
+      },
+      {
+        question: 'What are the parts of a neuron?',
+        options: ['Cell body, axon, dendrites', 'Head, body, tail', 'Nucleus, cytoplasm, membrane', 'Root, stem, leaves'],
+        correct: 'Cell body, axon, dendrites'
+      },
+      {
+        question: 'What is the function of dendrites?',
+        options: ['Carry impulses away from cell body', 'Receive impulses', 'Connect neurons', 'Produce hormones'],
+        correct: 'Receive impulses'
+      },
+      {
+        question: 'What is the function of axon?',
+        options: ['Receive impulses', 'Carry impulses away from cell body', 'Connect neurons', 'Produce hormones'],
+        correct: 'Carry impulses away from cell body'
+      },
+      {
+        question: 'What is a synapse?',
+        options: ['Part of neuron', 'Gap between neurons', 'Type of hormone', 'Brain region'],
+        correct: 'Gap between neurons'
+      },
+      {
+        question: 'What is a reflex action?',
+        options: ['Voluntary action', 'Involuntary rapid response', 'Slow response', 'Hormonal response'],
+        correct: 'Involuntary rapid response'
+      },
+      {
+        question: 'What is the pathway of reflex action?',
+        options: ['Brain to muscle', 'Receptor → Sensory neuron → Spinal cord → Motor neuron → Effector', 'Hormone to target', 'Eye to brain'],
+        correct: 'Receptor → Sensory neuron → Spinal cord → Motor neuron → Effector'
+      },
+      {
+        question: 'Which part of brain controls thinking?',
+        options: ['Cerebrum', 'Cerebellum', 'Medulla', 'Hypothalamus'],
+        correct: 'Cerebrum'
+      },
+      {
+        question: 'Which part of brain controls balance?',
+        options: ['Cerebrum', 'Cerebellum', 'Medulla', 'Hypothalamus'],
+        correct: 'Cerebellum'
+      },
+      {
+        question: 'Which part of brain controls breathing?',
+        options: ['Cerebrum', 'Cerebellum', 'Medulla', 'Hypothalamus'],
+        correct: 'Medulla'
+      },
+      {
+        question: 'What are hormones?',
+        options: ['Chemical messengers', 'Nerve impulses', 'Blood cells', 'Enzymes'],
+        correct: 'Chemical messengers'
+      },
+      {
+        question: 'Where are hormones produced?',
+        options: ['Nervous system', 'Endocrine glands', 'Blood vessels', 'Muscles'],
+        correct: 'Endocrine glands'
+      },
+      {
+        question: 'Which gland is called master gland?',
+        options: ['Thyroid', 'Pituitary', 'Adrenal', 'Pancreas'],
+        correct: 'Pituitary'
+      },
+      {
+        question: 'Which hormone is produced by thyroid gland?',
+        options: ['Insulin', 'Thyroxine', 'Adrenaline', 'Growth hormone'],
+        correct: 'Thyroxine'
+      },
+      {
+        question: 'Which hormone is produced by pancreas?',
+        options: ['Insulin', 'Thyroxine', 'Adrenaline', 'Growth hormone'],
+        correct: 'Insulin'
+      },
+      {
+        question: 'Which hormone is produced by adrenal glands?',
+        options: ['Insulin', 'Thyroxine', 'Adrenaline', 'Growth hormone'],
+        correct: 'Adrenaline'
+      },
+      {
+        question: 'What is the function of insulin?',
+        options: ['Controls growth', 'Controls metabolism', 'Controls blood sugar', 'Controls heart rate'],
+        correct: 'Controls blood sugar'
+      },
+      {
+        question: 'What is diabetes?',
+        options: ['Excess insulin', 'Deficiency of insulin', 'Excess thyroxine', 'Deficiency of thyroxine'],
+        correct: 'Deficiency of insulin'
+      },
+      {
+        question: 'What is the function of adrenaline?',
+        options: ['Controls growth', 'Prepares body for emergency', 'Controls blood sugar', 'Controls metabolism'],
+        correct: 'Prepares body for emergency'
+      },
+      {
+        question: 'How do plants respond to stimuli?',
+        options: ['Through nervous system', 'Through hormones only', 'Through growth movements', 'They do not respond'],
+        correct: 'Through growth movements'
+      },
+      {
+        question: 'What is tropism?',
+        options: ['Movement of animals', 'Growth movement in plants', 'Hormone production', 'Nerve impulse'],
+        correct: 'Growth movement in plants'
+      },
+      {
+        question: 'What is phototropism?',
+        options: ['Response to light', 'Response to gravity', 'Response to water', 'Response to touch'],
+        correct: 'Response to light'
       }
     ]
   },
@@ -1682,6 +2257,121 @@ export const scienceClass10 = [
         question: 'Which organ produces sperm in males?',
         options: ['Ovaries', 'Testes', 'Uterus', 'Prostate'],
         correct: 'Testes'
+      },
+      {
+        question: 'What is reproduction?',
+        options: ['Process of growth', 'Process of producing offspring', 'Process of nutrition', 'Process of respiration'],
+        correct: 'Process of producing offspring'
+      },
+      {
+        question: 'Which type of reproduction involves two parents?',
+        options: ['Sexual', 'Asexual', 'Binary fission', 'Budding'],
+        correct: 'Sexual'
+      },
+      {
+        question: 'What is the advantage of sexual reproduction?',
+        options: ['Rapid multiplication', 'Genetic variation', 'Less energy required', 'Single parent needed'],
+        correct: 'Genetic variation'
+      },
+      {
+        question: 'What is the advantage of asexual reproduction?',
+        options: ['Genetic variation', 'Rapid multiplication', 'Two parents needed', 'Complex process'],
+        correct: 'Rapid multiplication'
+      },
+      {
+        question: 'Which is an example of asexual reproduction?',
+        options: ['Binary fission', 'Fertilization', 'Pollination', 'Mating'],
+        correct: 'Binary fission'
+      },
+      {
+        question: 'What is binary fission?',
+        options: ['Division into two equal parts', 'Formation of buds', 'Formation of spores', 'Fragmentation'],
+        correct: 'Division into two equal parts'
+      },
+      {
+        question: 'Which organism reproduces by binary fission?',
+        options: ['Hydra', 'Amoeba', 'Yeast', 'Planaria'],
+        correct: 'Amoeba'
+      },
+      {
+        question: 'What is budding?',
+        options: ['Division into equal parts', 'Formation of small outgrowths', 'Formation of spores', 'Fragmentation'],
+        correct: 'Formation of small outgrowths'
+      },
+      {
+        question: 'Which organism reproduces by budding?',
+        options: ['Amoeba', 'Hydra', 'Paramecium', 'Bacteria'],
+        correct: 'Hydra'
+      },
+      {
+        question: 'What is fragmentation?',
+        options: ['Division into equal parts', 'Formation of buds', 'Breaking into fragments', 'Formation of spores'],
+        correct: 'Breaking into fragments'
+      },
+      {
+        question: 'Which organism reproduces by fragmentation?',
+        options: ['Hydra', 'Amoeba', 'Planaria', 'Yeast'],
+        correct: 'Planaria'
+      },
+      {
+        question: 'What are gametes?',
+        options: ['Body cells', 'Reproductive cells', 'Nerve cells', 'Blood cells'],
+        correct: 'Reproductive cells'
+      },
+      {
+        question: 'What is fertilization?',
+        options: ['Formation of gametes', 'Fusion of gametes', 'Division of cells', 'Growth of organism'],
+        correct: 'Fusion of gametes'
+      },
+      {
+        question: 'What is the male gamete in humans?',
+        options: ['Ovum', 'Sperm', 'Zygote', 'Embryo'],
+        correct: 'Sperm'
+      },
+      {
+        question: 'What is the female gamete in humans?',
+        options: ['Ovum', 'Sperm', 'Zygote', 'Embryo'],
+        correct: 'Ovum'
+      },
+      {
+        question: 'What is formed after fertilization?',
+        options: ['Gamete', 'Sperm', 'Ovum', 'Zygote'],
+        correct: 'Zygote'
+      },
+      {
+        question: 'Where does fertilization occur in humans?',
+        options: ['Ovary', 'Uterus', 'Fallopian tube', 'Vagina'],
+        correct: 'Fallopian tube'
+      },
+      {
+        question: 'What is the gestation period in humans?',
+        options: ['6 months', '9 months', '12 months', '3 months'],
+        correct: '9 months'
+      },
+      {
+        question: 'What is puberty?',
+        options: ['Birth of baby', 'Beginning of reproductive phase', 'End of growth', 'Process of aging'],
+        correct: 'Beginning of reproductive phase'
+      },
+      {
+        question: 'At what age does puberty begin in humans?',
+        options: ['5-8 years', '10-14 years', '18-20 years', '25-30 years'],
+        correct: '10-14 years'
+      },
+      {
+        question: 'What are secondary sexual characters?',
+        options: ['Primary reproductive organs', 'Features that distinguish males and females', 'Genetic features', 'Hormonal features'],
+        correct: 'Features that distinguish males and females'
+      },
+      {
+        question: 'Which hormone controls male secondary sexual characters?',
+        options: ['Estrogen', 'Testosterone', 'Insulin', 'Thyroxine'],
+        correct: 'Testosterone'
+      },
+      {
+        question: 'Which hormone controls female secondary sexual characters?',
+        options: ['Estrogen', 'Testosterone', 'Insulin', 'Thyroxine'],
+        correct: 'Estrogen'
       }
     ]
   },
@@ -1699,6 +2389,121 @@ export const scienceClass10 = [
         question: 'Which hormone controls growth in plants?',
         options: ['Auxin', 'Insulin', 'Adrenaline', 'Estrogen'],
         correct: 'Auxin'
+      },
+      {
+        question: 'What is coordination?',
+        options: ['Working together of different systems', 'Individual functioning', 'Random processes', 'Unrelated activities'],
+        correct: 'Working together of different systems'
+      },
+      {
+        question: 'Which systems work together for gas exchange?',
+        options: ['Respiratory and circulatory', 'Digestive and excretory', 'Nervous and endocrine', 'Reproductive and excretory'],
+        correct: 'Respiratory and circulatory'
+      },
+      {
+        question: 'Which systems work together for nutrition?',
+        options: ['Respiratory and circulatory', 'Digestive and circulatory', 'Nervous and endocrine', 'Reproductive and excretory'],
+        correct: 'Digestive and circulatory'
+      },
+      {
+        question: 'Which systems control and coordinate body functions?',
+        options: ['Respiratory and circulatory', 'Digestive and excretory', 'Nervous and endocrine', 'Reproductive and excretory'],
+        correct: 'Nervous and endocrine'
+      },
+      {
+        question: 'How does nervous system coordinate?',
+        options: ['Through hormones', 'Through nerve impulses', 'Through blood', 'Through enzymes'],
+        correct: 'Through nerve impulses'
+      },
+      {
+        question: 'How does endocrine system coordinate?',
+        options: ['Through hormones', 'Through nerve impulses', 'Through muscles', 'Through bones'],
+        correct: 'Through hormones'
+      },
+      {
+        question: 'Which is faster - nervous or endocrine coordination?',
+        options: ['Nervous', 'Endocrine', 'Both equal', 'Neither'],
+        correct: 'Nervous'
+      },
+      {
+        question: 'Which has longer lasting effects - nervous or endocrine?',
+        options: ['Nervous', 'Endocrine', 'Both equal', 'Neither'],
+        correct: 'Endocrine'
+      },
+      {
+        question: 'What is homeostasis?',
+        options: ['Maintaining constant internal environment', 'Changing internal environment', 'External adaptation', 'Random changes'],
+        correct: 'Maintaining constant internal environment'
+      },
+      {
+        question: 'Which systems maintain homeostasis?',
+        options: ['All systems', 'Only nervous system', 'Only endocrine system', 'Only circulatory system'],
+        correct: 'All systems'
+      },
+      {
+        question: 'How is body temperature regulated?',
+        options: ['By nervous system only', 'By endocrine system only', 'By both nervous and endocrine systems', 'By circulatory system only'],
+        correct: 'By both nervous and endocrine systems'
+      },
+      {
+        question: 'How is blood sugar level regulated?',
+        options: ['By insulin hormone', 'By nerve impulses', 'By digestive enzymes', 'By blood cells'],
+        correct: 'By insulin hormone'
+      },
+      {
+        question: 'What happens when blood sugar level rises?',
+        options: ['Insulin is released', 'Glucagon is released', 'Adrenaline is released', 'Thyroxine is released'],
+        correct: 'Insulin is released'
+      },
+      {
+        question: 'What happens when blood sugar level falls?',
+        options: ['Insulin is released', 'Glucagon is released', 'Adrenaline is released', 'Thyroxine is released'],
+        correct: 'Glucagon is released'
+      },
+      {
+        question: 'Which plant hormone promotes growth?',
+        options: ['Auxin', 'Cytokinin', 'Gibberellin', 'All of these'],
+        correct: 'All of these'
+      },
+      {
+        question: 'Which plant hormone inhibits growth?',
+        options: ['Auxin', 'Cytokinin', 'Gibberellin', 'Abscisic acid'],
+        correct: 'Abscisic acid'
+      },
+      {
+        question: 'What is geotropism?',
+        options: ['Response to light', 'Response to gravity', 'Response to water', 'Response to touch'],
+        correct: 'Response to gravity'
+      },
+      {
+        question: 'What is hydrotropism?',
+        options: ['Response to light', 'Response to gravity', 'Response to water', 'Response to touch'],
+        correct: 'Response to water'
+      },
+      {
+        question: 'What is thigmotropism?',
+        options: ['Response to light', 'Response to gravity', 'Response to water', 'Response to touch'],
+        correct: 'Response to touch'
+      },
+      {
+        question: 'Which part of plant shows positive phototropism?',
+        options: ['Roots', 'Shoot', 'Leaves', 'Flowers'],
+        correct: 'Shoot'
+      },
+      {
+        question: 'Which part of plant shows positive geotropism?',
+        options: ['Roots', 'Shoot', 'Leaves', 'Flowers'],
+        correct: 'Roots'
+      },
+      {
+        question: 'How do plants coordinate without nervous system?',
+        options: ['Through hormones and growth movements', 'Through nerve impulses', 'Through blood circulation', 'They cannot coordinate'],
+        correct: 'Through hormones and growth movements'
+      },
+      {
+        question: 'What is the role of feedback mechanism?',
+        options: ['Maintains homeostasis', 'Causes random changes', 'Stops all processes', 'Increases variation'],
+        correct: 'Maintains homeostasis'
       }
     ]
   },
@@ -1716,6 +2521,121 @@ export const scienceClass10 = [
         question: 'What is the basic unit of heredity?',
         options: ['Gene', 'Chromosome', 'Nucleus', 'DNA'],
         correct: 'Gene'
+      },
+      {
+        question: 'What is heredity?',
+        options: ['Transmission of traits from parents to offspring', 'Acquisition of new traits', 'Environmental adaptation', 'Random changes'],
+        correct: 'Transmission of traits from parents to offspring'
+      },
+      {
+        question: 'What is variation?',
+        options: ['Similarities between organisms', 'Differences between organisms', 'Genetic diseases', 'Environmental factors'],
+        correct: 'Differences between organisms'
+      },
+      {
+        question: 'What are genes?',
+        options: ['Units of heredity', 'Types of cells', 'Organs', 'Tissues'],
+        correct: 'Units of heredity'
+      },
+      {
+        question: 'Where are genes located?',
+        options: ['Cytoplasm', 'Nucleus', 'Cell membrane', 'Mitochondria'],
+        correct: 'Nucleus'
+      },
+      {
+        question: 'What are chromosomes?',
+        options: ['Thread-like structures carrying genes', 'Types of cells', 'Organs', 'Tissues'],
+        correct: 'Thread-like structures carrying genes'
+      },
+      {
+        question: 'How many chromosomes do humans have?',
+        options: ['23', '46', '48', '44'],
+        correct: '46'
+      },
+      {
+        question: 'How many pairs of chromosomes do humans have?',
+        options: ['22', '23', '24', '25'],
+        correct: '23'
+      },
+      {
+        question: 'What determines the sex of a child?',
+        options: ['Mother', 'Father', 'Both parents equally', 'Environment'],
+        correct: 'Father'
+      },
+      {
+        question: 'What are sex chromosomes in females?',
+        options: ['XX', 'XY', 'YY', 'XO'],
+        correct: 'XX'
+      },
+      {
+        question: 'What are sex chromosomes in males?',
+        options: ['XX', 'XY', 'YY', 'XO'],
+        correct: 'XY'
+      },
+      {
+        question: 'What is a dominant trait?',
+        options: ['Trait that is expressed', 'Trait that is not expressed', 'Rare trait', 'Acquired trait'],
+        correct: 'Trait that is expressed'
+      },
+      {
+        question: 'What is a recessive trait?',
+        options: ['Trait that is expressed', 'Trait that is masked', 'Common trait', 'Acquired trait'],
+        correct: 'Trait that is masked'
+      },
+      {
+        question: 'What is genotype?',
+        options: ['Physical appearance', 'Genetic makeup', 'Environmental effect', 'Behavioral trait'],
+        correct: 'Genetic makeup'
+      },
+      {
+        question: 'What is phenotype?',
+        options: ['Physical appearance', 'Genetic makeup', 'Environmental effect', 'Chromosomal arrangement'],
+        correct: 'Physical appearance'
+      },
+      {
+        question: 'What is a monohybrid cross?',
+        options: ['Cross involving one trait', 'Cross involving two traits', 'Cross involving multiple traits', 'Cross between different species'],
+        correct: 'Cross involving one trait'
+      },
+      {
+        question: 'What is the ratio in F2 generation of monohybrid cross?',
+        options: ['1:1', '1:2:1', '3:1', '9:3:3:1'],
+        correct: '3:1'
+      },
+      {
+        question: 'What are alleles?',
+        options: ['Different forms of same gene', 'Different genes', 'Different chromosomes', 'Different cells'],
+        correct: 'Different forms of same gene'
+      },
+      {
+        question: 'What is homozygous condition?',
+        options: ['Both alleles are same', 'Both alleles are different', 'Only one allele present', 'No alleles present'],
+        correct: 'Both alleles are same'
+      },
+      {
+        question: 'What is heterozygous condition?',
+        options: ['Both alleles are same', 'Both alleles are different', 'Only one allele present', 'No alleles present'],
+        correct: 'Both alleles are different'
+      },
+      {
+        question: 'Which plant did Mendel use for his experiments?',
+        options: ['Rose', 'Pea plant', 'Sunflower', 'Maize'],
+        correct: 'Pea plant'
+      },
+      {
+        question: 'What is Mendels first law?',
+        options: ['Law of dominance', 'Law of segregation', 'Law of independent assortment', 'Law of inheritance'],
+        correct: 'Law of segregation'
+      },
+      {
+        question: 'What causes variation in sexually reproducing organisms?',
+        options: ['Genetic recombination', 'Environmental factors', 'Mutations', 'All of these'],
+        correct: 'All of these'
+      },
+      {
+        question: 'What is the source of variation in asexually reproducing organisms?',
+        options: ['Genetic recombination', 'Mutations', 'Environmental factors', 'Sexual reproduction'],
+        correct: 'Mutations'
       }
     ]
   },
@@ -1733,6 +2653,121 @@ export const scienceClass10 = [
         question: 'What is the role of decomposers in an ecosystem?',
         options: ['Produce food', 'Break down dead organisms', 'Provide oxygen', 'Fix nitrogen'],
         correct: 'Break down dead organisms'
+      },
+      {
+        question: 'What is an ecosystem?',
+        options: ['Living organisms only', 'Non-living environment only', 'Interaction between living and non-living components', 'Plants and animals only'],
+        correct: 'Interaction between living and non-living components'
+      },
+      {
+        question: 'What are biotic factors?',
+        options: ['Living components', 'Non-living components', 'Physical factors', 'Chemical factors'],
+        correct: 'Living components'
+      },
+      {
+        question: 'What are abiotic factors?',
+        options: ['Living components', 'Non-living components', 'Plants only', 'Animals only'],
+        correct: 'Non-living components'
+      },
+      {
+        question: 'What is a food chain?',
+        options: ['Linear sequence of energy transfer', 'Complex network of feeding relationships', 'List of all organisms', 'Classification of organisms'],
+        correct: 'Linear sequence of energy transfer'
+      },
+      {
+        question: 'What is a food web?',
+        options: ['Linear sequence of energy transfer', 'Complex network of feeding relationships', 'List of all organisms', 'Classification of organisms'],
+        correct: 'Complex network of feeding relationships'
+      },
+      {
+        question: 'What are producers?',
+        options: ['Organisms that make their own food', 'Organisms that eat plants', 'Organisms that eat meat', 'Organisms that decompose'],
+        correct: 'Organisms that make their own food'
+      },
+      {
+        question: 'What are primary consumers?',
+        options: ['Producers', 'Herbivores', 'Carnivores', 'Decomposers'],
+        correct: 'Herbivores'
+      },
+      {
+        question: 'What are secondary consumers?',
+        options: ['Producers', 'Herbivores', 'Carnivores that eat herbivores', 'Decomposers'],
+        correct: 'Carnivores that eat herbivores'
+      },
+      {
+        question: 'What are tertiary consumers?',
+        options: ['Top carnivores', 'Herbivores', 'Primary carnivores', 'Decomposers'],
+        correct: 'Top carnivores'
+      },
+      {
+        question: 'How much energy is transferred from one trophic level to next?',
+        options: ['100%', '50%', '10%', '1%'],
+        correct: '10%'
+      },
+      {
+        question: 'What happens to the remaining 90% energy?',
+        options: ['Stored', 'Lost as heat', 'Transferred to next level', 'Converted to matter'],
+        correct: 'Lost as heat'
+      },
+      {
+        question: 'Why are food chains generally short?',
+        options: ['Limited energy transfer', 'Limited space', 'Limited organisms', 'Limited time'],
+        correct: 'Limited energy transfer'
+      },
+      {
+        question: 'What is biological magnification?',
+        options: ['Increase in organism size', 'Increase in population', 'Accumulation of harmful substances', 'Increase in energy'],
+        correct: 'Accumulation of harmful substances'
+      },
+      {
+        question: 'Which level has maximum energy in food chain?',
+        options: ['Producers', 'Primary consumers', 'Secondary consumers', 'Tertiary consumers'],
+        correct: 'Producers'
+      },
+      {
+        question: 'Which level has minimum energy in food chain?',
+        options: ['Producers', 'Primary consumers', 'Secondary consumers', 'Top consumers'],
+        correct: 'Top consumers'
+      },
+      {
+        question: 'What is ozone layer?',
+        options: ['Layer of oxygen', 'Layer of ozone gas', 'Layer of carbon dioxide', 'Layer of nitrogen'],
+        correct: 'Layer of ozone gas'
+      },
+      {
+        question: 'What is the function of ozone layer?',
+        options: ['Absorbs UV radiation', 'Provides oxygen', 'Controls temperature', 'Provides carbon dioxide'],
+        correct: 'Absorbs UV radiation'
+      },
+      {
+        question: 'What causes ozone depletion?',
+        options: ['CFCs', 'Carbon dioxide', 'Oxygen', 'Nitrogen'],
+        correct: 'CFCs'
+      },
+      {
+        question: 'What is greenhouse effect?',
+        options: ['Cooling of earth', 'Warming of earth', 'Ozone depletion', 'Acid rain'],
+        correct: 'Warming of earth'
+      },
+      {
+        question: 'Which gases cause greenhouse effect?',
+        options: ['CO₂, CH₄, CFCs', 'O₂, N₂', 'Only CO₂', 'Only CH₄'],
+        correct: 'CO₂, CH₄, CFCs'
+      },
+      {
+        question: 'What is biodegradable waste?',
+        options: ['Waste that can be decomposed by microorganisms', 'Waste that cannot be decomposed', 'Waste from industries', 'Waste from homes'],
+        correct: 'Waste that can be decomposed by microorganisms'
+      },
+      {
+        question: 'What is non-biodegradable waste?',
+        options: ['Waste that can be decomposed', 'Waste that cannot be decomposed by microorganisms', 'Organic waste', 'Natural waste'],
+        correct: 'Waste that cannot be decomposed by microorganisms'
+      },
+      {
+        question: 'Which is an example of biodegradable waste?',
+        options: ['Plastic', 'Glass', 'Paper', 'Metal'],
+        correct: 'Paper'
       }
     ]
   },
@@ -1750,6 +2785,121 @@ export const scienceClass10 = [
         question: 'Which gas is essential for photosynthesis?',
         options: ['Oxygen', 'Carbon dioxide', 'Nitrogen', 'Hydrogen'],
         correct: 'Carbon dioxide'
+      },
+      {
+        question: 'What are natural resources?',
+        options: ['Man-made materials', 'Materials obtained from nature', 'Artificial substances', 'Synthetic materials'],
+        correct: 'Materials obtained from nature'
+      },
+      {
+        question: 'What are renewable resources?',
+        options: ['Resources that can be replenished', 'Resources that cannot be replenished', 'Resources used once', 'Artificial resources'],
+        correct: 'Resources that can be replenished'
+      },
+      {
+        question: 'What are non-renewable resources?',
+        options: ['Resources that can be replenished', 'Resources that cannot be replenished quickly', 'Resources that are unlimited', 'Artificial resources'],
+        correct: 'Resources that cannot be replenished quickly'
+      },
+      {
+        question: 'Which is a non-renewable resource?',
+        options: ['Solar energy', 'Wind energy', 'Coal', 'Water'],
+        correct: 'Coal'
+      },
+      {
+        question: 'Which is a renewable resource?',
+        options: ['Coal', 'Petroleum', 'Natural gas', 'Wind energy'],
+        correct: 'Wind energy'
+      },
+      {
+        question: 'What is forest conservation?',
+        options: ['Cutting all trees', 'Protecting and managing forests', 'Using more wood', 'Building cities in forests'],
+        correct: 'Protecting and managing forests'
+      },
+      {
+        question: 'What is deforestation?',
+        options: ['Planting trees', 'Cutting down forests', 'Protecting forests', 'Growing forests'],
+        correct: 'Cutting down forests'
+      },
+      {
+        question: 'What are the consequences of deforestation?',
+        options: ['Soil erosion, climate change, loss of biodiversity', 'More rainfall', 'Better climate', 'More oxygen'],
+        correct: 'Soil erosion, climate change, loss of biodiversity'
+      },
+      {
+        question: 'What is water conservation?',
+        options: ['Wasting water', 'Using water efficiently and protecting water sources', 'Polluting water', 'Using more water'],
+        correct: 'Using water efficiently and protecting water sources'
+      },
+      {
+        question: 'What is rainwater harvesting?',
+        options: ['Wasting rainwater', 'Collecting and storing rainwater', 'Polluting rainwater', 'Using groundwater'],
+        correct: 'Collecting and storing rainwater'
+      },
+      {
+        question: 'What causes water pollution?',
+        options: ['Industrial waste, sewage, chemicals', 'Clean water', 'Pure water', 'Distilled water'],
+        correct: 'Industrial waste, sewage, chemicals'
+      },
+      {
+        question: 'What is soil conservation?',
+        options: ['Soil erosion', 'Protecting soil from degradation', 'Using more fertilizers', 'Removing topsoil'],
+        correct: 'Protecting soil from degradation'
+      },
+      {
+        question: 'What causes soil erosion?',
+        options: ['Wind and water', 'Plants', 'Animals', 'Fertilizers'],
+        correct: 'Wind and water'
+      },
+      {
+        question: 'How can soil erosion be prevented?',
+        options: ['Removing all vegetation', 'Planting trees and grass', 'Using more water', 'Removing topsoil'],
+        correct: 'Planting trees and grass'
+      },
+      {
+        question: 'What is wildlife conservation?',
+        options: ['Hunting animals', 'Protecting animals and their habitats', 'Destroying habitats', 'Capturing animals'],
+        correct: 'Protecting animals and their habitats'
+      },
+      {
+        question: 'What is biodiversity?',
+        options: ['Variety of life forms', 'Single species', 'Non-living things', 'Artificial life'],
+        correct: 'Variety of life forms'
+      },
+      {
+        question: 'Why is biodiversity important?',
+        options: ['Ecological balance, resources, medicines', 'No importance', 'Creates problems', 'Causes pollution'],
+        correct: 'Ecological balance, resources, medicines'
+      },
+      {
+        question: 'What are fossil fuels?',
+        options: ['Recent organic matter', 'Ancient organic matter converted to fuel', 'Artificial fuels', 'Renewable fuels'],
+        correct: 'Ancient organic matter converted to fuel'
+      },
+      {
+        question: 'Which are examples of fossil fuels?',
+        options: ['Coal, petroleum, natural gas', 'Solar energy', 'Wind energy', 'Water energy'],
+        correct: 'Coal, petroleum, natural gas'
+      },
+      {
+        question: 'What is the problem with fossil fuels?',
+        options: ['They are renewable', 'They cause pollution and are non-renewable', 'They are clean', 'They are unlimited'],
+        correct: 'They cause pollution and are non-renewable'
+      },
+      {
+        question: 'What are alternative sources of energy?',
+        options: ['Coal and petroleum', 'Solar, wind, hydro, geothermal', 'Only solar', 'Only wind'],
+        correct: 'Solar, wind, hydro, geothermal'
+      },
+      {
+        question: 'What is sustainable development?',
+        options: ['Using all resources now', 'Meeting present needs without compromising future', 'Ignoring future needs', 'Using only non-renewable resources'],
+        correct: 'Meeting present needs without compromising future'
+      },
+      {
+        question: 'What is the 3 Rs principle?',
+        options: ['Reduce, Reuse, Recycle', 'Remove, Replace, Repeat', 'Read, Write, Remember', 'Run, Rest, Relax'],
+        correct: 'Reduce, Reuse, Recycle'
       }
     ]
   }
