@@ -1,290 +1,222 @@
-<<<<<<< HEAD
 # Quiznetic - Educational Quiz Application
 
 A modern educational quiz application built with React, TypeScript, and Tailwind CSS. The application provides interactive quizzes for students following the Telangana state board curriculum.
 
 ![Quiznetic Screenshot](https://i.imgur.com/1pJ8xzM.png)
 
-## Features
+## 🚀 Features
 
 - **Multiple Question Types**: Multiple choice, fill-in-the-blank, matching, drag-and-drop ordering, and dropdown questions
-- **Interactive Maps**: Map-based questions with interactive map displays
+- **Interactive Maps**: Map-based questions with interactive map displays using Leaflet
 - **Subject Coverage**: Mathematics, Science, and Social Studies for classes 6-10
-- **Real-time Question Generation**: Uses Gemini AI API to generate dynamic questions
+- **AI-Powered Questions**: Uses Google Gemini API for dynamic question generation
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Progress Tracking**: Track quiz progress and scores
 - **Modern UI**: Beautiful, intuitive interface with smooth animations
+- **Secure Authentication**: Client-side authentication with localStorage management
 
-## Technology Stack
+## 🛠 Technology Stack
 
 - **Frontend**: React 18, TypeScript, Tailwind CSS
-- **AI Integration**: Google Gemini API for question generation
+- **AI Integration**: Google Gemini 1.5 Flash API for question generation
+- **Maps**: Leaflet for interactive map displays
 - **Routing**: React Router DOM
 - **UI Components**: Framer Motion, Lucide React
 - **Notifications**: React Toastify
 - **Build Tool**: Vite
 
-## Getting Started
+## 📦 Getting Started
 
 ### Prerequisites
 
 - Node.js (v16 or higher)
 - npm or yarn
+- Google Gemini API keys
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
-git clone <repository-url>
+git clone https://github.com/sreevallabh04/Quiznetic.git
 cd Quiznetic
 ```
 
-2. Install dependencies:
+2. **Install dependencies:**
 ```bash
 cd frontend
 npm install
 ```
 
-3. Start the development server:
+3. **Set up environment variables:**
+Create a `.env` file in the `frontend` directory with your Gemini API keys:
+```env
+VITE_GEMINI_API_KEY_1=your_first_api_key_here
+VITE_GEMINI_API_KEY_2=your_second_api_key_here
+VITE_GEMINI_API_KEY_3=your_third_api_key_here
+VITE_GEMINI_API_KEY_4=your_fourth_api_key_here
+VITE_GEMINI_API_KEY_5=your_fifth_api_key_here
+VITE_GEMINI_API_KEY_6=your_sixth_api_key_here
+VITE_GEMINI_API_KEY_7=your_seventh_api_key_here
+VITE_GEMINI_API_KEY_8=your_eighth_api_key_here
+```
+
+4. **Start the development server:**
 ```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+5. **Open your browser and navigate to `http://localhost:5173`**
 
-## API Configuration
+## 🔧 API Configuration
 
-The application uses Google Gemini API for generating dynamic questions. The API keys are configured in `frontend/src/utils/api.ts`. The system includes intelligent key rotation and retry logic to handle rate limits and API failures.
+The application uses Google Gemini 1.5 Flash API for generating dynamic questions. The system includes:
 
-### API Key Management
+- **Multiple API Key Support**: Load balancing across 8 API keys
+- **Intelligent Key Rotation**: Automatic rotation when rate limits are hit
+- **Retry Logic**: Exponential backoff with intelligent error handling
+- **Key Blacklisting**: Temporary blacklisting of failed keys
+- **Error Recovery**: Graceful handling of API failures
 
-- Multiple API keys are supported for load balancing
-- Automatic key rotation when rate limits are hit
-- Intelligent retry logic with exponential backoff
-- Key blacklisting for failed keys
+### Recent Updates
 
-## Project Structure
+- **✅ Fixed**: Updated from deprecated `gemini-pro` to `gemini-1.5-flash` model
+- **✅ Resolved**: 400 Bad Request errors caused by deprecated model usage
+- **✅ Enhanced**: Improved error handling and API key management
+
+## 📁 Project Structure
 
 ```
 Quiznetic/
-├── frontend/               # React frontend
+├── frontend/               # React frontend application
 │   ├── src/
 │   │   ├── components/     # React components
 │   │   │   ├── home/       # Home page components
 │   │   │   ├── landing/    # Landing page components
-│   │   │   ├── layout/     # Layout components
+│   │   │   ├── layout/     # Layout components (Header, Footer)
 │   │   │   └── ui/         # Reusable UI components
-│   │   ├── data/           # Static question data
-│   │   │   ├── maths/      # Mathematics questions
-│   │   │   ├── science/    # Science questions
-│   │   │   └── social/     # Social studies questions
+│   │   ├── data/           # Static question data by subject
+│   │   │   ├── maths/      # Mathematics questions (classes 6-10)
+│   │   │   ├── science/    # Science questions (classes 6-10)
+│   │   │   └── social/     # Social studies questions (classes 6-10)
 │   │   ├── pages/          # Page components
 │   │   ├── types/          # TypeScript type definitions
-│   │   ├── utils/          # Utility functions and API
+│   │   ├── utils/          # Utility functions and API logic
 │   │   └── main.tsx        # Application entry point
 │   ├── public/             # Static assets
+│   ├── .env                # Environment variables (not in repo)
+│   ├── .env.example        # Environment variables template
 │   └── package.json        # Dependencies and scripts
+├── .gitignore              # Git ignore patterns
 └── README.md               # Project documentation
 ```
 
-## Features in Detail
+## 🎯 Question Types
 
-### Question Types
+### 1. Multiple Choice Questions
+Traditional multiple choice with 4 options, including map-based questions with interactive displays.
 
-1. **Multiple Choice Questions**: Traditional multiple choice with 4 options
-2. **Fill-in-the-Blank**: Questions with blank spaces to fill
-3. **Matching Questions**: Match items from two columns
-4. **Drag-and-Drop Ordering**: Arrange items in correct order
-5. **Dropdown Questions**: Select correct options from dropdowns
+### 2. Fill-in-the-Blank
+Questions with blank spaces that students fill with correct answers.
 
-### Map Integration
+### 3. Matching Questions
+Match items from two columns (e.g., terms with definitions).
 
-- Interactive map questions for geography topics
-- Automatic map data generation based on question content
-- Support for various map entities (countries, states, cities, rivers, etc.)
+### 4. Drag-and-Drop Ordering
+Arrange items in the correct chronological or logical order.
 
-### Authentication
+### 5. Dropdown Questions
+Select correct options from dropdown menus within sentences.
 
-- Simple client-side authentication system
-- User registration and login functionality
-- Session management using localStorage
-=======
-# Quiznetic
+## 🗺 Map Integration
 
-A modern, interactive learning platform for Telangana State Board syllabus with quizzes, maps, and more.
+- **Interactive Geography**: Leaflet-powered interactive maps
+- **Auto-Detection**: Automatic map generation for geography questions
+- **Multi-Entity Support**: Countries, states, cities, rivers, mountains, etc.
+- **Visual Feedback**: Highlighting and markers for better learning
 
-![Quiznetic Screenshot](https://i.imgur.com/1pJ8xzM.png)
+## 🔐 Security Features
 
-## Overview
+- **Environment Variables**: All API keys stored securely in `.env` files
+- **Git Security**: API keys excluded from version control
+- **Client-side Auth**: Simple authentication using localStorage
+- **Input Validation**: Comprehensive validation for all user inputs
 
-Quiznetic is an educational platform designed to help students learn subjects based on the Telangana State Board syllabus. It features interactive quizzes with a special focus on geography through interactive map pointing exercises. The application provides a visually engaging learning experience with a cosmic space-themed UI.
-
-## Features
-
-- **Class-based Navigation**: Browse content by class (6-10)
-- **Subject Categorization**: Access content by subject (Mathematics, Science, Social Studies)
-- **Interactive Quizzes**: Test your knowledge with multiple-choice questions
-- **Interactive Maps**: Learn geography with Leaflet-powered interactive maps
-- **Map Pointing Exercises**: Identify states, rivers, mountains, capitals, and more
-- **Responsive Design**: Works on desktop and mobile devices
-- **Cosmic Space Theme**: Visually engaging user interface
-
-## Technologies Used
-
-- **Frontend**:
-  - React
-  - TypeScript
-  - Tailwind CSS
-  - Framer Motion (animations)
-  - Leaflet (interactive maps)
-  - Lucide React (icons)
-  
-- **Backend**:
-  - Node.js
-  - Express
-  - Firebase (authentication)
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/quiznetic.git
-   cd quiznetic
-   ```
-
-2. Install dependencies for both frontend and backend:
-   ```bash
-   # Install frontend dependencies
-   cd frontend
-   npm install
-
-   # Install backend dependencies
-   cd ../backend
-   npm install
-   ```
-
-3. Set up environment variables:
-   - Create a `.env` file in the backend directory
-   - Add necessary environment variables (see `.env.example`)
-
-4. Start the development servers:
-   ```bash
-   # Start backend server
-   cd backend
-   npm run dev
-
-   # Start frontend server
-   cd frontend
-   npm run dev
-   ```
->>>>>>> 7b0177345a45c7c6239071678bcb8665e19d3380
-
-## Map Pointing Feature
-
-One of the standout features of Quiznetic is the interactive map pointing functionality:
-
-- **Interactive Maps**: Unlike static images, our maps are fully interactive using Leaflet
-- **Diverse Geography Learning**: Identify states, rivers, mountains, capitals, historical regions, and more
-- **Class-specific Content**: Different map exercises for each class level (6-10)
-- **Visual Feedback**: Highlighting of geographical features with appropriate styling
-- **HUD-like Interface**: Modern, tech-inspired map interface for better engagement
-
-### Map Categories Include:
-
-- Indian States and Capitals
-- Indian Rivers and Water Bodies
-- Indian Mountain Ranges
-- Telangana Geography
-- World Geography
-- Historical Maps
-
-<<<<<<< HEAD
-## Development
+## 🚀 Development
 
 ### Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build optimized production bundle
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint for code quality
 
-### Code Style
+### Code Quality
 
-The project uses ESLint for code linting and TypeScript for type safety. All components are written in TypeScript with proper type definitions.
-=======
-## Project Structure
+- **TypeScript**: Full type safety throughout the application
+- **ESLint**: Code linting with modern standards
+- **Component Architecture**: Modular, reusable component design
+- **Error Boundaries**: Graceful error handling in React components
 
-```
-quiznetic/
-├── frontend/               # React frontend
-│   ├── src/
-│   │   ├── components/     # React components
-│   │   │   ├── ui/         # Reusable UI components
-│   │   │   ├── layout/     # Layout components
-│   │   │   └── ...
-│   │   ├── data/           # Quiz and map data
-│   │   │   ├── maths/      # Mathematics questions
-│   │   │   ├── science/    # Science questions
-│   │   │   ├── social/     # Social studies questions
-│   │   │   └── ...
-│   │   ├── pages/          # Page components
-│   │   └── utils/          # Utility functions
-│   └── ...
-└── backend/                # Node.js backend
-    ├── Controllers/        # Request controllers
-    ├── Middlewares/        # Express middlewares
-    ├── Models/             # Data models
-    ├── Routes/             # API routes
-    └── ...
-```
->>>>>>> 7b0177345a45c7c6239071678bcb8665e19d3380
+## 📱 Deployment
 
-## Usage
+### Production Build
 
-1. Open the application in your browser
-2. Select a class level (6-10)
-3. Choose a subject (Mathematics, Science, Social)
-4. Select a chapter or map pointing exercise
-5. Complete the quiz, interacting with maps when applicable
-6. See your score and progress
-
-<<<<<<< HEAD
-## Deployment
-
-The application can be deployed to any static hosting service:
-
-1. Build the application:
+1. **Build the application:**
 ```bash
 npm run build
 ```
 
-2. Deploy the `dist` folder to your hosting service
+2. **Deploy the `dist` folder** to your hosting service (Vercel, Netlify, etc.)
 
-## Contributing
+### Environment Setup
+
+- Ensure all `VITE_GEMINI_API_KEY_*` environment variables are set in production
+- Configure build settings for TypeScript and Vite
+- Set up proper domain and SSL certificates
+
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes with proper TypeScript types
 4. Add tests if applicable
-5. Submit a pull request
+5. Commit your changes (`git commit -m 'Add amazing feature'`)
+6. Push to the branch (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
 
-## License
+## 📝 Recent Changes
 
-This project is licensed under the MIT License.
+### v1.2.0 (Latest)
+- **Fixed**: Updated to Gemini 1.5 Flash API model
+- **Resolved**: 400 Bad Request errors from deprecated model
+- **Enhanced**: API key rotation and error handling
+- **Improved**: Environment variable management
+- **Security**: Removed hardcoded API keys from codebase
 
-## Support
+### v1.1.0
+- **Added**: Multiple question types support
+- **Enhanced**: Interactive map functionality
+- **Improved**: UI/UX with Tailwind CSS
+- **Added**: Progress tracking and scoring
 
-For support and questions, please open an issue in the repository.
-=======
-## Credits
+## 🔗 Links
 
-This project was developed to enhance the learning experience for students following the Telangana State Board syllabus.
+- **Live Demo**: [Quiznetic](https://quiznetic.vercel.app) *(if deployed)*
+- **Repository**: [GitHub](https://github.com/sreevallabh04/Quiznetic)
+- **Issues**: [Bug Reports & Feature Requests](https://github.com/sreevallabh04/Quiznetic/issues)
 
-- Map data is based on educational standards
-- Interactive maps powered by Leaflet
-- Cosmic space theme inspired by educational exploration
+## 📄 License
 
-## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This project is licensed under the MIT License.
->>>>>>> 7b0177345a45c7c6239071678bcb8665e19d3380
+## 💡 Support
+
+For support, questions, or feature requests:
+
+1. **GitHub Issues**: [Create an issue](https://github.com/sreevallabh04/Quiznetic/issues)
+2. **Documentation**: Check this README and code comments
+3. **Community**: Contribute to discussions in the repository
+
+---
+
+**Built with ❤️ for educational excellence in Telangana**
