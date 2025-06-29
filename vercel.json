@@ -86,7 +86,6 @@
     "VITE_ENABLE_API_QUESTIONS": "false",
     "VITE_ENABLE_ANALYTICS": "true",
     "VITE_ENABLE_DEBUG": "false",
-    "VITE_CLERK_PUBLISHABLE_KEY": "",
     "NODE_ENV": "production"
   },
   "functions": {
