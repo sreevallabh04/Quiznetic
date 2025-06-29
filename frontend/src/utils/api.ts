@@ -103,7 +103,7 @@ const rotateToNextApiKey = (): string => {
   return getCurrentApiKey();
 };
 
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
 
 // Define interfaces for different question types
 export type QuestionType = 'multiple_choice' | 'fill_blank' | 'matching' | 'drag_drop_order' | 'dropdown';
