@@ -1,14 +1,14 @@
 // Gemini API utilities for fetching questions
 // Array of API keys to rotate through when hitting rate limits
 const GEMINI_API_KEYS = [
-  process.env.VITE_GEMINI_API_KEY_1,
-  process.env.VITE_GEMINI_API_KEY_2,
-  process.env.VITE_GEMINI_API_KEY_3,
-  process.env.VITE_GEMINI_API_KEY_4,
-  process.env.VITE_GEMINI_API_KEY_5,
-  process.env.VITE_GEMINI_API_KEY_6,
-  process.env.VITE_GEMINI_API_KEY_7,
-  process.env.VITE_GEMINI_API_KEY_8
+  import.meta.env.VITE_GEMINI_API_KEY_1,
+  import.meta.env.VITE_GEMINI_API_KEY_2,
+  import.meta.env.VITE_GEMINI_API_KEY_3,
+  import.meta.env.VITE_GEMINI_API_KEY_4,
+  import.meta.env.VITE_GEMINI_API_KEY_5,
+  import.meta.env.VITE_GEMINI_API_KEY_6,
+  import.meta.env.VITE_GEMINI_API_KEY_7,
+  import.meta.env.VITE_GEMINI_API_KEY_8
 ].filter(Boolean) as string[]; // Filter out undefined values
 
 // Validate that we have at least one API key
