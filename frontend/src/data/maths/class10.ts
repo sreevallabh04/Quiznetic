@@ -28,108 +28,108 @@ export const mathsClass10 = [
         "options": ["π", "√2", "3/4", "√3"],
         "correct": "3/4"
       },
-          {
-            "question": "What is the set representation of the set of even integers?",
-            "options": ["{2, 4, 6, 8, ...}", "{1, 3, 5, 7, ...}", "{1, 2, 3, 4, ...}", "{0, 2, 4, 6, 8}"],
-            "correct": "{2, 4, 6, 8, ...}"
-          },
-          {
-            "question": "Which of the following is the correct set builder notation for the set of natural numbers?",
-            "options": ["{x | x is a natural number}", "{x | x is a prime number}", "{x | x is a real number}", "{x | x is a positive integer}"],
-            "correct": "{x | x is a natural number}"
-          },
-          {
-            "question": "What is the union of the sets A = {1, 2} and B = {2, 3}?",
-            "options": ["{1, 2, 3}", "{2, 3}", "{1, 2}", "{3, 4}"],
-            "correct": "{1, 2, 3}"
-          },
-          {
-            "question": "What is the intersection of sets A = {1, 2, 3} and B = {2, 3, 4}?",
-            "options": ["{1, 2, 3, 4}", "{2, 3}", "{3, 4}", "{1, 2}"],
-            "correct": "{2, 3}"
-          },
-          {
-            "question": "Find the roots of the equation x^2 - 4x + 4 = 0.",
-            "options": ["x = 2", "x = -2", "x = 0", "x = 4"],
-            "correct": "x = 2"
-          },
-          {
-            "question": "Find the roots of the quadratic equation x^2 - 7x + 10 = 0.",
-            "options": ["x = 2, 5", "x = 3, 4", "x = -2, -5", "x = 1, 10"],
-            "correct": "x = 2, 5"
-          },
-          {
-            "question": "What is the sum of the first 5 terms of the arithmetic progression 3, 7, 11, 15, ...?",
-            "options": ["25", "30", "35", "40"],
-            "correct": "25"
-          },
-          {
-            "question": "Find the common difference of the arithmetic progression 5, 10, 15, ...",
-            "options": ["5", "10", "15", "20"],
-            "correct": "5"
-          },
-          {
-            "question": "What is sin 30°?",
-            "options": ["√2/2", "1/2", "√3/2", "1"],
-            "correct": "1/2"
-          },
-          {
-            "question": "What is cos 60°?",
-            "options": ["1", "√2/2", "1/2", "√3/2"],
-            "correct": "1/2"
-          },
-          {
-            "question": "What is tan 45°?",
-            "options": ["1", "√3", "0", "∞"],
-            "correct": "1"
-          },
-          {
-            "question": "If the height of a building is 30 meters and the angle of elevation is 30°, find the distance from the base of the building.",
-            "options": ["15√3", "30", "20", "25"],
-            "correct": "15√3"
-          },
-          {
-            "question": "Find the equation of the straight line passing through the points (1, 2) and (3, 6).",
-            "options": ["y = 2x", "y = x + 1", "y = 4x", "y = 2x + 1"],
-            "correct": "y = 2x"
-          },
-          {
-            "question": "What is the slope of the line passing through (1, 1) and (2, 3)?",
-            "options": ["1", "2", "3", "4"],
-            "correct": "2"
-          },
-          {
-            "question": "What is the area of a circle with a radius of 7 cm?",
-            "options": ["154 cm²", "49 cm²", "100 cm²", "22 cm²"],
-            "correct": "49 cm²"
-          },
-          {
-            "question": "What is the circumference of a circle with radius 7 cm?",
-            "options": ["14π cm", "22π cm", "49π cm", "14 cm"],
-            "correct": "14π cm"
-          },
-          {
-            "question": "What is the tangent of 60°?",
-            "options": ["√3", "1", "√2", "1/√3"],
-            "correct": "√3"
-          },
-          {
-            "question": "If two triangles are similar, what is the ratio of their corresponding sides?",
-            "options": ["1:1", "2:1", "3:1", "2:3"],
-            "correct": "1:1"
-          },
-          {
-            "question": "What is the value of sin 90°?",
-            "options": ["0", "1", "√2/2", "√3/2"],
-            "correct": "1"
-          },
-          {
-            "question": "The sum of an arithmetic progression is 60, and the first term is 10. If the common difference is 5, what is the number of terms?",
-            "options": ["5", "6", "7", "8"],
-            "correct": "6"
-          }
-        ]
+      {
+        "question": "What is Euclids Division Lemma?",
+        "options": ["a = bq + r", "a = b + qr", "a = bq - r", "a = b - qr"],
+        "correct": "a = bq + r"
       },
+      {
+        "question": "What is the HCF of 12 and 18?",
+        "options": ["6", "12", "18", "36"],
+        "correct": "6"
+      },
+      {
+        "question": "What is the LCM of 4 and 6?",
+        "options": ["12", "24", "10", "8"],
+        "correct": "12"
+      },
+      {
+        "question": "Which number is both rational and irrational?",
+        "options": ["0", "1", "π", "None"],
+        "correct": "None"
+      },
+      {
+        "question": "What is the decimal expansion of 22/7?",
+        "options": ["Terminating", "Non-terminating repeating", "Non-terminating non-repeating", "Finite"],
+        "correct": "Non-terminating repeating"
+      },
+      {
+        "question": "What is the condition for a rational number p/q to have terminating decimal?",
+        "options": ["q = 2^m × 5^n", "q = 3^m × 7^n", "q = 2^m × 3^n", "Any value of q"],
+        "correct": "q = 2^m × 5^n"
+      },
+      {
+        "question": "What is √2 approximately equal to?",
+        "options": ["1.414", "1.732", "2.236", "3.14"],
+        "correct": "1.414"
+      },
+      {
+        "question": "What is the fundamental theorem of arithmetic?",
+        "options": ["Every integer can be written as product of primes", "Every number is prime", "Every number is composite", "Primes are infinite"],
+        "correct": "Every integer can be written as product of primes"
+      },
+      {
+        "question": "What is the HCF of two consecutive numbers?",
+        "options": ["1", "2", "The larger number", "The smaller number"],
+        "correct": "1"
+      },
+      {
+        "question": "What is the LCM of two coprime numbers a and b?",
+        "options": ["a + b", "a - b", "a × b", "1"],
+        "correct": "a × b"
+      },
+      {
+        "question": "Which of these is a perfect square?",
+        "options": ["50", "72", "81", "98"],
+        "correct": "81"
+      },
+      {
+        "question": "What is the square root of 144?",
+        "options": ["12", "14", "16", "10"],
+        "correct": "12"
+      },
+      {
+        "question": "What is the cube root of 27?",
+        "options": ["3", "9", "6", "4"],
+        "correct": "3"
+      },
+      {
+        "question": "What is the value of π?",
+        "options": ["22/7", "3.14159...", "Both A and B", "3.5"],
+        "correct": "Both A and B"
+      },
+      {
+        "question": "What is the relationship between HCF and LCM?",
+        "options": ["HCF × LCM = Product of numbers", "HCF + LCM = Sum of numbers", "HCF = LCM", "No relationship"],
+        "correct": "HCF × LCM = Product of numbers"
+      },
+      {
+        "question": "What is the decimal expansion of 1/7?",
+        "options": ["0.142857...", "0.125", "0.1666...", "0.2"],
+        "correct": "0.142857..."
+      },
+      {
+        "question": "What is the smallest rational number?",
+        "options": ["0", "1", "Does not exist", "-1"],
+        "correct": "Does not exist"
+      },
+      {
+        "question": "What is the largest irrational number?",
+        "options": ["π", "e", "√2", "Does not exist"],
+        "correct": "Does not exist"
+      },
+      {
+        "question": "What is the sum of a rational and irrational number?",
+        "options": ["Rational", "Irrational", "Can be either", "Zero"],
+        "correct": "Irrational"
+      },
+      {
+        "question": "What is the product of two irrational numbers?",
+        "options": ["Always irrational", "Always rational", "Can be either", "Always zero"],
+        "correct": "Can be either"
+      }
+    ]
+  },
     {
       "id": 2,
       "title": "Logarithm",
@@ -148,6 +148,116 @@ export const mathsClass10 = [
           "question": "Solve log3(x + 2) = 2.",
           "options": ["1", "7", "3", "4"],
           "correct": "7"
+        },
+        {
+          "question": "What is log10(100)?",
+          "options": ["2", "10", "100", "1"],
+          "correct": "2"
+        },
+        {
+          "question": "What is the value of log10(1)?",
+          "options": ["0", "1", "10", "Undefined"],
+          "correct": "0"
+        },
+        {
+          "question": "What is log5(125)?",
+          "options": ["3", "5", "25", "125"],
+          "correct": "3"
+        },
+        {
+          "question": "If log2(x) = 4, find x.",
+          "options": ["8", "16", "32", "64"],
+          "correct": "16"
+        },
+        {
+          "question": "What is log10(0.01)?",
+          "options": ["-2", "2", "0.01", "100"],
+          "correct": "-2"
+        },
+        {
+          "question": "What is the relationship between log and exponential?",
+          "options": ["log_a(b) = c means a^c = b", "log_a(b) = c means b^c = a", "log_a(b) = c means c^a = b", "No relationship"],
+          "correct": "log_a(b) = c means a^c = b"
+        },
+        {
+          "question": "What is log_a(1) for any base a?",
+          "options": ["0", "1", "a", "Undefined"],
+          "correct": "0"
+        },
+        {
+          "question": "What is log_a(a) for any base a?",
+          "options": ["0", "1", "a", "Undefined"],
+          "correct": "1"
+        },
+        {
+          "question": "Simplify log10(10^5).",
+          "options": ["5", "10", "50", "100"],
+          "correct": "5"
+        },
+        {
+          "question": "What is log2(1/8)?",
+          "options": ["-3", "3", "1/3", "8"],
+          "correct": "-3"
+        },
+        {
+          "question": "If log3(x) = -2, find x.",
+          "options": ["1/9", "9", "1/3", "3"],
+          "correct": "1/9"
+        },
+        {
+          "question": "What is the product rule for logarithms?",
+          "options": ["log(ab) = log(a) + log(b)", "log(ab) = log(a) × log(b)", "log(ab) = log(a) - log(b)", "log(ab) = log(a)/log(b)"],
+          "correct": "log(ab) = log(a) + log(b)"
+        },
+        {
+          "question": "What is the quotient rule for logarithms?",
+          "options": ["log(a/b) = log(a) - log(b)", "log(a/b) = log(a) + log(b)", "log(a/b) = log(a) × log(b)", "log(a/b) = log(a)/log(b)"],
+          "correct": "log(a/b) = log(a) - log(b)"
+        },
+        {
+          "question": "What is the power rule for logarithms?",
+          "options": ["log(a^n) = n × log(a)", "log(a^n) = log(a) + n", "log(a^n) = log(a) × n", "log(a^n) = log(a)^n"],
+          "correct": "log(a^n) = n × log(a)"
+        },
+        {
+          "question": "What is log10(√10)?",
+          "options": ["0.5", "1", "5", "10"],
+          "correct": "0.5"
+        },
+        {
+          "question": "Simplify log2(4) + log2(8).",
+          "options": ["5", "32", "12", "6"],
+          "correct": "5"
+        },
+        {
+          "question": "What is log3(27) - log3(9)?",
+          "options": ["1", "2", "3", "18"],
+          "correct": "1"
+        },
+        {
+          "question": "If log10(x) = 0.5, find x.",
+          "options": ["√10", "5", "0.5", "10"],
+          "correct": "√10"
+        },
+        {
+          "question": "What is the change of base formula?",
+          "options": ["log_a(b) = log_c(b)/log_c(a)", "log_a(b) = log_c(a)/log_c(b)", "log_a(b) = log_c(b) × log_c(a)", "log_a(b) = log_c(b) + log_c(a)"],
+          "correct": "log_a(b) = log_c(b)/log_c(a)"
+        },
+        {
+          "question": "What is log_e called?",
+          "options": ["Natural logarithm", "Common logarithm", "Binary logarithm", "Decimal logarithm"],
+          "correct": "Natural logarithm"
+        },
+        {
+          "question": "What is the base of natural logarithm?",
+          "options": ["e ≈ 2.718", "10", "2", "π"],
+          "correct": "e ≈ 2.718"
+        },
+        {
+          "question": "What is ln(e^3)?",
+          "options": ["3", "e", "e^3", "1"],
+          "correct": "3"
         }
       ]
     },
