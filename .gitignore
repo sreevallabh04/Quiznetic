@@ -1,11 +1,24 @@
 # Environment variables
-/frontend/.env
-/backend/.env
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+/backend/.env
 
+# Secrets and sensitive files
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+config.json
+credentials.json
 
 # Logs
 logs
