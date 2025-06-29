@@ -268,20 +268,135 @@ export const socialClass7 = [
       }
     ]
   },
-    {
-      id: 3,
-      title: 'Tanks and Ground Water',
-      description: 'Learn about the importance of tanks and groundwater management.',
-      questions: [
-        {
-          question: 'Which structure is commonly used in India to store rainwater?',
-          options: ['Tanks', 'Dams', 'Canals', 'Pipelines'],
-          correct: 'Tanks'
-        },
+      {
+    id: 3,
+    title: 'Tanks and Ground Water',
+    description: 'Learn about the importance of tanks and groundwater management.',
+    questions: [
+      {
+        question: 'Which structure is commonly used in India to store rainwater?',
+        options: ['Tanks', 'Dams', 'Canals', 'Pipelines'],
+        correct: 'Tanks'
+      },
       {
         question: 'What is the main cause of groundwater depletion?',
         options: ['Deforestation', 'Overuse of borewells', 'Heavy rainfall', 'Less agriculture'],
         correct: 'Overuse of borewells'
+      },
+      {
+        question: 'What is groundwater?',
+        options: ['Water on the surface', 'Water underground', 'Water in rivers', 'Water in oceans'],
+        correct: 'Water underground'
+      },
+      {
+        question: 'Which method is used to extract groundwater?',
+        options: ['Wells and borewells', 'Dams', 'Canals', 'Rivers'],
+        correct: 'Wells and borewells'
+      },
+      {
+        question: 'What is water table?',
+        options: ['Surface water level', 'Underground water level', 'River water level', 'Sea level'],
+        correct: 'Underground water level'
+      },
+      {
+        question: 'What happens when groundwater is overused?',
+        options: ['Water table rises', 'Water table falls', 'No change', 'More rain'],
+        correct: 'Water table falls'
+      },
+      {
+        question: 'Which is a traditional water harvesting structure?',
+        options: ['Tank', 'Borewell', 'Pipeline', 'Tap'],
+        correct: 'Tank'
+      },
+      {
+        question: 'What is rainwater harvesting?',
+        options: ['Storing rainwater', 'Using groundwater', 'River water storage', 'Sea water storage'],
+        correct: 'Storing rainwater'
+      },
+      {
+        question: 'Which soil allows water to pass through easily?',
+        options: ['Clay soil', 'Sandy soil', 'Black soil', 'Red soil'],
+        correct: 'Sandy soil'
+      },
+      {
+        question: 'What is aquifer?',
+        options: ['Surface water', 'Underground water-bearing rock', 'River bed', 'Ocean floor'],
+        correct: 'Underground water-bearing rock'
+      },
+      {
+        question: 'Which activity helps in groundwater recharge?',
+        options: ['Deforestation', 'Afforestation', 'Urbanization', 'Mining'],
+        correct: 'Afforestation'
+      },
+      {
+        question: 'What is the main source of groundwater?',
+        options: ['Rivers', 'Rainfall', 'Oceans', 'Lakes'],
+        correct: 'Rainfall'
+      },
+      {
+        question: 'Which type of well is deeper?',
+        options: ['Open well', 'Borewell', 'Both same', 'Cannot determine'],
+        correct: 'Borewell'
+      },
+      {
+        question: 'What is percolation?',
+        options: ['Water flowing on surface', 'Water seeping underground', 'Water evaporation', 'Water condensation'],
+        correct: 'Water seeping underground'
+      },
+      {
+        question: 'Which factor affects groundwater availability?',
+        options: ['Rainfall', 'Soil type', 'Topography', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is the purpose of check dams?',
+        options: ['Generate electricity', 'Slow down water flow', 'Navigation', 'Fishing'],
+        correct: 'Slow down water flow'
+      },
+      {
+        question: 'Which region has more groundwater problems?',
+        options: ['High rainfall areas', 'Low rainfall areas', 'Coastal areas', 'Mountain areas'],
+        correct: 'Low rainfall areas'
+      },
+      {
+        question: 'What is water conservation?',
+        options: ['Using more water', 'Saving and protecting water', 'Polluting water', 'Wasting water'],
+        correct: 'Saving and protecting water'
+      },
+      {
+        question: 'Which method helps in artificial recharge?',
+        options: ['Recharge wells', 'Percolation tanks', 'Check dams', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What happens to water table in summer?',
+        options: ['Rises', 'Falls', 'Remains same', 'Disappears'],
+        correct: 'Falls'
+      },
+      {
+        question: 'Which is a sign of groundwater depletion?',
+        options: ['Wells going dry', 'More rainfall', 'River flooding', 'Sea level rise'],
+        correct: 'Wells going dry'
+      },
+      {
+        question: 'What is the role of vegetation in groundwater?',
+        options: ['Reduces recharge', 'Increases recharge', 'No effect', 'Pollutes water'],
+        correct: 'Increases recharge'
+      },
+      {
+        question: 'Which type of rock stores more groundwater?',
+        options: ['Hard rock', 'Porous rock', 'Volcanic rock', 'Metamorphic rock'],
+        correct: 'Porous rock'
+      },
+      {
+        question: 'What is water stress?',
+        options: ['Excess water', 'Water shortage', 'Clean water', 'Salt water'],
+        correct: 'Water shortage'
+      },
+      {
+        question: 'Which practice helps in water conservation?',
+        options: ['Drip irrigation', 'Flood irrigation', 'Excessive pumping', 'Water wastage'],
+        correct: 'Drip irrigation'
       }
     ]
   },
@@ -304,6 +419,121 @@ export const socialClass7 = [
           'Fishing in protected areas'
         ],
         correct: 'Catching more fish than sustainable'
+      },
+      {
+        question: 'Which ocean covers the largest area on Earth?',
+        options: ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'],
+        correct: 'Pacific Ocean'
+      },
+      {
+        question: 'What percentage of Earth\'s surface is covered by oceans?',
+        options: ['50%', '60%', '70%', '80%'],
+        correct: '70%'
+      },
+      {
+        question: 'Which type of fishing is done near the coast?',
+        options: ['Deep sea fishing', 'Coastal fishing', 'Inland fishing', 'Ice fishing'],
+        correct: 'Coastal fishing'
+      },
+      {
+        question: 'What are ocean currents?',
+        options: ['Moving streams of ocean water', 'Ocean waves', 'Ocean tides', 'Ocean depth'],
+        correct: 'Moving streams of ocean water'
+      },
+      {
+        question: 'Which fish is commonly found in Indian Ocean?',
+        options: ['Salmon', 'Tuna', 'Cod', 'Trout'],
+        correct: 'Tuna'
+      },
+      {
+        question: 'What is marine ecosystem?',
+        options: ['Land ecosystem', 'Ocean ecosystem', 'Forest ecosystem', 'Desert ecosystem'],
+        correct: 'Ocean ecosystem'
+      },
+      {
+        question: 'Which method is used for large scale fishing?',
+        options: ['Net fishing', 'Hook and line', 'Spear fishing', 'Hand catching'],
+        correct: 'Net fishing'
+      },
+      {
+        question: 'What is aquaculture?',
+        options: ['Ocean fishing', 'Fish farming', 'Water sports', 'Ocean exploration'],
+        correct: 'Fish farming'
+      },
+      {
+        question: 'Which ocean is known for its fishing industry?',
+        options: ['All oceans', 'Only Pacific', 'Only Atlantic', 'Only Indian'],
+        correct: 'All oceans'
+      },
+      {
+        question: 'What threatens marine life?',
+        options: ['Pollution', 'Overfishing', 'Climate change', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Which is the smallest ocean?',
+        options: ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'],
+        correct: 'Arctic Ocean'
+      },
+      {
+        question: 'What is continental shelf?',
+        options: ['Deep ocean floor', 'Shallow underwater area near coast', 'Ocean surface', 'Ocean waves'],
+        correct: 'Shallow underwater area near coast'
+      },
+      {
+        question: 'Which fishing method is most sustainable?',
+        options: ['Overfishing', 'Selective fishing', 'Bottom trawling', 'Dynamite fishing'],
+        correct: 'Selective fishing'
+      },
+      {
+        question: 'What is the main occupation of coastal people?',
+        options: ['Farming', 'Fishing', 'Mining', 'Manufacturing'],
+        correct: 'Fishing'
+      },
+      {
+        question: 'Which factor affects ocean fishing?',
+        options: ['Season', 'Weather', 'Fish migration', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is fish processing?',
+        options: ['Catching fish', 'Preserving and preparing fish', 'Fish breeding', 'Fish counting'],
+        correct: 'Preserving and preparing fish'
+      },
+      {
+        question: 'Which equipment is used in modern fishing?',
+        options: ['Sonar', 'GPS', 'Fish finders', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is the economic importance of fishing?',
+        options: ['Employment', 'Food security', 'Export earnings', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Which ocean borders India?',
+        options: ['Pacific Ocean', 'Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean'],
+        correct: 'Indian Ocean'
+      },
+      {
+        question: 'What is fish migration?',
+        options: ['Fish staying in one place', 'Fish moving from one place to another', 'Fish dying', 'Fish breeding'],
+        correct: 'Fish moving from one place to another'
+      },
+      {
+        question: 'Which type of water do most fish live in?',
+        options: ['Fresh water only', 'Salt water only', 'Both fresh and salt water', 'Polluted water'],
+        correct: 'Both fresh and salt water'
+      },
+      {
+        question: 'What is marine pollution?',
+        options: ['Clean ocean water', 'Contamination of ocean water', 'Ocean waves', 'Ocean currents'],
+        correct: 'Contamination of ocean water'
+      },
+      {
+        question: 'Which fishing practice should be avoided?',
+        options: ['Sustainable fishing', 'Overfishing', 'Selective fishing', 'Seasonal fishing'],
+        correct: 'Overfishing'
       }
     ]
   },
@@ -321,6 +551,121 @@ export const socialClass7 = [
         question: 'Which European country is famous for its canals?',
         options: ['Germany', 'Netherlands', 'France', 'Italy'],
         correct: 'Netherlands'
+      },
+      {
+        question: 'Which is the largest country in Europe by area?',
+        options: ['France', 'Germany', 'Russia', 'Spain'],
+        correct: 'Russia'
+      },
+      {
+        question: 'Which river is the longest in Europe?',
+        options: ['Danube', 'Rhine', 'Volga', 'Thames'],
+        correct: 'Volga'
+      },
+      {
+        question: 'Which European country is shaped like a boot?',
+        options: ['Spain', 'Italy', 'Greece', 'Portugal'],
+        correct: 'Italy'
+      },
+      {
+        question: 'Which sea is surrounded by European countries?',
+        options: ['Mediterranean Sea', 'Red Sea', 'Arabian Sea', 'Bay of Bengal'],
+        correct: 'Mediterranean Sea'
+      },
+      {
+        question: 'Which European city is known as the City of Love?',
+        options: ['London', 'Rome', 'Paris', 'Vienna'],
+        correct: 'Paris'
+      },
+      {
+        question: 'Which European country has the most time zones?',
+        options: ['Germany', 'France', 'Russia', 'United Kingdom'],
+        correct: 'Russia'
+      },
+      {
+        question: 'Which mountain range is located in Switzerland?',
+        options: ['Alps', 'Pyrenees', 'Carpathians', 'Apennines'],
+        correct: 'Alps'
+      },
+      {
+        question: 'Which European country is famous for its fjords?',
+        options: ['Sweden', 'Norway', 'Denmark', 'Finland'],
+        correct: 'Norway'
+      },
+      {
+        question: 'Which European plain is most fertile?',
+        options: ['Hungarian Plain', 'North European Plain', 'Po Valley', 'Iberian Peninsula'],
+        correct: 'North European Plain'
+      },
+      {
+        question: 'Which European country has the most islands?',
+        options: ['Norway', 'Sweden', 'Finland', 'Denmark'],
+        correct: 'Finland'
+      },
+      {
+        question: 'Which climate is common in most of Europe?',
+        options: ['Tropical', 'Desert', 'Temperate', 'Arctic'],
+        correct: 'Temperate'
+      },
+      {
+        question: 'Which European country is landlocked?',
+        options: ['Poland', 'Switzerland', 'Portugal', 'Ireland'],
+        correct: 'Switzerland'
+      },
+      {
+        question: 'Which European river flows through multiple countries?',
+        options: ['Thames', 'Seine', 'Danube', 'Volga'],
+        correct: 'Danube'
+      },
+      {
+        question: 'Which European peninsula contains Spain and Portugal?',
+        options: ['Italian Peninsula', 'Balkan Peninsula', 'Iberian Peninsula', 'Scandinavian Peninsula'],
+        correct: 'Iberian Peninsula'
+      },
+      {
+        question: 'Which European country has the highest population?',
+        options: ['Germany', 'France', 'United Kingdom', 'Italy'],
+        correct: 'Germany'
+      },
+      {
+        question: 'Which European capital is divided by a river?',
+        options: ['Paris', 'London', 'Berlin', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Which European country is famous for tulips?',
+        options: ['Belgium', 'Netherlands', 'Denmark', 'Switzerland'],
+        correct: 'Netherlands'
+      },
+      {
+        question: 'Which European sea is the saltiest?',
+        options: ['North Sea', 'Baltic Sea', 'Mediterranean Sea', 'Black Sea'],
+        correct: 'Mediterranean Sea'
+      },
+      {
+        question: 'Which European country has the longest coastline?',
+        options: ['Norway', 'United Kingdom', 'Greece', 'Spain'],
+        correct: 'Norway'
+      },
+      {
+        question: 'Which European region is known for wine production?',
+        options: ['Scandinavia', 'Mediterranean region', 'Baltic region', 'Arctic region'],
+        correct: 'Mediterranean region'
+      },
+      {
+        question: 'Which European country is famous for its banks?',
+        options: ['Germany', 'Switzerland', 'Austria', 'Belgium'],
+        correct: 'Switzerland'
+      },
+      {
+        question: 'Which European language family is most common?',
+        options: ['Germanic', 'Romance', 'Slavic', 'Indo-European'],
+        correct: 'Indo-European'
+      },
+      {
+        question: 'Which European organization promotes unity?',
+        options: ['NATO', 'European Union', 'UN', 'World Bank'],
+        correct: 'European Union'
       }
     ]
   },
@@ -338,6 +683,121 @@ export const socialClass7 = [
         question: 'What is the main river flowing through Africa?',
         options: ['Amazon', 'Mississippi', 'Nile', 'Danube'],
         correct: 'Nile'
+      },
+      {
+        question: 'Which is the highest mountain in Africa?',
+        options: ['Mount Kenya', 'Mount Kilimanjaro', 'Atlas Mountains', 'Drakensberg'],
+        correct: 'Mount Kilimanjaro'
+      },
+      {
+        question: 'Which African country has the largest population?',
+        options: ['Egypt', 'Nigeria', 'South Africa', 'Kenya'],
+        correct: 'Nigeria'
+      },
+      {
+        question: 'Which African country is famous for pyramids?',
+        options: ['Sudan', 'Egypt', 'Libya', 'Morocco'],
+        correct: 'Egypt'
+      },
+      {
+        question: 'Which African lake is the largest?',
+        options: ['Lake Victoria', 'Lake Tanganyika', 'Lake Malawi', 'Lake Chad'],
+        correct: 'Lake Victoria'
+      },
+      {
+        question: 'Which African country is landlocked?',
+        options: ['Nigeria', 'Chad', 'Morocco', 'Ghana'],
+        correct: 'Chad'
+      },
+      {
+        question: 'Which African grassland is famous for wildlife?',
+        options: ['Sahara', 'Savanna', 'Congo Basin', 'Atlas'],
+        correct: 'Savanna'
+      },
+      {
+        question: 'Which African country was never colonized?',
+        options: ['Nigeria', 'Ethiopia', 'Kenya', 'Ghana'],
+        correct: 'Ethiopia'
+      },
+      {
+        question: 'Which African country is famous for diamonds?',
+        options: ['Nigeria', 'Egypt', 'South Africa', 'Morocco'],
+        correct: 'South Africa'
+      },
+      {
+        question: 'Which African river flows into the Mediterranean?',
+        options: ['Congo', 'Niger', 'Nile', 'Zambezi'],
+        correct: 'Nile'
+      },
+      {
+        question: 'Which African climate zone has the most rainfall?',
+        options: ['Desert', 'Savanna', 'Mediterranean', 'Tropical rainforest'],
+        correct: 'Tropical rainforest'
+      },
+      {
+        question: 'Which African country is shaped like a horn?',
+        options: ['Somalia', 'Kenya', 'Ethiopia', 'Sudan'],
+        correct: 'Somalia'
+      },
+      {
+        question: 'Which African falls is world famous?',
+        options: ['Blue Nile Falls', 'Victoria Falls', 'Tugela Falls', 'Kalambo Falls'],
+        correct: 'Victoria Falls'
+      },
+      {
+        question: 'Which African desert is in southern Africa?',
+        options: ['Sahara', 'Namib', 'Libyan', 'Nubian'],
+        correct: 'Namib'
+      },
+      {
+        question: 'Which African country has the longest coastline?',
+        options: ['Nigeria', 'Somalia', 'South Africa', 'Morocco'],
+        correct: 'Somalia'
+      },
+      {
+        question: 'Which African plateau covers most of the continent?',
+        options: ['Ethiopian Plateau', 'East African Plateau', 'African Plateau', 'South African Plateau'],
+        correct: 'African Plateau'
+      },
+      {
+        question: 'Which African country is famous for coffee?',
+        options: ['Nigeria', 'Ethiopia', 'Egypt', 'South Africa'],
+        correct: 'Ethiopia'
+      },
+      {
+        question: 'Which African animal is known as the King of the Jungle?',
+        options: ['Elephant', 'Lion', 'Cheetah', 'Leopard'],
+        correct: 'Lion'
+      },
+      {
+        question: 'Which African country has Arabic as official language?',
+        options: ['Nigeria', 'Egypt', 'Kenya', 'Ghana'],
+        correct: 'Egypt'
+      },
+      {
+        question: 'Which African region is known for oil production?',
+        options: ['West Africa', 'East Africa', 'North Africa', 'Central Africa'],
+        correct: 'West Africa'
+      },
+      {
+        question: 'Which African country is famous for tourism?',
+        options: ['Chad', 'Niger', 'Kenya', 'Mali'],
+        correct: 'Kenya'
+      },
+      {
+        question: 'Which African sea borders the northern coast?',
+        options: ['Red Sea', 'Mediterranean Sea', 'Arabian Sea', 'Indian Ocean'],
+        correct: 'Mediterranean Sea'
+      },
+      {
+        question: 'Which African economic activity is most common?',
+        options: ['Manufacturing', 'Agriculture', 'Mining', 'Tourism'],
+        correct: 'Agriculture'
+      },
+      {
+        question: 'Which African challenge affects development?',
+        options: ['Poverty', 'Disease', 'Conflict', 'All of the above'],
+        correct: 'All of the above'
       }
     ]
   },
@@ -355,79 +815,121 @@ export const socialClass7 = [
         question: 'Which Indian state is known for its Pochampally Ikat sarees?',
         options: ['Tamil Nadu', 'Andhra Pradesh', 'Rajasthan', 'West Bengal'],
         correct: 'Andhra Pradesh'
-      }
-    ]
-  },
-  {
-    id: 8,
-    title: 'Industrial Revolution',
-    description: 'Learn about the impact of the Industrial Revolution on society.',
-    questions: [
-      {
-        question: 'Which country is considered the birthplace of the Industrial Revolution?',
-        options: ['United States', 'Germany', 'United Kingdom', 'France'],
-        correct: 'United Kingdom'
       },
       {
-        question: 'What invention is associated with the start of the Industrial Revolution?',
-        options: ['Steam Engine', 'Electric Bulb', 'Telephone', 'Airplane'],
-        correct: 'Steam Engine'
-      }
-    ]
-  },
-  {
-    id: 9,
-    title: 'Production in a Factory - A Paper Mill',
-    description: 'Understand how paper is produced in factories.',
-    questions: [
-      {
-        question: 'What is the main raw material for paper production?',
-        options: ['Wood', 'Plastic', 'Glass', 'Metal'],
-        correct: 'Wood'
+        question: 'What is the main raw material for handloom weaving?',
+        options: ['Cotton', 'Silk', 'Wool', 'All of the above'],
+        correct: 'All of the above'
       },
       {
-        question: 'Which process removes ink from recycled paper?',
-        options: ['Deinking', 'Bleaching', 'Grinding', 'Pulverizing'],
-        correct: 'Deinking'
-      }
-    ]
-  },
-  {
-    id: 10,
-    title: 'Importance of Transport System',
-    description: 'Learn about the role of transport in economic development.',
-    questions: [
-      {
-        question: 'Which is the fastest mode of transportation?',
-        options: ['Road', 'Rail', 'Air', 'Water'],
-        correct: 'Air'
+        question: 'Which tool is used in handloom weaving?',
+        options: ['Loom', 'Spinning wheel', 'Shuttle', 'All of the above'],
+        correct: 'All of the above'
       },
       {
-        question: 'What is the main purpose of transport systems?',
-        options: [
-          'To increase pollution',
-          'To connect people and goods',
-          'To improve entertainment',
-          'To reduce trade'
-        ],
-        correct: 'To connect people and goods'
-      }
-    ]
-  },
-  {
-    id: 11,
-    title: 'New Kings and Kingdoms',
-    description: 'Study the rise of new kings and kingdoms in Indian history.',
-    questions: [
-      {
-        question: 'Which dynasty is known for building the Brihadeeswara Temple?',
-        options: ['Maurya', 'Chola', 'Gupta', 'Kushan'],
-        correct: 'Chola'
+        question: 'What is the difference between handicrafts and machine-made products?',
+        options: ['Handicrafts are made by hand', 'Machine products are faster to make', 'Handicrafts are unique', 'All of the above'],
+        correct: 'All of the above'
       },
       {
-        question: 'Who was the founder of the Chola dynasty?',
-        options: ['Raja Raja Chola', 'Vijayalaya Chola', 'Krishna Deva Raya', 'Ashoka'],
-        correct: 'Vijayalaya Chola'
+        question: 'Which Indian state is famous for Kanchipuram silk?',
+        options: ['Tamil Nadu', 'Karnataka', 'Kerala', 'Andhra Pradesh'],
+        correct: 'Tamil Nadu'
+      },
+      {
+        question: 'What is the economic importance of handicrafts?',
+        options: ['Employment generation', 'Cultural preservation', 'Export earnings', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Which handicraft is Rajasthan famous for?',
+        options: ['Block printing', 'Pottery', 'Jewelry', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What challenges do handicraft workers face?',
+        options: ['Competition from machines', 'Low wages', 'Lack of marketing', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Which fiber is used to make khadi?',
+        options: ['Cotton', 'Silk', 'Wool', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is the role of cooperatives in handicrafts?',
+        options: ['Provide raw materials', 'Help in marketing', 'Provide training', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Which Indian handicraft uses mirror work?',
+        options: ['Gujarati embroidery', 'Rajasthani embroidery', 'Both A and B', 'Neither A nor B'],
+        correct: 'Both A and B'
+      },
+      {
+        question: 'What is block printing?',
+        options: ['Machine printing', 'Hand printing using wooden blocks', 'Digital printing', 'Screen printing'],
+        correct: 'Hand printing using wooden blocks'
+      },
+      {
+        question: 'Which metal is commonly used in handicrafts?',
+        options: ['Brass', 'Copper', 'Silver', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is the importance of design in handicrafts?',
+        options: ['Attracts customers', 'Preserves tradition', 'Adds value', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Which Indian state is famous for carpet weaving?',
+        options: ['Kashmir', 'Uttar Pradesh', 'Rajasthan', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is the role of women in handicrafts?',
+        options: ['Major workforce', 'Skilled artisans', 'Income generation', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Which government scheme supports handicrafts?',
+        options: ['National Handicrafts Development Programme', 'Skill development schemes', 'Export promotion schemes', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is the global market for Indian handicrafts?',
+        options: ['Very small', 'Growing', 'Declining', 'Non-existent'],
+        correct: 'Growing'
+      },
+      {
+        question: 'Which material is used in bamboo crafts?',
+        options: ['Bamboo', 'Wood', 'Plastic', 'Metal'],
+        correct: 'Bamboo'
+      },
+      {
+        question: 'What is the environmental benefit of handicrafts?',
+        options: ['Use natural materials', 'No pollution', 'Sustainable', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Which Indian handicraft is UNESCO recognized?',
+        options: ['Kanchipuram silk', 'Banarasi silk', 'Both A and B', 'Neither A nor B'],
+        correct: 'Both A and B'
+      },
+      {
+        question: 'What skills are needed for handicrafts?',
+        options: ['Creativity', 'Patience', 'Technical skills', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'How can handicrafts be promoted?',
+        options: ['Better marketing', 'Quality improvement', 'Government support', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is the future of handicrafts industry?',
+        options: ['Bright with proper support', 'Uncertain', 'Will disappear', 'Only for exports'],
+        correct: 'Bright with proper support'
       }
     ]
   }
