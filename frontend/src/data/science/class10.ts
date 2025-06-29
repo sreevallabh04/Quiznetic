@@ -805,6 +805,121 @@ export const scienceClass10 = [
         question: 'What is the charge of a neutron?',
         options: ['Positive', 'Negative', 'Neutral', 'Depends on the element'],
         correct: 'Neutral'
+      },
+      {
+        question: 'Who proposed the atomic theory?',
+        options: ['Dalton', 'Thomson', 'Rutherford', 'Bohr'],
+        correct: 'Dalton'
+      },
+      {
+        question: 'What is the charge of an electron?',
+        options: ['Positive', 'Negative', 'Neutral', 'Variable'],
+        correct: 'Negative'
+      },
+      {
+        question: 'What is the charge of a proton?',
+        options: ['Positive', 'Negative', 'Neutral', 'Variable'],
+        correct: 'Positive'
+      },
+      {
+        question: 'Who discovered the electron?',
+        options: ['Thomson', 'Rutherford', 'Bohr', 'Chadwick'],
+        correct: 'Thomson'
+      },
+      {
+        question: 'Who discovered the neutron?',
+        options: ['Thomson', 'Rutherford', 'Bohr', 'Chadwick'],
+        correct: 'Chadwick'
+      },
+      {
+        question: 'What is the mass of an electron?',
+        options: ['1 amu', '1/1836 amu', '1836 amu', '0 amu'],
+        correct: '1/1836 amu'
+      },
+      {
+        question: 'What is the mass of a proton?',
+        options: ['1 amu', '1/1836 amu', '1836 amu', '0 amu'],
+        correct: '1 amu'
+      },
+      {
+        question: 'What is the mass of a neutron?',
+        options: ['1 amu', '1/1836 amu', '1836 amu', '0 amu'],
+        correct: '1 amu'
+      },
+      {
+        question: 'What is the atomic number?',
+        options: ['Number of protons', 'Number of neutrons', 'Number of electrons', 'Mass number'],
+        correct: 'Number of protons'
+      },
+      {
+        question: 'What is the mass number?',
+        options: ['Number of protons', 'Number of neutrons', 'Number of electrons', 'Protons + Neutrons'],
+        correct: 'Protons + Neutrons'
+      },
+      {
+        question: 'Which model is known as the plum pudding model?',
+        options: ['Dalton model', 'Thomson model', 'Rutherford model', 'Bohr model'],
+        correct: 'Thomson model'
+      },
+      {
+        question: 'What did Rutherford gold foil experiment prove?',
+        options: ['Existence of electrons', 'Existence of nucleus', 'Existence of neutrons', 'Atomic theory'],
+        correct: 'Existence of nucleus'
+      },
+      {
+        question: 'What are isotopes?',
+        options: ['Same atomic number, different mass number', 'Same mass number, different atomic number', 'Same atomic and mass number', 'Different atomic and mass number'],
+        correct: 'Same atomic number, different mass number'
+      },
+      {
+        question: 'What are isobars?',
+        options: ['Same atomic number, different mass number', 'Same mass number, different atomic number', 'Same atomic and mass number', 'Different atomic and mass number'],
+        correct: 'Same mass number, different atomic number'
+      },
+      {
+        question: 'Which shell can hold maximum 8 electrons?',
+        options: ['K shell', 'L shell', 'M shell', 'N shell'],
+        correct: 'L shell'
+      },
+      {
+        question: 'What is the maximum number of electrons in K shell?',
+        options: ['2', '8', '18', '32'],
+        correct: '2'
+      },
+      {
+        question: 'What is the maximum number of electrons in L shell?',
+        options: ['2', '8', '18', '32'],
+        correct: '8'
+      },
+      {
+        question: 'What is the maximum number of electrons in M shell?',
+        options: ['2', '8', '18', '32'],
+        correct: '18'
+      },
+      {
+        question: 'What is the electronic configuration of carbon?',
+        options: ['2,4', '2,6', '2,8', '2,2'],
+        correct: '2,4'
+      },
+      {
+        question: 'What is the electronic configuration of oxygen?',
+        options: ['2,4', '2,6', '2,8', '2,2'],
+        correct: '2,6'
+      },
+      {
+        question: 'What is the valency of carbon?',
+        options: ['2', '4', '6', '8'],
+        correct: '4'
+      },
+      {
+        question: 'What is the valency of oxygen?',
+        options: ['2', '4', '6', '8'],
+        correct: '2'
+      },
+      {
+        question: 'Which particles are present in the nucleus?',
+        options: ['Protons only', 'Neutrons only', 'Protons and neutrons', 'Protons, neutrons and electrons'],
+        correct: 'Protons and neutrons'
       }
     ]
   },
@@ -822,6 +937,121 @@ export const scienceClass10 = [
         question: 'What happens to the resistance when length of a conductor is doubled?',
         options: ['Doubles', 'Halves', 'Remains same', 'Becomes zero'],
         correct: 'Doubles'
+      },
+      {
+        question: 'What is Ohms Law?',
+        options: ['V = IR', 'V = I/R', 'V = I + R', 'V = I - R'],
+        correct: 'V = IR'
+      },
+      {
+        question: 'What is the SI unit of electric current?',
+        options: ['Volt', 'Ampere', 'Ohm', 'Watt'],
+        correct: 'Ampere'
+      },
+      {
+        question: 'What is the SI unit of potential difference?',
+        options: ['Volt', 'Ampere', 'Ohm', 'Watt'],
+        correct: 'Volt'
+      },
+      {
+        question: 'What is electric current?',
+        options: ['Flow of protons', 'Flow of neutrons', 'Flow of electrons', 'Flow of atoms'],
+        correct: 'Flow of electrons'
+      },
+      {
+        question: 'What happens to resistance when area of cross-section is doubled?',
+        options: ['Doubles', 'Halves', 'Remains same', 'Becomes zero'],
+        correct: 'Halves'
+      },
+      {
+        question: 'Which material has the highest resistance?',
+        options: ['Silver', 'Copper', 'Aluminum', 'Rubber'],
+        correct: 'Rubber'
+      },
+      {
+        question: 'Which material has the lowest resistance?',
+        options: ['Silver', 'Copper', 'Aluminum', 'Rubber'],
+        correct: 'Silver'
+      },
+      {
+        question: 'What is the resistance of an ideal ammeter?',
+        options: ['Zero', 'Infinity', 'Very high', 'Very low'],
+        correct: 'Zero'
+      },
+      {
+        question: 'What is the resistance of an ideal voltmeter?',
+        options: ['Zero', 'Infinity', 'Very high', 'Very low'],
+        correct: 'Infinity'
+      },
+      {
+        question: 'How is an ammeter connected in a circuit?',
+        options: ['In series', 'In parallel', 'Either way', 'Not connected'],
+        correct: 'In series'
+      },
+      {
+        question: 'How is a voltmeter connected in a circuit?',
+        options: ['In series', 'In parallel', 'Either way', 'Not connected'],
+        correct: 'In parallel'
+      },
+      {
+        question: 'What is the total resistance when resistors are connected in series?',
+        options: ['R₁ + R₂ + R₃', '1/R₁ + 1/R₂ + 1/R₃', 'R₁ × R₂ × R₃', 'R₁/R₂/R₃'],
+        correct: 'R₁ + R₂ + R₃'
+      },
+      {
+        question: 'What is the total resistance when resistors are connected in parallel?',
+        options: ['R₁ + R₂ + R₃', '1/R = 1/R₁ + 1/R₂ + 1/R₃', 'R₁ × R₂ × R₃', 'R₁/R₂/R₃'],
+        correct: '1/R = 1/R₁ + 1/R₂ + 1/R₃'
+      },
+      {
+        question: 'What is electric power?',
+        options: ['Rate of work done', 'Amount of charge', 'Electric current', 'Potential difference'],
+        correct: 'Rate of work done'
+      },
+      {
+        question: 'What is the SI unit of electric power?',
+        options: ['Volt', 'Ampere', 'Ohm', 'Watt'],
+        correct: 'Watt'
+      },
+      {
+        question: 'What is the formula for electric power?',
+        options: ['P = VI', 'P = V/I', 'P = V + I', 'P = V - I'],
+        correct: 'P = VI'
+      },
+      {
+        question: 'What is the commercial unit of electric energy?',
+        options: ['Joule', 'Watt', 'kWh', 'Calorie'],
+        correct: 'kWh'
+      },
+      {
+        question: 'What causes electric current in metals?',
+        options: ['Free electrons', 'Free protons', 'Free neutrons', 'Free atoms'],
+        correct: 'Free electrons'
+      },
+      {
+        question: 'What is resistivity?',
+        options: ['Property of material', 'Property of circuit', 'Property of current', 'Property of voltage'],
+        correct: 'Property of material'
+      },
+      {
+        question: 'What happens to resistance with increase in temperature for metals?',
+        options: ['Increases', 'Decreases', 'Remains same', 'Becomes zero'],
+        correct: 'Increases'
+      },
+      {
+        question: 'Which effect of current is used in electric bulbs?',
+        options: ['Magnetic effect', 'Chemical effect', 'Heating effect', 'All effects'],
+        correct: 'Heating effect'
+      },
+      {
+        question: 'What is the direction of conventional current?',
+        options: ['Positive to negative', 'Negative to positive', 'No specific direction', 'Circular'],
+        correct: 'Positive to negative'
+      },
+      {
+        question: 'What is the direction of electron flow?',
+        options: ['Positive to negative', 'Negative to positive', 'No specific direction', 'Circular'],
+        correct: 'Negative to positive'
       }
     ]
   },
@@ -839,6 +1069,121 @@ export const scienceClass10 = [
         question: 'What type of bond is present in NaCl?',
         options: ['Ionic', 'Covalent', 'Metallic', 'Hydrogen'],
         correct: 'Ionic'
+      },
+      {
+        question: 'What type of bond is present in H₂O?',
+        options: ['Ionic', 'Covalent', 'Metallic', 'Van der Waals'],
+        correct: 'Covalent'
+      },
+      {
+        question: 'Which bond involves transfer of electrons?',
+        options: ['Ionic', 'Covalent', 'Metallic', 'Hydrogen'],
+        correct: 'Ionic'
+      },
+      {
+        question: 'What is an ionic compound?',
+        options: ['Compound formed by sharing electrons', 'Compound formed by transfer of electrons', 'Compound with metallic bonding', 'Compound with hydrogen bonding'],
+        correct: 'Compound formed by transfer of electrons'
+      },
+      {
+        question: 'What is a covalent compound?',
+        options: ['Compound formed by sharing electrons', 'Compound formed by transfer of electrons', 'Compound with metallic bonding', 'Compound with ionic bonding'],
+        correct: 'Compound formed by sharing electrons'
+      },
+      {
+        question: 'Which type of elements form ionic bonds?',
+        options: ['Metal and metal', 'Non-metal and non-metal', 'Metal and non-metal', 'Noble gases'],
+        correct: 'Metal and non-metal'
+      },
+      {
+        question: 'Which type of elements form covalent bonds?',
+        options: ['Metal and metal', 'Non-metal and non-metal', 'Metal and non-metal', 'Noble gases'],
+        correct: 'Non-metal and non-metal'
+      },
+      {
+        question: 'What is the valency of sodium?',
+        options: ['1', '2', '3', '4'],
+        correct: '1'
+      },
+      {
+        question: 'What is the valency of chlorine?',
+        options: ['1', '2', '3', '4'],
+        correct: '1'
+      },
+      {
+        question: 'What is the formula of sodium chloride?',
+        options: ['NaCl', 'Na₂Cl', 'NaCl₂', 'Na₂Cl₂'],
+        correct: 'NaCl'
+      },
+      {
+        question: 'What is the formula of calcium oxide?',
+        options: ['CaO', 'Ca₂O', 'CaO₂', 'Ca₂O₂'],
+        correct: 'CaO'
+      },
+      {
+        question: 'What happens to sodium when it forms ionic bond?',
+        options: ['Gains electron', 'Loses electron', 'Shares electron', 'No change'],
+        correct: 'Loses electron'
+      },
+      {
+        question: 'What happens to chlorine when it forms ionic bond?',
+        options: ['Gains electron', 'Loses electron', 'Shares electron', 'No change'],
+        correct: 'Gains electron'
+      },
+      {
+        question: 'Which bond is stronger?',
+        options: ['Ionic bond', 'Covalent bond', 'Both equal', 'Depends on atoms'],
+        correct: 'Depends on atoms'
+      },
+      {
+        question: 'Which compounds conduct electricity?',
+        options: ['Ionic compounds in solid state', 'Ionic compounds in molten state', 'Covalent compounds', 'All compounds'],
+        correct: 'Ionic compounds in molten state'
+      },
+      {
+        question: 'Which compounds have high melting points?',
+        options: ['Ionic compounds', 'Covalent compounds', 'Both equal', 'Neither'],
+        correct: 'Ionic compounds'
+      },
+      {
+        question: 'Which compounds are soluble in water?',
+        options: ['Ionic compounds', 'Covalent compounds', 'Both equal', 'Neither'],
+        correct: 'Ionic compounds'
+      },
+      {
+        question: 'What is electronegativity?',
+        options: ['Ability to gain electrons', 'Ability to lose electrons', 'Ability to attract electrons', 'Ability to share electrons'],
+        correct: 'Ability to attract electrons'
+      },
+      {
+        question: 'Which element has highest electronegativity?',
+        options: ['Fluorine', 'Oxygen', 'Nitrogen', 'Chlorine'],
+        correct: 'Fluorine'
+      },
+      {
+        question: 'What is a coordinate bond?',
+        options: ['Both electrons from same atom', 'Electrons from different atoms', 'No electrons involved', 'Transfer of electrons'],
+        correct: 'Both electrons from same atom'
+      },
+      {
+        question: 'What is the octet rule?',
+        options: ['Atoms want 8 electrons in outermost shell', 'Atoms want 8 protons', 'Atoms want 8 neutrons', 'Atoms want 8 shells'],
+        correct: 'Atoms want 8 electrons in outermost shell'
+      },
+      {
+        question: 'Which noble gas configuration does sodium achieve after bonding?',
+        options: ['Helium', 'Neon', 'Argon', 'Krypton'],
+        correct: 'Neon'
+      },
+      {
+        question: 'Which noble gas configuration does chlorine achieve after bonding?',
+        options: ['Helium', 'Neon', 'Argon', 'Krypton'],
+        correct: 'Argon'
+      },
+      {
+        question: 'What is lattice energy?',
+        options: ['Energy to break ionic crystal', 'Energy to form ionic crystal', 'Energy to melt solid', 'Energy to boil liquid'],
+        correct: 'Energy to form ionic crystal'
       }
     ]
   },
@@ -856,6 +1201,121 @@ export const scienceClass10 = [
         question: 'What is the functional group in alcohols?',
         options: ['-OH', '-COOH', '-CHO', '-NH2'],
         correct: '-OH'
+      },
+      {
+        question: 'What is the general formula of alkenes?',
+        options: ['CnH2n+2', 'CnH2n', 'CnH2n-2', 'CnH2nO2'],
+        correct: 'CnH2n'
+      },
+      {
+        question: 'What is the general formula of alkynes?',
+        options: ['CnH2n+2', 'CnH2n', 'CnH2n-2', 'CnH2nO2'],
+        correct: 'CnH2n-2'
+      },
+      {
+        question: 'What is the valency of carbon?',
+        options: ['2', '4', '6', '8'],
+        correct: '4'
+      },
+      {
+        question: 'What type of bonds can carbon form?',
+        options: ['Single bonds only', 'Double bonds only', 'Triple bonds only', 'Single, double and triple bonds'],
+        correct: 'Single, double and triple bonds'
+      },
+      {
+        question: 'What is catenation?',
+        options: ['Bonding with other elements', 'Self-linking property', 'Formation of rings', 'Formation of chains'],
+        correct: 'Self-linking property'
+      },
+      {
+        question: 'Which element shows maximum catenation?',
+        options: ['Silicon', 'Carbon', 'Germanium', 'Tin'],
+        correct: 'Carbon'
+      },
+      {
+        question: 'What is the functional group in aldehydes?',
+        options: ['-OH', '-COOH', '-CHO', '-NH2'],
+        correct: '-CHO'
+      },
+      {
+        question: 'What is the functional group in carboxylic acids?',
+        options: ['-OH', '-COOH', '-CHO', '-NH2'],
+        correct: '-COOH'
+      },
+      {
+        question: 'What is the functional group in ketones?',
+        options: ['-OH', '-COOH', '-CHO', '-CO-'],
+        correct: '-CO-'
+      },
+      {
+        question: 'What is the simplest alkane?',
+        options: ['Methane', 'Ethane', 'Propane', 'Butane'],
+        correct: 'Methane'
+      },
+      {
+        question: 'What is the molecular formula of methane?',
+        options: ['CH₄', 'C₂H₆', 'C₃H₈', 'C₄H₁₀'],
+        correct: 'CH₄'
+      },
+      {
+        question: 'What is the molecular formula of ethane?',
+        options: ['CH₄', 'C₂H₆', 'C₃H₈', 'C₄H₁₀'],
+        correct: 'C₂H₆'
+      },
+      {
+        question: 'What is the simplest alkene?',
+        options: ['Methene', 'Ethene', 'Propene', 'Butene'],
+        correct: 'Ethene'
+      },
+      {
+        question: 'What is the molecular formula of ethene?',
+        options: ['C₂H₄', 'C₂H₆', 'C₂H₂', 'C₃H₆'],
+        correct: 'C₂H₄'
+      },
+      {
+        question: 'What is the simplest alkyne?',
+        options: ['Methyne', 'Ethyne', 'Propyne', 'Butyne'],
+        correct: 'Ethyne'
+      },
+      {
+        question: 'What is the molecular formula of ethyne?',
+        options: ['C₂H₄', 'C₂H₆', 'C₂H₂', 'C₃H₄'],
+        correct: 'C₂H₂'
+      },
+      {
+        question: 'What is the common name of ethyne?',
+        options: ['Acetylene', 'Ethylene', 'Methylene', 'Propylene'],
+        correct: 'Acetylene'
+      },
+      {
+        question: 'What is the common name of ethene?',
+        options: ['Acetylene', 'Ethylene', 'Methylene', 'Propylene'],
+        correct: 'Ethylene'
+      },
+      {
+        question: 'What is isomerism?',
+        options: ['Same molecular formula, different structure', 'Different molecular formula, same structure', 'Same molecular formula, same structure', 'Different molecular formula, different structure'],
+        correct: 'Same molecular formula, different structure'
+      },
+      {
+        question: 'What is saturated hydrocarbon?',
+        options: ['Contains single bonds only', 'Contains double bonds', 'Contains triple bonds', 'Contains multiple bonds'],
+        correct: 'Contains single bonds only'
+      },
+      {
+        question: 'What is unsaturated hydrocarbon?',
+        options: ['Contains single bonds only', 'Contains double or triple bonds', 'Contains no bonds', 'Contains ionic bonds'],
+        correct: 'Contains double or triple bonds'
+      },
+      {
+        question: 'What happens when ethanol is oxidized?',
+        options: ['Forms ethanoic acid', 'Forms ethane', 'Forms ethene', 'Forms methanol'],
+        correct: 'Forms ethanoic acid'
+      },
+      {
+        question: 'What is the common name of ethanoic acid?',
+        options: ['Formic acid', 'Acetic acid', 'Citric acid', 'Lactic acid'],
+        correct: 'Acetic acid'
       }
     ]
   },
@@ -873,6 +1333,121 @@ export const scienceClass10 = [
         question: 'Who discovered electromagnetic induction?',
         options: ['Oersted', 'Faraday', 'Ampere', 'Newton'],
         correct: 'Faraday'
+      },
+      {
+        question: 'What is a magnetic field?',
+        options: ['Region around magnet where magnetic force acts', 'Force exerted by magnet', 'Material of magnet', 'Shape of magnet'],
+        correct: 'Region around magnet where magnetic force acts'
+      },
+      {
+        question: 'What are magnetic field lines?',
+        options: ['Actual lines on magnet', 'Imaginary lines showing magnetic field', 'Lines drawn on paper', 'Electric field lines'],
+        correct: 'Imaginary lines showing magnetic field'
+      },
+      {
+        question: 'Which rule gives direction of magnetic field around current carrying conductor?',
+        options: ['Right hand rule', 'Left hand rule', 'Cork screw rule', 'Both A and C'],
+        correct: 'Both A and C'
+      },
+      {
+        question: 'What happens when current flows through a conductor?',
+        options: ['Magnetic field is produced', 'Electric field is produced', 'No field is produced', 'Gravitational field is produced'],
+        correct: 'Magnetic field is produced'
+      },
+      {
+        question: 'Who discovered that current produces magnetic field?',
+        options: ['Faraday', 'Oersted', 'Ampere', 'Maxwell'],
+        correct: 'Oersted'
+      },
+      {
+        question: 'What is electromagnetic induction?',
+        options: ['Production of current by magnetic field', 'Production of magnetic field by current', 'Production of heat by current', 'Production of light by current'],
+        correct: 'Production of current by magnetic field'
+      },
+      {
+        question: 'What is Faradays law?',
+        options: ['EMF is proportional to rate of change of magnetic flux', 'Force is proportional to current', 'Resistance is proportional to length', 'Power is proportional to voltage'],
+        correct: 'EMF is proportional to rate of change of magnetic flux'
+      },
+      {
+        question: 'What is Lenz law?',
+        options: ['Direction of induced current opposes the change', 'Direction of induced current supports the change', 'Magnitude of induced current', 'Frequency of induced current'],
+        correct: 'Direction of induced current opposes the change'
+      },
+      {
+        question: 'What is an electromagnet?',
+        options: ['Permanent magnet', 'Temporary magnet made using electric current', 'Natural magnet', 'Weak magnet'],
+        correct: 'Temporary magnet made using electric current'
+      },
+      {
+        question: 'What is the advantage of electromagnet over permanent magnet?',
+        options: ['Strength can be controlled', 'Can be switched on/off', 'Polarity can be reversed', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is a solenoid?',
+        options: ['Single loop of wire', 'Multiple loops of wire', 'Straight conductor', 'Curved conductor'],
+        correct: 'Multiple loops of wire'
+      },
+      {
+        question: 'What is the magnetic field inside a solenoid?',
+        options: ['Zero', 'Uniform', 'Non-uniform', 'Infinite'],
+        correct: 'Uniform'
+      },
+      {
+        question: 'Which device works on electromagnetic induction?',
+        options: ['Generator', 'Motor', 'Transformer', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What converts mechanical energy to electrical energy?',
+        options: ['Motor', 'Generator', 'Transformer', 'Battery'],
+        correct: 'Generator'
+      },
+      {
+        question: 'What converts electrical energy to mechanical energy?',
+        options: ['Motor', 'Generator', 'Transformer', 'Battery'],
+        correct: 'Motor'
+      },
+      {
+        question: 'What is the principle of electric motor?',
+        options: ['Electromagnetic induction', 'Force on current carrying conductor in magnetic field', 'Heating effect of current', 'Chemical effect of current'],
+        correct: 'Force on current carrying conductor in magnetic field'
+      },
+      {
+        question: 'What is the principle of electric generator?',
+        options: ['Electromagnetic induction', 'Force on current carrying conductor', 'Heating effect of current', 'Chemical effect of current'],
+        correct: 'Electromagnetic induction'
+      },
+      {
+        question: 'What is AC?',
+        options: ['Alternating Current', 'Automatic Current', 'Additional Current', 'Accurate Current'],
+        correct: 'Alternating Current'
+      },
+      {
+        question: 'What is DC?',
+        options: ['Direct Current', 'Double Current', 'Dynamic Current', 'Diagonal Current'],
+        correct: 'Direct Current'
+      },
+      {
+        question: 'Which type of current is supplied to homes?',
+        options: ['AC', 'DC', 'Both', 'Neither'],
+        correct: 'AC'
+      },
+      {
+        question: 'What is the frequency of AC in India?',
+        options: ['50 Hz', '60 Hz', '100 Hz', '25 Hz'],
+        correct: '50 Hz'
+      },
+      {
+        question: 'What is a transformer?',
+        options: ['Device to change voltage', 'Device to change current', 'Device to change resistance', 'Device to change power'],
+        correct: 'Device to change voltage'
+      },
+      {
+        question: 'Which type of current can be transformed?',
+        options: ['AC only', 'DC only', 'Both AC and DC', 'Neither AC nor DC'],
+        correct: 'AC only'
       }
     ]
   },
@@ -890,6 +1465,121 @@ export const scienceClass10 = [
         question: 'Which process is used for refining impure metals?',
         options: ['Distillation', 'Electrolysis', 'Roasting', 'Smelting'],
         correct: 'Electrolysis'
+      },
+      {
+        question: 'What is an ore?',
+        options: ['Pure metal', 'Mineral containing metal', 'Rock containing metal in extractable form', 'Any rock'],
+        correct: 'Rock containing metal in extractable form'
+      },
+      {
+        question: 'What is a mineral?',
+        options: ['Pure metal', 'Natural compound of metal', 'Artificial compound', 'Alloy'],
+        correct: 'Natural compound of metal'
+      },
+      {
+        question: 'What is metallurgy?',
+        options: ['Study of metals', 'Extraction of metals from ores', 'Making alloys', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is concentration of ore?',
+        options: ['Increasing metal content', 'Removing impurities', 'Separating ore from gangue', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is gangue?',
+        options: ['Metal content in ore', 'Impurities in ore', 'Pure metal', 'Refined metal'],
+        correct: 'Impurities in ore'
+      },
+      {
+        question: 'Which method is used for concentration of sulphide ores?',
+        options: ['Magnetic separation', 'Froth flotation', 'Gravity separation', 'Electrolysis'],
+        correct: 'Froth flotation'
+      },
+      {
+        question: 'What is roasting?',
+        options: ['Heating ore in presence of air', 'Heating ore in absence of air', 'Heating ore with carbon', 'Heating ore with acid'],
+        correct: 'Heating ore in presence of air'
+      },
+      {
+        question: 'What is calcination?',
+        options: ['Heating ore in presence of air', 'Heating ore in absence of air', 'Heating ore with carbon', 'Heating ore with acid'],
+        correct: 'Heating ore in absence of air'
+      },
+      {
+        question: 'What is smelting?',
+        options: ['Heating ore with reducing agent', 'Heating ore in air', 'Heating ore in absence of air', 'Cooling the ore'],
+        correct: 'Heating ore with reducing agent'
+      },
+      {
+        question: 'Which metal is extracted by electrolysis?',
+        options: ['Iron', 'Copper', 'Aluminium', 'Zinc'],
+        correct: 'Aluminium'
+      },
+      {
+        question: 'What is the most abundant metal in earths crust?',
+        options: ['Iron', 'Aluminium', 'Copper', 'Zinc'],
+        correct: 'Aluminium'
+      },
+      {
+        question: 'Which metal is known as the king of metals?',
+        options: ['Gold', 'Silver', 'Platinum', 'Iron'],
+        correct: 'Gold'
+      },
+      {
+        question: 'Which metal is most reactive?',
+        options: ['Sodium', 'Potassium', 'Lithium', 'Caesium'],
+        correct: 'Caesium'
+      },
+      {
+        question: 'Which metal is least reactive?',
+        options: ['Gold', 'Silver', 'Platinum', 'All equally'],
+        correct: 'Gold'
+      },
+      {
+        question: 'What is an alloy?',
+        options: ['Pure metal', 'Mixture of metals', 'Compound of metals', 'Ore of metal'],
+        correct: 'Mixture of metals'
+      },
+      {
+        question: 'Which alloy is used in making coins?',
+        options: ['Bronze', 'Brass', 'Cupro-nickel', 'Steel'],
+        correct: 'Cupro-nickel'
+      },
+      {
+        question: 'What is steel?',
+        options: ['Pure iron', 'Alloy of iron and carbon', 'Alloy of iron and copper', 'Alloy of iron and zinc'],
+        correct: 'Alloy of iron and carbon'
+      },
+      {
+        question: 'What is brass?',
+        options: ['Alloy of copper and tin', 'Alloy of copper and zinc', 'Alloy of copper and nickel', 'Pure copper'],
+        correct: 'Alloy of copper and zinc'
+      },
+      {
+        question: 'What is bronze?',
+        options: ['Alloy of copper and tin', 'Alloy of copper and zinc', 'Alloy of copper and nickel', 'Pure copper'],
+        correct: 'Alloy of copper and tin'
+      },
+      {
+        question: 'Which gas is used in extraction of iron?',
+        options: ['Oxygen', 'Carbon monoxide', 'Carbon dioxide', 'Nitrogen'],
+        correct: 'Carbon monoxide'
+      },
+      {
+        question: 'What is the ore of iron?',
+        options: ['Bauxite', 'Haematite', 'Galena', 'Cinnabar'],
+        correct: 'Haematite'
+      },
+      {
+        question: 'What is the ore of copper?',
+        options: ['Chalcopyrite', 'Haematite', 'Galena', 'Cinnabar'],
+        correct: 'Chalcopyrite'
+      },
+      {
+        question: 'Which method is used for purification of copper?',
+        options: ['Distillation', 'Electrolytic refining', 'Magnetic separation', 'Froth flotation'],
+        correct: 'Electrolytic refining'
       }
     ]
   },
