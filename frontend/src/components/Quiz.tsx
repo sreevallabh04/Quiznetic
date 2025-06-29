@@ -18,6 +18,7 @@ import {
 } from '../utils/api';
 import { ensureMinimumQuestions } from '../utils/helpers';
 import { logger } from '../utils/utils';
+import { useAnalytics } from '../utils/analytics';
 import MapDisplay from './MapDisplay';
 
 // Helper function to shuffle an array
@@ -38,6 +39,10 @@ export default function Quiz() {
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [userAnswers, setUserAnswers] = useState<Record<string, any>>({}); // Enhanced to store various answer types
+  const [quizStartTime, setQuizStartTime] = useState<Date>(new Date());
+  
+  // Analytics hook
+  const { trackQuizCompletion } = useAnalytics();
   
   // New states for API integration
   const [isLoading, setIsLoading] = useState(false);
@@ -99,11 +104,12 @@ export default function Quiz() {
         logger.log(`🎯 Loading questions for Class ${classId} ${subject} Chapter ${chapter}`);
         
         // Use the helper function to get static questions
-        const questions = await ensureMinimumQuestions(
+        const questions = ensureMinimumQuestions(
+          [],
+          15, // minimum questions
           Number(classId),
           subject as string,
-          Number(chapter),
-          15 // minimum questions
+          chapter as string
         );
         
         if (questions.length > 0) {
@@ -260,9 +266,28 @@ export default function Quiz() {
         setCurrentQuestion(currentQuestion + 1);
         setSelectedAnswer(null);
       } else {
+        handleQuizCompletion();
         setShowResult(true);
       }
     }, 1000);
+  };
+
+  const handleQuizCompletion = async () => {
+    const quizEndTime = new Date();
+    const timeSpentMinutes = Math.round((quizEndTime.getTime() - quizStartTime.getTime()) / (1000 * 60));
+    
+    // Track quiz completion in analytics
+    try {
+      await trackQuizCompletion({
+        subject: subject || '',
+        chapterId: chapter || '',
+        totalQuestions: questions.length,
+        score: score,
+        timeSpent: timeSpentMinutes
+      });
+    } catch (error) {
+      logger.error('Failed to track quiz completion:', error);
+    }
   };
 
   const handlePairSelection = (leftId: string, rightId: string) => {
