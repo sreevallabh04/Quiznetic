@@ -36,25 +36,25 @@ export default function ClassSelection() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="max-w-5xl mx-auto p-8 relative z-10"
+        className="max-w-5xl mx-auto p-3 sm:p-6 lg:p-8 relative z-10"
       >
         <PageTitle 
           title="Telangana Learning Hub" 
           subtitle="Interactive learning resources aligned with Telangana State Board syllabus"
         />
         
-        {/* Subject selection info */}
-        <div className="mb-12 text-center">
+        {/* Subject selection info - Mobile Responsive */}
+        <div className="mb-8 sm:mb-12 text-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="inline-block px-6 py-3 bg-white rounded-lg border border-primary-200 shadow-md"
+            className="inline-block px-4 sm:px-6 py-3 bg-white rounded-lg border border-primary-200 shadow-md"
           >
-            <h2 className="text-2xl font-semibold text-primary-700 mb-2">
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-primary-700 mb-1 sm:mb-2">
               Select Your Class Level
             </h2>
-            <p className="text-secondary-600">
+            <p className="text-secondary-600 text-sm sm:text-base">
               Choose your class to access subject materials and interactive quizzes
             </p>
           </motion.div>
@@ -64,16 +64,16 @@ export default function ClassSelection() {
           variants={container}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
         >
           {classes.map((classNum) => {
             // Different icons for different cards to add visual interest
             const icons = [
-              <BookOpen className="w-6 h-6 text-primary-600" />,
-              <Calculator className="w-6 h-6 text-primary-600" />,
-              <Microscope className="w-6 h-6 text-primary-600" />,
-              <Globe className="w-6 h-6 text-primary-600" />,
-              <Atom className="w-6 h-6 text-primary-600" />
+              <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" />,
+              <Calculator className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" />,
+              <Microscope className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" />,
+              <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" />,
+              <Atom className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" />
             ];
             const icon = icons[classNum - 6] || icons[0];
             
@@ -82,15 +82,16 @@ export default function ClassSelection() {
                 <Card 
                   onClick={() => navigate(`/class/${classNum}`)}
                   icon={icon}
+                  className="p-4 sm:p-6 h-full"
                 >
-                  <div className="flex flex-col">
-                    <div className="flex justify-between items-center">
-                      <span className="text-xl font-bold text-secondary-800">
+                  <div className="flex flex-col h-full">
+                    <div className="flex justify-between items-center mb-2 sm:mb-3">
+                      <span className="text-lg sm:text-xl font-bold text-secondary-800">
                         Class {classNum}
                       </span>
-                      <ChevronRight className="w-5 h-5 text-primary-500" />
+                      <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary-500" />
                     </div>
-                    <p className="mt-2 text-sm text-secondary-600">
+                    <p className="text-xs sm:text-sm text-secondary-600 leading-relaxed flex-grow">
                       {classNum <= 8 
                         ? "Elementary curriculum with fundamental concepts" 
                         : "Advanced curriculum with in-depth subjects"}
@@ -100,6 +101,26 @@ export default function ClassSelection() {
               </motion.div>
             );
           })}
+        </motion.div>
+
+        {/* Mobile-friendly call to action */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+          className="mt-8 sm:mt-12 text-center"
+        >
+          <div className="bg-white rounded-lg p-4 sm:p-6 border border-primary-200 shadow-sm max-w-md mx-auto">
+            <h3 className="font-semibold text-primary-700 mb-2 text-sm sm:text-base">
+              🎯 Quick Start Guide
+            </h3>
+            <div className="text-xs sm:text-sm text-secondary-600 space-y-1">
+              <p>1. Select your class level</p>
+              <p>2. Choose a subject</p>
+              <p>3. Pick a chapter</p>
+              <p>4. Start learning!</p>
+            </div>
+          </div>
         </motion.div>
       </motion.div>
     </div>

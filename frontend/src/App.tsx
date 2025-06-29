@@ -28,7 +28,7 @@ function App() {
               <UserProfile />
             </Header>
             
-            <main className="container mx-auto px-4 py-8">
+            <main className="container mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-6 lg:py-8 min-h-[calc(100vh-16rem)]">
               <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/profile" element={<UserProfilePage />} />
@@ -41,7 +41,19 @@ function App() {
             </main>
             
             <Footer />
-            <ToastContainer />
+            
+            <ToastContainer 
+              position="top-right"
+              autoClose={3000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              className="!mt-16 sm:!mt-20"
+            />
           </div>
         </AuthGuard>
       </Router>

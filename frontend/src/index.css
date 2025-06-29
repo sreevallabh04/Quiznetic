@@ -2,100 +2,354 @@
 @tailwind components;
 @tailwind utilities;
 
-/* styles.css */
+/* Mobile-first responsive utilities */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html, body {
+    scroll-behavior: smooth;
+  }
+  
+  button, a, input, select, textarea {
+    min-height: 44px;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
 
-/* Signup Page Container */
-.signup-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+@layer utilities {
+  .touch-manipulation {
+    touch-action: manipulation;
   }
   
-  /* Header */
-  .signup-header {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Form Styling */
-  .signup-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  /* Form Group */
-  .signup-form-group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Labels */
-  .signup-label {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  .signup-input {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-    transition: border-color 0.3s;
-    color: #333; /* Text color */
-    background-color: #fff; /* Background color */
-  }
-
-  .signup-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
-  }
-  
-  /* Submit Button */
-  .signup-button {
-    padding: 10px;
+  .prevent-zoom {
     font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
   }
   
-  .signup-button:hover {
-    background-color: #0056b3;
+  .mobile-only {
+    @apply block sm:hidden;
   }
   
-  /* Text for Account Info */
-  .signup-text {
-    font-size: 14px;
-    color: #555;
-    text-align: center;
+  .tablet-up {
+    @apply hidden sm:block;
   }
   
-  /* Link for Login */
-  .signup-link {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
+  .desktop-only {
+    @apply hidden lg:block;
   }
-  
-  .signup-link:hover {
-    text-decoration: underline;
-  }
+}
 
-  .signup-input::placeholder {
-    color: #aaa; /* Placeholder text color */
+/* Mobile-first responsive utilities */
+@layer base {
+  html {
+    /* Improve text rendering on mobile */
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+  
+  /* Ensure smooth scrolling */
+  html, body {
+    scroll-behavior: smooth;
+  }
+  
+  /* Improve touch targets for mobile */
+  button, a, input, select, textarea {
+    min-height: 44px; /* iOS recommended touch target size */
+  }
+  
+  /* Hide scrollbars but maintain functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  /* Mobile-first container classes */
+  .container-mobile {
+    @apply w-full max-w-none px-3 sm:max-w-7xl sm:mx-auto sm:px-4 lg:px-8;
+  }
+  
+  /* Responsive padding classes */
+  .p-mobile {
+    @apply p-3 sm:p-6 lg:p-8;
+  }
+  
+  .px-mobile {
+    @apply px-3 sm:px-4 lg:px-6;
+  }
+  
+  .py-mobile {
+    @apply py-3 sm:py-6 lg:py-8;
+  }
+  
+  /* Mobile-first text sizes */
+  .text-mobile-xs {
+    @apply text-xs sm:text-sm;
+  }
+  
+  .text-mobile-sm {
+    @apply text-sm sm:text-base;
+  }
+  
+  .text-mobile-base {
+    @apply text-base sm:text-lg;
+  }
+  
+  .text-mobile-lg {
+    @apply text-lg sm:text-xl lg:text-2xl;
+  }
+  
+  .text-mobile-xl {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+  }
+  
+  .text-mobile-2xl {
+    @apply text-2xl sm:text-3xl lg:text-4xl;
+  }
+  
+  /* Mobile-first spacing */
+  .space-mobile-x {
+    @apply space-x-2 sm:space-x-4 lg:space-x-6;
+  }
+  
+  .space-mobile-y {
+    @apply space-y-3 sm:space-y-6 lg:space-y-8;
+  }
+  
+  /* Mobile-first grid layouts */
+  .grid-mobile-auto {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6;
+  }
+  
+  .grid-mobile-2 {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:gap-6;
+  }
+  
+  /* Mobile-first button sizes */
+  .btn-mobile {
+    @apply px-3 py-2 text-sm sm:px-4 sm:py-2 sm:text-base;
+  }
+  
+  .btn-mobile-lg {
+    @apply px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base lg:text-lg;
+  }
+  
+  /* Card responsive padding */
+  .card-mobile {
+    @apply p-3 sm:p-4 lg:p-6;
+  }
+  
+  /* Mobile-friendly input sizing */
+  .input-mobile {
+    @apply text-base px-3 py-2 sm:text-sm;
+  }
+}
+
+@layer utilities {
+  /* Touch-friendly utilities */
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+  
+  /* Safe area utilities for mobile devices */
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  .safe-left {
+    padding-left: env(safe-area-inset-left);
+  }
+  
+  .safe-right {
+    padding-right: env(safe-area-inset-right);
+  }
+  
+  /* Prevent zoom on inputs in iOS */
+  .prevent-zoom {
+    font-size: 16px;
+  }
+  
+  /* Mobile-first aspect ratios */
+  .aspect-mobile-square {
+    @apply aspect-square;
+  }
+  
+  .aspect-mobile-video {
+    @apply aspect-video;
+  }
+  
+  /* Mobile-optimized shadows */
+  .shadow-mobile {
+    @apply shadow-sm sm:shadow-md lg:shadow-lg;
+  }
+  
+  /* Mobile-first border radius */
+  .rounded-mobile {
+    @apply rounded-lg sm:rounded-xl lg:rounded-2xl;
+  }
+  
+  /* Responsive flex utilities */
+  .flex-mobile-col {
+    @apply flex flex-col sm:flex-row;
+  }
+  
+  .flex-mobile-row {
+    @apply flex flex-row sm:flex-col lg:flex-row;
+  }
+  
+  /* Mobile navigation utilities */
+  .nav-mobile {
+    @apply fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-2 sm:relative sm:border-t-0 sm:p-0 sm:bg-transparent;
+  }
+  
+  /* Mobile modal utilities */
+  .modal-mobile {
+    @apply fixed inset-0 z-50 p-4 sm:p-6 lg:p-8;
+  }
+  
+  .modal-content-mobile {
+    @apply max-h-full overflow-y-auto rounded-mobile bg-white p-mobile shadow-mobile;
+  }
+  
+  /* Responsive image utilities */
+  .img-mobile {
+    @apply w-full h-auto max-w-full;
+  }
+  
+  /* Mobile-first visibility utilities */
+  .mobile-only {
+    @apply block sm:hidden;
+  }
+  
+  .tablet-up {
+    @apply hidden sm:block;
+  }
+  
+  .desktop-only {
+    @apply hidden lg:block;
+  }
+}
+
+/* Legacy styles for existing components */
+.signup-container {
+  @apply max-w-sm sm:max-w-md mx-auto m-6 sm:m-12 p-mobile border border-gray-300 rounded-mobile bg-gray-50 shadow-mobile;
+}
+
+.signup-header {
+  @apply text-center text-mobile-lg mb-4 sm:mb-6 text-gray-800;
+}
+
+.signup-form {
+  @apply flex flex-col space-y-3 sm:space-y-4;
+}
+
+.signup-form-group {
+  @apply flex flex-col;
+}
+
+.signup-label {
+  @apply text-mobile-xs font-semibold mb-1 sm:mb-2 text-gray-700;
+}
+
+.signup-input {
+  @apply input-mobile border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-gray-800 bg-white transition-all prevent-zoom;
+}
+
+.signup-input:focus {
+  @apply border-blue-500 ring-1 ring-blue-500/20;
+}
+
+.signup-button {
+  @apply btn-mobile-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 border-0 rounded cursor-pointer transition-colors touch-manipulation;
+}
+
+.signup-button:hover {
+  @apply bg-blue-700;
+}
+
+.signup-text {
+  @apply text-mobile-xs text-gray-700 text-center;
+}
+
+.signup-link {
+  @apply text-blue-600 no-underline font-semibold hover:underline;
+}
+
+.signup-input::placeholder {
+  @apply text-gray-400;
+}
+
+/* Custom focus styles for better accessibility */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary-500;
+}
+
+/* Improved button focus for touch devices */
+button:focus {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+}
+
+/* Ensure proper line height for readability on mobile */
+p, li, span {
+  line-height: 1.6;
+}
+
+/* Improve form accessibility on mobile */
+input, select, textarea {
+  @apply prevent-zoom;
+}
+
+/* Responsive table styles */
+.table-mobile {
+  @apply block sm:table w-full;
+}
+
+.table-mobile thead {
+  @apply hidden sm:table-header-group;
+}
+
+.table-mobile tbody {
+  @apply block sm:table-row-group;
+}
+
+.table-mobile tr {
+  @apply block sm:table-row border-b border-gray-200 mb-3 sm:mb-0;
+}
+
+.table-mobile td {
+  @apply block sm:table-cell px-3 py-2 sm:px-4 sm:py-3;
+}
+
+.table-mobile td:before {
+  content: attr(data-label) ": ";
+  @apply font-semibold sm:hidden;
+}
+
+/* Mobile-friendly animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
   

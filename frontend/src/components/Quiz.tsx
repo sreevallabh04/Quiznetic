@@ -1089,12 +1089,12 @@ export default function Quiz() {
       return null; 
   }
     
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="relative max-w-3xl mx-auto"
-    >
+      return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="relative max-w-3xl mx-auto p-3 sm:p-6 lg:p-8"
+      >
       {/* Subtle pattern background */}
       <div className="fixed inset-0 bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] bg-[size:20px_20px] opacity-30 z-[-1]"></div>
       
