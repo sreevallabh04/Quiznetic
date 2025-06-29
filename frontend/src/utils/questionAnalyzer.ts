@@ -1,5 +1,6 @@
 // Question analyzer and enhancer for Telangana State Board curriculum
 import { chapterData } from '../data/chapterData';
+import { logger } from './utils';
 
 interface QuestionAnalysis {
   subject: string;
@@ -306,31 +307,31 @@ const generateMapQuestions = (classLevel: number, chapterTitle: string, count: n
  * Print analysis summary
  */
 export const printAnalysisSummary = (analysis: QuestionAnalysis[]) => {
-  console.log('\n📊 TELANGANA STATE BOARD QUESTION ANALYSIS\n');
+  logger.log('\n📊 TELANGANA STATE BOARD QUESTION ANALYSIS\n');
   
   const needsMore = analysis.filter(a => a.status === 'needs_more');
   const complete = analysis.filter(a => a.status === 'complete');
   
-  console.log(`✅ Complete chapters: ${complete.length}`);
-  console.log(`⚠️  Chapters needing more questions: ${needsMore.length}`);
-  console.log(`📚 Total chapters analyzed: ${analysis.length}\n`);
+  logger.log(`✅ Complete chapters: ${complete.length}`);
+  logger.log(`⚠️  Chapters needing more questions: ${needsMore.length}`);
+  logger.log(`📚 Total chapters analyzed: ${analysis.length}\n`);
   
   if (needsMore.length > 0) {
-    console.log('CHAPTERS NEEDING MORE QUESTIONS:\n');
+    logger.log('CHAPTERS NEEDING MORE QUESTIONS:\n');
     needsMore.forEach(chapter => {
-      console.log(`📖 ${chapter.subject.toUpperCase()} Class ${chapter.classLevel} - ${chapter.chapterTitle}`);
-      console.log(`   Current: ${chapter.currentQuestions} | Needs: ${chapter.needsQuestions} more\n`);
+      logger.log(`📖 ${chapter.subject.toUpperCase()} Class ${chapter.classLevel} - ${chapter.chapterTitle}`);
+      logger.log(`   Current: ${chapter.currentQuestions} | Needs: ${chapter.needsQuestions} more\n`);
     });
   }
   
   // Summary by subject
   const subjects = ['maths', 'science', 'social', 'mapPointing'];
-  console.log('SUMMARY BY SUBJECT:\n');
+  logger.log('SUMMARY BY SUBJECT:\n');
   subjects.forEach(subject => {
     const subjectAnalysis = analysis.filter(a => a.subject === subject);
     const subjectComplete = subjectAnalysis.filter(a => a.status === 'complete').length;
     const subjectTotal = subjectAnalysis.length;
-    console.log(`${subject.toUpperCase()}: ${subjectComplete}/${subjectTotal} chapters complete`);
+    logger.log(`${subject.toUpperCase()}: ${subjectComplete}/${subjectTotal} chapters complete`);
   });
 };
 

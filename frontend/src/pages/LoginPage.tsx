@@ -14,13 +14,9 @@ export function LoginPage() {
     password: '',
   });
   const navigate = useNavigate();
-<<<<<<< HEAD
   
-=======
->>>>>>> 7b0177345a45c7c6239071678bcb8665e19d3380
   const handleChange = (e: any) => {
     const { name, value } = e.target;
-    console.log(name, value);
     const copyLoginInfo: LoginInfo = { ...loginInfo };
     copyLoginInfo[name as keyof LoginInfo] = value;
     setLoginInfo(copyLoginInfo);
@@ -32,10 +28,9 @@ export function LoginPage() {
     if (!email || !password) {
       return handleError("All fields are required");
     }
-<<<<<<< HEAD
     
     try {
-      // Simple client-side authentication
+      // Simple client-side authentication for static app
       // In a real app, you would validate against a backend
       if (email && password) {
         // For demo purposes, accept any valid email/password combination
@@ -58,35 +53,6 @@ export function LoginPage() {
       }
     } catch (err: any) {
       handleError(err.message || "Login failed");
-=======
-    try {
-      const url = "http://localhost:3001/auth/login";
-      const response = await fetch(url, {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(loginInfo)
-      });
-      const result = await response.json();
-      const { success, message, jwtToken, name, error } = result;
-      if (success) {
-        handleSuccess(message);
-        localStorage.setItem('token', jwtToken);
-        localStorage.setItem('loggedInUser', name);
-        setTimeout(() => {
-          navigate('/home');
-        }, 1000);
-      } else if (error) {
-        const details = error?.details[0].message;
-        handleError(details);
-      } else if (!success) {
-        handleError(message);
-      }
-      console.log(result);
-    } catch (err: any) {
-      handleError(err);
->>>>>>> 7b0177345a45c7c6239071678bcb8665e19d3380
     }
   }
 

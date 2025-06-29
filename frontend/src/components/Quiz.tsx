@@ -17,6 +17,7 @@ import {
   DropdownQuestion
 } from '../utils/api';
 import { ensureMinimumQuestions } from '../utils/helpers';
+import { logger } from '../utils/utils';
 import MapDisplay from './MapDisplay';
 
 // Helper function to shuffle an array
@@ -95,7 +96,7 @@ export default function Quiz() {
       setApiError(null);
       
       try {
-        console.log(`🎯 Loading questions for Class ${classId} ${subject} Chapter ${chapter}`);
+        logger.log(`🎯 Loading questions for Class ${classId} ${subject} Chapter ${chapter}`);
         
         // Use the helper function to get static questions
         const questions = await ensureMinimumQuestions(
@@ -107,14 +108,14 @@ export default function Quiz() {
         
         if (questions.length > 0) {
           setApiQuestions(questions);
-          console.log(`✅ Loaded ${questions.length} questions from Telangana State Board curriculum`);
+          logger.log(`✅ Loaded ${questions.length} questions from Telangana State Board curriculum`);
         } else {
           setApiError('No questions available for this chapter');
-          console.warn('No questions found for this chapter');
+          logger.warn('No questions found for this chapter');
         }
       } catch (error) {
         setApiError('Error loading questions');
-        console.error('Error loading static questions:', error);
+        logger.error('Error loading static questions:', error);
       } finally {
         setIsLoading(false);
       }
@@ -683,7 +684,7 @@ export default function Quiz() {
           // Update lastIndex to after the current match
           lastIndex = match.index + match[0].length;
         } catch (e) {
-          console.error("Error rendering specific dropdown:", e);
+          logger.error("Error rendering specific dropdown:", e);
           // Add error placeholder
           questionElements.push(
             <span key={`error-${match ? match[1] : 'unknown'}`} className="mx-1 px-2 py-1 bg-red-100 text-red-600 rounded">
@@ -708,7 +709,7 @@ export default function Quiz() {
         );
       }
     } catch (error) {
-      console.error("Error parsing dropdown question:", error);
+      logger.error("Error parsing dropdown question:", error);
       // If the entire rendering process fails, return an error message
       return (
         <div className="space-y-6">

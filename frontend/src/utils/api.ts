@@ -1,6 +1,7 @@
 // Gemini API utilities for fetching questions
 // Array of API keys to rotate through when hitting rate limits
 import { getFallbackQuestions } from './fallbackData';
+import { logger } from './utils';
 const GEMINI_API_KEYS = [
   import.meta.env.VITE_GEMINI_API_KEY_1,
   import.meta.env.VITE_GEMINI_API_KEY_2,
@@ -14,8 +15,11 @@ const GEMINI_API_KEYS = [
 
 // Validate that we have at least one API key
 if (GEMINI_API_KEYS.length === 0) {
-  console.error('No Gemini API keys found. Please set VITE_GEMINI_API_KEY_1 through VITE_GEMINI_API_KEY_8 in your .env file.');
-  throw new Error('Missing Gemini API keys. Please check your environment configuration.');
+  logger.error('No Gemini API keys found. Please set VITE_GEMINI_API_KEY_1 through VITE_GEMINI_API_KEY_8 in your .env file.');
+  // Don't throw error in production - fall back to static questions
+  if (import.meta.env.DEV) {
+    throw new Error('Missing Gemini API keys. Please check your environment configuration.');
+  }
 }
 
 // Track key status for intelligent rotation
@@ -80,18 +84,18 @@ const handleKeyFailure = (keyIndex: number, error: any, statusCode?: number): vo
   status.failures++;
   status.lastError = error?.message || 'Unknown error';
   
-  console.log(`API key ${keyIndex + 1}/${keyStatuses.length} failed: ${status.lastError}`);
+  logger.warn(`API key ${keyIndex + 1}/${keyStatuses.length} failed: ${status.lastError}`);
   
   // Blacklist keys based on error type and failure count
   if (statusCode === 429) {
     // Rate limit error: blacklist for a longer time with exponential backoff
     const backoffMinutes = Math.min(15, Math.pow(2, status.failures - 1));
     status.blacklistedUntil = Date.now() + (backoffMinutes * 60 * 1000);
-    console.log(`Key ${keyIndex + 1} rate limited, blacklisted for ${backoffMinutes} minutes`);
+    logger.warn(`Key ${keyIndex + 1} rate limited, blacklisted for ${backoffMinutes} minutes`);
   } else if (status.failures >= 3) {
     // Other errors: if persistent, blacklist temporarily
     status.blacklistedUntil = Date.now() + (2 * 60 * 1000); // 2 minutes
-    console.log(`Key ${keyIndex + 1} failing repeatedly, blacklisted for 2 minutes`);
+    logger.warn(`Key ${keyIndex + 1} failing repeatedly, blacklisted for 2 minutes`);
   }
 };
 
@@ -185,19 +189,19 @@ const makeGeminiApiRequest = async (prompt: string): Promise<any> => {
   
   // For logging/debugging
   const startTime = Date.now();
-  console.log(`Starting API request with prompt for: ${prompt.substring(0, 50)}...`);
+  logger.log(`Starting API request with prompt for: ${prompt.substring(0, 50)}...`);
   
   while (attempts < maxAttempts) {
     const currentKey = getCurrentApiKey();
     const currentKeyIdx = keyStatuses.findIndex(status => status.key === currentKey);
     
     try {
-      console.log(`Attempt ${attempts + 1}/${maxAttempts} using API key ${currentKeyIdx + 1}/${keyStatuses.length}`);
+      logger.log(`Attempt ${attempts + 1}/${maxAttempts} using API key ${currentKeyIdx + 1}/${keyStatuses.length}`);
       
       // Add delay between attempts with exponential backoff
       if (attempts > 0) {
         const delayMs = Math.min(1000 * Math.pow(1.5, attempts - 1), 8000);
-        console.log(`Adding delay of ${delayMs}ms before next attempt`);
+        logger.log(`Adding delay of ${delayMs}ms before next attempt`);
         await new Promise(resolve => setTimeout(resolve, delayMs));
       }
       
@@ -272,14 +276,14 @@ const makeGeminiApiRequest = async (prompt: string): Promise<any> => {
       keyStatuses[currentKeyIdx].lastError = null;
       keyStatuses[currentKeyIdx].blacklistedUntil = null;
       
-      console.log(`API request successful with key ${currentKeyIdx + 1} after ${attempts + 1} attempts`);
+      logger.log(`API request successful with key ${currentKeyIdx + 1} after ${attempts + 1} attempts`);
       
       // Success! Return the data
       return data;
       
     } catch (error) {
       // Handle network errors, parsing errors, etc.
-      console.error(`Error with API key ${currentKeyIdx + 1}:`, error);
+      logger.error(`Error with API key ${currentKeyIdx + 1}:`, error);
       
       // Update key status and rotate to next key
       handleKeyFailure(currentKeyIdx, error);
@@ -297,7 +301,7 @@ const makeGeminiApiRequest = async (prompt: string): Promise<any> => {
   
   // If we've exhausted all attempts, throw the last error
   const errorMsg = `All API keys failed after ${attempts} attempts. Last error: ${lastError?.message || 'Unknown error'}`;
-  console.error(errorMsg);
+  logger.error(errorMsg);
   throw new Error(errorMsg);
 };
 
@@ -519,7 +523,7 @@ const processApiResponse = (data: any): Question[] => {
   try {
     parsedQuestions = JSON.parse(jsonContent);
   } catch (e) {
-    console.error("Failed to parse JSON content:", jsonContent);
+          logger.error("Failed to parse JSON content:", jsonContent);
     throw new Error('Failed to parse JSON from API response');
   }
 
@@ -535,7 +539,7 @@ const processApiResponse = (data: any): Question[] => {
     
     // Basic validation
     if (!q.type || !q.question) {
-      console.warn(`Skipping question ${index + 1}: Missing type or question text.`);
+              logger.warn(`Skipping question ${index + 1}: Missing type or question text.`);
       return null;
     }
 
@@ -543,7 +547,7 @@ const processApiResponse = (data: any): Question[] => {
     switch (q.type) {
       case 'multiple_choice':
         if (!Array.isArray(q.options) || q.options.length < 2 || !q.correct || !q.options.includes(q.correct)) {
-           console.warn(`Skipping MCQ ${index + 1}: Invalid options or correct answer.`);
+           logger.warn(`Skipping MCQ ${index + 1}: Invalid options or correct answer.`);
            return null;
         }
         // Analyze if this is a map-related question
@@ -568,14 +572,14 @@ const processApiResponse = (data: any): Question[] => {
 
       case 'fill_blank':
         if (!q.correct || typeof q.correct !== 'string' || !q.question.includes('[BLANK]')) {
-          console.warn(`Skipping FillBlank ${index + 1}: Missing correct answer or [BLANK] placeholder.`);
+          logger.warn(`Skipping FillBlank ${index + 1}: Missing correct answer or [BLANK] placeholder.`);
           return null;
         }
         return { ...q, id: questionId, type: 'fill_blank' } as FillBlankQuestion;
 
       case 'matching':
         if (!q.prompt || !Array.isArray(q.pairs) || q.pairs.length < 2 || !q.pairs.every((p: any) => p.left?.id && p.left?.text && p.right?.id && p.right?.text)) {
-          console.warn(`Skipping Matching ${index + 1}: Invalid prompt or pairs structure.`);
+          logger.warn(`Skipping Matching ${index + 1}: Invalid prompt or pairs structure.`);
           return null;
         }
         // We'll shuffle the 'right' side options in the component later
@@ -583,7 +587,7 @@ const processApiResponse = (data: any): Question[] => {
 
       case 'drag_drop_order':
          if (!q.prompt || !Array.isArray(q.items) || q.items.length < 2 || !q.items.every((item: any) => item.id && item.text)) {
-           console.warn(`Skipping DragDropOrder ${index + 1}: Invalid prompt or items structure.`);
+           logger.warn(`Skipping DragDropOrder ${index + 1}: Invalid prompt or items structure.`);
            return null;
          }
          // We'll shuffle the items in the component later
@@ -591,13 +595,13 @@ const processApiResponse = (data: any): Question[] => {
 
       case 'dropdown':
         if (!Array.isArray(q.dropdowns) || q.dropdowns.length === 0 || !q.dropdowns.every((dd: any) => dd.placeholder && Array.isArray(dd.options) && dd.options.length > 1 && dd.correct && dd.options.includes(dd.correct) && q.question.includes(dd.placeholder))) {
-           console.warn(`Skipping Dropdown ${index + 1}: Invalid dropdowns structure or placeholder missing in question.`);
+           logger.warn(`Skipping Dropdown ${index + 1}: Invalid dropdowns structure or placeholder missing in question.`);
            return null;
         }
         return { ...q, id: questionId, type: 'dropdown' } as DropdownQuestion;
 
       default:
-        console.warn(`Skipping question ${index + 1}: Unknown type "${q.type}".`);
+                  logger.warn(`Skipping question ${index + 1}: Unknown type "${q.type}".`);
         return null;
     }
   }).filter(q => q !== null) as Question[]; // Remove any null entries
@@ -681,12 +685,12 @@ Generate around 15-20 questions total, mixing the types. Respond ONLY with the J
     };
   } catch (error) {
     // Provide a detailed error message to help debugging
-    console.error('Failed to fetch questions after all retry attempts:', error);
+    logger.error('Failed to fetch questions after all retry attempts:', error);
     
     // Log key statuses for debugging
-    console.log('Key status summary:');
+    logger.log('Key status summary:');
     keyStatuses.forEach((status, idx) => {
-      console.log(`Key ${idx + 1}: ${status.failures} failures, ${status.blacklistedUntil ? 'blacklisted until ' + new Date(status.blacklistedUntil).toLocaleTimeString() : 'active'}`);
+      logger.log(`Key ${idx + 1}: ${status.failures} failures, ${status.blacklistedUntil ? 'blacklisted until ' + new Date(status.blacklistedUntil).toLocaleTimeString() : 'active'}`);
     });
     
     // Check if all keys are invalid (400 errors)
@@ -695,8 +699,8 @@ Generate around 15-20 questions total, mixing the types. Respond ONLY with the J
     );
     
     if (allKeysInvalid || GEMINI_API_KEYS.length === 0) {
-      console.warn('🔄 API keys invalid or missing, using fallback data...');
-      const fallbackQuestions = getFallbackQuestions(subject, chapterTitle);
+      logger.warn('🔄 API keys invalid or missing, using fallback data...');
+      const fallbackQuestions = getFallbackQuestions(10);
       
       return {
         success: true,

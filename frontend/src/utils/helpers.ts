@@ -1,6 +1,9 @@
 import { Question } from './api';
 import { chapterData } from '../data/chapterData';
 import { getStaticQuestions } from './staticQuestions';
+import { generateStaticQuestions } from './staticQuestions';
+import { getFallbackQuestions } from './fallbackData';
+import { logger } from './utils';
 
 /**
  * Shuffles an array using Fisher-Yates algorithm
@@ -39,65 +42,51 @@ interface Chapter {
  * @param minQuestions Minimum number of questions to return (default: 15)
  * @returns Array of questions for the chapter
  */
-export const ensureMinimumQuestions = async (
+export const ensureMinimumQuestions = (
+  questions: Question[],
+  minCount: number = 5,
   classLevel: number,
   subject: string,
-  chapterId: number,
-  minQuestions: number = 15
-): Promise<Question[]> => {
+  chapterId: string
+): Question[] => {
   try {
-    console.log(`📚 Loading questions for Class ${classLevel} ${subject} Chapter ${chapterId}`);
+    logger.log(`📚 Loading questions for Class ${classLevel} ${subject} Chapter ${chapterId}`);
     
-    // Get static questions directly from our curated database
-    const questions = getStaticQuestions(classLevel, subject, chapterId);
-    
-    if (questions.length > 0) {
-      console.log(`✅ Loaded ${questions.length} curated questions from Telangana State Board curriculum`);
-      return questions.slice(0, Math.max(minQuestions, questions.length));
+    if (questions.length >= minCount) {
+      logger.log(`✅ Loaded ${questions.length} curated questions from Telangana State Board curriculum`);
+      return questions.slice(0, 10); // Cap at 10 questions
     }
     
-    // Fallback: Get questions from chapter data if static questions fail
-    const fallbackQuestions = getQuestionsFromChapterData(classLevel, subject, chapterId);
-    if (fallbackQuestions.length > 0) {
-      console.log(`📋 Using ${fallbackQuestions.length} questions from chapter data`);
-      return fallbackQuestions.slice(0, minQuestions);
+    // Try to get questions from static data first
+    const staticQuestions = generateStaticQuestions(classLevel, subject, chapterId);
+    if (staticQuestions.length > 0) {
+      logger.log(`📋 Using ${staticQuestions.length} questions from chapter data`);
+      return staticQuestions;
     }
     
-    // Last resort: return default questions
-    console.warn(`⚠️ No questions found for Class ${classLevel} ${subject} Chapter ${chapterId}. Using default questions.`);
-    return getDefaultQuestions(subject, classLevel, chapterId);
+    // If we still don't have enough, use fallback questions
+    const fallbackQuestions = getFallbackQuestions(minCount);
+    logger.warn(`⚠️ No questions found for Class ${classLevel} ${subject} Chapter ${chapterId}. Using default questions.`);
     
+    return [...questions, ...fallbackQuestions].slice(0, 10);
   } catch (error) {
-    console.error('Error in ensureMinimumQuestions:', error);
-    return getDefaultQuestions(subject, classLevel, chapterId);
+    logger.error('Error in ensureMinimumQuestions:', error);
+    return getFallbackQuestions(minCount);
   }
 };
 
 /**
- * Get questions directly from chapter data (fallback method)
+ * Get questions from chapter data structure
  */
-const getQuestionsFromChapterData = (classLevel: number, subject: string, chapterId: number): Question[] => {
+export const getQuestionsFromChapterData = (
+  classLevel: number,
+  subject: string,
+  chapterId: string
+): Question[] => {
   try {
-    const subjectData = chapterData[subject as keyof typeof chapterData];
-    if (!subjectData) return [];
-    
-    const classData = subjectData[classLevel as keyof typeof subjectData] as Chapter[];
-    if (!classData) return [];
-    
-    const chapter = classData.find(ch => ch.id === chapterId);
-    if (!chapter || !chapter.questions) return [];
-    
-    return chapter.questions.map((q, index) => ({
-      id: `chapter_${chapterId}_${index}`,
-      type: 'multiple_choice' as const,
-      question: q.question,
-      options: q.options,
-      correct: q.correct,
-      ...(q.mapData && { mapData: q.mapData }),
-      ...(q.imageUrl && { imageUrl: q.imageUrl })
-    }));
+    return generateStaticQuestions(classLevel, subject, chapterId);
   } catch (error) {
-    console.error('Error getting questions from chapter data:', error);
+    logger.error('Error getting questions from chapter data:', error);
     return [];
   }
 };

@@ -28,12 +28,9 @@ export const QUESTION_TYPES = {
  * API configuration
  */
 export const API_CONFIG = {
-<<<<<<< HEAD
-=======
-  BASE_URL: 'http://localhost:3001',
->>>>>>> 7b0177345a45c7c6239071678bcb8665e19d3380
-  TIMEOUT: 10000,
-  RETRY_ATTEMPTS: 3
+  BASE_URL: import.meta.env.VITE_API_BASE_URL || 'https://api.quiznetic.com',
+  TIMEOUT: parseInt(import.meta.env.VITE_API_TIMEOUT || '10000'),
+  RETRY_ATTEMPTS: parseInt(import.meta.env.VITE_API_RETRY_ATTEMPTS || '3')
 };
 
 /**

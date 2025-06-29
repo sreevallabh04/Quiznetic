@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getQuestionStats } from '../utils/staticQuestions';
+import { logger } from '../utils/utils';
 
 /**
  * Component that initializes and validates the static question database.
@@ -15,7 +16,7 @@ const QuestionInitializer: React.FC = () => {
       try {
         setIsLoading(true);
         
-        console.log('🚀 Initializing Telangana State Board Question Database...');
+        logger.log('🚀 Initializing Telangana State Board Question Database...');
         
         // Validate and count questions across all subjects and classes
         const subjects = ['maths', 'science', 'social', 'mapPointing'];
@@ -45,12 +46,12 @@ const QuestionInitializer: React.FC = () => {
           }
         });
         
-        console.log('✅ Question Database Initialized Successfully!');
-        console.log(`📊 Total: ${totalQuestions} questions across ${totalChapters} chapters`);
+            logger.log('✅ Question Database Initialized Successfully!');
+    logger.log(`📊 Total: ${totalQuestions} questions across ${totalChapters} chapters`);
         
         setIsComplete(true);
       } catch (err) {
-        console.error('Error initializing question database:', err);
+        logger.error('Error initializing question database:', err);
       } finally {
         setIsLoading(false);
       }

@@ -1,6 +1,8 @@
 // Static question system for Telangana State Board curriculum
 import { chapterData } from '../data/chapterData';
 import { Question, QuestionType } from './api';
+import { getFallbackQuestions } from './fallbackData';
+import { logger } from './utils';
 
 /**
  * Enhanced question types with better variety for educational content
@@ -142,162 +144,91 @@ const shuffleArray = <T>(array: T[]): T[] => {
 };
 
 /**
- * Get static questions for a specific class, subject, and chapter
+ * Generate questions for a specific chapter using static data
+ * @param classLevel The class level (6-12)
+ * @param subject The subject (maths, science, social)
+ * @param chapterId The chapter identifier
+ * @returns Array of questions for the chapter
  */
-export const getStaticQuestions = (
+export const generateStaticQuestions = (
   classLevel: number,
   subject: string,
-  chapterId: number
+  chapterId: string
 ): Question[] => {
   try {
-    // Get the subject data
-    const subjectData = chapterData[subject as keyof typeof chapterData];
-    if (!subjectData) {
-      console.warn(`Subject '${subject}' not found in chapter data`);
-      return getDefaultQuestions(subject, classLevel);
+    // Check if subject exists in chapter data
+    if (!chapterData[subject]) {
+      logger.warn(`Subject '${subject}' not found in chapter data`);
+      return getFallbackQuestions(5);
     }
-    
-    // Get the class data
-    const classData = subjectData[classLevel as keyof typeof subjectData] as ChapterData[];
-    if (!classData) {
-      console.warn(`Class ${classLevel} not found for subject '${subject}'`);
-      return getDefaultQuestions(subject, classLevel);
+
+    // Check if class level exists for the subject
+    const subjectData = chapterData[subject];
+    if (!subjectData[`class${classLevel}`]) {
+      logger.warn(`Class ${classLevel} not found for subject '${subject}'`);
+      return getFallbackQuestions(5);
     }
-    
-    // Find the specific chapter
-    const chapter = classData.find(ch => ch.id === chapterId);
+
+    // Get chapter data
+    const classData = subjectData[`class${classLevel}`];
+    const chapter = classData.find((ch: any) => ch.id === chapterId);
     if (!chapter) {
-      console.warn(`Chapter ${chapterId} not found for class ${classLevel} ${subject}`);
-      return getDefaultQuestions(subject, classLevel);
+      logger.warn(`Chapter ${chapterId} not found for class ${classLevel} ${subject}`);
+      return getFallbackQuestions(5);
     }
+
+    // Get questions from chapter
+    const questions = chapter.questions || [];
     
-    // Convert and enhance the questions
-    const enhancedQuestions = enhanceQuestionTypes(chapter.questions, chapter.title);
+    // Shuffle questions for variety
+    const shuffledQuestions = shuffleArray(questions);
     
-    // Ensure we have a good variety of questions
-    if (enhancedQuestions.length < 5) {
-      // Add some default questions if we don't have enough
-      const defaultQuestions = getDefaultQuestions(subject, classLevel);
-      enhancedQuestions.push(...defaultQuestions.slice(0, 5 - enhancedQuestions.length));
-    }
+    // Take up to 10 questions
+    const finalQuestions = shuffledQuestions.slice(0, 10);
     
-    // Limit to reasonable number and shuffle
-    const finalQuestions = shuffleArray(enhancedQuestions).slice(0, 15);
+    // Add unique IDs if not present
+    const questionsWithIds = finalQuestions.map((q: Question, index: number) => ({
+      ...q,
+      id: q.id || `${subject}_${classLevel}_${chapterId}_${index + 1}`
+    }));
+
+    logger.log(`✅ Generated ${finalQuestions.length} questions for Class ${classLevel} ${subject} Chapter ${chapterId}`);
     
-    console.log(`✅ Generated ${finalQuestions.length} questions for Class ${classLevel} ${subject} Chapter ${chapterId}`);
-    return finalQuestions;
-    
+    return questionsWithIds;
   } catch (error) {
-    console.error('Error generating static questions:', error);
-    return getDefaultQuestions(subject, classLevel);
+    logger.error('Error generating static questions:', error);
+    return getFallbackQuestions(5);
   }
 };
 
 /**
- * Get all available questions for a subject and class (for practice mode)
+ * Get all available questions from static data
+ * @returns Object containing all questions organized by subject and class
  */
-export const getAllStaticQuestions = (
-  classLevel: number,
-  subject: string
-): Question[] => {
+export const getAllStaticQuestions = () => {
   try {
-    const subjectData = chapterData[subject as keyof typeof chapterData];
-    if (!subjectData) return [];
+    const allQuestions: Record<string, any> = {};
     
-    const classData = subjectData[classLevel as keyof typeof subjectData] as ChapterData[];
-    if (!classData) return [];
-    
-    const allQuestions: Question[] = [];
-    
-    classData.forEach(chapter => {
-      const chapterQuestions = enhanceQuestionTypes(chapter.questions, chapter.title);
-      allQuestions.push(...chapterQuestions);
+    Object.keys(chapterData).forEach(subject => {
+      allQuestions[subject] = {};
+      const subjectData = chapterData[subject];
+      
+      Object.keys(subjectData).forEach(classKey => {
+        const classLevel = classKey.replace('class', '');
+        allQuestions[subject][classLevel] = {};
+        
+        const classData = subjectData[classKey];
+        classData.forEach((chapter: any) => {
+          allQuestions[subject][classLevel][chapter.id] = chapter.questions || [];
+        });
+      });
     });
     
-    return shuffleArray(allQuestions).slice(0, 50); // Limit for performance
+    return allQuestions;
   } catch (error) {
-    console.error('Error getting all static questions:', error);
-    return [];
+    logger.error('Error getting all static questions:', error);
+    return {};
   }
-};
-
-/**
- * Default questions for when specific content is not available
- */
-const getDefaultQuestions = (subject: string, classLevel: number): Question[] => {
-  const subjectSpecificQuestions: Record<string, Question[]> = {
-    maths: [
-      {
-        id: 'default_math_1',
-        type: 'multiple_choice',
-        question: `What is a fundamental concept in Class ${classLevel} Mathematics?`,
-        options: ['Numbers and Operations', 'Advanced Calculus', 'Quantum Physics', 'None of these'],
-        correct: 'Numbers and Operations'
-      },
-      {
-        id: 'default_math_2',
-        type: 'fill_blank',
-        question: 'Mathematics helps us understand [BLANK] and solve problems.',
-        correct: 'patterns'
-      }
-    ],
-    science: [
-      {
-        id: 'default_sci_1',
-        type: 'multiple_choice',
-        question: `Which is an important topic in Class ${classLevel} Science?`,
-        options: ['Scientific Method', 'Time Travel', 'Magic', 'None of these'],
-        correct: 'Scientific Method'
-      },
-      {
-        id: 'default_sci_2',
-        type: 'fill_blank',
-        question: 'Science is the study of the [BLANK] world around us.',
-        correct: 'natural'
-      }
-    ],
-    social: [
-      {
-        id: 'default_soc_1',
-        type: 'multiple_choice',
-        question: `What is an important aspect of Class ${classLevel} Social Studies?`,
-        options: ['Understanding Society', 'Space Exploration', 'Computer Programming', 'None of these'],
-        correct: 'Understanding Society'
-      },
-      {
-        id: 'default_soc_2',
-        type: 'fill_blank',
-        question: 'Social Studies helps us understand [BLANK] and culture.',
-        correct: 'history'
-      }
-    ],
-    mapPointing: [
-      {
-        id: 'default_map_1',
-        type: 'multiple_choice',
-        question: 'MaP: What is the capital of Telangana?',
-        options: ['Mumbai', 'Hyderabad', 'Chennai', 'Bangalore'],
-        correct: 'Hyderabad',
-        mapData: {
-          center: [17.8495, 79.1151],
-          zoom: 6,
-          marker: [17.8495, 79.1151],
-          type: 'state',
-          name: 'telangana'
-        }
-      }
-    ]
-  };
-  
-  return subjectSpecificQuestions[subject] || [
-    {
-      id: 'default_generic_1',
-      type: 'multiple_choice',
-      question: 'This is a sample question for the Telangana State Board curriculum.',
-      options: ['Option A', 'Option B', 'Option C', 'Option D'],
-      correct: 'Option A'
-    }
-  ];
 };
 
 /**
