@@ -1,6 +1,10 @@
 {
   "name": "quiznetic",
   "version": 2,
+  "framework": "vite",
+  "buildCommand": "cd frontend && npm ci && npm run build",
+  "outputDirectory": "frontend/dist",
+  "installCommand": "cd frontend && npm ci",
   "builds": [
     {
       "src": "frontend/package.json",
@@ -13,26 +17,81 @@
   "routes": [
     {
       "src": "/assets/(.*)",
-      "dest": "/frontend/dist/assets/$1",
+      "dest": "/assets/$1",
       "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "X-Content-Type-Options": "nosniff"
+      }
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      }
+    },
+    {
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|webp|woff|woff2|ttf|eot))",
+      "dest": "/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "X-Content-Type-Options": "nosniff"
       }
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/dist/$1"
-    },
+      "dest": "/index.html",
+      "headers": {
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+        "Cache-Control": "public, max-age=0, must-revalidate"
+      }
+    }
+  ],
+  "headers": [
     {
-      "src": "/(.*)",
-      "dest": "/frontend/dist/index.html"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
     }
   ],
   "env": {
-    "VITE_APP_NAME": "Quiznetic",
+    "VITE_APP_NAME": "Quiznetic - Telangana Learning Hub",
     "VITE_APP_VERSION": "1.0.0", 
     "VITE_APP_ENV": "production",
     "VITE_ENABLE_API_QUESTIONS": "false",
-    "VITE_ENABLE_ANALYTICS": "false",
-    "VITE_ENABLE_DEBUG": "false"
+    "VITE_ENABLE_ANALYTICS": "true",
+    "VITE_ENABLE_DEBUG": "false",
+    "VITE_CLERK_PUBLISHABLE_KEY": "",
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "app/api/*.js": {
+      "runtime": "nodejs18.x"
+    }
   }
 } 

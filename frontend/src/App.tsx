@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify';
 import { AuthGuard } from './components/auth/AuthGuard';
 import { UserProfile } from './components/auth/UserProfile';
 import { LandingPage } from './pages/LandingPage';
+import { UserProfilePage } from './pages/UserProfilePage';
 import QuestionTypesShowcase from './pages/QuestionTypesShowcase';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
@@ -30,6 +31,7 @@ function App() {
             <main className="container mx-auto px-4 py-8">
               <Routes>
                 <Route path="/" element={<LandingPage />} />
+                <Route path="/profile" element={<UserProfilePage />} />
                 <Route path="/question-types" element={<QuestionTypesShowcase />} />
                 <Route path="/home" element={<ClassSelection />} />
                 <Route path="/class/:classId" element={<SubjectSelection />} />

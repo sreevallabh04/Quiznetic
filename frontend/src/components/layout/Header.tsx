@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
-import { BookOpen, Layout } from 'lucide-react';
+import { BookOpen, Layout, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-export function Header() {
+interface HeaderProps {
+  children?: React.ReactNode;
+}
+
+export function Header({ children }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-primary-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,7 +44,7 @@ export function Header() {
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center"
+            className="flex items-center space-x-2"
           >
             <Link 
               to="/question-types" 
@@ -49,6 +53,17 @@ export function Header() {
               <Layout className="w-4 h-4" />
               <span className="font-medium">Question Types</span>
             </Link>
+            
+            <Link 
+              to="/profile" 
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-secondary-700 hover:text-primary-600 hover:bg-primary-50 transition-colors"
+            >
+              <User className="w-4 h-4" />
+              <span className="font-medium">Profile</span>
+            </Link>
+            
+            {/* User Profile Component */}
+            {children}
           </motion.div>
         </div>
       </div>
