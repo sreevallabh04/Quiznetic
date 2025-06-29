@@ -137,7 +137,7 @@ quiznetic/
 2. **Deploy to Vercel**
    ```bash
    # Visit: https://vercel.com
-   # Connect GitHub repository
+   # Connect GitHub repository: https://github.com/sreevallabh04/quiznetic
    # Add environment variables
    # Deploy!
    ```
@@ -219,6 +219,12 @@ Once deployed, your application will achieve:
 - **Backup**: Git-based version control
 - **Monitoring**: Built-in error tracking
 
+### **Developer Support**
+- **Creator**: Sreevallabh Kakarala
+- **Email**: sreevallabh.kakarala@gmail.com
+- **GitHub**: [@sreevallabh04](https://github.com/sreevallabh04)
+- **Repository**: https://github.com/sreevallabh04/quiznetic
+
 ---
 
 ## 🎯 **FINAL STATUS: PRODUCTION READY** ✅
@@ -233,6 +239,26 @@ Your Quiznetic application is now:
 
 **Ready to impact thousands of students! 🎓**
 
+## 👨‍💻 **About the Developer**
+
+This comprehensive educational platform was created by **Sreevallabh Kakarala**, a passionate developer dedicated to making quality education accessible to all students, especially in government schools.
+
+- 🌐 **Portfolio**: [sreevallabh.dev](https://sreevallabh.dev)
+- 💼 **LinkedIn**: [linkedin.com/in/sreevallabh-kakarala](https://linkedin.com/in/sreevallabh-kakarala)
+- 📧 **Email**: sreevallabh.kakarala@gmail.com
+- 🐱 **GitHub**: [@sreevallabh04](https://github.com/sreevallabh04)
+
+## 👨‍💻 **About the Developer**
+
+This comprehensive educational platform was created by **Sreevallabh Kakarala**, a passionate developer dedicated to making quality education accessible to all students, especially in government schools.
+
+- 🌐 **Portfolio**: [sreevallabh.dev](https://sreevallabh.dev)
+- 💼 **LinkedIn**: [linkedin.com/in/sreevallabh-kakarala](https://linkedin.com/in/sreevallabh-kakarala)
+- 📧 **Email**: sreevallabh.kakarala@gmail.com
+- 🐱 **GitHub**: [@sreevallabh04](https://github.com/sreevallabh04)
+
 ---
 
-*Deployment Time: 2-5 minutes | Total Setup: < 15 minutes* 
+*Deployment Time: 2-5 minutes | Total Setup: < 15 minutes*
+
+**Built with ❤️ by Sreevallabh Kakarala for Telangana students** 

@@ -49,7 +49,7 @@ VITE_ENABLE_DEBUG="false"
 
 1. **Connect Repository**
    - Sign up at [vercel.com](https://vercel.com)
-   - Import your GitHub repository
+   - Import your GitHub repository (https://github.com/sreevallabh04/quiznetic)
    - Select "Vite" as framework preset
 
 2. **Configure Build Settings**
@@ -283,10 +283,11 @@ chmod +x deploy.sh
 ## 🆘 Support
 
 **Need help?**
-- Check GitHub Issues
+- Check GitHub Issues: https://github.com/sreevallabh04/quiznetic/issues
 - Review deployment logs
 - Test locally first: `npm run preview`
 - Verify environment variables
+- Contact developer: sreevallabh.kakarala@gmail.com
 
 ## 🎉 Success!
 
@@ -301,6 +302,26 @@ Once deployed, your Quiznetic app will be:
 - Netlify: `https://quiznetic.netlify.app`
 - Custom: `https://yourschool.edu/quiznetic`
 
+## 👨‍💻 About the Developer
+
+This educational platform was created by **Sreevallabh Kakarala**, a passionate developer dedicated to making quality education accessible to all students.
+
+- 📧 **Email**: sreevallabh.kakarala@gmail.com
+- 🐱 **GitHub**: [@sreevallabh04](https://github.com/sreevallabh04)
+- 🌐 **Portfolio**: [sreevallabh.dev](https://sreevallabh.dev)
+
+## 👨‍💻 About the Developer
+
+This educational platform was created by **Sreevallabh Kakarala**, a passionate developer dedicated to making quality education accessible to all students.
+
+- 📧 **Email**: sreevallabh.kakarala@gmail.com
+- 🐱 **GitHub**: [@sreevallabh04](https://github.com/sreevallabh04)
+- 🌐 **Portfolio**: [sreevallabh.dev](https://sreevallabh.dev)
+
 ---
 
-*Happy teaching and learning! 🎓* 
+*Happy teaching and learning! 🎓*
+
+**Built with ❤️ by Sreevallabh Kakarala for Telangana students**
+
+**Built with ❤️ by Sreevallabh Kakarala for Telangana students** 

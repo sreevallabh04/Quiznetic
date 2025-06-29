@@ -12,12 +12,12 @@
     "react",
     "typescript"
   ],
-  "author": "Quiznetic Team",
+  "author": "Sreevallabh Kakarala <sreevallabh.kakarala@gmail.com>",
   "license": "MIT",
   "homepage": "https://quiznetic.vercel.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/quiznetic.git"
+    "url": "https://github.com/sreevallabh04/quiznetic.git"
   },
   "type": "module",
   "scripts": {

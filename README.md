@@ -47,7 +47,7 @@
 
 ### 1. Clone and Install
 ```bash
-git clone https://github.com/your-username/quiznetic.git
+git clone https://github.com/sreevallabh04/quiznetic.git
 cd quiznetic
 cd frontend
 npm install
@@ -280,9 +280,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-username/quiznetic/issues)
+- **Issues**: [GitHub Issues](https://github.com/sreevallabh04/quiznetic/issues)
 - **Documentation**: This README and inline code comments
-- **Email**: support@quiznetic.com (if applicable)
+- **Email**: sreevallabh.kakarala@gmail.com
 
 ## 🙏 Acknowledgments
 
@@ -290,8 +290,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Educational Community** for feedback and suggestions
 - **Open Source Contributors** for the amazing tools and libraries
 
+## 👨‍💻 About the Developer
+
+**Sreevallabh Kakarala** is a passionate developer focused on creating educational technology solutions that make quality education accessible to all students, especially in government schools.
+
+- 🌐 **Portfolio**: [sreevallabh.dev](https://sreevallabh.dev)
+- 💼 **LinkedIn**: [linkedin.com/in/sreevallabh-kakarala](https://linkedin.com/in/sreevallabh-kakarala)
+- 📧 **Email**: sreevallabh.kakarala@gmail.com
+- 🐱 **GitHub**: [@sreevallabh04](https://github.com/sreevallabh04)
+
 ---
 
-**Built with ❤️ for Telangana students**
+**Built with ❤️ by Sreevallabh Kakarala for Telangana students**
 
 *Making quality education accessible to all government school students*
