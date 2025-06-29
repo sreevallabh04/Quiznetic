@@ -14,6 +14,121 @@ export const socialClass10 = [
         question: 'Which source do historians use to study history?',
         options: ['Newspapers', 'Coins', 'Both A and B', 'None of the above'],
         correct: 'Both A and B'
+      },
+      {
+        question: 'What are primary sources in history?',
+        options: ['Textbooks written today', 'Original documents from the past', 'Modern interpretations', 'Fictional stories'],
+        correct: 'Original documents from the past'
+      },
+      {
+        question: 'Which of the following is a secondary source?',
+        options: ['Diary of a freedom fighter', 'Government records', 'History textbook', 'Ancient coins'],
+        correct: 'History textbook'
+      },
+      {
+        question: 'What is historiography?',
+        options: ['Writing of history', 'Study of geography', 'Art of painting', 'Science of archaeology'],
+        correct: 'Writing of history'
+      },
+      {
+        question: 'Which period is known as the Medieval period in Indian history?',
+        options: ['Before 1000 CE', '1000-1800 CE', 'After 1800 CE', '500-1000 CE'],
+        correct: '1000-1800 CE'
+      },
+      {
+        question: 'What does chronology mean in history?',
+        options: ['Study of coins', 'Arrangement of events in time order', 'Study of inscriptions', 'Writing of biographies'],
+        correct: 'Arrangement of events in time order'
+      },
+      {
+        question: 'Which empire marked the beginning of the Medieval period?',
+        options: ['Mughal Empire', 'Delhi Sultanate', 'Vijayanagara Empire', 'Maratha Empire'],
+        correct: 'Delhi Sultanate'
+      },
+      {
+        question: 'What are archaeological sources?',
+        options: ['Written records', 'Material remains from the past', 'Oral traditions', 'Modern photographs'],
+        correct: 'Material remains from the past'
+      },
+      {
+        question: 'Which language was used for administrative purposes during the Medieval period?',
+        options: ['Hindi', 'Sanskrit', 'Persian', 'Arabic'],
+        correct: 'Persian'
+      },
+      {
+        question: 'What is the importance of court chronicles?',
+        options: ['They give official accounts of rulers', 'They are always accurate', 'They represent common people', 'They are written by enemies'],
+        correct: 'They give official accounts of rulers'
+      },
+      {
+        question: 'Which type of sources help us understand the life of common people?',
+        options: ['Court records only', 'Folk tales and traditions', 'Royal biographies', 'Military accounts'],
+        correct: 'Folk tales and traditions'
+      },
+      {
+        question: 'What is the limitation of written sources?',
+        options: ['They are always true', 'They may have bias', 'They are easy to find', 'They cover all sections of society'],
+        correct: 'They may have bias'
+      },
+      {
+        question: 'Which period saw the rise of regional kingdoms in India?',
+        options: ['Ancient period', 'Medieval period', 'Modern period', 'Prehistoric period'],
+        correct: 'Medieval period'
+      },
+      {
+        question: 'What role did technology play in historical changes?',
+        options: ['No role at all', 'Minor role', 'Significant role in transformation', 'Only in modern times'],
+        correct: 'Significant role in transformation'
+      },
+      {
+        question: 'Which factor led to the decline of many medieval kingdoms?',
+        options: ['Natural disasters only', 'Foreign invasions and internal conflicts', 'Lack of resources', 'Climate change only'],
+        correct: 'Foreign invasions and internal conflicts'
+      },
+      {
+        question: 'What is the significance of studying different perspectives in history?',
+        options: ['Creates confusion', 'Gives complete understanding', 'Is unnecessary', 'Makes history complex'],
+        correct: 'Gives complete understanding'
+      },
+      {
+        question: 'Which sources help us understand the economic life of medieval India?',
+        options: ['Revenue records', 'Trade documents', 'Travelers accounts', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What is the importance of oral traditions in history?',
+        options: ['They are always accurate', 'They preserve cultural memory', 'They are written sources', 'They are modern inventions'],
+        correct: 'They preserve cultural memory'
+      },
+      {
+        question: 'Which aspect of medieval society is often neglected in court records?',
+        options: ['Royal ceremonies', 'Military campaigns', 'Life of common people', 'Administrative policies'],
+        correct: 'Life of common people'
+      },
+      {
+        question: 'What does the term periodization mean?',
+        options: ['Dividing history into periods', 'Writing periods', 'Reading history', 'Memorizing dates'],
+        correct: 'Dividing history into periods'
+      },
+      {
+        question: 'Why is it important to question historical sources?',
+        options: ['To create doubt', 'To understand their reliability', 'To reject them', 'To memorize them'],
+        correct: 'To understand their reliability'
+      },
+      {
+        question: 'Which type of evidence helps in dating historical events?',
+        options: ['Coins and inscriptions', 'Paintings only', 'Stories only', 'Modern books'],
+        correct: 'Coins and inscriptions'
+      },
+      {
+        question: 'What is the role of geography in shaping history?',
+        options: ['No role', 'Influences trade and culture', 'Only affects climate', 'Determines language only'],
+        correct: 'Influences trade and culture'
+      },
+      {
+        question: 'How do historians reconstruct the past?',
+        options: ['By imagination only', 'By analyzing various sources', 'By copying old books', 'By guessing'],
+        correct: 'By analyzing various sources'
       }
     ]
   },
@@ -31,6 +146,121 @@ export const socialClass10 = [
         question: 'Which treaty was signed after the Battle of Buxar?',
         options: ['Treaty of Purandar', 'Treaty of Allahabad', 'Treaty of Seringapatam', 'Treaty of Lahore'],
         correct: 'Treaty of Allahabad'
+      },
+      {
+        question: 'When was the Battle of Plassey fought?',
+        options: ['1757', '1764', '1770', '1799'],
+        correct: '1757'
+      },
+      {
+        question: 'Who was the Nawab of Bengal during the Battle of Plassey?',
+        options: ['Mir Jafar', 'Siraj-ud-Daulah', 'Mir Qasim', 'Alivardi Khan'],
+        correct: 'Siraj-ud-Daulah'
+      },
+      {
+        question: 'Which British officer led the Company forces at Plassey?',
+        options: ['Warren Hastings', 'Robert Clive', 'Lord Cornwallis', 'Lord Wellesley'],
+        correct: 'Robert Clive'
+      },
+      {
+        question: 'What was the main reason for the Battle of Plassey?',
+        options: ['Religious conflicts', 'Trade disputes', 'Territorial expansion', 'Cultural differences'],
+        correct: 'Trade disputes'
+      },
+      {
+        question: 'Who betrayed Siraj-ud-Daulah at Plassey?',
+        options: ['Mir Jafar', 'Rai Durlabh', 'Jagat Seth', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What was the immediate result of the Battle of Plassey?',
+        options: ['End of Mughal rule', 'British control over Bengal', 'Formation of new kingdom', 'Peace treaty'],
+        correct: 'British control over Bengal'
+      },
+      {
+        question: 'Which system did the British introduce to collect revenue?',
+        options: ['Zamindari system', 'Ryotwari system', 'Mahalwari system', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What was the Doctrine of Lapse?',
+        options: ['Trade policy', 'Military strategy', 'Annexation policy', 'Educational reform'],
+        correct: 'Annexation policy'
+      },
+      {
+        question: 'Who introduced the Doctrine of Lapse?',
+        options: ['Lord Wellesley', 'Lord Dalhousie', 'Lord Cornwallis', 'Warren Hastings'],
+        correct: 'Lord Dalhousie'
+      },
+      {
+        question: 'Which kingdom was annexed under the Doctrine of Lapse?',
+        options: ['Jhansi', 'Satara', 'Nagpur', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'What was the Subsidiary Alliance system?',
+        options: ['Trade agreement', 'Military alliance', 'Educational policy', 'Revenue system'],
+        correct: 'Military alliance'
+      },
+      {
+        question: 'Who introduced the Subsidiary Alliance?',
+        options: ['Lord Wellesley', 'Lord Dalhousie', 'Robert Clive', 'Warren Hastings'],
+        correct: 'Lord Wellesley'
+      },
+      {
+        question: 'Which was the first Indian ruler to accept Subsidiary Alliance?',
+        options: ['Nizam of Hyderabad', 'Tipu Sultan', 'Marathas', 'Mysore ruler'],
+        correct: 'Nizam of Hyderabad'
+      },
+      {
+        question: 'What happened to rulers who accepted Subsidiary Alliance?',
+        options: ['They gained independence', 'They lost real power', 'They became stronger', 'They got British support'],
+        correct: 'They lost real power'
+      },
+      {
+        question: 'Which Anglo-Mysore war led to the death of Tipu Sultan?',
+        options: ['First', 'Second', 'Third', 'Fourth'],
+        correct: 'Fourth'
+      },
+      {
+        question: 'When did Tipu Sultan die?',
+        options: ['1799', '1800', '1805', '1810'],
+        correct: '1799'
+      },
+      {
+        question: 'What was Tipu Sultan known as?',
+        options: ['Lion of Mysore', 'Tiger of Mysore', 'Eagle of Mysore', 'Leopard of Mysore'],
+        correct: 'Tiger of Mysore'
+      },
+      {
+        question: 'Which Maratha war established British supremacy?',
+        options: ['First Anglo-Maratha War', 'Second Anglo-Maratha War', 'Third Anglo-Maratha War', 'Fourth Anglo-Maratha War'],
+        correct: 'Third Anglo-Maratha War'
+      },
+      {
+        question: 'Who was the last Peshwa of the Maratha Empire?',
+        options: ['Baji Rao I', 'Baji Rao II', 'Madhav Rao', 'Narayan Rao'],
+        correct: 'Baji Rao II'
+      },
+      {
+        question: 'What was the main source of Companys income initially?',
+        options: ['Land revenue', 'Trade profits', 'Taxation', 'Military service'],
+        correct: 'Trade profits'
+      },
+      {
+        question: 'Which act regulated the East India Companys affairs?',
+        options: ['Regulating Act 1773', 'Pitts India Act 1784', 'Charter Act 1833', 'All of the above'],
+        correct: 'All of the above'
+      },
+      {
+        question: 'Who was the first Governor-General of India?',
+        options: ['Robert Clive', 'Warren Hastings', 'Lord Cornwallis', 'Lord Wellesley'],
+        correct: 'Warren Hastings'
+      },
+      {
+        question: 'What transformation did the Company undergo by 1857?',
+        options: ['From trader to ruler', 'From ruler to trader', 'From military to civilian', 'From Indian to British'],
+        correct: 'From trader to ruler'
       }
     ]
   },
@@ -88,7 +318,7 @@ export const socialClass10 = [
   {
     id: 6,
     title: 'The Indian Constitution',
-    description: 'The foundation of India’s democracy and its guiding principles.',
+    description: 'The foundation of Indias democracy and its guiding principles.',
     questions: [
       {
         question: 'When did the Indian Constitution come into effect?',
@@ -122,7 +352,7 @@ export const socialClass10 = [
   {
     id: 8,
     title: 'Parliament and the Making of Laws',
-    description: 'Understanding how laws are made in India’s democracy.',
+    description: 'Understanding how laws are made in Indias democracy.',
     questions: [
       {
         question: 'Which house is known as the Upper House of Parliament?',
@@ -216,8 +446,8 @@ export const socialClass10 = [
       },
       {
         question: 'What is the primary aim of labour laws?',
-        options: ['To increase profits', 'To protect workers’ rights', 'To promote industries', 'To reduce employment'],
-        correct: 'To protect workers’ rights'
+        options: ['To increase profits', 'To protect workers rights', 'To promote industries', 'To reduce employment'],
+        correct: 'To protect workers rights'
       }
     ]
   },
@@ -342,7 +572,7 @@ export const socialClass10 = [
   },
   {
     id: 21,
-    title: 'Civilising the “Native”, Educating the Nation',
+    title: 'Civilising the Native, Educating the Nation',
     description: 'British education policies and their impact on India.',
     questions: [
       {
