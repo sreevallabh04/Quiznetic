@@ -9,15 +9,19 @@ import Quiz from './components/Quiz';
 import RefreshHandler from './pages/RefreshHandler';
 import QuestionTypesShowcase from './pages/QuestionTypesShowcase';
 import QuestionInitializer from './components/QuestionInitializer';
+import ProductionReadyBanner from './components/ProductionReadyBanner';
 
 export default function App() {
-  // QuestionInitializer runs in the background to ensure all chapters have at least 25 questions
+  // QuestionInitializer validates the static question database
   return (
     <>
-      {/* The QuestionInitializer component doesn't render anything visible but runs the question generation process */}
+      {/* The QuestionInitializer component validates the static question database */}
       <QuestionInitializer />
       <BrowserRouter>
         <div className="relative min-h-screen text-secondary-800 overflow-hidden bg-white">
+          {/* Production Ready Banner */}
+          <ProductionReadyBanner />
+          
           {/* Light professional theme background elements */}
           <div className="fixed inset-0 bg-gradient-to-b from-white to-secondary-50 z-[-3]"></div>
           

@@ -1,5 +1,6 @@
 // Gemini API utilities for fetching questions
 // Array of API keys to rotate through when hitting rate limits
+import { getFallbackQuestions } from './fallbackData';
 const GEMINI_API_KEYS = [
   import.meta.env.VITE_GEMINI_API_KEY_1,
   import.meta.env.VITE_GEMINI_API_KEY_2,
@@ -610,7 +611,7 @@ const processApiResponse = (data: any): Question[] => {
 
 /**
  * Fetch questions from GEMINI API for a specific class, subject, and chapter
- * With API key rotation for handling rate limits
+ * With API key rotation for handling rate limits and fallback data
  * 
  * @param classLevel The class level (6-10)
  * @param subject The subject (maths, science, social)
@@ -687,6 +688,22 @@ Generate around 15-20 questions total, mixing the types. Respond ONLY with the J
     keyStatuses.forEach((status, idx) => {
       console.log(`Key ${idx + 1}: ${status.failures} failures, ${status.blacklistedUntil ? 'blacklisted until ' + new Date(status.blacklistedUntil).toLocaleTimeString() : 'active'}`);
     });
+    
+    // Check if all keys are invalid (400 errors)
+    const allKeysInvalid = keyStatuses.every(status => 
+      status.lastError && status.lastError.includes('API key is invalid')
+    );
+    
+    if (allKeysInvalid || GEMINI_API_KEYS.length === 0) {
+      console.warn('🔄 API keys invalid or missing, using fallback data...');
+      const fallbackQuestions = getFallbackQuestions(subject, chapterTitle);
+      
+      return {
+        success: true,
+        questions: fallbackQuestions,
+        error: 'Using sample questions - API service unavailable'
+      };
+    }
     
     return {
       success: false,

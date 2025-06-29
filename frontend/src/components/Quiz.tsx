@@ -8,7 +8,6 @@ import { Card } from './ui/Card';
 import { PageTitle } from './ui/PageTitle';
 import { ProgressBar } from './ui/ProgressBar';
 import { 
-  fetchQuestionsFromAPI, 
   Question, 
   QuestionType,
   MultipleChoiceQuestion,
@@ -17,6 +16,7 @@ import {
   DragDropOrderQuestion,
   DropdownQuestion
 } from '../utils/api';
+import { ensureMinimumQuestions } from '../utils/helpers';
 import MapDisplay from './MapDisplay';
 
 // Helper function to shuffle an array
@@ -85,39 +85,42 @@ export default function Quiz() {
   // For dropdown questions
   const [dropdownSelections, setDropdownSelections] = useState<Record<string, string>>({});
 
-  // Fetch additional questions from API
+  // Load static questions from Telangana State Board curriculum
   useEffect(() => {
-    // Skip API call if we don't have necessary data
-    if (!currentChapter || !classId || !subject) return;
+    // Skip if we don't have necessary data
+    if (!currentChapter || !classId || !subject || !chapter) return;
 
-    const fetchQuestions = async () => {
+    const loadStaticQuestions = async () => {
       setIsLoading(true);
       setApiError(null);
       
       try {
-        const result = await fetchQuestionsFromAPI(
+        console.log(`🎯 Loading questions for Class ${classId} ${subject} Chapter ${chapter}`);
+        
+        // Use the helper function to get static questions
+        const questions = await ensureMinimumQuestions(
           Number(classId),
           subject as string,
-          currentChapter.title,
-          // Safely access description with fallback
-          'description' in currentChapter ? currentChapter.description : `${currentChapter.title} chapter from ${subject} for class ${classId}`
+          Number(chapter),
+          15 // minimum questions
         );
         
-        if (result.success && result.questions.length > 0) {
-          setApiQuestions(result.questions);
+        if (questions.length > 0) {
+          setApiQuestions(questions);
+          console.log(`✅ Loaded ${questions.length} questions from Telangana State Board curriculum`);
         } else {
-          setApiError(result.error || 'Failed to fetch questions');
-          console.warn('API Error:', result.error);
+          setApiError('No questions available for this chapter');
+          console.warn('No questions found for this chapter');
         }
       } catch (error) {
-        setApiError('Error fetching questions');
-        console.error('Error in quiz component:', error);
+        setApiError('Error loading questions');
+        console.error('Error loading static questions:', error);
       } finally {
         setIsLoading(false);
       }
     };
 
-    fetchQuestions();
+    loadStaticQuestions();
   }, [classId, subject, chapter, currentChapter]);
 
   // Initialize state based on current question

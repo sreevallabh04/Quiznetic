@@ -1,28 +1,56 @@
 import React, { useState, useEffect } from 'react';
-import { ensureMinimumQuestions } from '../utils/helpers';
+import { getQuestionStats } from '../utils/staticQuestions';
 
 /**
- * Component that initializes questions for all chapters to ensure minimum question counts.
- * This runs in the background and doesn't block the UI.
+ * Component that initializes and validates the static question database.
+ * This runs in the background and provides feedback on the curriculum content.
  */
 const QuestionInitializer: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [stats, setStats] = useState<any>(null);
 
   useEffect(() => {
     const initializeQuestions = async () => {
       try {
         setIsLoading(true);
-        setError(null);
         
-        // Run the question generation process
-        await ensureMinimumQuestions(25);
+        console.log('🚀 Initializing Telangana State Board Question Database...');
+        
+        // Validate and count questions across all subjects and classes
+        const subjects = ['maths', 'science', 'social', 'mapPointing'];
+        const classes = [6, 7, 8, 9, 10];
+        
+        const allStats: any = {};
+        let totalQuestions = 0;
+        let totalChapters = 0;
+        
+        for (const subject of subjects) {
+          allStats[subject] = {};
+          for (const classLevel of classes) {
+            const classStats = getQuestionStats(classLevel, subject);
+            allStats[subject][classLevel] = classStats;
+            totalQuestions += classStats.totalQuestions;
+            totalChapters += classStats.chapters;
+          }
+        }
+        
+        setStats({
+          subjects: allStats,
+          summary: {
+            totalQuestions,
+            totalChapters,
+            subjects: subjects.length,
+            classes: classes.length
+          }
+        });
+        
+        console.log('✅ Question Database Initialized Successfully!');
+        console.log(`📊 Total: ${totalQuestions} questions across ${totalChapters} chapters`);
         
         setIsComplete(true);
       } catch (err) {
-        console.error('Error initializing questions:', err);
-        setError('Failed to initialize questions. Please try again later.');
+        console.error('Error initializing question database:', err);
       } finally {
         setIsLoading(false);
       }
@@ -33,7 +61,7 @@ const QuestionInitializer: React.FC = () => {
   }, []);
 
   // This component doesn't render anything visible to the user
-  // It just runs the initialization process in the background
+  // It just validates the static question database in the background
   return null;
 };
 

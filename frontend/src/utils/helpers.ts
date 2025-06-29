@@ -1,5 +1,6 @@
-import { fetchQuestionsFromAPI, MultipleChoiceQuestion } from './api';
+import { Question } from './api';
 import { chapterData } from '../data/chapterData';
+import { getStaticQuestions } from './staticQuestions';
 
 /**
  * Shuffles an array using Fisher-Yates algorithm
@@ -29,101 +30,113 @@ interface Chapter {
 }
 
 /**
- * Ensures that each chapter in all subjects has at least the specified minimum number of questions.
- * If a chapter has fewer questions, it will generate additional questions using the GROQ API.
+ * Get questions for a specific chapter using static data from Telangana State Board curriculum
+ * This replaces API calls with curated, curriculum-aligned content
  * 
- * @param minimumQuestionCount The minimum number of questions each chapter should have (default: 25)
- * @returns A promise that resolves when all chapters have been processed
+ * @param classLevel The class level (6-10)
+ * @param subject The subject (maths, science, social, mapPointing)
+ * @param chapterId The chapter ID
+ * @param minQuestions Minimum number of questions to return (default: 15)
+ * @returns Array of questions for the chapter
  */
-export const ensureMinimumQuestions = async (minimumQuestionCount: number = 25): Promise<void> => {
-  console.log(`Ensuring all chapters have at least ${minimumQuestionCount} questions...`);
-  
-  // Track which chapters need additional questions
-  const chaptersToUpdate: {
-    subject: string;
-    classLevel: number;
-    chapterIndex: number;
-    currentCount: number;
-    neededCount: number;
-  }[] = [];
-  
-  // Check all subjects and classes for chapters with fewer than the minimum question count
-  for (const [subject, classes] of Object.entries(chapterData)) {
-    for (const [classLevel, chapters] of Object.entries(classes)) {
-      const classNumber = parseInt(classLevel);
-      
-      // Skip if invalid class number
-      if (isNaN(classNumber)) continue;
-      
-      // Check each chapter's question count
-      chapters.forEach((chapter: Chapter, chapterIndex: number) => {
-        const questionCount = chapter.questions?.length || 0;
-        
-        if (questionCount < minimumQuestionCount) {
-          chaptersToUpdate.push({
-            subject,
-            classLevel: classNumber,
-            chapterIndex,
-            currentCount: questionCount,
-            neededCount: minimumQuestionCount - questionCount
-          });
-        }
-      });
+export const ensureMinimumQuestions = async (
+  classLevel: number,
+  subject: string,
+  chapterId: number,
+  minQuestions: number = 15
+): Promise<Question[]> => {
+  try {
+    console.log(`📚 Loading questions for Class ${classLevel} ${subject} Chapter ${chapterId}`);
+    
+    // Get static questions directly from our curated database
+    const questions = getStaticQuestions(classLevel, subject, chapterId);
+    
+    if (questions.length > 0) {
+      console.log(`✅ Loaded ${questions.length} curated questions from Telangana State Board curriculum`);
+      return questions.slice(0, Math.max(minQuestions, questions.length));
     }
+    
+    // Fallback: Get questions from chapter data if static questions fail
+    const fallbackQuestions = getQuestionsFromChapterData(classLevel, subject, chapterId);
+    if (fallbackQuestions.length > 0) {
+      console.log(`📋 Using ${fallbackQuestions.length} questions from chapter data`);
+      return fallbackQuestions.slice(0, minQuestions);
+    }
+    
+    // Last resort: return default questions
+    console.warn(`⚠️ No questions found for Class ${classLevel} ${subject} Chapter ${chapterId}. Using default questions.`);
+    return getDefaultQuestions(subject, classLevel, chapterId);
+    
+  } catch (error) {
+    console.error('Error in ensureMinimumQuestions:', error);
+    return getDefaultQuestions(subject, classLevel, chapterId);
   }
-  
-  // Generate and add questions for chapters that need them
-  for (const chapterInfo of chaptersToUpdate) {
-    const { subject, classLevel, chapterIndex, currentCount, neededCount } = chapterInfo;
-    // Use proper type casting to handle indexing into nested objects
+};
+
+/**
+ * Get questions directly from chapter data (fallback method)
+ */
+const getQuestionsFromChapterData = (classLevel: number, subject: string, chapterId: number): Question[] => {
+  try {
     const subjectData = chapterData[subject as keyof typeof chapterData];
-    const classData = subjectData[classLevel as unknown as keyof typeof subjectData];
-    const chapter = classData[chapterIndex] as Chapter;
+    if (!subjectData) return [];
     
-    console.log(`Generating ${neededCount} additional questions for ${subject} Class ${classLevel} Chapter "${chapter.title}" (current: ${currentCount})`);
+    const classData = subjectData[classLevel as keyof typeof subjectData] as Chapter[];
+    if (!classData) return [];
     
-    try {
-      // Generate additional questions using the GROQ API
-      const result = await fetchQuestionsFromAPI(
-        classLevel,
-        subject,
-        chapter.title,
-        chapter.description || `${chapter.title} chapter for ${subject} class ${classLevel}`
-      );
-      
-      if (result.success && result.questions.length > 0) {
-        // Convert API questions to the format expected by the chapter data
-        const formattedQuestions = result.questions
-          .filter(q => q.type === 'multiple_choice') // Filter to only use multiple-choice questions
-          .map((q) => {
-            const mcQuestion = q as MultipleChoiceQuestion;
-            return {
-              question: mcQuestion.question.replace(/MaP: /, ''), // Remove map prefix if present
-              options: mcQuestion.options,
-              correct: mcQuestion.correct,
-              ...(mcQuestion.mapData && { mapData: mcQuestion.mapData }),
-              ...(mcQuestion.imageUrl && { imageUrl: mcQuestion.imageUrl })
-            };
-          })
-          .slice(0, neededCount); // Only take as many as needed
-        
-        // Add the new questions to the chapter
-        if (!chapter.questions) {
-          chapter.questions = [];
-        }
-        
-        chapter.questions = [...chapter.questions, ...formattedQuestions];
-        
-        console.log(`Added ${formattedQuestions.length} questions to ${subject} Class ${classLevel} Chapter "${chapter.title}" (new total: ${chapter.questions.length})`);
-      } else {
-        console.warn(`Failed to generate questions for ${subject} Class ${classLevel} Chapter "${chapter.title}": ${result.error || 'Unknown error'}`);
-      }
-    } catch (error) {
-      console.error(`Error generating questions for ${subject} Class ${classLevel} Chapter "${chapter.title}":`, error);
-    }
+    const chapter = classData.find(ch => ch.id === chapterId);
+    if (!chapter || !chapter.questions) return [];
+    
+    return chapter.questions.map((q, index) => ({
+      id: `chapter_${chapterId}_${index}`,
+      type: 'multiple_choice' as const,
+      question: q.question,
+      options: q.options,
+      correct: q.correct,
+      ...(q.mapData && { mapData: q.mapData }),
+      ...(q.imageUrl && { imageUrl: q.imageUrl })
+    }));
+  } catch (error) {
+    console.error('Error getting questions from chapter data:', error);
+    return [];
   }
+};
+
+/**
+ * Get default questions when specific content is not available
+ */
+const getDefaultQuestions = (subject: string, classLevel: number, chapterId: number): Question[] => {
+  const subjectNames: Record<string, string> = {
+    maths: 'Mathematics',
+    science: 'Science',
+    social: 'Social Studies',
+    mapPointing: 'Geography & Map Skills'
+  };
   
-  console.log('Finished ensuring minimum question counts for all chapters');
+  const subjectName = subjectNames[subject] || subject;
+  
+  return [
+    {
+      id: `default_${Date.now()}_1`,
+      type: 'multiple_choice',
+      question: `This is a sample question for Class ${classLevel} ${subjectName} Chapter ${chapterId}. What is an important concept in this chapter?`,
+      options: ['Fundamental Concepts', 'Advanced Topics', 'Basic Principles', 'All of the above'],
+      correct: 'All of the above'
+    },
+    {
+      id: `default_${Date.now()}_2`,
+      type: 'fill_blank',
+      question: `In Class ${classLevel} ${subjectName}, we learn about [BLANK] concepts that are important for understanding the subject.`,
+      correct: 'key'
+    },
+    {
+      id: `default_${Date.now()}_3`,
+      type: 'multiple_choice',
+      question: `Which approach is best for learning ${subjectName} in Class ${classLevel}?`,
+      options: ['Regular practice', 'Understanding concepts', 'Solving problems', 'All of the above'],
+      correct: 'All of the above'
+    }
+  ];
 };
 
 /**
