@@ -7,6 +7,9 @@ import { subjects } from '../data/subjects';
 import { Card } from './ui/Card';
 import { PageTitle } from './ui/PageTitle';
 import { ProgressBar } from './ui/ProgressBar';
+import { XPNotification } from './ui/XPNotification';
+import { LevelDisplay } from './ui/LevelDisplay';
+import { useGamification } from './GamificationProvider';
 import { 
   Question, 
   QuestionType,
@@ -38,8 +41,12 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [userAnswers, setUserAnswers] = useState<Record<string, any>>({}); // Enhanced to store various answer types
+  const [userAnswers, setUserAnswers] = useState<Record<string, any>>({});
   const [quizStartTime, setQuizStartTime] = useState<Date>(new Date());
+  const [questionStartTime, setQuestionStartTime] = useState<Date>(new Date());
+  
+  // Gamification integration
+  const { profile, processQuestionResult, recentXpGain, clearRecentXpGain, addEngagementEvent } = useGamification();
   
   // Analytics hook
   const { trackQuizCompletion } = useAnalytics();
@@ -91,6 +98,27 @@ export default function Quiz() {
   // For dropdown questions
   const [dropdownSelections, setDropdownSelections] = useState<Record<string, string>>({});
 
+  // Track engagement events
+  useEffect(() => {
+    if (questions.length > 0) {
+      addEngagementEvent({
+        type: 'question_start',
+        metadata: { questionIndex: currentQuestion, questionId: questions[currentQuestion]?.id }
+      });
+      setQuestionStartTime(new Date());
+    }
+  }, [currentQuestion, questions.length]);
+
+  // Quiz start engagement event
+  useEffect(() => {
+    if (questions.length > 0) {
+      addEngagementEvent({
+        type: 'question_start',
+        metadata: { sessionStart: true, totalQuestions: questions.length }
+      });
+    }
+  }, [questions.length]);
+
   // Load static questions from Telangana State Board curriculum
   useEffect(() => {
     // Skip if we don't have necessary data
@@ -101,6 +129,11 @@ export default function Quiz() {
       setApiError(null);
       
       try {
+        // Validate subject
+        if (!subject || typeof subject !== 'string') {
+          throw new Error(`Invalid subject: ${subject}`);
+        }
+
         logger.log(`🎯 Loading questions for Class ${classId} ${subject} Chapter ${chapter}`);
         
         // Use the helper function to get static questions
@@ -108,7 +141,7 @@ export default function Quiz() {
           [],
           15, // minimum questions
           Number(classId),
-          subject as string,
+          subject,
           chapter as string
         );
         
@@ -149,6 +182,46 @@ export default function Quiz() {
     }
   }, [currentQuestion, questions]);
 
+  const processAnswer = (isCorrect: boolean, questionId: string, userAnswer: any) => {
+    const timeSpent = new Date().getTime() - questionStartTime.getTime();
+    const difficulty = Math.min(10, Math.max(1, (currentQuestion + 1) * 0.5 + Math.random() * 2));
+    
+    // Track engagement event
+    addEngagementEvent({
+      type: isCorrect ? 'correct_answer' : 'incorrect_answer',
+      metadata: { 
+        questionId, 
+        timeSpent, 
+        difficulty,
+        questionIndex: currentQuestion 
+      }
+    });
+
+    // Process through gamification system
+    const result = processQuestionResult({
+      questionId,
+      isCorrect,
+      timeSpent: timeSpent / 1000, // Convert to seconds
+      difficulty,
+      hintsUsed: 0,
+      attempts: 1
+    });
+
+    // Track engagement event for question end
+    addEngagementEvent({
+      type: 'question_end',
+      metadata: { 
+        questionId, 
+        xpEarned: result.xpEarned,
+        isCorrect 
+      }
+    });
+
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+  };
+
   const handleMultipleChoiceAnswer = (answer: string) => {
     const question = questions[currentQuestion] as MultipleChoiceQuestion;
     setSelectedAnswer(answer);
@@ -158,9 +231,8 @@ export default function Quiz() {
     newUserAnswers[question.id] = answer;
     setUserAnswers(newUserAnswers);
 
-    if (answer === question.correct) {
-      setScore(score + 1);
-    }
+    const isCorrect = answer === question.correct;
+    processAnswer(isCorrect, question.id, answer);
 
     moveToNextQuestion();
   };
@@ -178,9 +250,8 @@ export default function Quiz() {
     setUserAnswers(newUserAnswers);
 
     // Check if the answer is correct (case insensitive)
-    if (userAnswer.toLowerCase() === question.correct.toLowerCase()) {
-      setScore(score + 1);
-    }
+    const isCorrect = userAnswer.toLowerCase() === question.correct.toLowerCase();
+    processAnswer(isCorrect, question.id, userAnswer);
 
     moveToNextQuestion();
   };
@@ -202,10 +273,7 @@ export default function Quiz() {
       }
     }
 
-    if (allCorrect) {
-      setScore(score + 1);
-    }
-
+    processAnswer(allCorrect, question.id, matchingPairs);
     moveToNextQuestion();
   };
 
@@ -229,10 +297,7 @@ export default function Quiz() {
       }
     }
 
-    if (isCorrect) {
-      setScore(score + 1);
-    }
-
+    processAnswer(isCorrect, question.id, orderedItems);
     moveToNextQuestion();
   };
 
@@ -253,10 +318,7 @@ export default function Quiz() {
       }
     }
 
-    if (allCorrect) {
-      setScore(score + 1);
-    }
-
+    processAnswer(allCorrect, question.id, dropdownSelections);
     moveToNextQuestion();
   };
 

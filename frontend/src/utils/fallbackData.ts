@@ -129,14 +129,33 @@ export const fallbackQuestions: Record<string, Record<string, Question[]>> = {
   }
 };
 
-export const getFallbackQuestions = (subject: string, chapter: string): Question[] => {
-  const subjectData = fallbackQuestions[subject.toLowerCase()];
-  if (!subjectData) {
+export const getFallbackQuestions = (subject?: string | number, chapter?: string): Question[] => {
+  // Type guard and validation
+  if (!subject || typeof subject !== 'string') {
+    console.warn('Invalid or missing subject provided to getFallbackQuestions:', subject);
     return getDefaultQuestions();
   }
 
-  const chapterData = subjectData[chapter] || Object.values(subjectData)[0];
-  return chapterData || getDefaultQuestions();
+  const subjectKey = subject.toLowerCase();
+  const subjectData = fallbackQuestions[subjectKey];
+  
+  if (!subjectData) {
+    console.warn(`No fallback questions found for subject: ${subject}`);
+    return getDefaultQuestions();
+  }
+
+  if (!chapter) {
+    // If no chapter specified, return first available chapter's questions
+    return Object.values(subjectData)[0] || getDefaultQuestions();
+  }
+
+  const chapterData = subjectData[chapter];
+  if (!chapterData) {
+    console.warn(`No fallback questions found for chapter: ${chapter} in subject: ${subject}`);
+    return getDefaultQuestions();
+  }
+
+  return chapterData;
 };
 
 const getDefaultQuestions = (): Question[] => [

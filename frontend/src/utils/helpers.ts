@@ -65,13 +65,15 @@ export const ensureMinimumQuestions = (
     }
     
     // If we still don't have enough, use fallback questions
-    const fallbackQuestions = getFallbackQuestions(minCount);
-    logger.warn(`⚠️ No questions found for Class ${classLevel} ${subject} Chapter ${chapterId}. Using default questions.`);
+    const fallbackQuestions = getFallbackQuestions(subject, chapterId);
+    if (fallbackQuestions.length === 0) {
+      logger.warn(`⚠️ No questions found for Class ${classLevel} ${subject} Chapter ${chapterId}. Using default questions.`);
+    }
     
     return [...questions, ...fallbackQuestions].slice(0, 10);
   } catch (error) {
     logger.error('Error in ensureMinimumQuestions:', error);
-    return getFallbackQuestions(minCount);
+    return getFallbackQuestions(subject, chapterId);
   }
 };
 

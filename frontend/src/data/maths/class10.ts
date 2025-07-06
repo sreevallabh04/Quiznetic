@@ -28,7 +28,7 @@ export const mathsClass10 = [
         "options": ["π", "√2", "3/4", "√3"],
         "correct": "3/4"
       },
-      {
+          {
         "question": "What is Euclids Division Lemma?",
         "options": ["a = bq + r", "a = b + qr", "a = bq - r", "a = b - qr"],
         "correct": "a = bq + r"
@@ -127,9 +127,9 @@ export const mathsClass10 = [
         "question": "What is the product of two irrational numbers?",
         "options": ["Always irrational", "Always rational", "Can be either", "Always zero"],
         "correct": "Can be either"
-      }
-    ]
-  },
+          }
+        ]
+      },
     {
       "id": 2,
       "title": "Logarithm",

@@ -1,2775 +1,674 @@
 export const socialClass10 = [
-  // History: Our Pasts III (8 Chapters)
   {
     id: 1,
-    title: 'How, When and Where',
-    description: 'Understanding the importance of history and how it is recorded.',
+    title: 'India: Relief Features',
+    description: 'Study the major physical features and landforms of India.',
     questions: [
-      {
-        question: 'Why is it important to study history?',
-        options: ['To predict the future', 'To learn from the past', 'To memorize dates', 'To forget old traditions'],
-        correct: 'To learn from the past'
-      },
-      {
-        question: 'Which source do historians use to study history?',
-        options: ['Newspapers', 'Coins', 'Both A and B', 'None of the above'],
-        correct: 'Both A and B'
-      },
-      {
-        question: 'What are primary sources in history?',
-        options: ['Textbooks written today', 'Original documents from the past', 'Modern interpretations', 'Fictional stories'],
-        correct: 'Original documents from the past'
-      },
-      {
-        question: 'Which of the following is a secondary source?',
-        options: ['Diary of a freedom fighter', 'Government records', 'History textbook', 'Ancient coins'],
-        correct: 'History textbook'
-      },
-      {
-        question: 'What is historiography?',
-        options: ['Writing of history', 'Study of geography', 'Art of painting', 'Science of archaeology'],
-        correct: 'Writing of history'
-      },
-      {
-        question: 'Which period is known as the Medieval period in Indian history?',
-        options: ['Before 1000 CE', '1000-1800 CE', 'After 1800 CE', '500-1000 CE'],
-        correct: '1000-1800 CE'
-      },
-      {
-        question: 'What does chronology mean in history?',
-        options: ['Study of coins', 'Arrangement of events in time order', 'Study of inscriptions', 'Writing of biographies'],
-        correct: 'Arrangement of events in time order'
-      },
-      {
-        question: 'Which empire marked the beginning of the Medieval period?',
-        options: ['Mughal Empire', 'Delhi Sultanate', 'Vijayanagara Empire', 'Maratha Empire'],
-        correct: 'Delhi Sultanate'
-      },
-      {
-        question: 'What are archaeological sources?',
-        options: ['Written records', 'Material remains from the past', 'Oral traditions', 'Modern photographs'],
-        correct: 'Material remains from the past'
-      },
-      {
-        question: 'Which language was used for administrative purposes during the Medieval period?',
-        options: ['Hindi', 'Sanskrit', 'Persian', 'Arabic'],
-        correct: 'Persian'
-      },
-      {
-        question: 'What is the importance of court chronicles?',
-        options: ['They give official accounts of rulers', 'They are always accurate', 'They represent common people', 'They are written by enemies'],
-        correct: 'They give official accounts of rulers'
-      },
-      {
-        question: 'Which type of sources help us understand the life of common people?',
-        options: ['Court records only', 'Folk tales and traditions', 'Royal biographies', 'Military accounts'],
-        correct: 'Folk tales and traditions'
-      },
-      {
-        question: 'What is the limitation of written sources?',
-        options: ['They are always true', 'They may have bias', 'They are easy to find', 'They cover all sections of society'],
-        correct: 'They may have bias'
-      },
-      {
-        question: 'Which period saw the rise of regional kingdoms in India?',
-        options: ['Ancient period', 'Medieval period', 'Modern period', 'Prehistoric period'],
-        correct: 'Medieval period'
-      },
-      {
-        question: 'What role did technology play in historical changes?',
-        options: ['No role at all', 'Minor role', 'Significant role in transformation', 'Only in modern times'],
-        correct: 'Significant role in transformation'
-      },
-      {
-        question: 'Which factor led to the decline of many medieval kingdoms?',
-        options: ['Natural disasters only', 'Foreign invasions and internal conflicts', 'Lack of resources', 'Climate change only'],
-        correct: 'Foreign invasions and internal conflicts'
-      },
-      {
-        question: 'What is the significance of studying different perspectives in history?',
-        options: ['Creates confusion', 'Gives complete understanding', 'Is unnecessary', 'Makes history complex'],
-        correct: 'Gives complete understanding'
-      },
-      {
-        question: 'Which sources help us understand the economic life of medieval India?',
-        options: ['Revenue records', 'Trade documents', 'Travelers accounts', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the importance of oral traditions in history?',
-        options: ['They are always accurate', 'They preserve cultural memory', 'They are written sources', 'They are modern inventions'],
-        correct: 'They preserve cultural memory'
-      },
-      {
-        question: 'Which aspect of medieval society is often neglected in court records?',
-        options: ['Royal ceremonies', 'Military campaigns', 'Life of common people', 'Administrative policies'],
-        correct: 'Life of common people'
-      },
-      {
-        question: 'What does the term periodization mean?',
-        options: ['Dividing history into periods', 'Writing periods', 'Reading history', 'Memorizing dates'],
-        correct: 'Dividing history into periods'
-      },
-      {
-        question: 'Why is it important to question historical sources?',
-        options: ['To create doubt', 'To understand their reliability', 'To reject them', 'To memorize them'],
-        correct: 'To understand their reliability'
-      },
-      {
-        question: 'Which type of evidence helps in dating historical events?',
-        options: ['Coins and inscriptions', 'Paintings only', 'Stories only', 'Modern books'],
-        correct: 'Coins and inscriptions'
-      },
-      {
-        question: 'What is the role of geography in shaping history?',
-        options: ['No role', 'Influences trade and culture', 'Only affects climate', 'Determines language only'],
-        correct: 'Influences trade and culture'
-      },
-      {
-        question: 'How do historians reconstruct the past?',
-        options: ['By imagination only', 'By analyzing various sources', 'By copying old books', 'By guessing'],
-        correct: 'By analyzing various sources'
-      }
+      { question: 'Which is the highest mountain range in India?', options: ['Himalayas', 'Aravalli', 'Vindhya', 'Satpura'], correct: 'Himalayas' },
+      { question: 'What is the largest plateau in India?', options: ['Deccan Plateau', 'Chotanagpur Plateau', 'Malwa Plateau', 'Tibetan Plateau'], correct: 'Deccan Plateau' },
+      { question: 'Which river forms the largest delta in India?', options: ['Ganga', 'Brahmaputra', 'Godavari', 'Krishna'], correct: 'Ganga' },
+      { question: 'Which is the longest river in India?', options: ['Ganga', 'Yamuna', 'Godavari', 'Brahmaputra'], correct: 'Ganga' },
+      { question: 'Which is the largest desert in India?', options: ['Thar', 'Rann of Kutch', 'Ladakh', 'Cholistan'], correct: 'Thar' },
+      { question: 'Which is the southernmost point of India?', options: ['Indira Point', 'Kanyakumari', 'Rameswaram', 'Cape Comorin'], correct: 'Indira Point' },
+      { question: 'Which is the largest island group in India?', options: ['Andaman & Nicobar', 'Lakshadweep', 'Sundarbans', 'Minicoy'], correct: 'Andaman & Nicobar' },
+      { question: 'Which is the oldest mountain range in India?', options: ['Aravalli', 'Himalayas', 'Western Ghats', 'Eastern Ghats'], correct: 'Aravalli' },
+      { question: 'Which plain is known as the "Granary of India"?', options: ['Indo-Gangetic Plain', 'Coastal Plain', 'Deccan Plateau', 'Punjab Plain'], correct: 'Indo-Gangetic Plain' },
+      { question: 'Which river flows through the Rift Valley?', options: ['Narmada', 'Ganga', 'Yamuna', 'Godavari'], correct: 'Narmada' },
+      { question: 'Which is the largest state in India by area?', options: ['Rajasthan', 'Madhya Pradesh', 'Maharashtra', 'Uttar Pradesh'], correct: 'Rajasthan' },
+      { question: 'Which is the smallest state in India by area?', options: ['Goa', 'Sikkim', 'Tripura', 'Nagaland'], correct: 'Goa' },
+      { question: 'Which is the highest peak in India?', options: ['Kangchenjunga', 'Nanda Devi', 'Mount Everest', 'Anamudi'], correct: 'Kangchenjunga' },
+      { question: 'Which river is called the "Sorrow of Bengal"?', options: ['Damodar', 'Ganga', 'Brahmaputra', 'Kosi'], correct: 'Damodar' },
+      { question: 'Which is the largest lake in India?', options: ['Vembanad', 'Chilika', 'Wular', 'Sambhar'], correct: 'Vembanad' },
+      { question: 'Which is the largest saltwater lake in India?', options: ['Chilika', 'Sambhar', 'Pulicat', 'Vembanad'], correct: 'Chilika' },
+      { question: 'Which is the largest freshwater lake in India?', options: ['Wular', 'Vembanad', 'Loktak', 'Dal'], correct: 'Wular' },
+      { question: 'Which is the largest river basin in India?', options: ['Ganga Basin', 'Godavari Basin', 'Krishna Basin', 'Brahmaputra Basin'], correct: 'Ganga Basin' },
+      { question: 'Which is the main river of Rajasthan?', options: ['Luni', 'Chambal', 'Banas', 'Sabarmati'], correct: 'Luni' },
+      { question: 'Which is the largest delta in the world?', options: ['Sundarbans', 'Nile Delta', 'Mississippi Delta', 'Amazon Delta'], correct: 'Sundarbans' },
+      { question: 'Which is the largest coastal plain in India?', options: ['Eastern Coastal Plain', 'Western Coastal Plain', 'Konkan', 'Malabar'], correct: 'Eastern Coastal Plain' },
+      { question: 'Which is the largest peninsula in India?', options: ['Deccan Peninsula', 'Kathiawar Peninsula', 'Kutch Peninsula', 'Coromandel Peninsula'], correct: 'Deccan Peninsula' },
+      { question: 'Which is the largest gulf in India?', options: ['Gulf of Kutch', 'Gulf of Khambhat', 'Gulf of Mannar', 'Gulf of Cambay'], correct: 'Gulf of Kutch' },
+      { question: 'Which is the largest plateau in the world?', options: ['Tibetan Plateau', 'Deccan Plateau', 'Colorado Plateau', 'Patagonian Plateau'], correct: 'Tibetan Plateau' },
+      { question: 'Which is the largest river island in India?', options: ['Majuli', 'Divar', 'Srirangam', 'Umananda'], correct: 'Majuli' }
     ]
   },
   {
     id: 2,
-    title: 'From Trade to Territory: The Company Establishes Power',
-    description: 'How the British East India Company expanded its rule in India.',
+    title: 'Ideas on Development',
+    description: 'Explore concepts and indicators of development and progress.',
     questions: [
-      {
-        question: 'Which battle marked the beginning of British rule in India?',
-        options: ['Battle of Plassey', 'Battle of Panipat', 'Battle of Haldighati', 'Battle of Buxar'],
-        correct: 'Battle of Plassey'
-      },
-      {
-        question: 'Which treaty was signed after the Battle of Buxar?',
-        options: ['Treaty of Purandar', 'Treaty of Allahabad', 'Treaty of Seringapatam', 'Treaty of Lahore'],
-        correct: 'Treaty of Allahabad'
-      },
-      {
-        question: 'When was the Battle of Plassey fought?',
-        options: ['1757', '1764', '1770', '1799'],
-        correct: '1757'
-      },
-      {
-        question: 'Who was the Nawab of Bengal during the Battle of Plassey?',
-        options: ['Mir Jafar', 'Siraj-ud-Daulah', 'Mir Qasim', 'Alivardi Khan'],
-        correct: 'Siraj-ud-Daulah'
-      },
-      {
-        question: 'Which British officer led the Company forces at Plassey?',
-        options: ['Warren Hastings', 'Robert Clive', 'Lord Cornwallis', 'Lord Wellesley'],
-        correct: 'Robert Clive'
-      },
-      {
-        question: 'What was the main reason for the Battle of Plassey?',
-        options: ['Religious conflicts', 'Trade disputes', 'Territorial expansion', 'Cultural differences'],
-        correct: 'Trade disputes'
-      },
-      {
-        question: 'Who betrayed Siraj-ud-Daulah at Plassey?',
-        options: ['Mir Jafar', 'Rai Durlabh', 'Jagat Seth', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What was the immediate result of the Battle of Plassey?',
-        options: ['End of Mughal rule', 'British control over Bengal', 'Formation of new kingdom', 'Peace treaty'],
-        correct: 'British control over Bengal'
-      },
-      {
-        question: 'Which system did the British introduce to collect revenue?',
-        options: ['Zamindari system', 'Ryotwari system', 'Mahalwari system', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What was the Doctrine of Lapse?',
-        options: ['Trade policy', 'Military strategy', 'Annexation policy', 'Educational reform'],
-        correct: 'Annexation policy'
-      },
-      {
-        question: 'Who introduced the Doctrine of Lapse?',
-        options: ['Lord Wellesley', 'Lord Dalhousie', 'Lord Cornwallis', 'Warren Hastings'],
-        correct: 'Lord Dalhousie'
-      },
-      {
-        question: 'Which kingdom was annexed under the Doctrine of Lapse?',
-        options: ['Jhansi', 'Satara', 'Nagpur', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What was the Subsidiary Alliance system?',
-        options: ['Trade agreement', 'Military alliance', 'Educational policy', 'Revenue system'],
-        correct: 'Military alliance'
-      },
-      {
-        question: 'Who introduced the Subsidiary Alliance?',
-        options: ['Lord Wellesley', 'Lord Dalhousie', 'Robert Clive', 'Warren Hastings'],
-        correct: 'Lord Wellesley'
-      },
-      {
-        question: 'Which was the first Indian ruler to accept Subsidiary Alliance?',
-        options: ['Nizam of Hyderabad', 'Tipu Sultan', 'Marathas', 'Mysore ruler'],
-        correct: 'Nizam of Hyderabad'
-      },
-      {
-        question: 'What happened to rulers who accepted Subsidiary Alliance?',
-        options: ['They gained independence', 'They lost real power', 'They became stronger', 'They got British support'],
-        correct: 'They lost real power'
-      },
-      {
-        question: 'Which Anglo-Mysore war led to the death of Tipu Sultan?',
-        options: ['First', 'Second', 'Third', 'Fourth'],
-        correct: 'Fourth'
-      },
-      {
-        question: 'When did Tipu Sultan die?',
-        options: ['1799', '1800', '1805', '1810'],
-        correct: '1799'
-      },
-      {
-        question: 'What was Tipu Sultan known as?',
-        options: ['Lion of Mysore', 'Tiger of Mysore', 'Eagle of Mysore', 'Leopard of Mysore'],
-        correct: 'Tiger of Mysore'
-      },
-      {
-        question: 'Which Maratha war established British supremacy?',
-        options: ['First Anglo-Maratha War', 'Second Anglo-Maratha War', 'Third Anglo-Maratha War', 'Fourth Anglo-Maratha War'],
-        correct: 'Third Anglo-Maratha War'
-      },
-      {
-        question: 'Who was the last Peshwa of the Maratha Empire?',
-        options: ['Baji Rao I', 'Baji Rao II', 'Madhav Rao', 'Narayan Rao'],
-        correct: 'Baji Rao II'
-      },
-      {
-        question: 'What was the main source of Companys income initially?',
-        options: ['Land revenue', 'Trade profits', 'Taxation', 'Military service'],
-        correct: 'Trade profits'
-      },
-      {
-        question: 'Which act regulated the East India Companys affairs?',
-        options: ['Regulating Act 1773', 'Pitts India Act 1784', 'Charter Act 1833', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Who was the first Governor-General of India?',
-        options: ['Robert Clive', 'Warren Hastings', 'Lord Cornwallis', 'Lord Wellesley'],
-        correct: 'Warren Hastings'
-      },
-      {
-        question: 'What transformation did the Company undergo by 1857?',
-        options: ['From trader to ruler', 'From ruler to trader', 'From military to civilian', 'From Indian to British'],
-        correct: 'From trader to ruler'
-      }
+      { question: 'What is development?', options: ['Process of improvement', 'Process of decline', 'Process of destruction', 'Process of migration'], correct: 'Process of improvement' },
+      { question: 'Which indicator is used to measure economic development?', options: ['GDP', 'HDI', 'Both A and B', 'None'], correct: 'Both A and B' },
+      { question: 'Which is a non-economic indicator of development?', options: ['Literacy rate', 'GDP', 'Per capita income', 'Industrial output'], correct: 'Literacy rate' },
+      { question: 'What is sustainable development?', options: ['Development without harming environment', 'Development at any cost', 'No development', 'Only economic growth'], correct: 'Development without harming environment' },
+      { question: 'Which country is known for high HDI?', options: ['Norway', 'India', 'China', 'Nigeria'], correct: 'Norway' },
+      { question: 'What is per capita income?', options: ['Average income per person', 'Total income', 'Income of richest', 'Income of poorest'], correct: 'Average income per person' },
+      { question: 'Which sector is primary in development?', options: ['Agriculture', 'Industry', 'Services', 'IT'], correct: 'Agriculture' },
+      { question: 'Which is a renewable resource?', options: ['Solar energy', 'Coal', 'Petroleum', 'Natural gas'], correct: 'Solar energy' },
+      { question: 'Which is a non-renewable resource?', options: ['Coal', 'Wind', 'Solar', 'Water'], correct: 'Coal' },
+      { question: 'What is HDI?', options: ['Human Development Index', 'Human Destruction Index', 'Health Development Index', 'Human Data Index'], correct: 'Human Development Index' },
+      { question: 'Which is a social indicator of development?', options: ['Life expectancy', 'GDP', 'Industrial output', 'Exports'], correct: 'Life expectancy' },
+      { question: 'Which is a measure of health?', options: ['Infant mortality rate', 'GDP', 'Exports', 'Imports'], correct: 'Infant mortality rate' },
+      { question: 'Which is a measure of education?', options: ['Literacy rate', 'GDP', 'Exports', 'Imports'], correct: 'Literacy rate' },
+      { question: 'Which is a measure of standard of living?', options: ['Per capita income', 'GDP', 'Exports', 'Imports'], correct: 'Per capita income' },
+      { question: 'Which is a measure of gender equality?', options: ['Gender Development Index', 'GDP', 'Exports', 'Imports'], correct: 'Gender Development Index' },
+      { question: 'Which is a measure of poverty?', options: ['Poverty line', 'GDP', 'Exports', 'Imports'], correct: 'Poverty line' },
+      { question: 'Which is a measure of inequality?', options: ['Gini coefficient', 'GDP', 'Exports', 'Imports'], correct: 'Gini coefficient' },
+      { question: 'Which is a measure of employment?', options: ['Unemployment rate', 'GDP', 'Exports', 'Imports'], correct: 'Unemployment rate' },
+      { question: 'Which is a measure of environment?', options: ['Carbon footprint', 'GDP', 'Exports', 'Imports'], correct: 'Carbon footprint' },
+      { question: 'Which is a measure of happiness?', options: ['World Happiness Index', 'GDP', 'Exports', 'Imports'], correct: 'World Happiness Index' },
+      { question: 'Which is a measure of technology?', options: ['Internet penetration', 'GDP', 'Exports', 'Imports'], correct: 'Internet penetration' },
+      { question: 'Which is a measure of infrastructure?', options: ['Road density', 'GDP', 'Exports', 'Imports'], correct: 'Road density' },
+      { question: 'Which is a measure of governance?', options: ['Corruption Perceptions Index', 'GDP', 'Exports', 'Imports'], correct: 'Corruption Perceptions Index' },
+      { question: 'Which is a measure of innovation?', options: ['Global Innovation Index', 'GDP', 'Exports', 'Imports'], correct: 'Global Innovation Index' },
+      { question: 'Which is a measure of peace?', options: ['Global Peace Index', 'GDP', 'Exports', 'Imports'], correct: 'Global Peace Index' }
     ]
   },
   {
     id: 3,
-    title: 'Tanks and Ground Water',
-    description: 'Learn about the importance of tanks and groundwater management.',
+    title: 'Production and Employment',
+    description: 'Learn about economic activities, production, and employment in India.',
     questions: [
-      {
-        question: 'Which structure is commonly used in India to store rainwater?',
-        options: ['Tanks', 'Dams', 'Canals', 'Pipelines'],
-        correct: 'Tanks'
-      },
-      {
-        question: 'What is the primary source of groundwater?',
-        options: ['Rivers', 'Rainwater', 'Lakes', 'Sea'],
-        correct: 'Rainwater'
-      },
-      {
-        question: 'What is groundwater?',
-        options: ['Water on the surface', 'Water underground', 'Water in rivers', 'Water in oceans'],
-        correct: 'Water underground'
-      },
-      {
-        question: 'Which method is used to extract groundwater?',
-        options: ['Wells and borewells', 'Dams', 'Canals', 'Rivers'],
-        correct: 'Wells and borewells'
-      },
-      {
-        question: 'What is water table?',
-        options: ['Surface water level', 'Underground water level', 'River water level', 'Sea level'],
-        correct: 'Underground water level'
-      },
-      {
-        question: 'What happens when groundwater is overused?',
-        options: ['Water table rises', 'Water table falls', 'No change', 'More rain'],
-        correct: 'Water table falls'
-      },
-      {
-        question: 'Which is a traditional water harvesting structure?',
-        options: ['Tank', 'Borewell', 'Pipeline', 'Tap'],
-        correct: 'Tank'
-      },
-      {
-        question: 'What is rainwater harvesting?',
-        options: ['Storing rainwater', 'Using groundwater', 'River water storage', 'Sea water storage'],
-        correct: 'Storing rainwater'
-      },
-      {
-        question: 'Which soil allows water to pass through easily?',
-        options: ['Clay soil', 'Sandy soil', 'Black soil', 'Red soil'],
-        correct: 'Sandy soil'
-      },
-      {
-        question: 'What is aquifer?',
-        options: ['Surface water', 'Underground water-bearing rock', 'River bed', 'Ocean floor'],
-        correct: 'Underground water-bearing rock'
-      },
-      {
-        question: 'Which activity helps in groundwater recharge?',
-        options: ['Deforestation', 'Afforestation', 'Urbanization', 'Mining'],
-        correct: 'Afforestation'
-      },
-      {
-        question: 'What is the main source of groundwater?',
-        options: ['Rivers', 'Rainfall', 'Oceans', 'Lakes'],
-        correct: 'Rainfall'
-      },
-      {
-        question: 'Which type of well is deeper?',
-        options: ['Open well', 'Borewell', 'Both same', 'Cannot determine'],
-        correct: 'Borewell'
-      },
-      {
-        question: 'What is percolation?',
-        options: ['Water flowing on surface', 'Water seeping underground', 'Water evaporation', 'Water condensation'],
-        correct: 'Water seeping underground'
-      },
-      {
-        question: 'Which factor affects groundwater availability?',
-        options: ['Rainfall', 'Soil type', 'Topography', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the purpose of check dams?',
-        options: ['Generate electricity', 'Slow down water flow', 'Navigation', 'Fishing'],
-        correct: 'Slow down water flow'
-      },
-      {
-        question: 'Which region has more groundwater problems?',
-        options: ['High rainfall areas', 'Low rainfall areas', 'Coastal areas', 'Mountain areas'],
-        correct: 'Low rainfall areas'
-      },
-      {
-        question: 'What is water conservation?',
-        options: ['Using more water', 'Saving and protecting water', 'Polluting water', 'Wasting water'],
-        correct: 'Saving and protecting water'
-      },
-      {
-        question: 'Which method helps in artificial recharge?',
-        options: ['Recharge wells', 'Percolation tanks', 'Check dams', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What happens to water table in summer?',
-        options: ['Rises', 'Falls', 'Remains same', 'Disappears'],
-        correct: 'Falls'
-      },
-      {
-        question: 'Which is a sign of groundwater depletion?',
-        options: ['Wells going dry', 'More rainfall', 'River flooding', 'Sea level rise'],
-        correct: 'Wells going dry'
-      },
-      {
-        question: 'What is the role of vegetation in groundwater?',
-        options: ['Reduces recharge', 'Increases recharge', 'No effect', 'Pollutes water'],
-        correct: 'Increases recharge'
-      },
-      {
-        question: 'Which type of rock stores more groundwater?',
-        options: ['Hard rock', 'Porous rock', 'Volcanic rock', 'Metamorphic rock'],
-        correct: 'Porous rock'
-      },
-      {
-        question: 'What is water stress?',
-        options: ['Excess water', 'Water shortage', 'Clean water', 'Salt water'],
-        correct: 'Water shortage'
-      },
-      {
-        question: 'Which practice helps in water conservation?',
-        options: ['Drip irrigation', 'Flood irrigation', 'Excessive pumping', 'Water wastage'],
-        correct: 'Drip irrigation'
-      }
+      { question: 'What is production?', options: ['Creation of goods and services', 'Destruction of goods', 'Import of goods', 'Export of goods'], correct: 'Creation of goods and services' },
+      { question: 'What is employment?', options: ['Having a job', 'Being unemployed', 'Being a student', 'Being retired'], correct: 'Having a job' },
+      { question: 'Which sector is the largest employer in India?', options: ['Agriculture', 'Industry', 'Services', 'IT'], correct: 'Agriculture' },
+      { question: 'What is disguised unemployment?', options: ['More people employed than needed', 'No one employed', 'Everyone employed', 'None'], correct: 'More people employed than needed' },
+      { question: 'What is seasonal unemployment?', options: ['Unemployment during certain seasons', 'Unemployment all year', 'No unemployment', 'None'], correct: 'Unemployment during certain seasons' },
+      { question: 'What is the main source of income in rural areas?', options: ['Agriculture', 'Industry', 'Services', 'IT'], correct: 'Agriculture' },
+      { question: 'What is the main source of income in urban areas?', options: ['Services', 'Agriculture', 'Industry', 'IT'], correct: 'Services' },
+      { question: 'What is the meaning of GDP?', options: ['Gross Domestic Product', 'Gross Domestic Production', 'Gross Domestic Price', 'Gross Domestic Purchase'], correct: 'Gross Domestic Product' },
+      { question: 'Which sector contributes most to India\'s GDP?', options: ['Services', 'Agriculture', 'Industry', 'IT'], correct: 'Services' },
+      { question: 'What is the meaning of underemployment?', options: ['Working below capacity', 'Not working', 'Overworking', 'None'], correct: 'Working below capacity' },
+      { question: 'What is the meaning of self-employment?', options: ['Working for oneself', 'Working for others', 'Not working', 'None'], correct: 'Working for oneself' },
+      { question: 'What is the meaning of wage employment?', options: ['Working for wages', 'Working for oneself', 'Not working', 'None'], correct: 'Working for wages' },
+      { question: 'What is the meaning of formal sector?', options: ['Organized sector', 'Unorganized sector', 'Agriculture', 'None'], correct: 'Organized sector' },
+      { question: 'What is the meaning of informal sector?', options: ['Unorganized sector', 'Organized sector', 'Agriculture', 'None'], correct: 'Unorganized sector' },
+      { question: 'What is the meaning of labour force?', options: ['People able to work', 'Children', 'Elderly', 'None'], correct: 'People able to work' },
+      { question: 'What is the meaning of unemployment rate?', options: ['Percentage of unemployed', 'Percentage of employed', 'Total population', 'None'], correct: 'Percentage of unemployed' },
+      { question: 'What is the meaning of productivity?', options: ['Output per worker', 'Input per worker', 'Total output', 'None'], correct: 'Output per worker' },
+      { question: 'What is the meaning of capital?', options: ['Money and assets', 'Labour', 'Land', 'None'], correct: 'Money and assets' },
+      { question: 'What is the meaning of land?', options: ['Natural resources', 'Money', 'Labour', 'None'], correct: 'Natural resources' },
+      { question: 'What is the meaning of entrepreneur?', options: ['Business owner', 'Worker', 'Manager', 'None'], correct: 'Business owner' },
+      { question: 'What is the meaning of service sector?', options: ['Tertiary sector', 'Primary sector', 'Secondary sector', 'None'], correct: 'Tertiary sector' },
+      { question: 'What is the meaning of secondary sector?', options: ['Manufacturing', 'Agriculture', 'Services', 'None'], correct: 'Manufacturing' },
+      { question: 'What is the meaning of primary sector?', options: ['Agriculture', 'Manufacturing', 'Services', 'None'], correct: 'Agriculture' },
+      { question: 'What is the meaning of jobless growth?', options: ['Growth without employment', 'Growth with employment', 'No growth', 'None'], correct: 'Growth without employment' },
+      { question: 'What is the meaning of skill development?', options: ['Improving skills', 'Losing skills', 'No skills', 'None'], correct: 'Improving skills' }
     ]
   },
   {
     id: 4,
-    title: 'Tribals, Dikus and the Vision of a Golden Age',
-    description: 'Understanding the life of tribals and their struggles under British rule.',
+    title: 'Climate in Indian Context',
+    description: 'Understand the climate patterns and their impact on India.',
     questions: [
-      {
-        question: 'Who were the Dikus according to the tribals?',
-        options: ['British', 'Landlords', 'Moneylenders', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which tribal leader led the Munda Rebellion?',
-        options: ['Sidhu Murmu', 'Birsa Munda', 'Kanu Murmu', 'Tatya Tope'],
-        correct: 'Birsa Munda'
-      },
-      {
-        question: 'What was the main occupation of tribal people?',
-        options: ['Agriculture', 'Hunting and gathering', 'Trade', 'Crafts'],
-        correct: 'Hunting and gathering'
-      },
-      {
-        question: 'Which act affected tribal land rights?',
-        options: ['Indian Forest Act 1865', 'Land Revenue Act', 'Permanent Settlement', 'Ryotwari System'],
-        correct: 'Indian Forest Act 1865'
-      },
-      {
-        question: 'What is jhum cultivation?',
-        options: ['Intensive farming', 'Shifting cultivation', 'Terrace farming', 'Irrigation farming'],
-        correct: 'Shifting cultivation'
-      },
-      {
-        question: 'Which tribal leader led the Santhal rebellion?',
-        options: ['Birsa Munda', 'Sidhu and Kanhu', 'Tantya Tope', 'Rani Gaidinliu'],
-        correct: 'Sidhu and Kanhu'
-      },
-      {
-        question: 'When did the Santhal rebellion take place?',
-        options: ['1855-56', '1857-58', '1859-60', '1861-62'],
-        correct: '1855-56'
-      },
-      {
-        question: 'Who was Birsa Munda?',
-        options: ['Santhal leader', 'Munda tribal leader', 'Gond leader', 'Bhil leader'],
-        correct: 'Munda tribal leader'
-      },
-      {
-        question: 'What was the Ulgulan movement?',
-        options: ['Santhal rebellion', 'Munda rebellion', 'Gond rebellion', 'Bhil rebellion'],
-        correct: 'Munda rebellion'
-      },
-      {
-        question: 'Which region had the highest concentration of tribal population?',
-        options: ['Central India', 'North India', 'South India', 'East India'],
-        correct: 'Central India'
-      },
-      {
-        question: 'What was the impact of British forest laws on tribals?',
-        options: ['Improved their life', 'Restricted their access to forests', 'Gave them more land', 'No impact'],
-        correct: 'Restricted their access to forests'
-      },
-      {
-        question: 'Which tribal group is found in the Nilgiri Hills?',
-        options: ['Todas', 'Santhals', 'Gonds', 'Bhils'],
-        correct: 'Todas'
-      },
-      {
-        question: 'What was the traditional social organization of tribals?',
-        options: ['Caste system', 'Clan system', 'Class system', 'Feudal system'],
-        correct: 'Clan system'
-      },
-      {
-        question: 'Which tribal group was known for their skill in archery?',
-        options: ['Bhils', 'Gonds', 'Santhals', 'Mundas'],
-        correct: 'Bhils'
-      },
-      {
-        question: 'What was the impact of commercialization on tribal economy?',
-        options: ['Improved their income', 'Made them dependent on market', 'No change', 'Made them self-sufficient'],
-        correct: 'Made them dependent on market'
-      },
-      {
-        question: 'Which tribal group is found in Rajasthan?',
-        options: ['Bhils', 'Gonds', 'Santhals', 'Mundas'],
-        correct: 'Bhils'
-      },
-      {
-        question: 'What was the impact of railways on tribal areas?',
-        options: ['Improved connectivity', 'Brought outsiders', 'Affected traditional life', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which rebellion is associated with the Kol tribe?',
-        options: ['Kol rebellion 1831-32', 'Santhal rebellion', 'Munda rebellion', 'Bhil rebellion'],
-        correct: 'Kol rebellion 1831-32'
-      },
-      {
-        question: 'What was the role of missionaries among tribals?',
-        options: ['Only religious conversion', 'Education and healthcare', 'Land distribution', 'Political mobilization'],
-        correct: 'Education and healthcare'
-      },
-      {
-        question: 'Which tribal leader was known as Dharti Aba?',
-        options: ['Sidhu Murmu', 'Birsa Munda', 'Kanu Murmu', 'Jatra Bhagat'],
-        correct: 'Birsa Munda'
-      },
-      {
-        question: 'What was the impact of land revenue system on tribals?',
-        options: ['Benefited them', 'Made them landless', 'No impact', 'Improved their status'],
-        correct: 'Made them landless'
-      },
-      {
-        question: 'Which tribal rebellion occurred in Andhra Pradesh?',
-        options: ['Santhal rebellion', 'Munda rebellion', 'Rampa rebellion', 'Kol rebellion'],
-        correct: 'Rampa rebellion'
-      },
-      {
-        question: 'Who led the Rampa rebellion?',
-        options: ['Birsa Munda', 'Alluri Sitarama Raju', 'Gunda Dhur', 'Komaram Bheem'],
-        correct: 'Alluri Sitarama Raju'
-      },
-      {
-        question: 'What was the vision of golden age among tribals?',
-        options: ['Return to traditional life', 'Modern development', 'British rule', 'Urban life'],
-        correct: 'Return to traditional life'
-      },
-      {
-        question: 'Which act provided some protection to tribal interests?',
-        options: ['Government of India Act 1935', 'Indian Forest Act', 'Land Revenue Act', 'Criminal Tribes Act'],
-        correct: 'Government of India Act 1935'
-      }
+      { question: 'Which winds bring rainfall to most of India during summer?', options: ['Southwest monsoon', 'Northeast monsoon', 'Trade winds', 'Westerlies'], correct: 'Southwest monsoon' },
+      { question: 'Which state receives the highest annual rainfall?', options: ['Meghalaya', 'Rajasthan', 'Gujarat', 'Punjab'], correct: 'Meghalaya' },
+      { question: 'What is the main reason for monsoon in India?', options: ['Temperature difference between land and sea', 'Himalayan mountains', 'Ocean currents', 'Wind direction'], correct: 'Temperature difference between land and sea' },
+      { question: 'Which month does Southwest monsoon usually arrive in Kerala?', options: ['June', 'July', 'August', 'May'], correct: 'June' },
+      { question: 'What is the average annual rainfall in India?', options: ['118 cm', '98 cm', '138 cm', '158 cm'], correct: '118 cm' },
+      { question: 'Which region receives rainfall from Northeast monsoon?', options: ['Tamil Nadu coast', 'Kerala coast', 'Gujarat coast', 'Odisha coast'], correct: 'Tamil Nadu coast' },
+      { question: 'What causes Western Disturbances?', options: ['Mediterranean cyclones', 'Bay of Bengal cyclones', 'Arabian Sea cyclones', 'Pacific cyclones'], correct: 'Mediterranean cyclones' },
+      { question: 'Which city is known as the driest place in India?', options: ['Jaisalmer', 'Jodhpur', 'Bikaner', 'Barmer'], correct: 'Jaisalmer' },
+      { question: 'What type of climate does India have?', options: ['Monsoon type', 'Mediterranean', 'Tundra', 'Equatorial'], correct: 'Monsoon type' },
+      { question: 'Which factor does NOT influence Indian climate?', options: ['Antarctic winds', 'Latitude', 'Altitude', 'Ocean currents'], correct: 'Antarctic winds' },
+      { question: 'What is the average temperature range in the Thar Desert?', options: ['3°C to 50°C', '10°C to 40°C', '15°C to 35°C', '20°C to 30°C'], correct: '3°C to 50°C' },
+      { question: 'Which season brings hot and dry winds called loo?', options: ['Summer', 'Winter', 'Monsoon', 'Spring'], correct: 'Summer' },
+      { question: 'What is the duration of Southwest monsoon in India?', options: ['June to September', 'July to October', 'May to August', 'August to November'], correct: 'June to September' },
+      { question: 'Which place is known as the wettest place on Earth?', options: ['Mawsynram', 'Cherrapunji', 'Gangtok', 'Shillong'], correct: 'Mawsynram' },
+      { question: 'What causes rainfall in winters in North India?', options: ['Western Disturbances', 'Southwest monsoon', 'Northeast monsoon', 'Local winds'], correct: 'Western Disturbances' },
+      { question: 'Which state receives the least rainfall in India?', options: ['Rajasthan', 'Gujarat', 'Haryana', 'Punjab'], correct: 'Rajasthan' },
+      { question: 'What is the role of Himalayas in Indian climate?', options: ['Blocks cold winds from Central Asia', 'Causes rainfall', 'Reduces temperature', 'All of these'], correct: 'All of these' },
+      { question: 'Which month is usually the hottest in North India?', options: ['May', 'June', 'April', 'July'], correct: 'May' },
+      { question: 'What is the normal date of monsoon withdrawal from Northwest India?', options: ['September 1', 'October 1', 'August 1', 'November 1'], correct: 'September 1' },
+      { question: 'Which phenomenon causes break in monsoon?', options: ['Shifting of ITCZ', 'Western Disturbances', 'Jet Stream', 'El Nino'], correct: 'Shifting of ITCZ' },
+      { question: 'What is the main cause of winter rains in Tamil Nadu?', options: ['Northeast monsoon', 'Southwest monsoon', 'Western Disturbances', 'Local winds'], correct: 'Northeast monsoon' },
+      { question: 'Which season occurs between March and May in India?', options: ['Summer', 'Winter', 'Spring', 'Autumn'], correct: 'Summer' },
+      { question: 'What is the average winter temperature in the plains of North India?', options: ['10-15°C', '15-20°C', '20-25°C', '5-10°C'], correct: '10-15°C' },
+      { question: 'Which wind system affects the climate of North India in winter?', options: ['Westerlies', 'Easterlies', 'Trade winds', 'Monsoons'], correct: 'Westerlies' },
+      { question: 'What is the main reason for variation in temperature and rainfall in India?', options: ['Latitude', 'Longitude', 'Altitude', 'Ocean currents'], correct: 'Latitude' }
     ]
   },
   {
     id: 5,
-    title: 'When People Rebel: 1857 and After',
-    description: 'The events and consequences of the Revolt of 1857.',
+    title: 'Indian Rivers and Water Resources',
+    description: 'Study the major rivers and water resources of India.',
     questions: [
-      {
-        question: 'Who was the last Mughal emperor during the Revolt of 1857?',
-        options: ['Bahadur Shah Zafar', 'Akbar II', 'Shah Jahan', 'Aurangzeb'],
-        correct: 'Bahadur Shah Zafar'
-      },
-      {
-        question: 'Which queen led the revolt from Jhansi?',
-        options: ['Rani Durgavati', 'Rani Lakshmibai', 'Razia Sultan', 'Rani Padmini'],
-        correct: 'Rani Lakshmibai'
-      },
-      {
-        question: 'What was the immediate cause of the Revolt of 1857?',
-        options: ['Economic exploitation', 'Greased cartridges', 'Religious interference', 'Political annexations'],
-        correct: 'Greased cartridges'
-      },
-      {
-        question: 'Where did the Revolt of 1857 begin?',
-        options: ['Delhi', 'Meerut', 'Lucknow', 'Kanpur'],
-        correct: 'Meerut'
-      },
-      {
-        question: 'Who was the British officer killed at Barrackpore?',
-        options: ['General Dyer', 'Hugh Wheeler', 'Lieutenant Baugh', 'Colonel Neill'],
-        correct: 'Lieutenant Baugh'
-      },
-      {
-        question: 'Which sepoy refused to use the greased cartridge?',
-        options: ['Mangal Pandey', 'Tatya Tope', 'Nana Saheb', 'Kunwar Singh'],
-        correct: 'Mangal Pandey'
-      },
-      {
-        question: 'Who led the revolt in Kanpur?',
-        options: ['Rani Lakshmibai', 'Nana Saheb', 'Tatya Tope', 'Begum Hazrat Mahal'],
-        correct: 'Nana Saheb'
-      },
-      {
-        question: 'Who was the military commander of Nana Saheb?',
-        options: ['Tatya Tope', 'Azimullah Khan', 'Kunwar Singh', 'Firoz Shah'],
-        correct: 'Tatya Tope'
-      },
-      {
-        question: 'Who led the revolt in Lucknow?',
-        options: ['Begum Hazrat Mahal', 'Rani Lakshmibai', 'Nana Saheb', 'Tatya Tope'],
-        correct: 'Begum Hazrat Mahal'
-      },
-      {
-        question: 'Who was the aged leader of revolt in Bihar?',
-        options: ['Kunwar Singh', 'Nana Saheb', 'Tatya Tope', 'Firoz Shah'],
-        correct: 'Kunwar Singh'
-      },
-      {
-        question: 'What was the Doctrine of Lapse?',
-        options: ['Trade policy', 'Military strategy', 'Annexation policy', 'Educational reform'],
-        correct: 'Annexation policy'
-      },
-      {
-        question: 'Which Governor-General introduced the Doctrine of Lapse?',
-        options: ['Lord Wellesley', 'Lord Dalhousie', 'Lord Cornwallis', 'Warren Hastings'],
-        correct: 'Lord Dalhousie'
-      },
-      {
-        question: 'Which kingdom was annexed first under Doctrine of Lapse?',
-        options: ['Satara', 'Jhansi', 'Nagpur', 'Awadh'],
-        correct: 'Satara'
-      },
-      {
-        question: 'Why was Awadh annexed?',
-        options: ['Doctrine of Lapse', 'Misgovernment', 'No heir', 'Economic reasons'],
-        correct: 'Misgovernment'
-      },
-      {
-        question: 'What happened to the sepoys after 1857?',
-        options: ['All were executed', 'Some were punished, others recruited', 'All were forgiven', 'All were dismissed'],
-        correct: 'Some were punished, others recruited'
-      },
-      {
-        question: 'What was the result of the Revolt of 1857?',
-        options: ['Company rule ended', 'Crown rule began', 'Government of India Act 1858', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Who became the first Viceroy of India?',
-        options: ['Lord Canning', 'Lord Mayo', 'Lord Ripon', 'Lord Curzon'],
-        correct: 'Lord Canning'
-      },
-      {
-        question: 'What was the Queens Proclamation of 1858?',
-        options: ['Declaration of war', 'Promise of reforms', 'End of Company rule', 'Religious freedom'],
-        correct: 'Promise of reforms'
-      },
-      {
-        question: 'Which policy was adopted towards Indian princes after 1857?',
-        options: ['Annexation', 'Subsidiary Alliance', 'Non-interference', 'Direct rule'],
-        correct: 'Non-interference'
-      },
-      {
-        question: 'What was the impact of 1857 revolt on Indian society?',
-        options: ['United Hindus and Muslims', 'Created communal divide', 'No impact', 'Only political impact'],
-        correct: 'United Hindus and Muslims'
-      },
-      {
-        question: 'Which army was reorganized after 1857?',
-        options: ['British army', 'Indian army', 'Both armies', 'No reorganization'],
-        correct: 'Indian army'
-      },
-      {
-        question: 'What was the ratio of British to Indian soldiers after 1857?',
-        options: ['1:2', '1:3', '2:1', '1:1'],
-        correct: '1:2'
-      },
-      {
-        question: 'Which regions remained largely unaffected by the revolt?',
-        options: ['Punjab and Bengal', 'Madras and Bombay', 'South India', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What was the nature of the Revolt of 1857?',
-        options: ['Only sepoy mutiny', 'Popular uprising', 'Religious war', 'Caste conflict'],
-        correct: 'Popular uprising'
-      },
-      {
-        question: 'Who called the Revolt of 1857 the First War of Independence?',
-        options: ['Nehru', 'V.D. Savarkar', 'Gandhi', 'Tilak'],
-        correct: 'V.D. Savarkar'
-      }
+      { question: 'Which is the longest river in India?', options: ['Ganga', 'Godavari', 'Brahmaputra', 'Yamuna'], correct: 'Ganga' },
+      { question: 'Which river is known as the Sorrow of Bihar?', options: ['Kosi', 'Ganga', 'Yamuna', 'Son'], correct: 'Kosi' },
+      { question: 'Which river originates from Amarkantak?', options: ['Narmada', 'Godavari', 'Krishna', 'Mahanadi'], correct: 'Narmada' },
+      { question: 'Which is the largest peninsular river?', options: ['Godavari', 'Krishna', 'Cauvery', 'Mahanadi'], correct: 'Godavari' },
+      { question: 'Where does the Brahmaputra originate?', options: ['Mansarovar Lake', 'Gangotri', 'Yamdrok Lake', 'Chemayungdung'], correct: 'Chemayungdung' },
+      { question: 'Which river is called Tsangpo in Tibet?', options: ['Brahmaputra', 'Indus', 'Sutlej', 'Ganga'], correct: 'Brahmaputra' },
+      { question: 'Which river forms the largest delta in the world?', options: ['Ganga-Brahmaputra', 'Godavari', 'Krishna', 'Mahanadi'], correct: 'Ganga-Brahmaputra' },
+      { question: 'What is the length of the Ganga river?', options: ['2525 km', '2900 km', '3200 km', '2100 km'], correct: '2525 km' },
+      { question: 'Which river is known as Dakshin Ganga?', options: ['Godavari', 'Krishna', 'Cauvery', 'Narmada'], correct: 'Godavari' },
+      { question: 'Which river flows through a rift valley?', options: ['Narmada', 'Godavari', 'Krishna', 'Cauvery'], correct: 'Narmada' },
+      { question: 'What is the main cause of river pollution in India?', options: ['Industrial waste', 'Agricultural runoff', 'Domestic sewage', 'Religious practices'], correct: 'Industrial waste' },
+      { question: 'Which river system has the largest basin in India?', options: ['Ganga', 'Brahmaputra', 'Indus', 'Godavari'], correct: 'Ganga' },
+      { question: 'What percentage of India\u0027s population lives in the Ganga basin?', options: ['40%', '30%', '50%', '60%'], correct: '40%' },
+      { question: 'Which river is called Vridha Ganga?', options: ['Godavari', 'Krishna', 'Cauvery', 'Narmada'], correct: 'Godavari' },
+      { question: 'What is the main source of irrigation in India?', options: ['Canals', 'Wells', 'Tanks', 'Tube wells'], correct: 'Canals' },
+      { question: 'Which state has the largest number of rivers?', options: ['Kerala', 'Karnataka', 'Maharashtra', 'Madhya Pradesh'], correct: 'Kerala' },
+      { question: 'What is the main cause of water scarcity in India?', options: ['Population growth', 'Climate change', 'Industrial use', 'Agricultural use'], correct: 'Population growth' },
+      { question: 'Which river forms Bhakra Nangal Dam?', options: ['Sutlej', 'Beas', 'Ravi', 'Chenab'], correct: 'Sutlej' },
+      { question: 'What is the main source of water pollution in the Ganga?', options: ['Industrial waste', 'Agricultural runoff', 'Domestic sewage', 'Religious practices'], correct: 'Industrial waste' },
+      { question: 'Which river is called the River of Sorrow in West Bengal?', options: ['Damodar', 'Hooghly', 'Teesta', 'Mahananda'], correct: 'Damodar' },
+      { question: 'What is the main purpose of the National River Conservation Plan?', options: ['Reduce pollution', 'Increase irrigation', 'Generate power', 'Control floods'], correct: 'Reduce pollution' },
+      { question: 'Which river forms the border between India and Bangladesh?', options: ['Teesta', 'Brahmaputra', 'Ganga', 'Meghna'], correct: 'Teesta' },
+      { question: 'What is the main source of drinking water in rural India?', options: ['Groundwater', 'Rivers', 'Lakes', 'Rainwater'], correct: 'Groundwater' },
+      { question: 'Which river is known as the Sorrow of Bengal?', options: ['Damodar', 'Hooghly', 'Teesta', 'Mahananda'], correct: 'Damodar' },
+      { question: 'What percentage of India\u0027s water resources are used for agriculture?', options: ['80%', '70%', '60%', '90%'], correct: '80%' }
     ]
   },
   {
     id: 6,
-    title: 'The Indian Constitution',
-    description: 'The foundation of Indias democracy and its guiding principles.',
+    title: 'The Population',
+    description: 'Examine the population trends and demographics of India.',
     questions: [
-      {
-        question: 'When did the Indian Constitution come into effect?',
-        options: ['15th August 1947', '26th January 1950', '2nd October 1948', '26th November 1949'],
-        correct: '26th January 1950'
-      },
-      {
-        question: 'Who is known as the Father of the Indian Constitution?',
-        options: ['Mahatma Gandhi', 'B.R. Ambedkar', 'Jawaharlal Nehru', 'Sardar Patel'],
-        correct: 'B.R. Ambedkar'
-      },
-      {
-        question: 'When was the Constituent Assembly formed?',
-        options: ['1946', '1947', '1948', '1949'],
-        correct: '1946'
-      },
-      {
-        question: 'Who was the Chairman of the Drafting Committee?',
-        options: ['Jawaharlal Nehru', 'B.R. Ambedkar', 'Rajendra Prasad', 'Sardar Patel'],
-        correct: 'B.R. Ambedkar'
-      },
-      {
-        question: 'How many parts are there in the Indian Constitution?',
-        options: ['20', '22', '24', '26'],
-        correct: '22'
-      },
-      {
-        question: 'How many articles were there originally in the Constitution?',
-        options: ['395', '396', '397', '398'],
-        correct: '395'
-      },
-      {
-        question: 'What type of government does India have?',
-        options: ['Federal', 'Unitary', 'Parliamentary', 'Presidential'],
-        correct: 'Parliamentary'
-      },
-      {
-        question: 'Which part of the Constitution deals with Fundamental Rights?',
-        options: ['Part II', 'Part III', 'Part IV', 'Part V'],
-        correct: 'Part III'
-      },
-      {
-        question: 'How many Fundamental Rights are there?',
-        options: ['6', '7', '8', '9'],
-        correct: '6'
-      },
-      {
-        question: 'Which right was removed by the 44th Amendment?',
-        options: ['Right to Education', 'Right to Property', 'Right to Privacy', 'Right to Work'],
-        correct: 'Right to Property'
-      },
-      {
-        question: 'What are Directive Principles of State Policy?',
-        options: ['Enforceable rights', 'Guidelines for government', 'Fundamental duties', 'Constitutional amendments'],
-        correct: 'Guidelines for government'
-      },
-      {
-        question: 'Which part contains Directive Principles?',
-        options: ['Part III', 'Part IV', 'Part V', 'Part VI'],
-        correct: 'Part IV'
-      },
-      {
-        question: 'Who was the first President of the Constituent Assembly?',
-        options: ['Dr. Rajendra Prasad', 'Dr. Sachchidananda Sinha', 'Jawaharlal Nehru', 'B.R. Ambedkar'],
-        correct: 'Dr. Sachchidananda Sinha'
-      },
-      {
-        question: 'How long did it take to frame the Constitution?',
-        options: ['2 years 11 months 18 days', '3 years', '2 years', '4 years'],
-        correct: '2 years 11 months 18 days'
-      },
-      {
-        question: 'What is the Preamble?',
-        options: ['Introduction to Constitution', 'First article', 'Last part', 'Amendment procedure'],
-        correct: 'Introduction to Constitution'
-      },
-      {
-        question: 'Which word was added to the Preamble by 42nd Amendment?',
-        options: ['Socialist', 'Secular', 'Integrity', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the source of authority in Indian Constitution?',
-        options: ['Parliament', 'President', 'We the People', 'Supreme Court'],
-        correct: 'We the People'
-      },
-      {
-        question: 'Which principle is borrowed from the British Constitution?',
-        options: ['Federal system', 'Parliamentary government', 'Judicial review', 'Written constitution'],
-        correct: 'Parliamentary government'
-      },
-      {
-        question: 'From which country did we borrow the concept of Directive Principles?',
-        options: ['USA', 'UK', 'Ireland', 'Canada'],
-        correct: 'Ireland'
-      },
-      {
-        question: 'What is the minimum age for President of India?',
-        options: ['25 years', '30 years', '35 years', '40 years'],
-        correct: '35 years'
-      },
-      {
-        question: 'Who elects the President of India?',
-        options: ['People directly', 'Parliament', 'Electoral College', 'State Assemblies'],
-        correct: 'Electoral College'
-      },
-      {
-        question: 'What is the term of office of the President?',
-        options: ['4 years', '5 years', '6 years', '7 years'],
-        correct: '5 years'
-      },
-      {
-        question: 'Who is the constitutional head of the state?',
-        options: ['Prime Minister', 'President', 'Chief Justice', 'Speaker'],
-        correct: 'President'
-      },
-      {
-        question: 'What makes the Indian Constitution unique?',
-        options: ['Longest written constitution', 'Borrowed features', 'Detailed provisions', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which amendment is known as Mini Constitution?',
-        options: ['42nd Amendment', '44th Amendment', '73rd Amendment', '74th Amendment'],
-        correct: '42nd Amendment'
-      }
+      { question: 'Which state is the most populous in India?', options: ['Uttar Pradesh', 'Maharashtra', 'Bihar', 'West Bengal'], correct: 'Uttar Pradesh' },
+      { question: 'What is the main reason for population growth in India?', options: ['High birth rate', 'High death rate', 'Migration', 'Low birth rate'], correct: 'High birth rate' },
+      { question: 'What is India\u0027s population density?', options: ['382 per sq km', '452 per sq km', '520 per sq km', '324 per sq km'], correct: '382 per sq km' },
+      { question: 'Which state has the highest literacy rate?', options: ['Kerala', 'Tamil Nadu', 'Maharashtra', 'Gujarat'], correct: 'Kerala' },
+      { question: 'What is the sex ratio of India?', options: ['940 females per 1000 males', '920 females per 1000 males', '960 females per 1000 males', '900 females per 1000 males'], correct: '940 females per 1000 males' },
+      { question: 'Which state has the lowest population density?', options: ['Arunachal Pradesh', 'Sikkim', 'Mizoram', 'Nagaland'], correct: 'Arunachal Pradesh' },
+      { question: 'What is the current population growth rate of India?', options: ['1.1%', '1.5%', '2.0%', '0.8%'], correct: '1.1%' },
+      { question: 'Which age group forms the largest segment of India\u0027s population?', options: ['15-64 years', '0-14 years', '65+ years', '25-35 years'], correct: '15-64 years' },
+      { question: 'What percentage of India\u0027s population lives in rural areas?', options: ['65%', '55%', '75%', '45%'], correct: '65%' },
+      { question: 'Which state has the highest population density?', options: ['Bihar', 'West Bengal', 'Kerala', 'Uttar Pradesh'], correct: 'Bihar' },
+      { question: 'What is the median age of India\u0027s population?', options: ['28 years', '32 years', '25 years', '35 years'], correct: '28 years' },
+      { question: 'Which year did India\u0027s population cross 1 billion?', options: ['2000', '1995', '2005', '1990'], correct: '2000' },
+      { question: 'What is the infant mortality rate in India?', options: ['30 per 1000', '40 per 1000', '20 per 1000', '50 per 1000'], correct: '30 per 1000' },
+      { question: 'Which state has the highest sex ratio?', options: ['Kerala', 'Punjab', 'Haryana', 'Gujarat'], correct: 'Kerala' },
+      { question: 'What is the life expectancy in India?', options: ['69 years', '65 years', '72 years', '75 years'], correct: '69 years' },
+      { question: 'Which state has the lowest literacy rate?', options: ['Bihar', 'Uttar Pradesh', 'Rajasthan', 'Madhya Pradesh'], correct: 'Bihar' },
+      { question: 'What percentage of India\u0027s population is below poverty line?', options: ['22%', '30%', '15%', '35%'], correct: '22%' },
+      { question: 'Which city has the highest population in India?', options: ['Mumbai', 'Delhi', 'Kolkata', 'Chennai'], correct: 'Mumbai' },
+      { question: 'What is the working age population percentage in India?', options: ['65%', '55%', '75%', '45%'], correct: '65%' },
+      { question: 'Which state has the highest urban population?', options: ['Maharashtra', 'Tamil Nadu', 'Gujarat', 'Karnataka'], correct: 'Maharashtra' },
+      { question: 'What is the population growth rate in urban areas?', options: ['2.3%', '1.8%', '3.0%', '1.5%'], correct: '2.3%' },
+      { question: 'Which state has the lowest sex ratio?', options: ['Haryana', 'Punjab', 'Gujarat', 'Rajasthan'], correct: 'Haryana' },
+      { question: 'What is the literacy rate in India?', options: ['74%', '82%', '68%', '78%'], correct: '74%' },
+      { question: 'Which state has the highest child sex ratio?', options: ['Mizoram', 'Kerala', 'Meghalaya', 'Tripura'], correct: 'Mizoram' },
+      { question: 'What is the population density of Delhi?', options: ['11,297 per sq km', '9,340 per sq km', '7,845 per sq km', '13,125 per sq km'], correct: '11,297 per sq km' }
     ]
   },
   {
     id: 7,
-    title: 'Understanding Secularism',
-    description: 'The concept of secularism and its importance in India.',
+    title: 'Settlement and Migration',
+    description: 'Learn about settlement patterns and migration in India.',
     questions: [
-      {
-        question: 'What does secularism mean?',
-        options: ['State supports one religion', 'State treats all religions equally', 'Religious rule over the state', 'No religion is allowed'],
-        correct: 'State treats all religions equally'
-      },
-      {
-        question: 'Which article of the Indian Constitution deals with secularism?',
-        options: ['Article 14', 'Article 15', 'Article 25', 'Article 30'],
-        correct: 'Article 25'
-      },
-      {
-        question: 'When was the word secular added to the Constitution?',
-        options: ['1950', '1976', '1991', '2002'],
-        correct: '1976'
-      },
-      {
-        question: 'Which amendment added secular to the Preamble?',
-        options: ['42nd Amendment', '44th Amendment', '52nd Amendment', '61st Amendment'],
-        correct: '42nd Amendment'
-      },
-      {
-        question: 'What is the Indian model of secularism?',
-        options: ['Complete separation', 'Principled distance', 'State religion', 'No interference'],
-        correct: 'Principled distance'
-      },
-      {
-        question: 'Which right guarantees freedom of religion?',
-        options: ['Article 25', 'Article 26', 'Article 27', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What does Article 27 prohibit?',
-        options: ['Religious practice', 'Religious education', 'Compulsory payment for promotion of religion', 'Religious freedom'],
-        correct: 'Compulsory payment for promotion of religion'
-      },
-      {
-        question: 'Which country follows strict separation model?',
-        options: ['India', 'France', 'UK', 'Germany'],
-        correct: 'France'
-      },
-      {
-        question: 'What is the main challenge to secularism in India?',
-        options: ['Religious diversity', 'Communalism', 'Poverty', 'Illiteracy'],
-        correct: 'Communalism'
-      },
-      {
-        question: 'Which institution protects secular values?',
-        options: ['Parliament', 'Executive', 'Judiciary', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is communalism?',
-        options: ['Religious harmony', 'Religious extremism', 'Secular values', 'Religious freedom'],
-        correct: 'Religious extremism'
-      },
-      {
-        question: 'Which article deals with cultural and educational rights?',
-        options: ['Article 29', 'Article 30', 'Both A and B', 'Article 25'],
-        correct: 'Both A and B'
-      },
-      {
-        question: 'What does uniform civil code mean?',
-        options: ['Same laws for all religions', 'Different laws for different religions', 'No laws', 'Religious laws only'],
-        correct: 'Same laws for all religions'
-      },
-      {
-        question: 'Which directive principle talks about uniform civil code?',
-        options: ['Article 44', 'Article 45', 'Article 46', 'Article 47'],
-        correct: 'Article 44'
-      },
-      {
-        question: 'What is the role of state in Indian secularism?',
-        options: ['Promote one religion', 'Maintain equal distance from all religions', 'Oppose all religions', 'Ignore religions'],
-        correct: 'Maintain equal distance from all religions'
-      },
-      {
-        question: 'Which fundamental right is most related to secularism?',
-        options: ['Right to equality', 'Right to freedom of religion', 'Right to life', 'Right to education'],
-        correct: 'Right to freedom of religion'
-      },
-      {
-        question: 'What is the significance of secularism in democracy?',
-        options: ['Protects minority rights', 'Ensures religious freedom', 'Promotes tolerance', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which country has state religion?',
-        options: ['India', 'Pakistan', 'France', 'USA'],
-        correct: 'Pakistan'
-      },
-      {
-        question: 'What is the wall of separation?',
-        options: ['Physical wall', 'Separation of religion and state', 'Border wall', 'Cultural barrier'],
-        correct: 'Separation of religion and state'
-      },
-      {
-        question: 'Which case is related to secularism?',
-        options: ['Kesavananda Bharati case', 'S.R. Bommai case', 'Maneka Gandhi case', 'Vishaka case'],
-        correct: 'S.R. Bommai case'
-      },
-      {
-        question: 'What is religious neutrality?',
-        options: ['Opposing all religions', 'Supporting all religions equally', 'Not interfering in religious matters', 'Promoting atheism'],
-        correct: 'Not interfering in religious matters'
-      },
-      {
-        question: 'Which institution can dismiss a government for violating secularism?',
-        options: ['President', 'Supreme Court', 'Parliament', 'Election Commission'],
-        correct: 'Supreme Court'
-      },
-      {
-        question: 'What is the relationship between secularism and democracy?',
-        options: ['They are opposite', 'They complement each other', 'No relationship', 'They conflict'],
-        correct: 'They complement each other'
-      },
-      {
-        question: 'Which value is essential for secularism?',
-        options: ['Tolerance', 'Respect for diversity', 'Equal treatment', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What threatens secularism in India?',
-        options: ['Religious fundamentalism', 'Political manipulation of religion', 'Communal violence', 'All of the above'],
-        correct: 'All of the above'
-      }
+      { question: 'What is migration?', options: ['Movement of people from one place to another', 'Staying in one place', 'Birth rate', 'Death rate'], correct: 'Movement of people from one place to another' },
+      { question: 'Which type of migration is most common in India?', options: ['Rural to urban', 'Urban to rural', 'International', 'Seasonal'], correct: 'Rural to urban' },
+      { question: 'What is the main reason for rural to urban migration?', options: ['Employment opportunities', 'Education', 'Healthcare', 'Better lifestyle'], correct: 'Employment opportunities' },
+      { question: 'What is urbanization?', options: ['Growth of urban areas', 'Growth of rural areas', 'Population decline', 'Migration'], correct: 'Growth of urban areas' },
+      { question: 'Which state has the highest rate of out-migration?', options: ['Uttar Pradesh', 'Bihar', 'Rajasthan', 'Madhya Pradesh'], correct: 'Uttar Pradesh' },
+      { question: 'What is the main cause of seasonal migration?', options: ['Agriculture work', 'Industrial work', 'Construction work', 'Service sector'], correct: 'Agriculture work' },
+      { question: 'Which city receives the highest number of migrants?', options: ['Mumbai', 'Delhi', 'Bangalore', 'Chennai'], correct: 'Mumbai' },
+      { question: 'What percentage of India\u0027s population are internal migrants?', options: ['30%', '20%', '40%', '50%'], correct: '30%' },
+      { question: 'What is the main push factor for migration?', options: ['Unemployment', 'Education', 'Marriage', 'Natural disasters'], correct: 'Unemployment' },
+      { question: 'What is the main pull factor for migration?', options: ['Better job opportunities', 'Better education', 'Better healthcare', 'Better lifestyle'], correct: 'Better job opportunities' },
+      { question: 'Which age group migrates the most?', options: ['15-30 years', '31-45 years', '46-60 years', 'Above 60 years'], correct: '15-30 years' },
+      { question: 'What type of settlement is most common in India?', options: ['Rural', 'Urban', 'Semi-urban', 'Metropolitan'], correct: 'Rural' },
+      { question: 'What is the definition of a metropolitan city?', options: ['Population above 1 million', 'Population above 5 million', 'Population above 10 million', 'Population above 500,000'], correct: 'Population above 1 million' },
+      { question: 'Which state has the highest urbanization rate?', options: ['Tamil Nadu', 'Maharashtra', 'Gujarat', 'Karnataka'], correct: 'Tamil Nadu' },
+      { question: 'What is the main problem faced by migrants in cities?', options: ['Housing shortage', 'Unemployment', 'Cultural adjustment', 'Language barrier'], correct: 'Housing shortage' },
+      { question: 'What is the impact of migration on rural areas?', options: ['Labor shortage', 'Population growth', 'Economic growth', 'Better infrastructure'], correct: 'Labor shortage' },
+      { question: 'What is chain migration?', options: ['Migration following relatives', 'Forced migration', 'Seasonal migration', 'International migration'], correct: 'Migration following relatives' },
+      { question: 'Which sector employs most rural migrants?', options: ['Construction', 'Manufacturing', 'Services', 'Agriculture'], correct: 'Construction' },
+      { question: 'What is the gender ratio in migration?', options: ['More females than males', 'More males than females', 'Equal ratio', 'Varies by region'], correct: 'More females than males' },
+      { question: 'What is step migration?', options: ['Gradual movement to larger cities', 'Direct movement to cities', 'International migration', 'Seasonal migration'], correct: 'Gradual movement to larger cities' },
+      { question: 'Which region has the highest rural-urban migration?', options: ['Northern Plains', 'Southern Peninsula', 'Western Region', 'Eastern Region'], correct: 'Northern Plains' },
+      { question: 'What is the main reason for female migration?', options: ['Marriage', 'Employment', 'Education', 'Family movement'], correct: 'Marriage' },
+      { question: 'What is counter-urbanization?', options: ['Movement from urban to rural areas', 'Movement from rural to urban areas', 'International migration', 'No migration'], correct: 'Movement from urban to rural areas' },
+      { question: 'Which type of settlement has the highest growth rate?', options: ['Census towns', 'Metropolitan cities', 'Small towns', 'Villages'], correct: 'Census towns' },
+      { question: 'What is the main characteristic of urban settlements?', options: ['Non-agricultural activities', 'Agricultural activities', 'Mixed activities', 'No economic activities'], correct: 'Non-agricultural activities' }
     ]
   },
   {
     id: 8,
-    title: 'Parliament and the Making of Laws',
-    description: 'Understanding how laws are made in Indias democracy.',
+    title: 'Rampur: Village Economy',
+    description: 'A case study of the rural economy in Rampur village.',
     questions: [
-      {
-        question: 'Which house is known as the Upper House of Parliament?',
-        options: ['Lok Sabha', 'Rajya Sabha', 'Vidhan Sabha', 'Gram Sabha'],
-        correct: 'Rajya Sabha'
-      },
-      {
-        question: 'Who has the power to pass a bill in Parliament?',
-        options: ['President', 'Prime Minister', 'Both houses of Parliament', 'Supreme Court'],
-        correct: 'Both houses of Parliament'
-      },
-      {
-        question: 'What is the maximum strength of Lok Sabha?',
-        options: ['545', '550', '552', '555'],
-        correct: '552'
-      },
-      {
-        question: 'What is the maximum strength of Rajya Sabha?',
-        options: ['245', '250', '255', '260'],
-        correct: '250'
-      },
-      {
-        question: 'Who is the presiding officer of Lok Sabha?',
-        options: ['President', 'Vice President', 'Speaker', 'Prime Minister'],
-        correct: 'Speaker'
-      },
-      {
-        question: 'Who is the presiding officer of Rajya Sabha?',
-        options: ['President', 'Vice President', 'Speaker', 'Deputy Speaker'],
-        correct: 'Vice President'
-      },
-      {
-        question: 'What is the term of Lok Sabha?',
-        options: ['4 years', '5 years', '6 years', '7 years'],
-        correct: '5 years'
-      },
-      {
-        question: 'What is the term of Rajya Sabha members?',
-        options: ['4 years', '5 years', '6 years', '7 years'],
-        correct: '6 years'
-      },
-      {
-        question: 'How are Rajya Sabha members elected?',
-        options: ['Direct election', 'Indirect election by state assemblies', 'Nominated by President', 'Both B and C'],
-        correct: 'Both B and C'
-      },
-      {
-        question: 'How many members can President nominate to Rajya Sabha?',
-        options: ['10', '12', '14', '15'],
-        correct: '12'
-      },
-      {
-        question: 'What is a bill?',
-        options: ['A law', 'A proposed law', 'A rule', 'A regulation'],
-        correct: 'A proposed law'
-      },
-      {
-        question: 'Which type of bill can only be introduced in Lok Sabha?',
-        options: ['Ordinary bill', 'Money bill', 'Constitutional amendment bill', 'Private bill'],
-        correct: 'Money bill'
-      },
-      {
-        question: 'Who decides whether a bill is a money bill?',
-        options: ['President', 'Prime Minister', 'Speaker of Lok Sabha', 'Chief Justice'],
-        correct: 'Speaker of Lok Sabha'
-      },
-      {
-        question: 'How many readings does a bill have in each house?',
-        options: ['2', '3', '4', '5'],
-        correct: '3'
-      },
-      {
-        question: 'What happens if Rajya Sabha rejects a money bill?',
-        options: ['Bill is rejected', 'Bill goes to joint session', 'Bill is sent back to Lok Sabha', 'Bill becomes law'],
-        correct: 'Bill becomes law'
-      },
-      {
-        question: 'Who gives assent to bills to make them laws?',
-        options: ['Prime Minister', 'President', 'Speaker', 'Chief Justice'],
-        correct: 'President'
-      },
-      {
-        question: 'What is a joint session of Parliament?',
-        options: ['Regular meeting', 'Meeting to resolve deadlock', 'Budget session', 'Question hour'],
-        correct: 'Meeting to resolve deadlock'
-      },
-      {
-        question: 'Who presides over joint session of Parliament?',
-        options: ['President', 'Vice President', 'Speaker of Lok Sabha', 'Prime Minister'],
-        correct: 'Speaker of Lok Sabha'
-      },
-      {
-        question: 'What is question hour?',
-        options: ['Time for asking questions to ministers', 'Time for voting', 'Time for debate', 'Time for adjournment'],
-        correct: 'Time for asking questions to ministers'
-      },
-      {
-        question: 'What is zero hour?',
-        options: ['12 noon', 'Time for urgent matters', 'Start of session', 'End of session'],
-        correct: 'Time for urgent matters'
-      },
-      {
-        question: 'What is a quorum?',
-        options: ['Maximum members', 'Minimum members required for meeting', 'Total members', 'Elected members'],
-        correct: 'Minimum members required for meeting'
-      },
-      {
-        question: 'What is the quorum for Lok Sabha?',
-        options: ['1/5th of total strength', '1/10th of total strength', '1/4th of total strength', '1/3rd of total strength'],
-        correct: '1/10th of total strength'
-      },
-      {
-        question: 'What are parliamentary committees?',
-        options: ['Groups of MPs for detailed study', 'Political parties', 'Government departments', 'Court committees'],
-        correct: 'Groups of MPs for detailed study'
-      },
-      {
-        question: 'Which is the most important function of Parliament?',
-        options: ['Making laws', 'Controlling executive', 'Financial control', 'All equally important'],
-        correct: 'All equally important'
-      },
-      {
-        question: 'What is the role of opposition in Parliament?',
-        options: ['Support government', 'Question and criticize government', 'Make laws', 'Implement policies'],
-        correct: 'Question and criticize government'
-      }
+      { question: 'What is the main occupation in Rampur village?', options: ['Agriculture', 'Industry', 'Services', 'Trade'], correct: 'Agriculture' },
+      { question: 'What type of farming is practiced in Rampur?', options: ['Multiple cropping', 'Single cropping', 'Shifting cultivation', 'Plantation farming'], correct: 'Multiple cropping' },
+      { question: 'What is the main source of irrigation in Rampur?', options: ['Tube wells', 'Canal', 'Rain', 'River'], correct: 'Tube wells' },
+      { question: 'What is the main Rabi crop in Rampur?', options: ['Wheat', 'Rice', 'Maize', 'Barley'], correct: 'Wheat' },
+      { question: 'What is the main Kharif crop in Rampur?', options: ['Rice', 'Wheat', 'Pulses', 'Vegetables'], correct: 'Rice' },
+      { question: 'What percentage of farmers in Rampur are small farmers?', options: ['75%', '50%', '25%', '100%'], correct: '75%' },
+      { question: 'What is the main source of credit in Rampur?', options: ['Moneylenders', 'Banks', 'Cooperatives', 'Government'], correct: 'Moneylenders' },
+      { question: 'What is the main non-farm activity in Rampur?', options: ['Small manufacturing', 'Trade', 'Transport', 'Construction'], correct: 'Small manufacturing' },
+      { question: 'What is the land ownership pattern in Rampur?', options: ['Unequal distribution', 'Equal distribution', 'Government owned', 'Communal ownership'], correct: 'Unequal distribution' },
+      { question: 'What is the main problem faced by farmers in Rampur?', options: ['Lack of capital', 'Poor soil', 'Water scarcity', 'Labor shortage'], correct: 'Lack of capital' },
+      { question: 'What is the role of women in Rampur\u0027s economy?', options: ['Agricultural labor', 'Household work only', 'No role', 'Business owners'], correct: 'Agricultural labor' },
+      { question: 'What is the status of education in Rampur?', options: ['Primary school only', 'No school', 'College', 'University'], correct: 'Primary school only' },
+      { question: 'What is the main mode of transport in Rampur?', options: ['Bullock cart', 'Tractor', 'Bus', 'Train'], correct: 'Bullock cart' },
+      { question: 'What is the main market for Rampur\u0027s produce?', options: ['Local mandi', 'City market', 'Export market', 'Village market'], correct: 'Local mandi' },
+      { question: 'What is the status of electricity in Rampur?', options: ['Irregular supply', 'Regular supply', 'No supply', '24-hour supply'], correct: 'Irregular supply' },
+      { question: 'What is the main source of employment in Rampur?', options: ['Agriculture', 'Industry', 'Services', 'Government jobs'], correct: 'Agriculture' },
+      { question: 'What is the status of healthcare in Rampur?', options: ['Primary health center', 'No facility', 'Hospital', 'Multiple clinics'], correct: 'Primary health center' },
+      { question: 'What is the main source of fuel in Rampur?', options: ['Firewood', 'LPG', 'Electricity', 'Solar energy'], correct: 'Firewood' },
+      { question: 'What is the status of landless laborers in Rampur?', options: ['Poor conditions', 'Good conditions', 'No laborers', 'Rich laborers'], correct: 'Poor conditions' },
+      { question: 'What is the role of Panchayat in Rampur?', options: ['Local governance', 'No role', 'Business control', 'Education control'], correct: 'Local governance' },
+      { question: 'What is the status of modern farming equipment in Rampur?', options: ['Limited use', 'Widespread use', 'No use', 'Complete mechanization'], correct: 'Limited use' },
+      { question: 'What is the main source of drinking water in Rampur?', options: ['Hand pump', 'Tap water', 'River', 'Rainwater'], correct: 'Hand pump' },
+      { question: 'What is the status of rural industries in Rampur?', options: ['Small scale', 'Large scale', 'No industry', 'Heavy industry'], correct: 'Small scale' },
+      { question: 'What is the main environmental issue in Rampur?', options: ['Groundwater depletion', 'Air pollution', 'Soil erosion', 'Deforestation'], correct: 'Groundwater depletion' },
+      { question: 'What is the status of savings among Rampur residents?', options: ['Low savings', 'High savings', 'No savings', 'Regular savings'], correct: 'Low savings' }
     ]
   },
   {
     id: 9,
-    title: 'Judiciary',
-    description: 'The role and structure of the judicial system in India.',
+    title: 'Globalisation',
+    description: 'Understanding international trade and its impact on the Indian economy.',
     questions: [
-      {
-        question: 'Which is the highest court of justice in India?',
-        options: ['High Court', 'District Court', 'Supreme Court', 'Session Court'],
-        correct: 'Supreme Court'
-      },
-      {
-        question: 'Who appoints the Chief Justice of India?',
-        options: ['Prime Minister', 'Parliament', 'President', 'Governor'],
-        correct: 'President'
-      },
-      {
-        question: 'What is the retirement age of Supreme Court judges?',
-        options: ['60 years', '62 years', '65 years', '70 years'],
-        correct: '65 years'
-      },
-      {
-        question: 'What is the retirement age of High Court judges?',
-        options: ['60 years', '62 years', '65 years', '70 years'],
-        correct: '62 years'
-      },
-      {
-        question: 'How many judges can be in the Supreme Court?',
-        options: ['31', '33', '34', '35'],
-        correct: '34'
-      },
-      {
-        question: 'What is judicial review?',
-        options: ['Review of laws by judiciary', 'Review of judges', 'Review of cases', 'Review of courts'],
-        correct: 'Review of laws by judiciary'
-      },
-      {
-        question: 'What is original jurisdiction?',
-        options: ['Power to hear appeals', 'Power to hear cases first time', 'Power to review laws', 'Power to punish'],
-        correct: 'Power to hear cases first time'
-      },
-      {
-        question: 'What is appellate jurisdiction?',
-        options: ['Power to hear cases first time', 'Power to hear appeals', 'Power to review laws', 'Power to transfer cases'],
-        correct: 'Power to hear appeals'
-      },
-      {
-        question: 'Which article deals with Supreme Court?',
-        options: ['Article 124', 'Article 125', 'Article 126', 'Article 127'],
-        correct: 'Article 124'
-      },
-      {
-        question: 'What is PIL?',
-        options: ['Public Interest Litigation', 'Private Interest Litigation', 'Political Interest Litigation', 'Personal Interest Litigation'],
-        correct: 'Public Interest Litigation'
-      },
-      {
-        question: 'Who can file PIL?',
-        options: ['Only lawyers', 'Only affected persons', 'Any citizen', 'Only government'],
-        correct: 'Any citizen'
-      },
-      {
-        question: 'What is contempt of court?',
-        options: ['Respect for court', 'Disrespect to court', 'Appeal to court', 'Judgment of court'],
-        correct: 'Disrespect to court'
-      },
-      {
-        question: 'What is judicial activism?',
-        options: ['Passive role of judiciary', 'Active role of judiciary', 'Political role of judiciary', 'Administrative role of judiciary'],
-        correct: 'Active role of judiciary'
-      },
-      {
-        question: 'What is the hierarchy of courts in India?',
-        options: ['Supreme Court, High Court, District Court', 'High Court, Supreme Court, District Court', 'District Court, High Court, Supreme Court', 'Supreme Court, District Court, High Court'],
-        correct: 'Supreme Court, High Court, District Court'
-      },
-      {
-        question: 'What is the collegium system?',
-        options: ['System of appointing judges', 'System of court hierarchy', 'System of legal education', 'System of case management'],
-        correct: 'System of appointing judges'
-      },
-      {
-        question: 'Which case established judicial review in India?',
-        options: ['Kesavananda Bharati case', 'Golak Nath case', 'Minerva Mills case', 'Maneka Gandhi case'],
-        correct: 'Golak Nath case'
-      },
-      {
-        question: 'What is the basic structure doctrine?',
-        options: ['Structure of courts', 'Basic features of Constitution that cannot be amended', 'Structure of laws', 'Structure of government'],
-        correct: 'Basic features of Constitution that cannot be amended'
-      },
-      {
-        question: 'Which case established basic structure doctrine?',
-        options: ['Golak Nath case', 'Kesavananda Bharati case', 'Minerva Mills case', 'Maneka Gandhi case'],
-        correct: 'Kesavananda Bharati case'
-      },
-      {
-        question: 'What is advisory jurisdiction?',
-        options: ['Power to give advice to government', 'Power to advise President', 'Power to advise Parliament', 'All of the above'],
-        correct: 'Power to advise President'
-      },
-      {
-        question: 'What is writ jurisdiction?',
-        options: ['Power to issue writs', 'Power to write judgments', 'Power to write laws', 'Power to write reports'],
-        correct: 'Power to issue writs'
-      },
-      {
-        question: 'How many types of writs are there?',
-        options: ['4', '5', '6', '7'],
-        correct: '5'
-      },
-      {
-        question: 'Which writ is known as the bulwark of personal liberty?',
-        options: ['Mandamus', 'Prohibition', 'Habeas Corpus', 'Certiorari'],
-        correct: 'Habeas Corpus'
-      },
-      {
-        question: 'What does independence of judiciary mean?',
-        options: ['Judiciary is free from executive and legislative interference', 'Judiciary can do anything', 'Judiciary is above law', 'Judiciary is separate building'],
-        correct: 'Judiciary is free from executive and legislative interference'
-      },
-      {
-        question: 'What ensures independence of judiciary?',
-        options: ['Security of tenure', 'Fixed salary', 'Separate budget', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the role of judiciary in democracy?',
-        options: ['Protects Constitution', 'Protects rights', 'Checks executive power', 'All of the above'],
-        correct: 'All of the above'
-      }
+      { question: 'What is globalisation?', options: ['Integration of economies', 'Economic isolation', 'Local trade only', 'No trade'], correct: 'Integration of economies' },
+      { question: 'What is foreign trade?', options: ['Trade between countries', 'Domestic trade', 'No trade', 'Local trade'], correct: 'Trade between countries' },
+      { question: 'What is foreign investment?', options: ['Investment from other countries', 'Domestic investment', 'No investment', 'Government investment'], correct: 'Investment from other countries' },
+      { question: 'What is MNC?', options: ['Multinational Corporation', 'Local Company', 'Government Company', 'Small Business'], correct: 'Multinational Corporation' },
+      { question: 'What is WTO?', options: ['World Trade Organization', 'World Transport Organization', 'World Tax Organization', 'World Trade Office'], correct: 'World Trade Organization' },
+      { question: 'What is trade barrier?', options: ['Restrictions on trade', 'Free trade', 'No trade', 'Local trade'], correct: 'Restrictions on trade' },
+      { question: 'What is liberalization?', options: ['Removing trade barriers', 'Adding barriers', 'No trade', 'Local trade only'], correct: 'Removing trade barriers' },
+      { question: 'What is privatization?', options: ['Private ownership', 'Government ownership', 'Public ownership', 'No ownership'], correct: 'Private ownership' },
+      { question: 'What is outsourcing?', options: ['Getting work done from other countries', 'Local work', 'No work', 'Government work'], correct: 'Getting work done from other countries' },
+      { question: 'What is SEZ?', options: ['Special Economic Zone', 'Special Education Zone', 'Special Energy Zone', 'Special Export Zone'], correct: 'Special Economic Zone' },
+      { question: 'What is trade deficit?', options: ['Imports more than exports', 'Exports more than imports', 'Equal trade', 'No trade'], correct: 'Imports more than exports' },
+      { question: 'What is trade surplus?', options: ['Exports more than imports', 'Imports more than exports', 'Equal trade', 'No trade'], correct: 'Exports more than imports' },
+      { question: 'What is foreign exchange?', options: ['Currency of other countries', 'Local currency', 'No currency', 'Gold only'], correct: 'Currency of other countries' },
+      { question: 'What is GDP?', options: ['Gross Domestic Product', 'Gross Domestic Price', 'Global Domestic Product', 'General Domestic Product'], correct: 'Gross Domestic Product' },
+      { question: 'What is FDI?', options: ['Foreign Direct Investment', 'Foreign Domestic Investment', 'Fixed Deposit Investment', 'Future Development Investment'], correct: 'Foreign Direct Investment' },
+      { question: 'What is IMF?', options: ['International Monetary Fund', 'International Money Fund', 'Indian Monetary Fund', 'International Market Fund'], correct: 'International Monetary Fund' },
+      { question: 'What is World Bank?', options: ['International financial institution', 'National bank', 'Private bank', 'Local bank'], correct: 'International financial institution' },
+      { question: 'What is patent?', options: ['Exclusive right to product', 'Public right', 'No right', 'Common right'], correct: 'Exclusive right to product' },
+      { question: 'What is technology transfer?', options: ['Sharing technology between countries', 'Local technology', 'No technology', 'Ancient technology'], correct: 'Sharing technology between countries' },
+      { question: 'What is BPO?', options: ['Business Process Outsourcing', 'Business Process Organization', 'Business Public Office', 'Business Process Order'], correct: 'Business Process Outsourcing' },
+      { question: 'What is fair trade?', options: ['Ethical trading practices', 'Unfair trade', 'No trade', 'Local trade'], correct: 'Ethical trading practices' },
+      { question: 'What is trade union?', options: ['Workers organization', 'Business organization', 'Government organization', 'Private organization'], correct: 'Workers organization' },
+      { question: 'What is child labor?', options: ['Employment of children', 'Adult employment', 'No employment', 'Legal employment'], correct: 'Employment of children' },
+      { question: 'What is sweatshop?', options: ['Poor working conditions', 'Good conditions', 'No work', 'Safe conditions'], correct: 'Poor working conditions' },
+      { question: 'What is economic growth?', options: ['Increase in production', 'Decrease in production', 'No change', 'Negative growth'], correct: 'Increase in production' }
     ]
   },
   {
     id: 10,
-    title: 'Understanding Marginalisation',
-    description: 'Exploring the concept of marginalisation in society.',
+    title: 'Food Security',
+    description: 'Understanding food security and its importance in India.',
     questions: [
-      {
-        question: 'Which communities are often marginalised in India?',
-        options: ['Dalits', 'Adivasis', 'Women', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is affirmative action?',
-        options: ['Providing extra privileges to the rich', 'Ensuring equal opportunities for disadvantaged groups', 'Tax exemptions for businesses', 'Reducing education standards'],
-        correct: 'Ensuring equal opportunities for disadvantaged groups'
-      },
-      {
-        question: 'What does marginalisation mean?',
-        options: ['Being at the center', 'Being pushed to the edges of society', 'Being popular', 'Being wealthy'],
-        correct: 'Being pushed to the edges of society'
-      },
-      {
-        question: 'Which article prohibits discrimination?',
-        options: ['Article 14', 'Article 15', 'Article 16', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is reservation?',
-        options: ['Booking tickets', 'Quotas for disadvantaged groups', 'Saving money', 'Protecting resources'],
-        correct: 'Quotas for disadvantaged groups'
-      },
-      {
-        question: 'Which constitutional provision protects minorities?',
-        options: ['Article 29', 'Article 30', 'Both A and B', 'Article 25'],
-        correct: 'Both A and B'
-      },
-      {
-        question: 'What is social exclusion?',
-        options: ['Including everyone', 'Keeping certain groups out', 'Social gathering', 'Social media'],
-        correct: 'Keeping certain groups out'
-      },
-      {
-        question: 'Which group faces gender-based marginalisation?',
-        options: ['Men', 'Women', 'Children', 'Elderly'],
-        correct: 'Women'
-      },
-      {
-        question: 'What is economic marginalisation?',
-        options: ['Having too much money', 'Being excluded from economic opportunities', 'Economic growth', 'Economic policy'],
-        correct: 'Being excluded from economic opportunities'
-      },
-      {
-        question: 'Which law protects SC/ST communities?',
-        options: ['SC/ST Act 1989', 'Civil Rights Act', 'Human Rights Act', 'Consumer Protection Act'],
-        correct: 'SC/ST Act 1989'
-      },
-      {
-        question: 'What is the purpose of reservation policy?',
-        options: ['To divide society', 'To ensure representation of marginalized groups', 'To create conflict', 'To reduce efficiency'],
-        correct: 'To ensure representation of marginalized groups'
-      },
-      {
-        question: 'Which institution monitors implementation of safeguards for minorities?',
-        options: ['National Commission for Minorities', 'Supreme Court', 'Parliament', 'President'],
-        correct: 'National Commission for Minorities'
-      },
-      {
-        question: 'What is cultural marginalisation?',
-        options: ['Promoting culture', 'Suppressing cultural identity', 'Cultural festival', 'Cultural exchange'],
-        correct: 'Suppressing cultural identity'
-      },
-      {
-        question: 'Which article deals with protection of interests of minorities?',
-        options: ['Article 29', 'Article 30', 'Article 31', 'Article 32'],
-        correct: 'Article 29'
-      },
-      {
-        question: 'What is stereotype?',
-        options: ['Fixed ideas about groups', 'New ideas', 'Creative thinking', 'Scientific method'],
-        correct: 'Fixed ideas about groups'
-      },
-      {
-        question: 'Which movement fought against untouchability?',
-        options: ['Civil Rights Movement', 'Dalit Movement', 'Environmental Movement', 'Student Movement'],
-        correct: 'Dalit Movement'
-      },
-      {
-        question: 'What is prejudice?',
-        options: ['Fair judgment', 'Preconceived opinion', 'Logical thinking', 'Scientific analysis'],
-        correct: 'Preconceived opinion'
-      },
-      {
-        question: 'Which constitutional body protects fundamental rights?',
-        options: ['Parliament', 'Executive', 'Judiciary', 'Election Commission'],
-        correct: 'Judiciary'
-      },
-      {
-        question: 'What is the role of civil society in protecting marginalized groups?',
-        options: ['No role', 'Advocacy and support', 'Creating divisions', 'Opposing government'],
-        correct: 'Advocacy and support'
-      },
-      {
-        question: 'Which principle ensures equal treatment?',
-        options: ['Rule of law', 'Separation of powers', 'Federalism', 'Secularism'],
-        correct: 'Rule of law'
-      },
-      {
-        question: 'What is intersectionality?',
-        options: ['Road crossing', 'Multiple forms of discrimination', 'Mathematical concept', 'Architectural design'],
-        correct: 'Multiple forms of discrimination'
-      },
-      {
-        question: 'Which article provides right to constitutional remedies?',
-        options: ['Article 32', 'Article 33', 'Article 34', 'Article 35'],
-        correct: 'Article 32'
-      },
-      {
-        question: 'What is dignity?',
-        options: ['Wealth', 'Self-respect and worth', 'Power', 'Fame'],
-        correct: 'Self-respect and worth'
-      },
-      {
-        question: 'Which factor contributes to marginalisation?',
-        options: ['Poverty', 'Lack of education', 'Social prejudice', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the goal of inclusive development?',
-        options: ['Exclude certain groups', 'Include all sections of society', 'Focus only on majority', 'Ignore minorities'],
-        correct: 'Include all sections of society'
-      }
+      { question: 'What is food security?', options: ['Access to sufficient food', 'Food shortage', 'No food', 'Expensive food'], correct: 'Access to sufficient food' },
+      { question: 'What is PDS?', options: ['Public Distribution System', 'Private Distribution System', 'Personal Distribution System', 'Partial Distribution System'], correct: 'Public Distribution System' },
+      { question: 'What is MSP?', options: ['Minimum Support Price', 'Maximum Support Price', 'Market Support Price', 'Minimum Sale Price'], correct: 'Minimum Support Price' },
+      { question: 'What is buffer stock?', options: ['Food grain reserve', 'No stock', 'Market stock', 'Private stock'], correct: 'Food grain reserve' },
+      { question: 'What is food corporation of India?', options: ['Government food agency', 'Private company', 'NGO', 'International organization'], correct: 'Government food agency' },
+      { question: 'What is green revolution?', options: ['Increased food production', 'Environmental movement', 'Political movement', 'Social movement'], correct: 'Increased food production' },
+      { question: 'What is food grain procurement?', options: ['Government purchase of grains', 'Private purchase', 'No purchase', 'International purchase'], correct: 'Government purchase of grains' },
+      { question: 'What is rationing?', options: ['Controlled distribution', 'Free distribution', 'No distribution', 'Private distribution'], correct: 'Controlled distribution' },
+      { question: 'What is food subsidy?', options: ['Government support for food', 'No support', 'Private support', 'International aid'], correct: 'Government support for food' },
+      { question: 'What is malnutrition?', options: ['Poor nutrition', 'Good nutrition', 'Over nutrition', 'No nutrition'], correct: 'Poor nutrition' },
+      { question: 'What is hunger index?', options: ['Measure of hunger', 'Food price index', 'Production index', 'Consumption index'], correct: 'Measure of hunger' },
+      { question: 'What is food basket?', options: ['Mix of food items', 'Single food item', 'No food', 'Imported food'], correct: 'Mix of food items' },
+      { question: 'What is food inflation?', options: ['Rise in food prices', 'Price fall', 'Stable prices', 'No change'], correct: 'Rise in food prices' },
+      { question: 'What is food security bill?', options: ['Law for food security', 'Company law', 'Tax law', 'Trade law'], correct: 'Law for food security' },
+      { question: 'What is zero hunger?', options: ['No hunger goal', 'Some hunger', 'Increasing hunger', 'Maximum hunger'], correct: 'No hunger goal' },
+      { question: 'What is food sovereignty?', options: ['Right to define food policy', 'No rights', 'Limited rights', 'International control'], correct: 'Right to define food policy' },
+      { question: 'What is sustainable agriculture?', options: ['Long-term farming', 'Short-term farming', 'No farming', 'Industrial farming'], correct: 'Long-term farming' },
+      { question: 'What is food wastage?', options: ['Loss of food', 'Food storage', 'Food production', 'Food processing'], correct: 'Loss of food' },
+      { question: 'What is food processing?', options: ['Converting raw food to edible form', 'Growing food', 'Selling food', 'Buying food'], correct: 'Converting raw food to edible form' },
+      { question: 'What is food preservation?', options: ['Keeping food safe', 'Destroying food', 'Wasting food', 'Selling food'], correct: 'Keeping food safe' },
+      { question: 'What is food adulteration?', options: ['Adding impurities to food', 'Pure food', 'Clean food', 'Healthy food'], correct: 'Adding impurities to food' },
+      { question: 'What is food quality?', options: ['Standard of food', 'Poor food', 'No standard', 'Low quality'], correct: 'Standard of food' },
+      { question: 'What is food safety?', options: ['Safe food handling', 'Unsafe food', 'No safety', 'Poor handling'], correct: 'Safe food handling' },
+      { question: 'What is food chain?', options: ['Production to consumption', 'Only production', 'Only consumption', 'No connection'], correct: 'Production to consumption' },
+      { question: 'What is food security allowance?', options: ['Compensation for no food', 'No compensation', 'Regular salary', 'Bonus'], correct: 'Compensation for no food' }
     ]
   },
   {
     id: 11,
-    title: 'Confronting Marginalisation',
-    description: 'How marginalised communities fight for their rights.',
+    title: 'Sustainable Development with Equity',
+    description: 'Understanding sustainable development and equitable growth in India.',
     questions: [
-      {
-        question: 'Which law protects the rights of Dalits and Adivasis?',
-        options: ['Panchayati Raj Act', 'SC/ST Prevention of Atrocities Act', 'Consumer Protection Act', 'Forest Rights Act'],
-        correct: 'SC/ST Prevention of Atrocities Act'
-      },
-      {
-        question: 'Which movement fought for the rights of Dalits?',
-        options: ['Bhoodan Movement', 'Dalit Panthers', 'Chipko Movement', 'Swadeshi Movement'],
-        correct: 'Dalit Panthers'
-      },
-      {
-        question: 'Who founded the Dalit Panthers?',
-        options: ['B.R. Ambedkar', 'Namdeo Dhasal', 'Jyotiba Phule', 'Periyar'],
-        correct: 'Namdeo Dhasal'
-      },
-      {
-        question: 'What is the main strategy to confront marginalisation?',
-        options: ['Violence', 'Legal action and awareness', 'Isolation', 'Acceptance'],
-        correct: 'Legal action and awareness'
-      },
-      {
-        question: 'Which constitutional provision allows positive discrimination?',
-        options: ['Article 15(4)', 'Article 16(4)', 'Article 46', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the role of civil rights movements?',
-        options: ['Create divisions', 'Fight for equal rights', 'Promote inequality', 'Support discrimination'],
-        correct: 'Fight for equal rights'
-      },
-      {
-        question: 'Which act provides for forest rights of tribals?',
-        options: ['Forest Rights Act 2006', 'Wildlife Protection Act', 'Environment Protection Act', 'Water Act'],
-        correct: 'Forest Rights Act 2006'
-      },
-      {
-        question: 'What is advocacy?',
-        options: ['Legal profession', 'Speaking up for rights', 'Court procedure', 'Government policy'],
-        correct: 'Speaking up for rights'
-      },
-      {
-        question: 'Which institution provides legal aid to poor?',
-        options: ['Legal Services Authority', 'Supreme Court', 'High Court', 'District Court'],
-        correct: 'Legal Services Authority'
-      },
-      {
-        question: 'What is the importance of education in fighting marginalisation?',
-        options: ['No importance', 'Creates awareness and empowerment', 'Increases divisions', 'Promotes inequality'],
-        correct: 'Creates awareness and empowerment'
-      },
-      {
-        question: 'Which movement fought for womens rights?',
-        options: ['Chipko Movement', 'Feminist Movement', 'Environmental Movement', 'Peace Movement'],
-        correct: 'Feminist Movement'
-      },
-      {
-        question: 'What is empowerment?',
-        options: ['Giving power to few', 'Enabling people to take control of their lives', 'Reducing power', 'Centralizing power'],
-        correct: 'Enabling people to take control of their lives'
-      },
-      {
-        question: 'Which article provides for equality before law?',
-        options: ['Article 14', 'Article 15', 'Article 16', 'Article 17'],
-        correct: 'Article 14'
-      },
-      {
-        question: 'What is the role of media in confronting marginalisation?',
-        options: ['No role', 'Creating awareness', 'Promoting stereotypes', 'Ignoring issues'],
-        correct: 'Creating awareness'
-      },
-      {
-        question: 'Which commission looks after SC/ST issues?',
-        options: ['National Commission for SC/ST', 'Human Rights Commission', 'Women Commission', 'Minority Commission'],
-        correct: 'National Commission for SC/ST'
-      },
-      {
-        question: 'What is collective action?',
-        options: ['Individual effort', 'Group effort for common cause', 'Government action', 'Court action'],
-        correct: 'Group effort for common cause'
-      },
-      {
-        question: 'Which right allows people to approach courts?',
-        options: ['Right to equality', 'Right to constitutional remedies', 'Right to freedom', 'Right to life'],
-        correct: 'Right to constitutional remedies'
-      },
-      {
-        question: 'What is social justice?',
-        options: ['Justice for rich', 'Fair treatment for all', 'Justice for majority', 'Justice for government'],
-        correct: 'Fair treatment for all'
-      },
-      {
-        question: 'Which strategy is most effective in fighting marginalisation?',
-        options: ['Violence', 'Legal and peaceful methods', 'Isolation', 'Acceptance of status quo'],
-        correct: 'Legal and peaceful methods'
-      },
-      {
-        question: 'What is the significance of Article 17?',
-        options: ['Abolishes untouchability', 'Provides equality', 'Ensures freedom', 'Protects life'],
-        correct: 'Abolishes untouchability'
-      },
-      {
-        question: 'Which movement used non-violent resistance?',
-        options: ['Dalit Panthers', 'Civil Rights Movement', 'Environmental Movement', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the role of NGOs in confronting marginalisation?',
-        options: ['No role', 'Support and advocacy', 'Creating problems', 'Supporting discrimination'],
-        correct: 'Support and advocacy'
-      },
-      {
-        question: 'Which principle guides fight against marginalisation?',
-        options: ['Inequality', 'Human dignity', 'Discrimination', 'Segregation'],
-        correct: 'Human dignity'
-      },
-      {
-        question: 'What is the ultimate goal of confronting marginalisation?',
-        options: ['Create new hierarchies', 'Achieve inclusive society', 'Maintain status quo', 'Promote divisions'],
-        correct: 'Achieve inclusive society'
-      },
-      {
-        question: 'Which tool is most important in legal fight against marginalisation?',
-        options: ['Constitution', 'Police', 'Army', 'Bureaucracy'],
-        correct: 'Constitution'
-      }
+      { question: 'What is sustainable development?', options: ['Development meeting present and future needs', 'Only present development', 'Only future development', 'No development'], correct: 'Development meeting present and future needs' },
+      { question: 'What is equity?', options: ['Fair distribution', 'Unfair distribution', 'No distribution', 'Random distribution'], correct: 'Fair distribution' },
+      { question: 'What is environmental sustainability?', options: ['Protecting environment while developing', 'Destroying environment', 'No protection', 'No development'], correct: 'Protecting environment while developing' },
+      { question: 'What is social sustainability?', options: ['Meeting social needs', 'Ignoring social needs', 'No social concern', 'Anti-social development'], correct: 'Meeting social needs' },
+      { question: 'What is economic sustainability?', options: ['Long-term economic growth', 'Short-term growth', 'No growth', 'Negative growth'], correct: 'Long-term economic growth' },
+      { question: 'What is renewable resource?', options: ['Naturally replenished resource', 'Non-replenishing resource', 'No resource', 'Limited resource'], correct: 'Naturally replenished resource' },
+      { question: 'What is non-renewable resource?', options: ['Limited resource', 'Unlimited resource', 'Renewable resource', 'No resource'], correct: 'Limited resource' },
+      { question: 'What is carbon footprint?', options: ['Impact on environment', 'No impact', 'Positive impact', 'Random impact'], correct: 'Impact on environment' },
+      { question: 'What is green economy?', options: ['Environmentally friendly economy', 'Harmful economy', 'No economy', 'Traditional economy'], correct: 'Environmentally friendly economy' },
+      { question: 'What is social justice?', options: ['Fair treatment in society', 'Unfair treatment', 'No treatment', 'Random treatment'], correct: 'Fair treatment in society' },
+      { question: 'What is inclusive growth?', options: ['Growth benefiting all', 'Growth for few', 'No growth', 'Negative growth'], correct: 'Growth benefiting all' },
+      { question: 'What is poverty alleviation?', options: ['Reducing poverty', 'Increasing poverty', 'No change', 'More poverty'], correct: 'Reducing poverty' },
+      { question: 'What is gender equality?', options: ['Equal rights for all genders', 'Male dominance', 'Female dominance', 'No equality'], correct: 'Equal rights for all genders' },
+      { question: 'What is social inclusion?', options: ['Including all groups', 'Excluding groups', 'No inclusion', 'Partial inclusion'], correct: 'Including all groups' },
+      { question: 'What is clean energy?', options: ['Non-polluting energy', 'Polluting energy', 'No energy', 'Traditional energy'], correct: 'Non-polluting energy' },
+      { question: 'What is biodiversity?', options: ['Variety of life forms', 'Single species', 'No life', 'Limited species'], correct: 'Variety of life forms' },
+      { question: 'What is climate change?', options: ['Long-term weather changes', 'Daily weather', 'No change', 'Short-term change'], correct: 'Long-term weather changes' },
+      { question: 'What is sustainable agriculture?', options: ['Long-term farming practices', 'Short-term farming', 'No farming', 'Harmful farming'], correct: 'Long-term farming practices' },
+      { question: 'What is water conservation?', options: ['Saving water', 'Wasting water', 'No conservation', 'Water pollution'], correct: 'Saving water' },
+      { question: 'What is waste management?', options: ['Proper waste disposal', 'No disposal', 'Random disposal', 'Improper disposal'], correct: 'Proper waste disposal' },
+      { question: 'What is green technology?', options: ['Environmental friendly technology', 'Harmful technology', 'No technology', 'Old technology'], correct: 'Environmental friendly technology' },
+      { question: 'What is sustainable cities?', options: ['Environmentally planned cities', 'Unplanned cities', 'No planning', 'Random development'], correct: 'Environmentally planned cities' },
+      { question: 'What is responsible consumption?', options: ['Mindful use of resources', 'Wasteful use', 'No consumption', 'Over consumption'], correct: 'Mindful use of resources' },
+      { question: 'What is sustainable transport?', options: ['Eco-friendly transport', 'Polluting transport', 'No transport', 'Traditional transport'], correct: 'Eco-friendly transport' },
+      { question: 'What is green jobs?', options: ['Environmental sector jobs', 'Traditional jobs', 'No jobs', 'Harmful jobs'], correct: 'Environmental sector jobs' }
     ]
   },
   {
     id: 12,
-    title: 'Public Facilities',
-    description: 'Importance of public services like water, electricity, and transport.',
+    title: 'The world between wars 1900-1950',
+    description: 'Study of major world events and developments between 1900-1950.',
     questions: [
-      {
-        question: 'Which sector provides public facilities in India?',
-        options: ['Private Sector', 'Public Sector', 'Only NGOs', 'None of the above'],
-        correct: 'Public Sector'
-      },
-      {
-        question: 'Why are public facilities essential?',
-        options: ['They are free for all', 'They help in economic development', 'They are only for the poor', 'They generate revenue'],
-        correct: 'They help in economic development'
-      },
-      {
-        question: 'What are public facilities?',
-        options: ['Services provided by government for all', 'Private services', 'Commercial services', 'Luxury services'],
-        correct: 'Services provided by government for all'
-      },
-      {
-        question: 'Which of these is a public facility?',
-        options: ['Water supply', 'Electricity', 'Public transport', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Why should water be a public facility?',
-        options: ['Its a basic need', 'Private companies are expensive', 'Government can ensure access for all', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What happens when public facilities are privatized?',
-        options: ['They become cheaper', 'They become accessible to all', 'They may become expensive', 'Quality always improves'],
-        correct: 'They may become expensive'
-      },
-      {
-        question: 'Which article makes education a fundamental right?',
-        options: ['Article 19', 'Article 20', 'Article 21A', 'Article 22'],
-        correct: 'Article 21A'
-      },
-      {
-        question: 'What is the advantage of public healthcare?',
-        options: ['Only for rich', 'Accessible to all economic classes', 'Very expensive', 'Limited services'],
-        correct: 'Accessible to all economic classes'
-      },
-      {
-        question: 'Which is the largest public sector undertaking in India?',
-        options: ['Indian Railways', 'Air India', 'ONGC', 'Coal India'],
-        correct: 'Indian Railways'
-      },
-      {
-        question: 'What is the role of government in providing public facilities?',
-        options: ['No role', 'Ensure universal access', 'Only for urban areas', 'Only for rich'],
-        correct: 'Ensure universal access'
-      },
-      {
-        question: 'Which facility is most important for rural development?',
-        options: ['Shopping malls', 'Roads and connectivity', 'Luxury hotels', 'Private clubs'],
-        correct: 'Roads and connectivity'
-      },
-      {
-        question: 'What is the benefit of public transport?',
-        options: ['Reduces pollution', 'Affordable for common people', 'Reduces traffic congestion', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which scheme provides rural employment?',
-        options: ['MGNREGA', 'Digital India', 'Make in India', 'Skill India'],
-        correct: 'MGNREGA'
-      },
-      {
-        question: 'What is the main source of funding for public facilities?',
-        options: ['Private donations', 'Foreign aid', 'Tax revenue', 'Loans only'],
-        correct: 'Tax revenue'
-      },
-      {
-        question: 'Which facility ensures food security?',
-        options: ['Public Distribution System', 'Private stores', 'Restaurants', 'Hotels'],
-        correct: 'Public Distribution System'
-      },
-      {
-        question: 'What is the challenge in providing public facilities?',
-        options: ['Limited resources', 'Large population', 'Geographical diversity', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which constitutional principle supports public facilities?',
-        options: ['Equality', 'Justice', 'Welfare state', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the impact of good public facilities?',
-        options: ['Improves quality of life', 'Reduces inequality', 'Promotes development', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which facility is essential for democracy?',
-        options: ['Education', 'Healthcare', 'Information access', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the difference between public and private facilities?',
-        options: ['Ownership and purpose', 'Quality only', 'Cost only', 'Location only'],
-        correct: 'Ownership and purpose'
-      },
-      {
-        question: 'Which scheme provides free healthcare?',
-        options: ['Ayushman Bharat', 'Jan Aushadhi', 'Both A and B', 'None of the above'],
-        correct: 'Both A and B'
-      },
-      {
-        question: 'What is the role of local government in public facilities?',
-        options: ['No role', 'Implementation and maintenance', 'Only funding', 'Only planning'],
-        correct: 'Implementation and maintenance'
-      },
-      {
-        question: 'Which facility promotes gender equality?',
-        options: ['Equal access to education', 'Safe public transport', 'Healthcare for women', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the goal of providing public facilities?',
-        options: ['Profit making', 'Social welfare', 'Political gain', 'Administrative convenience'],
-        correct: 'Social welfare'
-      },
-      {
-        question: 'Which principle should guide public facility provision?',
-        options: ['Profit maximization', 'Universal access', 'Selective access', 'Commercial viability only'],
-        correct: 'Universal access'
-      }
+      { question: 'What was the main cause of World War I?', options: ['Assassination of Archduke Franz Ferdinand', 'Economic crisis', 'Colonial rivalry', 'Russian Revolution'], correct: 'Assassination of Archduke Franz Ferdinand' },
+      { question: 'When did World War I begin?', options: ['1914', '1915', '1913', '1916'], correct: '1914' },
+      { question: 'Which treaty ended World War I?', options: ['Treaty of Versailles', 'Treaty of Paris', 'Treaty of London', 'Treaty of Rome'], correct: 'Treaty of Versailles' },
+      { question: 'What was the League of Nations?', options: ['International peace organization', 'Military alliance', 'Economic union', 'Political party'], correct: 'International peace organization' },
+      { question: 'When did the Great Depression begin?', options: ['1929', '1928', '1930', '1931'], correct: '1929' },
+      { question: 'What was the New Deal?', options: ['Economic recovery program', 'Peace treaty', 'Military alliance', 'Trade agreement'], correct: 'Economic recovery program' },
+      { question: 'Who was Adolf Hitler?', options: ['Nazi leader', 'Soviet leader', 'American president', 'British prime minister'], correct: 'Nazi leader' },
+      { question: 'What was the Holocaust?', options: ['Genocide of Jews', 'Natural disaster', 'Economic crisis', 'Political movement'], correct: 'Genocide of Jews' },
+      { question: 'When did World War II begin?', options: ['1939', '1938', '1940', '1941'], correct: '1939' },
+      { question: 'What was the Axis Powers?', options: ['Germany-Italy-Japan alliance', 'Britain-France alliance', 'US-USSR alliance', 'China-India alliance'], correct: 'Germany-Italy-Japan alliance' },
+      { question: 'What was the Allied Powers?', options: ['Britain-France-US-USSR alliance', 'Germany-Italy alliance', 'Japan-China alliance', 'India-Australia alliance'], correct: 'Britain-France-US-USSR alliance' },
+      { question: 'What was the Manhattan Project?', options: ['Atomic bomb development', 'Peace initiative', 'Economic plan', 'Military strategy'], correct: 'Atomic bomb development' },
+      { question: 'When did World War II end?', options: ['1945', '1944', '1946', '1943'], correct: '1945' },
+      { question: 'What was the United Nations?', options: ['International organization', 'Military alliance', 'Economic union', 'Political party'], correct: 'International organization' },
+      { question: 'What was the Cold War?', options: ['US-USSR rivalry', 'World War III', 'Trade war', 'Civil war'], correct: 'US-USSR rivalry' },
+      { question: 'What was the Iron Curtain?', options: ['Division of Europe', 'Military wall', 'Trade barrier', 'Political boundary'], correct: 'Division of Europe' },
+      { question: 'What was the Marshall Plan?', options: ['European recovery program', 'Military strategy', 'Peace treaty', 'Trade agreement'], correct: 'European recovery program' },
+      { question: 'What was the Russian Revolution?', options: ['Bolshevik takeover', 'Democratic reform', 'Military coup', 'Economic reform'], correct: 'Bolshevik takeover' },
+      { question: 'Who was Joseph Stalin?', options: ['Soviet leader', 'American president', 'British prime minister', 'German leader'], correct: 'Soviet leader' },
+      { question: 'What was the Great Purge?', options: ['Soviet political repression', 'Economic reform', 'Military strategy', 'Cultural revolution'], correct: 'Soviet political repression' },
+      { question: 'What was fascism?', options: ['Authoritarian nationalism', 'Democracy', 'Communism', 'Capitalism'], correct: 'Authoritarian nationalism' },
+      { question: 'What was the Spanish Civil War?', options: ['War between Republicans and Nationalists', 'World War I', 'World War II', 'Cold War'], correct: 'War between Republicans and Nationalists' },
+      { question: 'What was the Treaty of Brest-Litovsk?', options: ['Russia-Germany peace treaty', 'WWI end treaty', 'WWII end treaty', 'Cold War treaty'], correct: 'Russia-Germany peace treaty' },
+      { question: 'What was the Weimar Republic?', options: ['German democracy 1919-1933', 'Soviet state', 'American territory', 'British colony'], correct: 'German democracy 1919-1933' },
+      { question: 'What was the Beer Hall Putsch?', options: ['Nazi coup attempt', 'Peace conference', 'Trade agreement', 'Military alliance'], correct: 'Nazi coup attempt' }
     ]
   },
   {
     id: 13,
-    title: 'Law and Social Justice',
-    description: 'How laws protect the rights of people and ensure justice.',
+    title: 'National Liberation Movements in the colonies',
+    description: 'Study of independence movements in various colonies.',
     questions: [
-      {
-        question: 'Which act ensures minimum wages for workers?',
-        options: ['Factory Act', 'Minimum Wages Act', 'Child Labour Act', 'Consumer Protection Act'],
-        correct: 'Minimum Wages Act'
-      },
-      {
-        question: 'What is the primary aim of labour laws?',
-        options: ['To increase profits', 'To protect workers rights', 'To promote industries', 'To reduce employment'],
-        correct: 'To protect workers rights'
-      },
-      {
-        question: 'What is social justice?',
-        options: ['Justice for society', 'Fair treatment for all', 'Justice system', 'Court proceedings'],
-        correct: 'Fair treatment for all'
-      },
-      {
-        question: 'Which article prohibits child labour?',
-        options: ['Article 23', 'Article 24', 'Article 25', 'Article 26'],
-        correct: 'Article 24'
-      },
-      {
-        question: 'What is the role of law in society?',
-        options: ['Create disorder', 'Maintain order and justice', 'Promote inequality', 'Support powerful only'],
-        correct: 'Maintain order and justice'
-      },
-      {
-        question: 'Which act protects consumers?',
-        options: ['Consumer Protection Act', 'Contract Act', 'Sale of Goods Act', 'Partnership Act'],
-        correct: 'Consumer Protection Act'
-      },
-      {
-        question: 'What is the principle of rule of law?',
-        options: ['Law is supreme', 'Ruler is supreme', 'Rich are supreme', 'Government is supreme'],
-        correct: 'Law is supreme'
-      },
-      {
-        question: 'Which institution interprets laws?',
-        options: ['Parliament', 'Executive', 'Judiciary', 'Bureaucracy'],
-        correct: 'Judiciary'
-      },
-      {
-        question: 'What is the purpose of labour laws?',
-        options: ['Exploit workers', 'Protect workers from exploitation', 'Reduce wages', 'Increase working hours'],
-        correct: 'Protect workers from exploitation'
-      },
-      {
-        question: 'Which act deals with factories?',
-        options: ['Factory Act 1948', 'Labour Act', 'Industrial Act', 'Workers Act'],
-        correct: 'Factory Act 1948'
-      },
-      {
-        question: 'What is the right to information?',
-        options: ['Right to know government actions', 'Right to privacy', 'Right to education', 'Right to work'],
-        correct: 'Right to know government actions'
-      },
-      {
-        question: 'Which act provides right to information?',
-        options: ['RTI Act 2005', 'Information Act', 'Transparency Act', 'Public Act'],
-        correct: 'RTI Act 2005'
-      },
-      {
-        question: 'What is the benefit of RTI?',
-        options: ['Promotes transparency', 'Reduces corruption', 'Ensures accountability', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which law protects environment?',
-        options: ['Environment Protection Act', 'Water Act', 'Air Act', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the role of police?',
-        options: ['Make laws', 'Enforce laws', 'Interpret laws', 'Change laws'],
-        correct: 'Enforce laws'
-      },
-      {
-        question: 'Which principle ensures fair trial?',
-        options: ['Due process of law', 'Quick trial', 'Secret trial', 'Expensive trial'],
-        correct: 'Due process of law'
-      },
-      {
-        question: 'What is legal aid?',
-        options: ['Help to rich', 'Free legal help to poor', 'Expensive legal service', 'Government salary'],
-        correct: 'Free legal help to poor'
-      },
-      {
-        question: 'Which article provides legal aid?',
-        options: ['Article 39A', 'Article 40A', 'Article 41A', 'Article 42A'],
-        correct: 'Article 39A'
-      },
-      {
-        question: 'What is the importance of independent judiciary?',
-        options: ['Ensures fair justice', 'Protects rights', 'Checks government power', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which law deals with domestic violence?',
-        options: ['Domestic Violence Act 2005', 'Family Act', 'Women Act', 'Marriage Act'],
-        correct: 'Domestic Violence Act 2005'
-      },
-      {
-        question: 'What is the purpose of criminal law?',
-        options: ['Punish crimes', 'Maintain order', 'Protect society', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which law protects children?',
-        options: ['Child Protection Act', 'Juvenile Justice Act', 'Child Labour Act', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the benefit of social legislation?',
-        options: ['Protects vulnerable groups', 'Promotes equality', 'Ensures justice', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which institution makes laws?',
-        options: ['Parliament', 'Supreme Court', 'President', 'Prime Minister'],
-        correct: 'Parliament'
-      },
-      {
-        question: 'What is the relationship between law and justice?',
-        options: ['No relationship', 'Law should promote justice', 'Law opposes justice', 'Justice opposes law'],
-        correct: 'Law should promote justice'
-      }
+      { question: 'What was colonialism?', options: ['Foreign political control', 'Self-governance', 'Democracy', 'Independence'], correct: 'Foreign political control' },
+      { question: 'What was imperialism?', options: ['Extending nation\u0027s power', 'Giving up power', 'Sharing power', 'Local governance'], correct: 'Extending nation\u0027s power' },
+      { question: 'Which was the first Asian country to modernize?', options: ['Japan', 'China', 'India', 'Korea'], correct: 'Japan' },
+      { question: 'What was the Meiji Restoration?', options: ['Japanese modernization', 'Chinese revolution', 'Indian independence', 'Korean war'], correct: 'Japanese modernization' },
+      { question: 'Who was Sun Yat-sen?', options: ['Chinese revolutionary', 'Japanese emperor', 'Indian leader', 'Korean president'], correct: 'Chinese revolutionary' },
+      { question: 'What was the Long March?', options: ['Chinese Communist retreat', 'Japanese invasion', 'Indian protest', 'Korean war'], correct: 'Chinese Communist retreat' },
+      { question: 'Who was Ho Chi Minh?', options: ['Vietnamese leader', 'Chinese leader', 'Korean leader', 'Japanese emperor'], correct: 'Vietnamese leader' },
+      { question: 'What was the Vietnam War?', options: ['War against US intervention', 'Civil war', 'World war', 'Cold war'], correct: 'War against US intervention' },
+      { question: 'What was apartheid?', options: ['Racial segregation', 'Economic policy', 'Foreign policy', 'Trade policy'], correct: 'Racial segregation' },
+      { question: 'Who was Nelson Mandela?', options: ['South African leader', 'Nigerian leader', 'Kenyan leader', 'Egyptian leader'], correct: 'South African leader' },
+      { question: 'What was the ANC?', options: ['African National Congress', 'Asian National Committee', 'American National Council', 'Australian National Congress'], correct: 'African National Congress' },
+      { question: 'What was Pan-Africanism?', options: ['African unity movement', 'Economic policy', 'Trade agreement', 'Military alliance'], correct: 'African unity movement' },
+      { question: 'Who was Kwame Nkrumah?', options: ['Ghanaian leader', 'Nigerian leader', 'Kenyan leader', 'Egyptian leader'], correct: 'Ghanaian leader' },
+      { question: 'What was the Mau Mau uprising?', options: ['Kenyan rebellion', 'Nigerian civil war', 'Egyptian revolution', 'South African protest'], correct: 'Kenyan rebellion' },
+      { question: 'What was the Suez Crisis?', options: ['Egyptian nationalization', 'African unity', 'Trade dispute', 'Military conflict'], correct: 'Egyptian nationalization' },
+      { question: 'Who was Gamal Abdel Nasser?', options: ['Egyptian leader', 'Syrian leader', 'Iraqi leader', 'Iranian leader'], correct: 'Egyptian leader' },
+      { question: 'What was Arab nationalism?', options: ['Pan-Arab unity movement', 'Religious movement', 'Economic policy', 'Military strategy'], correct: 'Pan-Arab unity movement' },
+      { question: 'What was the Palestine issue?', options: ['Arab-Israeli conflict', 'Civil war', 'Trade dispute', 'Border conflict'], correct: 'Arab-Israeli conflict' },
+      { question: 'What was the Non-Aligned Movement?', options: ['Third World alliance', 'Military alliance', 'Economic union', 'Political party'], correct: 'Third World alliance' },
+      { question: 'What was decolonization?', options: ['Independence from colonial rule', 'Colonial expansion', 'Economic policy', 'Military strategy'], correct: 'Independence from colonial rule' },
+      { question: 'What was the Bandung Conference?', options: ['Afro-Asian solidarity meeting', 'Peace conference', 'Trade meeting', 'Military summit'], correct: 'Afro-Asian solidarity meeting' },
+      { question: 'What was the Cuban Revolution?', options: ['Communist takeover', 'Independence movement', 'Civil war', 'Military coup'], correct: 'Communist takeover' },
+      { question: 'Who was Fidel Castro?', options: ['Cuban revolutionary leader', 'Mexican president', 'Brazilian leader', 'Argentine president'], correct: 'Cuban revolutionary leader' },
+      { question: 'What was the Monroe Doctrine?', options: ['US Americas policy', 'European policy', 'Asian policy', 'African policy'], correct: 'US Americas policy' },
+      { question: 'What was the Good Neighbor Policy?', options: ['US Latin America policy', 'European unity', 'Asian cooperation', 'African alliance'], correct: 'US Latin America policy' }
     ]
   },
   {
     id: 14,
-    title: 'Resources',
-    description: 'Understanding natural and human-made resources.',
+    title: 'National Movement in India–Partition & Independence 1939-1947',
+    description: 'Study of India\u0027s independence movement and partition.',
     questions: [
-      {
-        question: 'Which of the following is a renewable resource?',
-        options: ['Coal', 'Petroleum', 'Solar Energy', 'Natural Gas'],
-        correct: 'Solar Energy'
-      },
-      {
-        question: 'Which type of resources are found in a fixed quantity?',
-        options: ['Renewable', 'Non-renewable', 'Human-made', 'Cultural'],
-        correct: 'Non-renewable'
-      },
-      {
-        question: 'What are natural resources?',
-        options: ['Resources made by humans', 'Resources found in nature', 'Artificial resources', 'Processed resources'],
-        correct: 'Resources found in nature'
-      },
-      {
-        question: 'Which is an example of biotic resource?',
-        options: ['Minerals', 'Forests', 'Rocks', 'Metals'],
-        correct: 'Forests'
-      },
-      {
-        question: 'Which is an abiotic resource?',
-        options: ['Plants', 'Animals', 'Minerals', 'Bacteria'],
-        correct: 'Minerals'
-      },
-      {
-        question: 'What are human-made resources?',
-        options: ['Natural materials', 'Resources created by humans', 'Wild resources', 'Untouched resources'],
-        correct: 'Resources created by humans'
-      },
-      {
-        question: 'Which factor affects resource distribution?',
-        options: ['Climate', 'Topography', 'Geological structure', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is resource conservation?',
-        options: ['Using all resources quickly', 'Sustainable use of resources', 'Wasting resources', 'Ignoring resources'],
-        correct: 'Sustainable use of resources'
-      },
-      {
-        question: 'Which energy source is inexhaustible?',
-        options: ['Coal', 'Solar energy', 'Petroleum', 'Natural gas'],
-        correct: 'Solar energy'
-      },
-      {
-        question: 'What is sustainable development?',
-        options: ['Development without considering future', 'Meeting present needs without compromising future', 'Only economic growth', 'Only environmental protection'],
-        correct: 'Meeting present needs without compromising future'
-      },
-      {
-        question: 'Which resource is essential for all life forms?',
-        options: ['Gold', 'Water', 'Silver', 'Diamond'],
-        correct: 'Water'
-      },
-      {
-        question: 'What are potential resources?',
-        options: ['Resources being used', 'Resources that can be used in future', 'Exhausted resources', 'Artificial resources'],
-        correct: 'Resources that can be used in future'
-      },
-      {
-        question: 'What are developed resources?',
-        options: ['Resources not yet discovered', 'Resources being utilized', 'Resources that cannot be used', 'Resources from space'],
-        correct: 'Resources being utilized'
-      },
-      {
-        question: 'Which is a metallic mineral?',
-        options: ['Coal', 'Iron ore', 'Limestone', 'Salt'],
-        correct: 'Iron ore'
-      },
-      {
-        question: 'Which is a non-metallic mineral?',
-        options: ['Gold', 'Silver', 'Mica', 'Copper'],
-        correct: 'Mica'
-      },
-      {
-        question: 'What is resource planning?',
-        options: ['Random use of resources', 'Systematic use of resources', 'Wastage of resources', 'Ignoring resources'],
-        correct: 'Systematic use of resources'
-      },
-      {
-        question: 'Which country has abundant mineral resources?',
-        options: ['Japan', 'India', 'Singapore', 'Switzerland'],
-        correct: 'India'
-      },
-      {
-        question: 'What is resource depletion?',
-        options: ['Increase in resources', 'Exhaustion of resources', 'Conservation of resources', 'Discovery of resources'],
-        correct: 'Exhaustion of resources'
-      },
-      {
-        question: 'Which technology helps in resource exploration?',
-        options: ['Remote sensing', 'Satellite imagery', 'GIS', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the main cause of resource scarcity?',
-        options: ['Overuse', 'Population growth', 'Poor planning', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which principle should guide resource use?',
-        options: ['Use maximum resources', 'Sustainable utilization', 'Ignore future needs', 'Export all resources'],
-        correct: 'Sustainable utilization'
-      },
-      {
-        question: 'What are stock resources?',
-        options: ['Resources in use', 'Resources available but not used due to lack of technology', 'Exhausted resources', 'Imported resources'],
-        correct: 'Resources available but not used due to lack of technology'
-      },
-      {
-        question: 'Which is an example of flow resource?',
-        options: ['Coal', 'Wind energy', 'Iron ore', 'Gold'],
-        correct: 'Wind energy'
-      },
-      {
-        question: 'What is resource substitution?',
-        options: ['Using same resource repeatedly', 'Replacing one resource with another', 'Wasting resources', 'Hoarding resources'],
-        correct: 'Replacing one resource with another'
-      },
-      {
-        question: 'Which approach is best for resource management?',
-        options: ['Individual approach', 'Community approach', 'Government approach', 'Integrated approach'],
-        correct: 'Integrated approach'
-      }
+      { question: 'What was the Quit India Movement?', options: ['1942 mass protest', '1940 protest', '1943 protest', '1941 protest'], correct: '1942 mass protest' },
+      { question: 'Who started the Quit India Movement?', options: ['Mahatma Gandhi', 'Jawaharlal Nehru', 'Subhas Chandra Bose', 'Sardar Patel'], correct: 'Mahatma Gandhi' },
+      { question: 'What was the Cripps Mission?', options: ['British proposal for India', 'Independence plan', 'Partition plan', 'Economic plan'], correct: 'British proposal for India' },
+      { question: 'What was the Cabinet Mission?', options: ['1946 British plan', '1945 plan', '1947 plan', '1944 plan'], correct: '1946 British plan' },
+      { question: 'What was the INA?', options: ['Indian National Army', 'Indian National Association', 'Indian National Alliance', 'Indian National Authority'], correct: 'Indian National Army' },
+      { question: 'Who led the INA?', options: ['Subhas Chandra Bose', 'Mahatma Gandhi', 'Jawaharlal Nehru', 'Sardar Patel'], correct: 'Subhas Chandra Bose' },
+      { question: 'What was the Direct Action Day?', options: ['Muslim League protest', 'Congress protest', 'British action', 'INA action'], correct: 'Muslim League protest' },
+      { question: 'What was the Mountbatten Plan?', options: ['Partition plan', 'Independence plan', 'Unity plan', 'Federal plan'], correct: 'Partition plan' },
+      { question: 'When was India partitioned?', options: ['1947', '1946', '1948', '1945'], correct: '1947' },
+      { question: 'Who was India\u0027s first Prime Minister?', options: ['Jawaharlal Nehru', 'Mahatma Gandhi', 'Sardar Patel', 'Rajendra Prasad'], correct: 'Jawaharlal Nehru' },
+      { question: 'What was the Muslim League?', options: ['Muslim political party', 'Hindu organization', 'British organization', 'Independence movement'], correct: 'Muslim political party' },
+      { question: 'Who led the Muslim League?', options: ['Muhammad Ali Jinnah', 'Liaquat Ali Khan', 'Abul Kalam Azad', 'Khan Abdul Ghaffar Khan'], correct: 'Muhammad Ali Jinnah' },
+      { question: 'What was the Two-Nation Theory?', options: ['Separate Muslim state idea', 'United India plan', 'Federal structure', 'Provincial autonomy'], correct: 'Separate Muslim state idea' },
+      { question: 'What was the Transfer of Power?', options: ['British handover to India', 'Partition process', 'Independence movement', 'Political reform'], correct: 'British handover to India' },
+      { question: 'What was the Wavell Plan?', options: ['1945 British proposal', '1944 proposal', '1946 proposal', '1943 proposal'], correct: '1945 British proposal' },
+      { question: 'What was the Royal Indian Navy Mutiny?', options: ['1946 naval uprising', '1945 protest', '1947 revolt', '1944 rebellion'], correct: '1946 naval uprising' },
+      { question: 'What was the Gandhi-Jinnah talks?', options: ['1944 unity discussion', '1945 talks', '1946 meeting', '1943 dialogue'], correct: '1944 unity discussion' },
+      { question: 'What was the Simla Conference?', options: ['1945 political meeting', '1944 conference', '1946 summit', '1943 gathering'], correct: '1945 political meeting' },
+      { question: 'What was the Interim Government?', options: ['1946 temporary government', '1945 administration', '1947 council', '1944 cabinet'], correct: '1946 temporary government' },
+      { question: 'What was the 3 June Plan?', options: ['Partition announcement', 'Independence plan', 'Unity proposal', 'Federal scheme'], correct: 'Partition announcement' },
+      { question: 'What was the Radcliffe Line?', options: ['India-Pakistan border', 'Provincial boundary', 'State border', 'District line'], correct: 'India-Pakistan border' },
+      { question: 'What was the Partition violence?', options: ['Communal riots', 'Political protest', 'Military action', 'Civil unrest'], correct: 'Communal riots' },
+      { question: 'What was Operation Polo?', options: ['Hyderabad integration', 'Military exercise', 'Police action', 'Political movement'], correct: 'Hyderabad integration' },
+      { question: 'What was the Standstill Agreement?', options: ['Temporary arrangement with princely states', 'Partition plan', 'Independence proposal', 'Federal scheme'], correct: 'Temporary arrangement with princely states' },
+      { question: 'What was the Integration of States?', options: ['Unification of princely states', 'Partition process', 'Independence movement', 'Political reform'], correct: 'Unification of princely states' }
     ]
   },
   {
     id: 15,
-    title: 'Land, Soil, Water, Natural Vegetation and Wildlife Resources',
-    description: 'Importance of land, soil, water, and conservation methods.',
+    title: 'Making of Independent India\u0027s Constitution',
+    description: 'Study of the process of creating India\u0027s Constitution.',
     questions: [
-      {
-        question: 'Which type of farming depends on monsoon rain?',
-        options: ['Irrigated farming', 'Shifting agriculture', 'Rain-fed farming', 'Plantation farming'],
-        correct: 'Rain-fed farming'
-      },
-      {
-        question: 'Which method is used to prevent soil erosion?',
-        options: ['Deforestation', 'Overgrazing', 'Terrace farming', 'Excess irrigation'],
-        correct: 'Terrace farming'
-      },
-      {
-        question: 'What percentage of Earths surface is covered by water?',
-        options: ['50%', '60%', '71%', '80%'],
-        correct: '71%'
-      },
-      {
-        question: 'Which soil is best for cotton cultivation?',
-        options: ['Alluvial soil', 'Black soil', 'Red soil', 'Laterite soil'],
-        correct: 'Black soil'
-      },
-      {
-        question: 'What causes soil erosion?',
-        options: ['Wind', 'Water', 'Human activities', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which is the most fertile soil?',
-        options: ['Desert soil', 'Alluvial soil', 'Mountain soil', 'Forest soil'],
-        correct: 'Alluvial soil'
-      },
-      {
-        question: 'What is humus?',
-        options: ['Rock particles', 'Organic matter in soil', 'Water in soil', 'Air in soil'],
-        correct: 'Organic matter in soil'
-      },
-      {
-        question: 'Which method helps in soil conservation?',
-        options: ['Contour ploughing', 'Strip cropping', 'Afforestation', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the main cause of land degradation?',
-        options: ['Natural factors only', 'Human activities', 'Climate change only', 'Animal activities'],
-        correct: 'Human activities'
-      },
-      {
-        question: 'Which type of vegetation is found in tropical regions?',
-        options: ['Coniferous forests', 'Tropical rainforests', 'Temperate forests', 'Tundra vegetation'],
-        correct: 'Tropical rainforests'
-      },
-      {
-        question: 'What is the importance of forests?',
-        options: ['Provide oxygen', 'Prevent soil erosion', 'Habitat for wildlife', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which is the largest freshwater lake in India?',
-        options: ['Dal Lake', 'Wular Lake', 'Chilika Lake', 'Pulicat Lake'],
-        correct: 'Wular Lake'
-      },
-      {
-        question: 'What is watershed management?',
-        options: ['Water pollution', 'Systematic management of water resources', 'Water wastage', 'Water storage only'],
-        correct: 'Systematic management of water resources'
-      },
-      {
-        question: 'Which animal is the national bird of India?',
-        options: ['Eagle', 'Peacock', 'Parrot', 'Crow'],
-        correct: 'Peacock'
-      },
-      {
-        question: 'What is biodiversity?',
-        options: ['Single species', 'Variety of life forms', 'Only plant species', 'Only animal species'],
-        correct: 'Variety of life forms'
-      },
-      {
-        question: 'Which is an endangered species?',
-        options: ['Tiger', 'Elephant', 'Rhinoceros', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the main threat to wildlife?',
-        options: ['Habitat destruction', 'Poaching', 'Pollution', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which soil is found in heavy rainfall areas?',
-        options: ['Desert soil', 'Laterite soil', 'Black soil', 'Alluvial soil'],
-        correct: 'Laterite soil'
-      },
-      {
-        question: 'What is the process of soil formation called?',
-        options: ['Weathering', 'Erosion', 'Deposition', 'Sedimentation'],
-        correct: 'Weathering'
-      },
-      {
-        question: 'Which factor affects natural vegetation?',
-        options: ['Climate', 'Soil', 'Topography', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the importance of wetlands?',
-        options: ['Flood control', 'Water purification', 'Wildlife habitat', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which method is used for water harvesting?',
-        options: ['Rainwater harvesting', 'Check dams', 'Percolation tanks', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is desertification?',
-        options: ['Formation of deserts', 'Land becoming desert-like', 'Desert expansion', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which tree is known as the king of forests?',
-        options: ['Teak', 'Sal', 'Oak', 'Pine'],
-        correct: 'Teak'
-      },
-      {
-        question: 'What is the role of earthworms in soil?',
-        options: ['Soil aeration', 'Mixing organic matter', 'Improving soil fertility', 'All of the above'],
-        correct: 'All of the above'
-      }
+      { question: 'When was the Constituent Assembly formed?', options: ['1946', '1947', '1945', '1948'], correct: '1946' },
+      { question: 'Who was the Chairman of the Drafting Committee?', options: ['Dr. B.R. Ambedkar', 'Jawaharlal Nehru', 'Rajendra Prasad', 'Sardar Patel'], correct: 'Dr. B.R. Ambedkar' },
+      { question: 'When was the Constitution adopted?', options: ['26 November 1949', '26 January 1950', '15 August 1947', '26 November 1948'], correct: '26 November 1949' },
+      { question: 'When did the Constitution come into effect?', options: ['26 January 1950', '26 November 1949', '15 August 1947', '26 November 1948'], correct: '26 January 1950' },
+      { question: 'What is the Preamble?', options: ['Introduction to Constitution', 'Law book', 'Government order', 'Court judgment'], correct: 'Introduction to Constitution' },
+      { question: 'What type of government does India have?', options: ['Parliamentary democracy', 'Presidential system', 'Military rule', 'Monarchy'], correct: 'Parliamentary democracy' },
+      { question: 'What is federalism?', options: ['Division of powers', 'Central rule', 'State autonomy', 'Local government'], correct: 'Division of powers' },
+      { question: 'What are Fundamental Rights?', options: ['Basic human rights', 'Government policies', 'State laws', 'Local rules'], correct: 'Basic human rights' },
+      { question: 'What are Directive Principles?', options: ['State policy guidelines', 'Laws', 'Rules', 'Regulations'], correct: 'State policy guidelines' },
+      { question: 'What is secularism?', options: ['Religious neutrality', 'Hindu state', 'Muslim state', 'Christian state'], correct: 'Religious neutrality' },
+      { question: 'What is universal adult franchise?', options: ['Voting right for all adults', 'Limited voting', 'No voting', 'Restricted voting'], correct: 'Voting right for all adults' },
+      { question: 'What is the basic structure doctrine?', options: ['Core features of Constitution', 'Amendment process', 'Law making', 'Court procedure'], correct: 'Core features of Constitution' },
+      { question: 'What are the three organs of government?', options: ['Legislature, Executive, Judiciary', 'President, PM, CM', 'Centre, State, Local', 'Army, Navy, Air Force'], correct: 'Legislature, Executive, Judiciary' },
+      { question: 'What is the role of Parliament?', options: ['Law making', 'Law enforcement', 'Court judgment', 'Local administration'], correct: 'Law making' },
+      { question: 'What is the Supreme Court?', options: ['Highest court', 'Lower court', 'Local court', 'Special court'], correct: 'Highest court' },
+      { question: 'What are Fundamental Duties?', options: ['Citizens\u0027 obligations', 'Government duties', 'State functions', 'Local responsibilities'], correct: 'Citizens\u0027 obligations' },
+      { question: 'What is the Election Commission?', options: ['Election conducting body', 'Government department', 'Political party', 'Local body'], correct: 'Election conducting body' },
+      { question: 'What is the Planning Commission?', options: ['Economic planning body', 'Election body', 'Law making body', 'Court system'], correct: 'Economic planning body' },
+      { question: 'What is the Finance Commission?', options: ['Financial distribution body', 'Banking regulator', 'Economic planner', 'Tax collector'], correct: 'Financial distribution body' },
+      { question: 'What is the official language?', options: ['Hindi in Devanagari script', 'English', 'Sanskrit', 'Urdu'], correct: 'Hindi in Devanagari script' },
+      { question: 'What is the emergency provision?', options: ['Special powers during crisis', 'Normal governance', 'Regular law', 'Standard procedure'], correct: 'Special powers during crisis' },
+      { question: 'What is the amendment process?', options: ['Constitutional change procedure', 'Law making', 'Court process', 'Election system'], correct: 'Constitutional change procedure' },
+      { question: 'What is the citizenship law?', options: ['Rules for Indian citizenship', 'Voting rights', 'Property rights', 'Education rights'], correct: 'Rules for Indian citizenship' },
+      { question: 'What is the role of states?', options: ['State level governance', 'National governance', 'Local administration', 'International relations'], correct: 'State level governance' },
+      { question: 'What is the role of President?', options: ['Head of State', 'Head of Government', 'Chief Justice', 'Army Chief'], correct: 'Head of State' }
     ]
   },
   {
     id: 16,
-    title: 'Agriculture',
-    description: 'Different types of farming and their impact on the economy.',
+    title: 'The Election Process in India',
+    description: 'Understanding the electoral system and democratic process in India.',
     questions: [
-      {
-        question: 'Which crop is known as the staple food of India?',
-        options: ['Wheat', 'Rice', 'Millets', 'Sugarcane'],
-        correct: 'Rice'
-      },
-      {
-        question: 'Which type of agriculture is practiced in small areas with traditional methods?',
-        options: ['Commercial farming', 'Subsistence farming', 'Plantation farming', 'Horticulture'],
-        correct: 'Subsistence farming'
-      },
-      {
-        question: 'What percentage of Indias population depends on agriculture?',
-        options: ['40%', '50%', '60%', '70%'],
-        correct: '60%'
-      },
-      {
-        question: 'Which season is known as Kharif season?',
-        options: ['Summer season', 'Monsoon season', 'Winter season', 'Spring season'],
-        correct: 'Monsoon season'
-      },
-      {
-        question: 'Which crop is grown in Rabi season?',
-        options: ['Rice', 'Cotton', 'Wheat', 'Sugarcane'],
-        correct: 'Wheat'
-      },
-      {
-        question: 'What is the main feature of intensive farming?',
-        options: ['Large area cultivation', 'Use of modern technology', 'Traditional methods', 'Low investment'],
-        correct: 'Use of modern technology'
-      },
-      {
-        question: 'Which type of farming is done for commercial purposes?',
-        options: ['Subsistence farming', 'Commercial farming', 'Primitive farming', 'Mixed farming'],
-        correct: 'Commercial farming'
-      },
-      {
-        question: 'What is Green Revolution?',
-        options: ['Environmental movement', 'Agricultural modernization', 'Forest conservation', 'Water conservation'],
-        correct: 'Agricultural modernization'
-      },
-      {
-        question: 'Which crop is known as golden fiber?',
-        options: ['Cotton', 'Jute', 'Silk', 'Wool'],
-        correct: 'Jute'
-      },
-      {
-        question: 'What is the main problem of Indian agriculture?',
-        options: ['Small land holdings', 'Lack of irrigation', 'Traditional methods', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which state is the largest producer of rice in India?',
-        options: ['Punjab', 'West Bengal', 'Uttar Pradesh', 'Andhra Pradesh'],
-        correct: 'West Bengal'
-      },
-      {
-        question: 'What is organic farming?',
-        options: ['Use of chemical fertilizers', 'Use of natural fertilizers', 'Use of pesticides', 'Use of machines'],
-        correct: 'Use of natural fertilizers'
-      },
-      {
-        question: 'Which crop requires high temperature and rainfall?',
-        options: ['Wheat', 'Rice', 'Barley', 'Gram'],
-        correct: 'Rice'
-      },
-      {
-        question: 'What is the importance of agriculture in Indian economy?',
-        options: ['Provides employment', 'Contributes to GDP', 'Provides raw materials', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which method helps in soil conservation in agriculture?',
-        options: ['Crop rotation', 'Terrace farming', 'Contour ploughing', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is irrigation?',
-        options: ['Natural rainfall', 'Artificial water supply', 'Groundwater', 'River water'],
-        correct: 'Artificial water supply'
-      },
-      {
-        question: 'Which is the most important cash crop of India?',
-        options: ['Rice', 'Wheat', 'Cotton', 'Sugarcane'],
-        correct: 'Cotton'
-      },
-      {
-        question: 'What is mixed farming?',
-        options: ['Growing different crops', 'Crop cultivation with animal husbandry', 'Using different seeds', 'Using different fertilizers'],
-        correct: 'Crop cultivation with animal husbandry'
-      },
-      {
-        question: 'Which factor affects agricultural productivity?',
-        options: ['Climate', 'Soil', 'Technology', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the main objective of agricultural development?',
-        options: ['Increase production', 'Improve quality', 'Ensure food security', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which crop is grown throughout the year?',
-        options: ['Rice', 'Wheat', 'Sugarcane', 'Cotton'],
-        correct: 'Sugarcane'
-      },
-      {
-        question: 'What is the role of technology in agriculture?',
-        options: ['Increases productivity', 'Reduces labor', 'Improves quality', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which is an example of plantation agriculture?',
-        options: ['Tea', 'Coffee', 'Rubber', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the main challenge for small farmers?',
-        options: ['Lack of capital', 'Limited land', 'Poor technology', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which government scheme supports farmers?',
-        options: ['PM-KISAN', 'Crop insurance', 'Minimum support price', 'All of the above'],
-        correct: 'All of the above'
-      }
+      { question: 'What is universal adult franchise?', options: ['Right to vote for all adults', 'Limited voting rights', 'No voting rights', 'Selective voting'], correct: 'Right to vote for all adults' },
+      { question: 'What is the Election Commission of India?', options: ['Constitutional body for elections', 'Political party', 'Government department', 'Private organization'], correct: 'Constitutional body for elections' },
+      { question: 'What is the voting age in India?', options: ['18 years', '21 years', '25 years', '16 years'], correct: '18 years' },
+      { question: 'What is a constituency?', options: ['Electoral district', 'Political party', 'Government office', 'Voting booth'], correct: 'Electoral district' },
+      { question: 'What is FPTP system?', options: ['First Past The Post', 'Fair Political Treatment', 'Federal Party Transfer', 'Free Public Transport'], correct: 'First Past The Post' },
+      { question: 'What is a Model Code of Conduct?', options: ['Election guidelines', 'Political manifesto', 'Government policy', 'Party rules'], correct: 'Election guidelines' },
+      { question: 'What is an Electronic Voting Machine?', options: ['Digital voting device', 'Ballot box', 'Counting machine', 'Registration system'], correct: 'Digital voting device' },
+      { question: 'What is voter ID?', options: ['Voter identification card', 'Driving license', 'Passport', 'Ration card'], correct: 'Voter identification card' },
+      { question: 'What is a polling booth?', options: ['Voting station', 'Party office', 'Government building', 'School'], correct: 'Voting station' },
+      { question: 'What is a returning officer?', options: ['Election official', 'Political leader', 'Government servant', 'Party worker'], correct: 'Election official' },
+      { question: 'What is electoral roll?', options: ['Voter list', 'Candidate list', 'Party list', 'Officer list'], correct: 'Voter list' },
+      { question: 'What is a by-election?', options: ['Mid-term election', 'General election', 'Local election', 'State election'], correct: 'Mid-term election' },
+      { question: 'What is delimitation?', options: ['Boundary fixing', 'Vote counting', 'Party registration', 'Candidate selection'], correct: 'Boundary fixing' },
+      { question: 'What is NOTA?', options: ['None Of The Above', 'New Order To All', 'National Order To Act', 'Notice Of The Assembly'], correct: 'None Of The Above' },
+      { question: 'What is election manifesto?', options: ['Party promises', 'Government order', 'Court judgment', 'Official notice'], correct: 'Party promises' },
+      { question: 'What is booth capturing?', options: ['Electoral malpractice', 'Legal process', 'Voting procedure', 'Election campaign'], correct: 'Electoral malpractice' },
+      { question: 'What is voter turnout?', options: ['Voting percentage', 'Party membership', 'Election result', 'Campaign success'], correct: 'Voting percentage' },
+      { question: 'What is election petition?', options: ['Legal challenge to result', 'Nomination paper', 'Party document', 'Government order'], correct: 'Legal challenge to result' },
+      { question: 'What is campaign period?', options: ['Time for election propaganda', 'Voting time', 'Result time', 'Registration time'], correct: 'Time for election propaganda' },
+      { question: 'What is postal ballot?', options: ['Voting by mail', 'Direct voting', 'Online voting', 'Proxy voting'], correct: 'Voting by mail' },
+      { question: 'What is election symbol?', options: ['Party identity mark', 'Government seal', 'Voter ID', 'Candidate photo'], correct: 'Party identity mark' },
+      { question: 'What is election expenditure?', options: ['Campaign spending', 'Government budget', 'Party fund', 'Voter payment'], correct: 'Campaign spending' },
+      { question: 'What is election observer?', options: ['Neutral monitor', 'Party worker', 'Government official', 'Local leader'], correct: 'Neutral monitor' },
+      { question: 'What is vote counting?', options: ['Result tabulation', 'Voter registration', 'Campaign planning', 'Party meeting'], correct: 'Result tabulation' },
+      { question: 'What is election duty?', options: ['Official assignment', 'Party work', 'Volunteer service', 'Public service'], correct: 'Official assignment' }
     ]
   },
   {
     id: 17,
-    title: 'Industries',
-    description: 'Understanding different types of industries and their role.',
+    title: 'Independent India (The first 30 years 1947-1977)',
+    description: 'Study of India\u0027s development in the first three decades after independence.',
     questions: [
-      {
-        question: 'Which of the following is an agro-based industry?',
-        options: ['Iron and Steel', 'Cement', 'Textile', 'Automobile'],
-        correct: 'Textile'
-      },
-      {
-        question: 'Which industry is called the backbone of industrial development?',
-        options: ['IT Industry', 'Iron and Steel Industry', 'Tourism Industry', 'Handicrafts Industry'],
-        correct: 'Iron and Steel Industry'
-      },
-      {
-        question: 'What is industrialization?',
-        options: ['Growth of agriculture', 'Growth of industries', 'Growth of services', 'Growth of trade'],
-        correct: 'Growth of industries'
-      },
-      {
-        question: 'Which factor is most important for industrial location?',
-        options: ['Raw materials', 'Power', 'Transport', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What are heavy industries?',
-        options: ['Industries using heavy machinery', 'Industries producing heavy goods', 'Industries with large investment', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which is an example of cottage industry?',
-        options: ['Handloom', 'Pottery', 'Handicrafts', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the main advantage of small scale industries?',
-        options: ['Provide employment', 'Less capital requirement', 'Use local resources', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which industry is based on forest resources?',
-        options: ['Paper industry', 'Furniture industry', 'Match industry', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the role of industries in economic development?',
-        options: ['Provide employment', 'Increase income', 'Improve standard of living', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which is a mineral-based industry?',
-        options: ['Iron and Steel', 'Cement', 'Aluminum', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is industrial pollution?',
-        options: ['Pollution from industries', 'Pollution in industries', 'Pollution by workers', 'Pollution of products'],
-        correct: 'Pollution from industries'
-      },
-      {
-        question: 'Which factor affects industrial growth?',
-        options: ['Government policy', 'Technology', 'Market demand', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the importance of transport for industries?',
-        options: ['Movement of raw materials', 'Movement of finished goods', 'Movement of workers', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which industry is known as sunrise industry?',
-        options: ['Traditional industry', 'IT industry', 'Heavy industry', 'Chemical industry'],
-        correct: 'IT industry'
-      },
-      {
-        question: 'What is industrial estate?',
-        options: ['Area for industries', 'Industrial building', 'Industrial machinery', 'Industrial products'],
-        correct: 'Area for industries'
-      },
-      {
-        question: 'Which is the largest industry in India?',
-        options: ['Textile', 'Iron and Steel', 'Chemical', 'Automobile'],
-        correct: 'Textile'
-      },
-      {
-        question: 'What is the main problem of Indian industries?',
-        options: ['Lack of technology', 'Poor infrastructure', 'Limited capital', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which policy promoted industrial growth in India?',
-        options: ['Industrial Policy 1991', 'New Economic Policy', 'Liberalization', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is automation in industries?',
-        options: ['Use of machines', 'Use of computers', 'Use of robots', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which industry provides maximum employment?',
-        options: ['Large scale industries', 'Small scale industries', 'Heavy industries', 'Chemical industries'],
-        correct: 'Small scale industries'
-      },
-      {
-        question: 'What is industrial cluster?',
-        options: ['Group of industries', 'Group of workers', 'Group of machines', 'Group of products'],
-        correct: 'Group of industries'
-      },
-      {
-        question: 'Which factor is important for chemical industries?',
-        options: ['Water', 'Power', 'Transport', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the impact of globalization on industries?',
-        options: ['Increased competition', 'Technology transfer', 'Market expansion', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which industry is environment friendly?',
-        options: ['Chemical industry', 'IT industry', 'Mining industry', 'Heavy industry'],
-        correct: 'IT industry'
-      },
-      {
-        question: 'What is the future of Indian industries?',
-        options: ['Technology-based', 'Skill-based', 'Knowledge-based', 'All of the above'],
-        correct: 'All of the above'
-      }
+      { question: 'Who was India\u0027s first Prime Minister?', options: ['Jawaharlal Nehru', 'Sardar Patel', 'B.R. Ambedkar', 'Rajendra Prasad'], correct: 'Jawaharlal Nehru' },
+      { question: 'What was the First Five Year Plan?', options: ['Economic development program', 'Political reform', 'Social change', 'Military strategy'], correct: 'Economic development program' },
+      { question: 'What was the Green Revolution?', options: ['Agricultural modernization', 'Environmental movement', 'Political change', 'Industrial growth'], correct: 'Agricultural modernization' },
+      { question: 'What was the White Revolution?', options: ['Milk production increase', 'Paper industry', 'Sugar industry', 'Cotton industry'], correct: 'Milk production increase' },
+      { question: 'What was the Non-Aligned Movement?', options: ['Independent foreign policy', 'Military alliance', 'Economic union', 'Political party'], correct: 'Independent foreign policy' },
+      { question: 'What was the Sino-Indian War?', options: ['1962 India-China conflict', '1965 war', '1971 war', '1947 war'], correct: '1962 India-China conflict' },
+      { question: 'What was the Indo-Pak War 1965?', options: ['Kashmir conflict', 'Bangladesh war', 'Siachen conflict', 'Kargil war'], correct: 'Kashmir conflict' },
+      { question: 'What was the Indo-Pak War 1971?', options: ['Bangladesh liberation', 'Kashmir war', 'Siachen conflict', 'Kargil war'], correct: 'Bangladesh liberation' },
+      { question: 'What was the Emergency?', options: ['1975-77 period', '1971-73 period', '1969-71 period', '1977-79 period'], correct: '1975-77 period' },
+      { question: 'What was bank nationalization?', options: ['Government takeover of banks', 'Private banking', 'Foreign banks', 'Cooperative banks'], correct: 'Government takeover of banks' },
+      { question: 'What was the Privy Purse abolition?', options: ['End of royal privileges', 'New tax', 'Government scheme', 'Economic policy'], correct: 'End of royal privileges' },
+      { question: 'What was the State Reorganization?', options: ['Language-based states', 'Geographic division', 'Economic zones', 'Cultural regions'], correct: 'Language-based states' },
+      { question: 'What was the Planning Commission?', options: ['Economic planning body', 'Political organization', 'Social welfare agency', 'Educational institution'], correct: 'Economic planning body' },
+      { question: 'What was the Panchsheel Agreement?', options: ['India-China principles', 'Economic policy', 'Social reform', 'Military strategy'], correct: 'India-China principles' },
+      { question: 'What was Operation Flood?', options: ['Milk production program', 'Flood control', 'Military operation', 'Relief work'], correct: 'Milk production program' },
+      { question: 'What was the Indira Gandhi era?', options: ['1966-77 period', '1947-64 period', '1977-80 period', '1980-84 period'], correct: '1966-77 period' },
+      { question: 'What was the Congress Split?', options: ['1969 party division', '1975 split', '1977 break', '1980 separation'], correct: '1969 party division' },
+      { question: 'What was the Twenty Point Programme?', options: ['Economic reform plan', 'Political agenda', 'Social scheme', 'Military strategy'], correct: 'Economic reform plan' },
+      { question: 'What was the Shimla Agreement?', options: ['1972 India-Pakistan pact', '1965 treaty', '1971 agreement', '1974 accord'], correct: '1972 India-Pakistan pact' },
+      { question: 'What was the Nuclear Program?', options: ['Atomic energy development', 'Space program', 'Defense strategy', 'Research project'], correct: 'Atomic energy development' },
+      { question: 'What was the Land Reform?', options: ['Agricultural land redistribution', 'Urban development', 'Industrial policy', 'Forest conservation'], correct: 'Agricultural land redistribution' },
+      { question: 'What was the Industrial Policy?', options: ['Manufacturing sector rules', 'Agricultural policy', 'Trade policy', 'Foreign policy'], correct: 'Manufacturing sector rules' },
+      { question: 'What was the Education Policy?', options: ['Learning system reform', 'Health policy', 'Housing scheme', 'Transport plan'], correct: 'Learning system reform' },
+      { question: 'What was the Foreign Policy?', options: ['International relations', 'Domestic policy', 'Economic plan', 'Defense strategy'], correct: 'International relations' },
+      { question: 'What was the JP Movement?', options: ['Anti-corruption protest', 'Economic reform', 'Social change', 'Political party'], correct: 'Anti-corruption protest' }
     ]
   },
   {
     id: 18,
-    title: 'Human Resources',
-    description: 'Understanding population as an asset and its development.',
+    title: 'Emerging Political Trends (1977-2007)',
+    description: 'Study of political developments in India from 1977 to 2007.',
     questions: [
-      {
-        question: 'What is the key factor in human resource development?',
-        options: ['Only education', 'Only health', 'Both education and health', 'Natural resources'],
-        correct: 'Both education and health'
-      },
-      {
-        question: 'Which country has the second-largest population in the world?',
-        options: ['USA', 'China', 'India', 'Russia'],
-        correct: 'India'
-      },
-      {
-        question: 'What is human capital?',
-        options: ['Money invested in humans', 'Skills and knowledge of people', 'Number of people', 'Physical strength'],
-        correct: 'Skills and knowledge of people'
-      },
-      {
-        question: 'Which factor contributes to human resource development?',
-        options: ['Education', 'Health', 'Training', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the importance of education in human development?',
-        options: ['Increases skills', 'Improves productivity', 'Enhances quality of life', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is population explosion?',
-        options: ['Rapid increase in population', 'Rapid decrease in population', 'Stable population', 'Aging population'],
-        correct: 'Rapid increase in population'
-      },
-      {
-        question: 'Which age group is considered working population?',
-        options: ['0-14 years', '15-59 years', '60+ years', '0-59 years'],
-        correct: '15-59 years'
-      },
-      {
-        question: 'What is demographic dividend?',
-        options: ['Large working age population', 'Large elderly population', 'Large child population', 'Equal age distribution'],
-        correct: 'Large working age population'
-      },
-      {
-        question: 'Which factor affects quality of population?',
-        options: ['Literacy rate', 'Health status', 'Skill level', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is brain drain?',
-        options: ['Loss of educated people to other countries', 'Loss of memory', 'Lack of education', 'Poor health'],
-        correct: 'Loss of educated people to other countries'
-      },
-      {
-        question: 'Which is the most important investment in human capital?',
-        options: ['Education', 'Health', 'Training', 'All equally important'],
-        correct: 'All equally important'
-      },
-      {
-        question: 'What is the role of health in human development?',
-        options: ['Increases productivity', 'Reduces absenteeism', 'Improves quality of life', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which scheme promotes skill development in India?',
-        options: ['Skill India', 'Digital India', 'Make in India', 'Startup India'],
-        correct: 'Skill India'
-      },
-      {
-        question: 'What is human development index?',
-        options: ['Measure of economic growth', 'Measure of human development', 'Measure of population', 'Measure of resources'],
-        correct: 'Measure of human development'
-      },
-      {
-        question: 'Which factor indicates quality of life?',
-        options: ['Life expectancy', 'Literacy rate', 'Per capita income', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What is the main challenge of human resource development?',
-        options: ['Large population', 'Poor education', 'Health problems', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which policy focuses on population control?',
-        options: ['Family planning', 'Education policy', 'Health policy', 'Economic policy'],
-        correct: 'Family planning'
-      },
-      {
-        question: 'What is the advantage of educated population?',
-        options: ['Higher productivity', 'Better health', 'Economic growth', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which sector employs maximum people in India?',
-        options: ['Agriculture', 'Industry', 'Services', 'Government'],
-        correct: 'Agriculture'
-      },
-      {
-        question: 'What is unemployment?',
-        options: ['People without work', 'People with part-time work', 'People with low wages', 'People in agriculture'],
-        correct: 'People without work'
-      },
-      {
-        question: 'Which type of unemployment is common in rural areas?',
-        options: ['Seasonal unemployment', 'Structural unemployment', 'Cyclical unemployment', 'Frictional unemployment'],
-        correct: 'Seasonal unemployment'
-      },
-      {
-        question: 'What is the role of technology in human development?',
-        options: ['Improves skills', 'Creates new jobs', 'Enhances productivity', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which program promotes adult education?',
-        options: ['Sarva Shiksha Abhiyan', 'National Literacy Mission', 'Mid-day Meal', 'Right to Education'],
-        correct: 'National Literacy Mission'
-      },
-      {
-        question: 'What is the impact of globalization on human resources?',
-        options: ['Increased mobility', 'Skill development', 'New opportunities', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which is the ultimate goal of human resource development?',
-        options: ['Economic growth', 'Social development', 'Better quality of life', 'All of the above'],
-        correct: 'All of the above'
-      }
+      { question: 'What was the Janata Party?', options: ['First non-Congress government', 'Congress party', 'Regional party', 'Left party'], correct: 'First non-Congress government' },
+      { question: 'Who was Morarji Desai?', options: ['First non-Congress PM', 'Congress PM', 'BJP leader', 'Left leader'], correct: 'First non-Congress PM' },
+      { question: 'What was Operation Blue Star?', options: ['1984 military action', '1982 operation', '1986 action', '1988 operation'], correct: '1984 military action' },
+      { question: 'What was the Anti-Sikh riots?', options: ['1984 violence', '1982 riots', '1986 conflict', '1988 unrest'], correct: '1984 violence' },
+      { question: 'Who was Rajiv Gandhi?', options: ['PM 1984-89', 'PM 1980-84', 'PM 1989-91', 'PM 1991-96'], correct: 'PM 1984-89' },
+      { question: 'What was the Shah Bano case?', options: ['Muslim personal law debate', 'Property dispute', 'Criminal case', 'Civil matter'], correct: 'Muslim personal law debate' },
+      { question: 'What was the Mandal Commission?', options: ['OBC reservation policy', 'Economic policy', 'Foreign policy', 'Education policy'], correct: 'OBC reservation policy' },
+      { question: 'What was the Ram Janmabhoomi movement?', options: ['Ayodhya dispute', 'Kashmir issue', 'Punjab problem', 'Northeast conflict'], correct: 'Ayodhya dispute' },
+      { question: 'What was the Coalition era?', options: ['Multi-party governments', 'Single party rule', 'President rule', 'Military rule'], correct: 'Multi-party governments' },
+      { question: 'What was the BJP rise?', options: ['Hindu nationalist growth', 'Congress dominance', 'Left emergence', 'Regional power'], correct: 'Hindu nationalist growth' },
+      { question: 'What was the Economic liberalization?', options: ['1991 reforms', '1985 changes', '1995 policy', '2000 reforms'], correct: '1991 reforms' },
+      { question: 'What was the National Front?', options: ['1989 coalition', '1991 alliance', '1996 front', '1998 group'], correct: '1989 coalition' },
+      { question: 'What was the United Front?', options: ['1996 coalition', '1991 alliance', '1998 front', '2004 group'], correct: '1996 coalition' },
+      { question: 'What was the NDA?', options: ['BJP-led alliance', 'Congress alliance', 'Left front', 'Regional group'], correct: 'BJP-led alliance' },
+      { question: 'What was the UPA?', options: ['Congress-led alliance', 'BJP alliance', 'Left front', 'Regional group'], correct: 'Congress-led alliance' },
+      { question: 'What was the Kargil War?', options: ['1999 India-Pakistan conflict', '1995 war', '2001 conflict', '2003 battle'], correct: '1999 India-Pakistan conflict' },
+      { question: 'What was the Nuclear test?', options: ['1998 Pokhran-II', '1995 test', '2000 experiment', '2002 trial'], correct: '1998 Pokhran-II' },
+      { question: 'What was the Gujarat riots?', options: ['2002 communal violence', '2000 unrest', '2004 conflict', '2006 riots'], correct: '2002 communal violence' },
+      { question: 'What was the RTI Act?', options: ['Information rights law', 'Property law', 'Criminal law', 'Civil law'], correct: 'Information rights law' },
+      { question: 'What was NREGA?', options: ['Rural employment guarantee', 'Urban scheme', 'Industrial policy', 'Education law'], correct: 'Rural employment guarantee' },
+      { question: 'What was the Nuclear deal?', options: ['Indo-US agreement', 'Russia pact', 'China treaty', 'France accord'], correct: 'Indo-US agreement' },
+      { question: 'What was the SEZ policy?', options: ['Special economic zones', 'Social welfare', 'Security measure', 'State reform'], correct: 'Special economic zones' },
+      { question: 'What was the Reservation debate?', options: ['OBC quota issue', 'Economic policy', 'Foreign affairs', 'Defense matter'], correct: 'OBC quota issue' },
+      { question: 'What was the Rise of regional parties?', options: ['State-based politics', 'National politics', 'Local politics', 'International relations'], correct: 'State-based politics' },
+      { question: 'What was the Coalition politics?', options: ['Multi-party governance', 'Single party rule', 'Presidential system', 'Military rule'], correct: 'Multi-party governance' }
     ]
   },
   {
     id: 19,
-    title: 'The Making of the National Movement: 1870s–1947',
-    description: 'How the freedom struggle evolved over time.',
+    title: 'Post-War World and India',
+    description: 'Study of global developments after World War II and their impact on India.',
     questions: [
-      {
-        question: 'Which movement was started by Mahatma Gandhi in 1942?',
-        options: ['Non-Cooperation Movement', 'Civil Disobedience Movement', 'Quit India Movement', 'Swadeshi Movement'],
-        correct: 'Quit India Movement'
-      },
-      {
-        question: 'Who was the first President of the Indian National Congress?',
-        options: ['Mahatma Gandhi', 'Jawaharlal Nehru', 'W.C. Banerjee', 'Sardar Patel'],
-        correct: 'W.C. Banerjee'
-      },
-      {
-        question: 'When was the Indian National Congress founded?',
-        options: ['1885', '1886', '1887', '1888'],
-        correct: '1885'
-      },
-      {
-        question: 'Who founded the Indian National Congress?',
-        options: ['A.O. Hume', 'Dadabhai Naoroji', 'Surendranath Banerjee', 'W.C. Banerjee'],
-        correct: 'A.O. Hume'
-      },
-      {
-        question: 'What was the Swadeshi Movement?',
-        options: ['Use of foreign goods', 'Use of Indian goods', 'Political movement', 'Economic boycott'],
-        correct: 'Use of Indian goods'
-      },
-      {
-        question: 'When did the Partition of Bengal take place?',
-        options: ['1905', '1906', '1907', '1908'],
-        correct: '1905'
-      },
-      {
-        question: 'Who led the Khilafat Movement?',
-        options: ['Mahatma Gandhi', 'Ali Brothers', 'Maulana Azad', 'Khan Abdul Ghaffar Khan'],
-        correct: 'Ali Brothers'
-      },
-      {
-        question: 'What was the main demand of the Khilafat Movement?',
-        options: ['Independence', 'Restoration of Caliph', 'Hindu-Muslim unity', 'Economic rights'],
-        correct: 'Restoration of Caliph'
-      },
-      {
-        question: 'When did the Non-Cooperation Movement start?',
-        options: ['1919', '1920', '1921', '1922'],
-        correct: '1920'
-      },
-      {
-        question: 'Why was the Non-Cooperation Movement called off?',
-        options: ['Government pressure', 'Chauri Chaura incident', 'Lack of support', 'Foreign intervention'],
-        correct: 'Chauri Chaura incident'
-      },
-      {
-        question: 'What was the Salt March also known as?',
-        options: ['Quit India March', 'Dandi March', 'Freedom March', 'Civil Disobedience March'],
-        correct: 'Dandi March'
-      },
-      {
-        question: 'When did the Salt March take place?',
-        options: ['1929', '1930', '1931', '1932'],
-        correct: '1930'
-      },
-      {
-        question: 'What was the slogan of Quit India Movement?',
-        options: ['Swaraj is my birthright', 'Do or Die', 'Vande Mataram', 'Inquilab Zindabad'],
-        correct: 'Do or Die'
-      },
-      {
-        question: 'Who gave the slogan Inquilab Zindabad?',
-        options: ['Bhagat Singh', 'Ashfaqullah Khan', 'Chandrashekhar Azad', 'Ram Prasad Bismil'],
-        correct: 'Ashfaqullah Khan'
-      },
-      {
-        question: 'What was the main feature of the early nationalist movement?',
-        options: ['Violent methods', 'Constitutional methods', 'Mass movements', 'Revolutionary activities'],
-        correct: 'Constitutional methods'
-      },
-      {
-        question: 'Who were called Moderates?',
-        options: ['Early Congress leaders', 'Revolutionary leaders', 'Extremist leaders', 'British officials'],
-        correct: 'Early Congress leaders'
-      },
-      {
-        question: 'Who were the main Extremist leaders?',
-        options: ['Bal Gangadhar Tilak', 'Lala Lajpat Rai', 'Bipin Chandra Pal', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What was the main difference between Moderates and Extremists?',
-        options: ['Methods of struggle', 'Goals', 'Leadership', 'Support base'],
-        correct: 'Methods of struggle'
-      },
-      {
-        question: 'Who was known as the Lion of Punjab?',
-        options: ['Bhagat Singh', 'Lala Lajpat Rai', 'Udham Singh', 'Kartar Singh Sarabha'],
-        correct: 'Lala Lajpat Rai'
-      },
-      {
-        question: 'What was the impact of World War I on Indian nationalism?',
-        options: ['Strengthened it', 'Weakened it', 'No impact', 'Delayed it'],
-        correct: 'Strengthened it'
-      },
-      {
-        question: 'What was the Rowlatt Act?',
-        options: ['Educational reform', 'Repressive law', 'Economic policy', 'Social reform'],
-        correct: 'Repressive law'
-      },
-      {
-        question: 'What was the impact of the Jallianwala Bagh massacre?',
-        options: ['Ended nationalism', 'Strengthened nationalism', 'No impact', 'Divided people'],
-        correct: 'Strengthened nationalism'
-      },
-      {
-        question: 'Who was the Viceroy during Quit India Movement?',
-        options: ['Lord Linlithgow', 'Lord Wavell', 'Lord Mountbatten', 'Lord Irwin'],
-        correct: 'Lord Linlithgow'
-      },
-      {
-        question: 'What was the main achievement of the national movement?',
-        options: ['Independence', 'Unity', 'Awareness', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'When did India gain independence?',
-        options: ['August 14, 1947', 'August 15, 1947', 'August 16, 1947', 'August 17, 1947'],
-        correct: 'August 15, 1947'
-      }
+      { question: 'What was the Cold War?', options: ['US-USSR rivalry', 'Hot war', 'World War', 'Civil war'], correct: 'US-USSR rivalry' },
+      { question: 'What was the Iron Curtain?', options: ['Division of Europe', 'Military wall', 'Trade barrier', 'Political boundary'], correct: 'Division of Europe' },
+      { question: 'What was NATO?', options: ['Western military alliance', 'Eastern alliance', 'Trade group', 'Political party'], correct: 'Western military alliance' },
+      { question: 'What was the Warsaw Pact?', options: ['Soviet military alliance', 'Western alliance', 'Trade group', 'Political party'], correct: 'Soviet military alliance' },
+      { question: 'What was the Marshall Plan?', options: ['European recovery program', 'Military strategy', 'Peace treaty', 'Trade agreement'], correct: 'European recovery program' },
+      { question: 'What was the Cuban Missile Crisis?', options: ['US-USSR confrontation', 'Trade dispute', 'Civil war', 'Regional conflict'], correct: 'US-USSR confrontation' },
+      { question: 'What was the Vietnam War?', options: ['US-Vietnam conflict', 'Civil war', 'World war', 'Regional war'], correct: 'US-Vietnam conflict' },
+      { question: 'What was the Korean War?', options: ['North-South Korea conflict', 'Civil war', 'World war', 'Regional war'], correct: 'North-South Korea conflict' },
+      { question: 'What was the Space Race?', options: ['US-USSR competition', 'Scientific research', 'Military program', 'Economic rivalry'], correct: 'US-USSR competition' },
+      { question: 'What was Détente?', options: ['Easing of tensions', 'Military buildup', 'Trade war', 'Political crisis'], correct: 'Easing of tensions' },
+      { question: 'What was the Berlin Wall?', options: ['East-West Berlin barrier', 'Military defense', 'Trade barrier', 'Political boundary'], correct: 'East-West Berlin barrier' },
+      { question: 'What was Glasnost?', options: ['Soviet openness policy', 'Economic reform', 'Military strategy', 'Political party'], correct: 'Soviet openness policy' },
+      { question: 'What was Perestroika?', options: ['Soviet restructuring', 'Economic plan', 'Military reform', 'Political movement'], correct: 'Soviet restructuring' },
+      { question: 'What was the Fall of Berlin Wall?', options: ['1989 German unification', '1991 event', '1987 incident', '1985 occurrence'], correct: '1989 German unification' },
+      { question: 'What was the Collapse of USSR?', options: ['1991 Soviet dissolution', '1989 event', '1993 incident', '1987 occurrence'], correct: '1991 Soviet dissolution' },
+      { question: 'What was India\u0027s role in Cold War?', options: ['Non-aligned nation', 'US ally', 'USSR ally', 'Neutral country'], correct: 'Non-aligned nation' },
+      { question: 'What was the Third World?', options: ['Developing nations', 'Rich nations', 'Poor nations', 'Advanced nations'], correct: 'Developing nations' },
+      { question: 'What was Decolonization?', options: ['End of colonial rule', 'Colonial expansion', 'Military conquest', 'Political reform'], correct: 'End of colonial rule' },
+      { question: 'What was the UN role?', options: ['International peace', 'Military force', 'Economic body', 'Political party'], correct: 'International peace' },
+      { question: 'What was the Arms Race?', options: ['Military competition', 'Space race', 'Economic rivalry', 'Political contest'], correct: 'Military competition' },
+      { question: 'What was the Green Revolution?', options: ['Agricultural modernization', 'Environmental movement', 'Political change', 'Social reform'], correct: 'Agricultural modernization' },
+      { question: 'What was Globalization?', options: ['Global integration', 'Local focus', 'Regional unity', 'National isolation'], correct: 'Global integration' },
+      { question: 'What was the Information Age?', options: ['Digital revolution', 'Industrial age', 'Stone age', 'Bronze age'], correct: 'Digital revolution' },
+      { question: 'What was Climate Change?', options: ['Global warming issue', 'Weather pattern', 'Seasonal change', 'Temperature variation'], correct: 'Global warming issue' },
+      { question: 'What was Terrorism?', options: ['Political violence', 'State policy', 'Military strategy', 'Economic policy'], correct: 'Political violence' }
     ]
   },
   {
     id: 20,
-    title: 'Women, Caste and Reform',
-    description: 'Social reforms related to women and caste discrimination.',
+    title: 'Social Movements in our times',
+    description: 'Study of major social movements and their impact on society.',
     questions: [
-      {
-        question: 'Which social reformer worked for widow remarriage?',
-        options: ['Raja Ram Mohan Roy', 'Swami Vivekananda', 'Jyotiba Phule', 'Dayanand Saraswati'],
-        correct: 'Raja Ram Mohan Roy'
-      },
-      {
-        question: 'Which movement aimed at abolishing untouchability?',
-        options: ['Bhoodan Movement', 'Dalit Movement', 'Brahmo Samaj', 'Self-Respect Movement'],
-        correct: 'Self-Respect Movement'
-      },
-      {
-        question: 'Who founded the Brahmo Samaj?',
-        options: ['Raja Ram Mohan Roy', 'Keshab Chandra Sen', 'Debendranath Tagore', 'Swami Vivekananda'],
-        correct: 'Raja Ram Mohan Roy'
-      },
-      {
-        question: 'What was the main objective of Brahmo Samaj?',
-        options: ['Social reform', 'Religious reform', 'Educational reform', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Who founded the Arya Samaj?',
-        options: ['Dayanand Saraswati', 'Raja Ram Mohan Roy', 'Swami Vivekananda', 'Keshab Chandra Sen'],
-        correct: 'Dayanand Saraswati'
-      },
-      {
-        question: 'What was the slogan of Arya Samaj?',
-        options: ['Back to Vedas', 'Go back to nature', 'Unity in diversity', 'Truth alone triumphs'],
-        correct: 'Back to Vedas'
-      },
-      {
-        question: 'Who was known as Mahatma?',
-        options: ['Jyotiba Phule', 'B.R. Ambedkar', 'Mahatma Gandhi', 'Periyar'],
-        correct: 'Jyotiba Phule'
-      },
-      {
-        question: 'Which reformer worked for the rights of lower castes?',
-        options: ['Jyotiba Phule', 'B.R. Ambedkar', 'Periyar', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Who founded the Satyashodhak Samaj?',
-        options: ['Jyotiba Phule', 'B.R. Ambedkar', 'Periyar', 'Narayana Guru'],
-        correct: 'Jyotiba Phule'
-      },
-      {
-        question: 'What was the main objective of Satyashodhak Samaj?',
-        options: ['Education for lower castes', 'Religious reform', 'Social equality', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Who was known as the Father of the Indian Constitution?',
-        options: ['B.R. Ambedkar', 'Jawaharlal Nehru', 'Mahatma Gandhi', 'Sardar Patel'],
-        correct: 'B.R. Ambedkar'
-      },
-      {
-        question: 'Which act was passed to allow widow remarriage?',
-        options: ['Widow Remarriage Act 1856', 'Child Marriage Act', 'Sati Prevention Act', 'Women Education Act'],
-        correct: 'Widow Remarriage Act 1856'
-      },
-      {
-        question: 'Who was the first woman to become a doctor in India?',
-        options: ['Anandibai Joshi', 'Kadambini Ganguly', 'Rukhmabai', 'Sarojini Naidu'],
-        correct: 'Anandibai Joshi'
-      },
-      {
-        question: 'Which social evil was abolished by Raja Ram Mohan Roy?',
-        options: ['Child marriage', 'Sati', 'Untouchability', 'Purdah system'],
-        correct: 'Sati'
-      },
-      {
-        question: 'What was the Self-Respect Movement?',
-        options: ['Movement for womens rights', 'Movement against caste discrimination', 'Religious movement', 'Political movement'],
-        correct: 'Movement against caste discrimination'
-      },
-      {
-        question: 'Who led the Self-Respect Movement?',
-        options: ['Periyar', 'B.R. Ambedkar', 'Jyotiba Phule', 'Narayana Guru'],
-        correct: 'Periyar'
-      },
-      {
-        question: 'What was the impact of social reform movements?',
-        options: ['Improved status of women', 'Reduced caste discrimination', 'Spread of education', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which organization worked for womens education?',
-        options: ['Brahmo Samaj', 'Arya Samaj', 'Prarthana Samaj', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Who was the first woman to practice law in India?',
-        options: ['Cornelia Sorabji', 'Sarojini Naidu', 'Annie Besant', 'Rukhmabai'],
-        correct: 'Cornelia Sorabji'
-      },
-      {
-        question: 'What was the main problem faced by women in 19th century?',
-        options: ['Child marriage', 'Sati', 'Lack of education', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which movement was started by Ishwar Chandra Vidyasagar?',
-        options: ['Widow remarriage movement', 'Womens education movement', 'Anti-sati movement', 'Child marriage prevention'],
-        correct: 'Widow remarriage movement'
-      },
-      {
-        question: 'What was the role of newspapers in social reform?',
-        options: ['Spread awareness', 'Criticized social evils', 'Supported reforms', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which reformer established schools for girls?',
-        options: ['Jyotiba Phule', 'Ishwar Chandra Vidyasagar', 'D.K. Karve', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What was the main achievement of reform movements?',
-        options: ['Social awakening', 'Educational progress', 'Womens empowerment', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which law prohibited child marriage?',
-        options: ['Child Marriage Restraint Act 1929', 'Widow Remarriage Act', 'Sati Prevention Act', 'Education Act'],
-        correct: 'Child Marriage Restraint Act 1929'
-      }
+      { question: 'What is a social movement?', options: ['Collective action for change', 'Individual action', 'Government policy', 'Political party'], correct: 'Collective action for change' },
+      { question: 'What was the Civil Rights Movement?', options: ['Racial equality movement', 'Economic reform', 'Political change', 'Social reform'], correct: 'Racial equality movement' },
+      { question: 'What was the Women\u0027s Movement?', options: ['Gender equality movement', 'Political reform', 'Economic change', 'Social reform'], correct: 'Gender equality movement' },
+      { question: 'What was the Environmental Movement?', options: ['Nature protection movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Nature protection movement' },
+      { question: 'What was the Labor Movement?', options: ['Workers\u0027 rights movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Workers\u0027 rights movement' },
+      { question: 'What was the Peace Movement?', options: ['Anti-war movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Anti-war movement' },
+      { question: 'What was the Student Movement?', options: ['Youth activism', 'Political change', 'Economic reform', 'Social reform'], correct: 'Youth activism' },
+      { question: 'What was the Dalit Movement?', options: ['Caste equality movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Caste equality movement' },
+      { question: 'What was the Farmers\u0027 Movement?', options: ['Agricultural rights movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Agricultural rights movement' },
+      { question: 'What was the Anti-corruption Movement?', options: ['Corruption protest movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Corruption protest movement' },
+      { question: 'What was the RTI Movement?', options: ['Information rights movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Information rights movement' },
+      { question: 'What was the LGBT Movement?', options: ['Sexual rights movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Sexual rights movement' },
+      { question: 'What was the Disability Rights Movement?', options: ['Disability justice movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Disability justice movement' },
+      { question: 'What was the Digital Rights Movement?', options: ['Internet freedom movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Internet freedom movement' },
+      { question: 'What was the Consumer Movement?', options: ['Consumer protection movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Consumer protection movement' },
+      { question: 'What was the Human Rights Movement?', options: ['Rights protection movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Rights protection movement' },
+      { question: 'What was the Child Rights Movement?', options: ['Children\u0027s protection movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Children\u0027s protection movement' },
+      { question: 'What was the Animal Rights Movement?', options: ['Animal protection movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Animal protection movement' },
+      { question: 'What was the Mental Health Movement?', options: ['Mental health awareness', 'Political change', 'Economic reform', 'Social reform'], correct: 'Mental health awareness' },
+      { question: 'What was the Education Movement?', options: ['Education rights movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Education rights movement' },
+      { question: 'What was the Housing Rights Movement?', options: ['Housing justice movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Housing justice movement' },
+      { question: 'What was the Food Security Movement?', options: ['Food rights movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Food rights movement' },
+      { question: 'What was the Water Rights Movement?', options: ['Water access movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Water access movement' },
+      { question: 'What was the Indigenous Rights Movement?', options: ['Tribal rights movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Tribal rights movement' },
+      { question: 'What was the Senior Citizens Movement?', options: ['Elderly rights movement', 'Political change', 'Economic reform', 'Social reform'], correct: 'Elderly rights movement' }
     ]
   },
   {
     id: 21,
-    title: 'Civilising the Native, Educating the Nation',
-    description: 'British education policies and their impact on India.',
+    title: 'The Movement for the Formation of Telangana State',
+    description: 'Study of the movement that led to the formation of Telangana state.',
     questions: [
-      {
-        question: 'Which British Governor-General introduced English education in India?',
-        options: ['Lord Dalhousie', 'Lord Cornwallis', 'Lord Macaulay', 'Lord Wellesley'],
-        correct: 'Lord Macaulay'
-      },
-      {
-        question: 'Which university was the first to be established in India?',
-        options: ['Banaras Hindu University', 'Calcutta University', 'Delhi University', 'Bombay University'],
-        correct: 'Calcutta University'
-      },
-      {
-        question: 'What was the main purpose of British education policy?',
-        options: ['Spread knowledge', 'Create loyal administrators', 'Modernize India', 'Religious conversion'],
-        correct: 'Create loyal administrators'
-      },
-      {
-        question: 'Which act introduced English as medium of instruction?',
-        options: ['Charter Act 1813', 'Education Act 1835', 'Indian Education Act', 'University Act'],
-        correct: 'Education Act 1835'
-      },
-      {
-        question: 'Who wrote the famous Minute on Education?',
-        options: ['Lord Macaulay', 'Lord Dalhousie', 'Charles Wood', 'Lord Curzon'],
-        correct: 'Lord Macaulay'
-      },
-      {
-        question: 'What was the Macaulay Minute?',
-        options: ['Educational policy document', 'Legal document', 'Administrative order', 'Military instruction'],
-        correct: 'Educational policy document'
-      },
-      {
-        question: 'Which system of education was promoted by the British?',
-        options: ['Traditional Indian system', 'Western education system', 'Religious education', 'Technical education'],
-        correct: 'Western education system'
-      },
-      {
-        question: 'What was the impact of English education on Indians?',
-        options: ['Created awareness', 'Developed critical thinking', 'Led to nationalism', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which commission was appointed to review education in India?',
-        options: ['Hunter Commission', 'Wood Commission', 'Sadler Commission', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What was the Woods Despatch?',
-        options: ['Educational charter', 'Military order', 'Trade agreement', 'Administrative reform'],
-        correct: 'Educational charter'
-      },
-      {
-        question: 'When was the Woods Despatch issued?',
-        options: ['1854', '1855', '1856', '1857'],
-        correct: '1854'
-      },
-      {
-        question: 'Which universities were established in 1857?',
-        options: ['Calcutta, Bombay, Madras', 'Delhi, Allahabad, Punjab', 'Banaras, Aligarh, Jamia', 'All of the above'],
-        correct: 'Calcutta, Bombay, Madras'
-      },
-      {
-        question: 'What was the main criticism of British education?',
-        options: ['Neglected Indian languages', 'Ignored traditional knowledge', 'Created unemployment', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Who established the Mohammedan Anglo-Oriental College?',
-        options: ['Sir Syed Ahmad Khan', 'Maulana Azad', 'Ashfaq Ullah Khan', 'Khan Abdul Ghaffar Khan'],
-        correct: 'Sir Syed Ahmad Khan'
-      },
-      {
-        question: 'Which college later became Aligarh Muslim University?',
-        options: ['Mohammedan Anglo-Oriental College', 'Jamia Millia Islamia', 'Darul Uloom Deoband', 'Osmania University'],
-        correct: 'Mohammedan Anglo-Oriental College'
-      },
-      {
-        question: 'What was the main objective of Aligarh College?',
-        options: ['Modern education for Muslims', 'Religious education', 'Technical education', 'Womens education'],
-        correct: 'Modern education for Muslims'
-      },
-      {
-        question: 'Who founded the Banaras Hindu University?',
-        options: ['Madan Mohan Malaviya', 'Dayanand Saraswati', 'Annie Besant', 'Pandit Nehru'],
-        correct: 'Madan Mohan Malaviya'
-      },
-      {
-        question: 'What was the impact of education on Indian society?',
-        options: ['Social awakening', 'Political consciousness', 'Economic development', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which language was promoted as medium of instruction?',
-        options: ['Hindi', 'Sanskrit', 'English', 'Persian'],
-        correct: 'English'
-      },
-      {
-        question: 'What was the condition of womens education under British rule?',
-        options: ['Very poor initially', 'Gradually improved', 'Promoted by reformers', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which movement promoted indigenous education?',
-        options: ['Swadeshi movement', 'National education movement', 'Bengal partition movement', 'All of the above'],
-        correct: 'National education movement'
-      },
-      {
-        question: 'Who established the National Council of Education?',
-        options: ['Bengali leaders', 'Congress leaders', 'Extremist leaders', 'All of the above'],
-        correct: 'Bengali leaders'
-      },
-      {
-        question: 'What was the main feature of national education?',
-        options: ['Use of mother tongue', 'Indian culture and values', 'Practical education', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'Which institution was established as alternative to British education?',
-        options: ['Jamia Millia Islamia', 'Gujarat Vidyapith', 'Kashi Vidyapith', 'All of the above'],
-        correct: 'All of the above'
-      },
-      {
-        question: 'What was the ultimate impact of education on Indian independence?',
-        options: ['Created nationalist leaders', 'Spread political awareness', 'United different communities', 'All of the above'],
-        correct: 'All of the above'
-      }
+      { question: 'When was Telangana formed?', options: ['2014', '2013', '2015', '2012'], correct: '2014' },
+      { question: 'What was the Gentlemen\u0027s Agreement?', options: ['1956 regional agreement', '1950 pact', '1960 deal', '1955 accord'], correct: '1956 regional agreement' },
+      { question: 'What was the Mulki Rules?', options: ['Local employment protection', 'Land rights', 'Water rights', 'Education rules'], correct: 'Local employment protection' },
+      { question: 'What was the 1969 Movement?', options: ['First Telangana agitation', 'Second movement', 'Third protest', 'Final movement'], correct: 'First Telangana agitation' },
+      { question: 'What was the role of students?', options: ['Led the movement', 'Opposed movement', 'Neutral stance', 'No involvement'], correct: 'Led the movement' },
+      { question: 'What was the Six-Point Formula?', options: ['1973 solution attempt', '1970 plan', '1975 proposal', '1980 scheme'], correct: '1973 solution attempt' },
+      { question: 'What was GO 610?', options: ['Employment order', 'Education order', 'Land order', 'Water order'], correct: 'Employment order' },
+      { question: 'What was the TRS role?', options: ['Led final movement', 'Opposed movement', 'Neutral stance', 'No involvement'], correct: 'Led final movement' },
+      { question: 'What was the Srikrishna Committee?', options: ['2010 study committee', '2008 committee', '2012 panel', '2009 group'], correct: '2010 study committee' },
+      { question: 'What was the water dispute?', options: ['Krishna-Godavari sharing', 'Land sharing', 'Power sharing', 'Resource division'], correct: 'Krishna-Godavari sharing' },
+      { question: 'What was the power issue?', options: ['Electricity distribution', 'Political power', 'Economic power', 'Social power'], correct: 'Electricity distribution' },
+      { question: 'What was the education issue?', options: ['Educational opportunities', 'School system', 'College system', 'Teaching method'], correct: 'Educational opportunities' },
+      { question: 'What was the employment issue?', options: ['Local jobs protection', 'Salary issue', 'Working conditions', 'Job creation'], correct: 'Local jobs protection' },
+      { question: 'What was the cultural aspect?', options: ['Cultural identity', 'Art form', 'Language issue', 'Religious matter'], correct: 'Cultural identity' },
+      { question: 'What was Article 371D?', options: ['Special provisions for AP', 'General law', 'State rule', 'Local order'], correct: 'Special provisions for AP' },
+      { question: 'What was the role of media?', options: ['Movement coverage', 'Opposition', 'Neutral stance', 'No coverage'], correct: 'Movement coverage' },
+      { question: 'What was the political impact?', options: ['New state formation', 'No change', 'Minor change', 'Temporary effect'], correct: 'New state formation' },
+      { question: 'What was the economic impact?', options: ['Resource division', 'No effect', 'Minor impact', 'Temporary change'], correct: 'Resource division' },
+      { question: 'What was the social impact?', options: ['Community relations change', 'No effect', 'Minor impact', 'Temporary effect'], correct: 'Community relations change' },
+      { question: 'What was the final bill?', options: ['AP Reorganisation Act', 'State bill', 'Local law', 'Regional act'], correct: 'AP Reorganisation Act' },
+      { question: 'What was the capital issue?', options: ['Hyderabad sharing', 'New capital', 'Old capital', 'No issue'], correct: 'Hyderabad sharing' },
+      { question: 'What was the role of women?', options: ['Active participation', 'No role', 'Minor role', 'Passive support'], correct: 'Active participation' },
+      { question: 'What was the historical context?', options: ['Regional disparity', 'Unity movement', 'Peace effort', 'Development plan'], correct: 'Regional disparity' },
+      { question: 'What was the legal process?', options: ['Constitutional amendment', 'State law', 'Local rule', 'Regional order'], correct: 'Constitutional amendment' },
+      { question: 'What was the aftermath?', options: ['Two states formation', 'No change', 'Minor change', 'Temporary effect'], correct: 'Two states formation' }
     ]
   }
 ];

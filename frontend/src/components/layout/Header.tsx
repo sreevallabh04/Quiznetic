@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { BookOpen, Layout, User, Menu, X } from 'lucide-react';
+import { BookOpen, Layout, User, Menu, X, Trophy } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -64,6 +64,14 @@ export function Header({ children }: HeaderProps) {
               </Link>
               
               <Link 
+                to="/gamification" 
+                className="flex items-center gap-2 px-3 lg:px-4 py-2 rounded-lg text-secondary-700 hover:text-primary-600 hover:bg-primary-50 transition-colors text-sm lg:text-base"
+              >
+                <Trophy className="w-4 h-4" />
+                <span className="font-medium">Progress</span>
+              </Link>
+              
+              <Link 
                 to="/profile" 
                 className="flex items-center gap-2 px-3 lg:px-4 py-2 rounded-lg text-secondary-700 hover:text-primary-600 hover:bg-primary-50 transition-colors text-sm lg:text-base"
               >
@@ -106,6 +114,15 @@ export function Header({ children }: HeaderProps) {
                 >
                   <Layout className="w-5 h-5" />
                   <span className="font-medium">Question Types</span>
+                </Link>
+                
+                <Link 
+                  to="/gamification" 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-secondary-700 hover:text-primary-600 hover:bg-primary-50 transition-colors w-full"
+                >
+                  <Trophy className="w-5 h-5" />
+                  <span className="font-medium">Progress Dashboard</span>
                 </Link>
                 
                 <Link 
